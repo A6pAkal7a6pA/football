@@ -12,7 +12,7 @@ const swiper = new Swiper('.store-slider', {
 	initialSlide: 0,
 	centeredSlides: true,
 	slideToClickedSlide: true,
-	autoHeight: true,
+	autoHeight: false,
 	grabCursor: true,
 	spaceBetween: 40,
 	coverflowEffect: {
