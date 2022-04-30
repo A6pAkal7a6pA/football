@@ -1,0 +1,33 @@
+.info {
+	margin-bottom: 170px;
+	&__inner {
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+
+	&__item {
+		max-width: 520px;
+		height: 90px;
+		background: #082148;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		gap: 0 20px;
+		padding: 12px 20px;
+	}
+
+	&__image {
+	}
+
+	&__text {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #fff;
+	}
+}

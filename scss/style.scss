@@ -1,0 +1,21 @@
+@import "_zeroing.scss";
+@import "_configuration.scss";
+@import "_component.scss";
+@import "_trailer.scss";
+@import "_info.scss";
+@import "_store.scss";
+
+.wrapper {
+	min-height: 100vh;
+	width: 100%;
+	background: #FFFFFF;
+	overflow: hidden;
+}
+
+.trailer {
+	margin-bottom: 80px;
+}
+
+.info {
+	margin-bottom: 85px;
+}
