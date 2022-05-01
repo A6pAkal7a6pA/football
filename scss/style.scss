@@ -4,6 +4,9 @@
 @import "_trailer.scss";
 @import "_info.scss";
 @import "_store.scss";
+@import "_unique.scss";
+@import "_tokenomic.scss";
+@import "_contact.scss";
 
 .wrapper {
 	min-height: 100vh;
@@ -21,5 +24,25 @@
 }
 
 .store {
+
+}
+.unique {
+	padding-bottom: 170px;
+}
+
+@media(max-width: 500px) {
+	.trailer {
+		margin-bottom: 25px;
+	}
 	
+	.info {
+		margin-bottom: 85px;
+	}
+	
+	.store {
+	
+	}
+	.unique {
+		padding-bottom: 170px;
+	}
 }

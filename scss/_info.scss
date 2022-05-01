@@ -31,3 +31,21 @@
 		color: #fff;
 	}
 }
+@media(max-width: 1090px) {
+	.info {
+		&__content {
+			justify-content: center;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.info {
+		&__content {
+			gap: 0;
+		}
+		&__item {
+			height: auto;
+		}
+	}
+}

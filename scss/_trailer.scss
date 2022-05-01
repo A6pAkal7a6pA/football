@@ -1,6 +1,6 @@
 .trailer {
 	&__inner {
-		margin-bottom: 50px;
+
 	}
 
 	&__image {
@@ -15,5 +15,13 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+	}
+}
+
+@media(max-width: 500px) {
+	.trailer {
+		&__image {
+			margin-bottom: 20px;
+		}
 	}
 }

@@ -99,7 +99,6 @@ a {
 
 .container {
   max-width: 1470px;
-  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -137,10 +136,6 @@ a {
   color: #ffffff;
 }
 
-.trailer__inner {
-  margin-bottom: 50px;
-}
-
 .trailer__image {
   margin-bottom: 50px;
 }
@@ -161,6 +156,12 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 500px) {
+  .trailer__image {
+    margin-bottom: 20px;
+  }
 }
 
 .info {
@@ -199,6 +200,23 @@ a {
   font-size: 18px;
   line-height: 22px;
   color: #fff;
+}
+
+@media (max-width: 1090px) {
+  .info__content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .info__content {
+    gap: 0;
+  }
+  .info__item {
+    height: auto;
+  }
 }
 
 .store {
@@ -324,7 +342,7 @@ a {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  max-width: 390px;
+  max-width: calc(100% - 204px);
   width: 100%;
   height: 10px;
 }
@@ -337,6 +355,337 @@ a {
 
 .store-slider__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet-active {
   background: #4dda36;
+}
+
+@media (max-width: 1090px) {
+  .store-slider__wrapper {
+    max-width: 700px;
+  }
+}
+
+.unique {
+  background: #f8f8f8;
+}
+
+.unique__inner {
+  padding-top: 70px;
+}
+
+.unique__title {
+  font-family: "Roboto Slab", serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 80px;
+}
+
+.unique-slider__wrapper {
+  height: 457px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.unique-slider__image {
+  padding: 12px 22px;
+}
+
+.unique-slider__image img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.unique-slider__name {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #082148;
+  text-align: center;
+  display: none;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.unique-slider__text {
+  padding: 0 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  display: none;
+}
+
+.unique-slider__item {
+  max-width: 270px;
+  height: 100%;
+}
+
+.unique-slider__item.swiper-slide-visible {
+  opacity: 0.4;
+}
+
+.unique-slider__item.swiper-slide-prev, .unique-slider__item.swiper-slide-next {
+  opacity: 0.7;
+}
+
+.unique-slider__item.swiper-slide-active {
+  opacity: 1;
+  background: url("../img/messi-bg.png") center/cover no-repeat;
+  border-radius: 6.72301px;
+}
+
+.unique-slider__item.swiper-slide-active .unique-slider__name {
+  display: block;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #082148;
+  text-align: center;
+}
+
+.unique-slider__item.swiper-slide-active .unique-slider__text {
+  display: block;
+  padding: 0 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.unique-slider__navigation {
+  max-width: 270px;
+  width: 100%;
+  height: 10px;
+  margin: 25px auto 0 auto;
+  position: relative;
+}
+
+.unique-slider__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 390px;
+  width: 100%;
+  height: 10px;
+}
+
+.unique-slider__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet {
+  width: 100%;
+  border-radius: 3px;
+  background: #dfdfdf;
+  opacity: 1;
+}
+
+.unique-slider__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet-active {
+  background: #4dda36;
+}
+
+.unique-slider__button-prev, .unique-slider__button-next {
+  background: #082148;
+  border-radius: 6.72301px;
+  width: 52px;
+  height: 52px;
+  top: 0;
+}
+
+.unique-slider__button-prev::after, .unique-slider__button-next::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+}
+
+.unique-slider__button-prev {
+  -webkit-transform: translate(-50%, 25%);
+          transform: translate(-50%, 25%);
+  left: 0;
+}
+
+.unique-slider__button-prev::after {
+  background: url("../img/icons/white-arrow-left.svg") center/cover no-repeat;
+}
+
+.unique-slider__button-next {
+  -webkit-transform: translate(50%, 25%);
+          transform: translate(50%, 25%);
+  right: 0;
+}
+
+.unique-slider__button-next::after {
+  background: url("../img/icons/white-arrow-right.svg") center/cover no-repeat;
+}
+
+@media (max-width: 1090px) {
+  .unique-slider__wrapper {
+    max-width: 700px;
+  }
+}
+
+.tokenomic {
+  background: #f8f8f8;
+}
+
+.tokenomic__inner {
+  background: #fdfffd;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.tokenomic__title {
+  font-family: "Roboto Slab", serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  color: #082148;
+  margin-bottom: 40px;
+}
+
+.tokenomic__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tokenomic__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 100%;
+  max-width: 143px;
+}
+
+.tokenomic-item__image {
+  margin-bottom: 5px;
+}
+
+.tokenomic-item__title {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 29px;
+  color: #4dda36;
+  margin-bottom: 10px;
+}
+
+.tokenomic-item__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+@media (max-width: 500px) {
+  .tokenomic__content {
+    gap: 30px 0;
+  }
+}
+
+.contact {
+  background: #082148;
+  padding: 90px 0;
+}
+
+.contact__title {
+  font-family: "Roboto Slab", serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  color: #fdfffd;
+  margin-bottom: 50px;
+}
+
+.contact__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact__item {
+  background: #fdfffd;
+  border-radius: 10px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 134px;
+  width: 100%;
+}
+
+.contact__image {
+  margin-bottom: 10px;
+}
+
+.contact__name {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #010038;
+}
+
+@media (max-width: 500px) {
+  .contact__content {
+    gap: 10px;
+  }
+  .contact__item {
+    max-width: 90px;
+    padding: 10px 4px;
+  }
 }
 
 .wrapper {
@@ -352,4 +701,20 @@ a {
 
 .info {
   margin-bottom: 85px;
+}
+
+.unique {
+  padding-bottom: 170px;
+}
+
+@media (max-width: 500px) {
+  .trailer {
+    margin-bottom: 25px;
+  }
+  .info {
+    margin-bottom: 85px;
+  }
+  .unique {
+    padding-bottom: 170px;
+  }
 }

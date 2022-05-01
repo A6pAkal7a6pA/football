@@ -1,0 +1,155 @@
+.unique {
+	background: #f8f8f8;
+	&__inner {
+		padding-top: 70px;
+	}
+
+	&__title {
+		font-family: $fontfamilyRobotoSlab;
+		font-weight: 900;
+		font-size: 32px;
+		line-height: 42px;
+		text-align: center;
+		color: #000000;
+		margin-bottom: 80px;
+	}
+
+	&__slider {
+	}
+}
+.unique-slider {
+	&__wrapper {
+		height: 457px;
+		align-items: flex-start;
+	}
+	&__image {
+		padding: 12px 22px;
+		img {
+			max-width: 100%;
+			object-fit: cover;
+			width: 100%;
+		}
+	}
+	&__name {
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 30px;
+		color: #082148;
+		text-align: center;
+		display: none;
+		position: relative;
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		padding: 0 5px;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		color: #000000;
+		display: none;
+	}
+
+	&__item {
+		max-width: 270px;
+		height: 100%;
+		&.swiper-slide-visible {
+			opacity: 0.4;
+		}
+		&.swiper-slide-prev,
+		&.swiper-slide-next {
+			opacity: 0.7;
+		}
+		&.swiper-slide-active {
+			opacity: 1;
+			background: url("../img/messi-bg.png") center / cover no-repeat;
+			border-radius: 6.72301px;
+			.unique-slider__image {
+				img {
+				}
+			}
+			.unique-slider__name {
+				display: block;
+				font-weight: 700;
+				font-size: 25px;
+				line-height: 30px;
+				color: #082148;
+				text-align: center;
+			}
+
+			.unique-slider__text {
+				display: block;
+				padding: 0 5px;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 20px;
+				text-align: center;
+				color: #000000;
+			}
+		}
+	}
+	&__navigation {
+		max-width: 270px;
+		width: 100%;
+		height: 10px;
+		margin: 25px auto 0 auto;
+		position: relative;
+	}
+	&__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+		position: absolute;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		max-width: 390px;
+		width: 100%;
+		height: 10px;
+		.swiper-pagination-bullet {
+			width: 100%;
+			border-radius: 3px;
+			background: #dfdfdf;
+			opacity: 1;
+		}
+		.swiper-pagination-bullet-active {
+			background: #4dda36;
+		}
+	}
+	&__button-prev,
+	&__button-next {
+		background: #082148;
+		border-radius: 6.72301px;
+		width: 52px;
+		height: 52px;
+		top: 0;
+		&::after {
+			content: "";
+			width: 24px;
+			height: 24px;
+		}
+	}
+	&__button-prev {
+		transform: translate(-50%, 25%);
+		left: 0;
+		&::after {
+			background: url("../img/icons/white-arrow-left.svg") center / cover no-repeat;
+		}
+	}
+	&__button-next {
+		transform: translate(50%, 25%);
+		right: 0;
+		&::after {
+			background: url("../img/icons/white-arrow-right.svg") center / cover no-repeat;
+		}
+	}
+}
+
+@media(max-width: 1090px) {
+	.unique-slider {
+		&__wrapper {
+			max-width: 700px;
+		}
+	}
+}

@@ -1,12 +1,10 @@
-const swiper = new Swiper('.store-slider', {
+const storeSlider = new Swiper('.store-slider', {
 	loop: true,
 	// autoplay: {
 	// 	delay: 5000,
 	// 	disableOnInteraction: false
 	// },
 	speed: 1000,
-	// height: 256,
-	width: 1060,
 	effect: 'coverflow',
 	slidesPerView: 'auto',
 	initialSlide: 0,
@@ -24,6 +22,40 @@ const swiper = new Swiper('.store-slider', {
 		slideShadows: false,
 	},
 	pagination: {
+		el: '.store-slider__pagination',
+		type: 'bullets',
+		clickable: true
+	},
+	navigation: {
+		nextEl: '.store-slider__button-next',
+		prevEl: '.store-slider__button-prev',
+	}
+});
+
+const uniqueSlider = new Swiper('.unique-slider', {
+	loop: true,
+	// autoplay: {
+	// 	delay: 5000,
+	// 	disableOnInteraction: false
+	// },
+	speed: 1000,
+	effect: 'coverflow',
+	slidesPerView: 'auto',
+	initialSlide: 0,
+	centeredSlides: true,
+	slideToClickedSlide: true,
+	autoHeight: false,
+	grabCursor: true,
+	spaceBetween: 20,
+	coverflowEffect: {
+		rotate: 0,
+		stretch: 50,
+		depth: 60,
+		modifier: 1,
+		scale: 0.9,
+		slideShadows: false,
+	},
+	pagination: {
 		el: '.swiper-pagination',
 		type: 'bullets',
 		clickable: true
@@ -31,5 +63,10 @@ const swiper = new Swiper('.store-slider', {
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
-	}
+	},
+	breakpoints: {
+		500: {
+			spaceBetween: 50,
+		}
+}
 });
