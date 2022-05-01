@@ -18,6 +18,19 @@
 	}
 }
 .unique-slider {
+	position: relative;
+	&::after {
+		content: "";
+		width: 270px;
+		height: 457px;
+		position: absolute;
+		left: 50%;
+		top: 0;
+		background: url("../img/messi-bg.png") center / cover no-repeat;
+		border-radius: 6.72301px;
+		border: 4px solid #00cb51;
+		transform: translate(-50%);
+	}
 	&__wrapper {
 		height: 457px;
 		align-items: flex-start;
@@ -63,8 +76,6 @@
 		}
 		&.swiper-slide-active {
 			opacity: 1;
-			background: url("../img/messi-bg.png") center / cover no-repeat;
-			border-radius: 6.72301px;
 			.unique-slider__image {
 				img {
 				}
@@ -117,36 +128,36 @@
 			background: #4dda36;
 		}
 	}
-	&__button-prev,
-	&__button-next {
+	.unique-slider__button-prev,
+	.unique-slider__button-next {
 		background: #082148;
 		border-radius: 6.72301px;
 		width: 52px;
 		height: 52px;
-		top: 0;
+		top: 50%;
 		&::after {
 			content: "";
 			width: 24px;
 			height: 24px;
 		}
 	}
-	&__button-prev {
-		transform: translate(-50%, 25%);
-		left: 0;
+	.unique-slider__button-prev {
+		transform: translate(calc(-161px), 90px);
+		left: 50%;
 		&::after {
 			background: url("../img/icons/white-arrow-left.svg") center / cover no-repeat;
 		}
 	}
-	&__button-next {
-		transform: translate(50%, 25%);
-		right: 0;
+	.unique-slider__button-next {
+		transform: translate(calc(161px), 90px);
+		right: 50%;
 		&::after {
 			background: url("../img/icons/white-arrow-right.svg") center / cover no-repeat;
 		}
 	}
 }
 
-@media(max-width: 1090px) {
+@media (max-width: 1090px) {
 	.unique-slider {
 		&__wrapper {
 			max-width: 700px;
