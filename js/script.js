@@ -68,5 +68,10 @@ const uniqueSlider = new Swiper('.unique-slider', {
 		500: {
 			spaceBetween: 50,
 		}
-}
+	}
+});
+
+let headerBurger = document.querySelector('.header__burger');
+headerBurger.addEventListener('click', () => {
+
 });
