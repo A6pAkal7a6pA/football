@@ -73,5 +73,5 @@ const uniqueSlider = new Swiper('.unique-slider', {
 
 let headerBurger = document.querySelector('.header__burger');
 headerBurger.addEventListener('click', () => {
-
+	document.querySelector('.header').classList.toggle('active');
 });
