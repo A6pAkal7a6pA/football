@@ -25,9 +25,12 @@
 		align-items: center;
 		justify-content: space-between;
 		gap: 30px;
+		width: 100%;
 	}
 	&__anonses {
 		opacity: 0;
+		display: none;
+
 
 	}
 
@@ -40,6 +43,9 @@
 	}
 
 	&__item {
+	}
+	&__email {
+		display: none;
 	}
 
 	&__link {
