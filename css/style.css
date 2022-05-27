@@ -171,10 +171,12 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 30px;
+  width: 100%;
 }
 
 .header__anonses {
   opacity: 0;
+  display: none;
 }
 
 .header__list {
@@ -189,6 +191,10 @@ a {
           justify-content: center;
   gap: 30px;
   height: 100%;
+}
+
+.header__email {
+  display: none;
 }
 
 .header__link {
