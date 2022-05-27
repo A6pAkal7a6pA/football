@@ -331,6 +331,7 @@ a {
   }
   .header.active .header__anonses {
     opacity: 1;
+    display: block;
   }
   .header.active .header__inner {
     opacity: 1;
