@@ -3,6 +3,7 @@
 	height: 60px;
 	width: 100%;
 	position: fixed;
+	z-index: 99;
 	&__inner {
 		height: 100%;
 		display: flex;

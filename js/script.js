@@ -32,6 +32,40 @@ const storeSlider = new Swiper('.store-slider', {
 	}
 });
 
+const skillsSlider = new Swiper('.skills-slider', {
+	loop: true,
+	// autoplay: {
+	// 	delay: 5000,
+	// 	disableOnInteraction: false
+	// },
+	speed: 1000,
+	effect: 'coverflow',
+	slidesPerView: 'auto',
+	initialSlide: 0,
+	centeredSlides: true,
+	slideToClickedSlide: true,
+	autoHeight: false,
+	grabCursor: true,
+	spaceBetween:0,
+	coverflowEffect: {
+		rotate: 0,
+		stretch: 120,
+		depth: 80,
+		modifier: 1,
+		scale: 0.95,
+		slideShadows: false,
+	},
+	pagination: {
+		el: '.skills-slider__pagination',
+		type: 'bullets',
+		clickable: true
+	},
+	navigation: {
+		nextEl: '.skills-slider__button-next',
+		prevEl: '.skills-slider__button-prev',
+	}
+});
+
 const uniqueSlider = new Swiper('.unique-slider', {
 	loop: true,
 	// autoplay: {
