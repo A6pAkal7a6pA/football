@@ -109,3 +109,29 @@ let headerBurger = document.querySelector('.header__burger');
 headerBurger.addEventListener('click', () => {
 	document.querySelector('.header').classList.toggle('active');
 });
+
+let headSlider = new Swiper('.head-slider', {
+	loop: false,
+	// autoplay: {
+	// 	delay: 5000,
+	// 	disableOnInteraction: false
+	// },
+	speed: 1000,
+	slidesPerView: 'auto',
+	initialSlide: 0,
+	centeredSlides: false,
+	slideToClickedSlide: false,
+	preventClicks: false,
+	autoHeight: false,
+	grabCursor: false,
+	spaceBetween: 10,
+	navigation: {
+		nextEl: '.head-slider__button-next',
+		prevEl: '.head-slider__button-prev',
+	}
+	// breakpoints: {
+	// 	500: {
+	// 		spaceBetween: 50,
+	// 	}
+	// }
+});
