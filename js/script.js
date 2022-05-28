@@ -46,7 +46,7 @@ const skillsSlider = new Swiper('.skills-slider', {
 	slideToClickedSlide: true,
 	autoHeight: false,
 	grabCursor: true,
-	spaceBetween:0,
+	spaceBetween: 0,
 	coverflowEffect: {
 		rotate: 0,
 		stretch: 120,
@@ -125,6 +125,7 @@ let headSlider = new Swiper('.head-slider', {
 	autoHeight: false,
 	grabCursor: false,
 	spaceBetween: 10,
+	allowTouchMove: false,
 	navigation: {
 		nextEl: '.head-slider__button-next',
 		prevEl: '.head-slider__button-prev',
@@ -135,3 +136,10 @@ let headSlider = new Swiper('.head-slider', {
 	// 	}
 	// }
 });
+
+let firstChildRoadItem = document.querySelector('.road-top .road__item:first-child');
+let marginMidLine = firstChildRoadItem.getBoundingClientRect().width / 2;
+document.querySelector('.road-mid').style.marginLeft = marginMidLine + 'px';
+document.querySelector('.road-bot').style.marginLeft = marginMidLine + 10 + 'px';
+let checkInner = document.querySelector('.check__inner');
+document.querySelector('.road__inner').style.marginLeft = checkInner.getBoundingClientRect().left + 'px';

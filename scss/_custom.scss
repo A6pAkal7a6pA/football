@@ -133,23 +133,10 @@
 	.head-slider {
 		display: flex;
 		align-items: center;
-		// gap: 30px;
-		// padding-right: 80px;
 		margin-left: 0;
 		max-width: 737px;
 		padding-right: 88px;
 		width: 100%;
-		// &::before {
-		// 	content: '';
-		// 	width: 65px;
-		// 	height: 100%;
-		// 	position: absolute;
-		// 	z-index: 2;
-		// 	right: 78px;
-		// 	top: 0;
-		// 	background: linear-gradient(180deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 100%);
-		// 	transform: rotate(90deg);
-		// }
 		&::after {
 			content: '';
 			width: 78px;
@@ -161,8 +148,6 @@
 			background: #fff;
 		}
 		&__wrapper {
-			// max-width: 659px;
-			// overflow: hidden;
 		}
 
 		&__slide {
@@ -171,6 +156,7 @@
 			padding: 5px;
 			background: #ebebeb;
 			border-radius: 5px;
+			cursor: pointer;
 		}
 
 		// &__navigation {

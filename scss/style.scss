@@ -5,13 +5,18 @@
 @import "_trailer.scss";
 @import "_about.scss";
 @import "_info.scss";
+@import "_investor.scss";
+@import "_check.scss";
 @import "_store.scss";
 @import "_possibilities.scss";
 @import "_unique.scss";
 @import "_custom.scss";
 @import "_skills.scss";
+@import "_deligate.scss";
 @import "_tokenomic.scss";
+@import "_roadmap.scss";
 @import "_contact.scss";
+@import "_copy.scss";
 
 .wrapper {
 	min-height: 100vh;
@@ -26,6 +31,23 @@
 
 .info {
 	margin-bottom: 85px;
+}
+
+.investor {
+	margin-bottom: 140px;
+}
+
+.check {
+	margin-bottom: 140px;
+}
+.tokenomic {
+	margin-bottom: 140px;
+}
+.deligate {
+	margin-bottom: 140px;
+}
+.road  {
+	margin-bottom: 140px;
 }
 
 .store {

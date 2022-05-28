@@ -1,0 +1,44 @@
+.check {
+	&__inner {
+	}
+
+	&__title {
+		font-weight: 800;
+		font-size: 32px;
+		line-height: 39px;
+		text-align: center;
+		color: #082148;
+		margin-bottom: 44px;
+	}
+
+	&__image {
+		margin-top: -42px;
+		margin-bottom: 44px;
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__items {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+	}
+
+	&__item {
+		background: #4dda36;
+		border-radius: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+		gap: 10px;
+		max-width: 310px;
+		width: 100%;
+	}
+
+	&__text {
+	}
+}
