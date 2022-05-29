@@ -42,6 +42,7 @@
 		align-items: center;
 		justify-content: center;
 		flex: 1 0 420px;
+		position: relative;
 	}
 
 	&__human {
@@ -64,50 +65,66 @@
 
 	&__colors {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
-		gap: 23px;
+		gap: 16px;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 5;
+		width: 19.8px;
+		height: 306.2px;
 	}
 
 	&__color {
-		width: 50px;
-		height: 50px;
-		padding: 10px;
-		background: #e3e3e3;
-		border-radius: 5px;
+		width: 19.8px;
+		height: 19.8px;
 		cursor: pointer;
-		border-bottom: 3px solid transparent;
-		border-radius: 5px;
-		&.active {
-			border-bottom: 3px solid #4dda36;
-		}
+		border-radius: 1.32px;
 		&_1 {
 			.custom__dermo {
-				background: #ffcc99;
+				background: #FCD09F;
 			}
 		}
 		&_2 {
 			.custom__dermo {
-				background: #ffaf77;
+				background: #FFCC99;
 			}
 		}
 		&_3 {
 			.custom__dermo {
-				background: #f28f71;
+				background: #FFBE92;
 			}
 		}
 		&_4 {
 			.custom__dermo {
-				background: #9c755a;
+				background: #FCC0A2;
 			}
 		}
 		&_5 {
 			.custom__dermo {
-				background: #9c695a;
+				background: #FFAF77;
 			}
 		}
 		&_6 {
 			.custom__dermo {
-				background: #6d5550;
+				background: #F7B86D;
+			}
+		}
+		&_7 {
+			.custom__dermo {
+				background: #D87E41;
+			}
+		}
+		&_8 {
+			.custom__dermo {
+				background: #9C755A;
+			}
+		}
+		&_9 {
+			.custom__dermo {
+				background: #6D5550;
 			}
 		}
 	}
