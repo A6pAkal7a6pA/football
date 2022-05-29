@@ -217,6 +217,14 @@ let skins = {
 		rightHand: 'img/customization/colors/rightFist_darkBlack.png',
 		legs: 'img/customization/colors/legs_darkBlack.png'
 	},
+	lightBrick: {
+		body: 'img/customization/colors/body_lightBrick.png',
+		leftShoulder: 'img/customization/colors/leftHand_lightBrick.png',
+		leftHand: 'img/customization/colors/leftFist_lightBrick.png',
+		rightShoulder: 'img/customization/colors/rightHand_lightBrick.png',
+		rightHand: 'img/customization/colors/rightFist_lightBrick.png',
+		legs: 'img/customization/colors/legs_lightBrick.png'
+	},
 	darkBrown: {
 		body: 'img/customization/colors/body_darkBrown.png',
 		leftShoulder: 'img/customization/colors/leftHand_darkBrown.png',
@@ -233,6 +241,14 @@ let skins = {
 		rightHand: 'img/customization/colors/rightFist_darkChocolate.png',
 		legs: 'img/customization/colors/legs_darkChocolate.png'
 	},
+	light: {
+		body: 'img/customization/colors/body_light.png',
+		leftShoulder: 'img/customization/colors/leftHand_light.png',
+		leftHand: 'img/customization/colors/leftFist_light.png',
+		rightShoulder: 'img/customization/colors/rightHand_light.png',
+		rightHand: 'img/customization/colors/rightFist_light.png',
+		legs: 'img/customization/colors/legs_light.png'
+	},
 	lightBrick: {
 		body: 'img/customization/colors/body_lightBrick.png',
 		leftShoulder: 'img/customization/colors/leftHand_lightBrick.png',
@@ -241,13 +257,13 @@ let skins = {
 		rightHand: 'img/customization/colors/rightFist_lightBrick.png',
 		legs: 'img/customization/colors/legs_lightBrick.png'
 	},
-	lightChiz: {
-		body: 'img/customization/colors/body_lightChiz.png',
-		leftShoulder: 'img/customization/colors/leftHand_lightChiz.png',
-		leftHand: 'img/customization/colors/leftFist_lightChiz.png',
-		rightShoulder: 'img/customization/colors/rightHand_lightChiz.png',
-		rightHand: 'img/customization/colors/rightFist_lightChiz.png',
-		legs: 'img/customization/colors/legs_lightChiz.png'
+	lightCheese: {
+		body: 'img/customization/colors/body_lightCheese.png',
+		leftShoulder: 'img/customization/colors/leftHand_lightCheese.png',
+		leftHand: 'img/customization/colors/leftFist_lightCheese.png',
+		rightShoulder: 'img/customization/colors/rightHand_lightCheese.png',
+		rightHand: 'img/customization/colors/rightFist_lightCheese.png',
+		legs: 'img/customization/colors/legs_lightCheese.png'
 	},
 	lightOrange: {
 		body: 'img/customization/colors/body_lightOrange.png',
@@ -256,5 +272,22 @@ let skins = {
 		rightShoulder: 'img/customization/colors/rightHand_lightOrange.png',
 		rightHand: 'img/customization/colors/rightFist_lightOrange.png',
 		legs: 'img/customization/colors/legs_lightOrange.png'
+	},
+	lightPink: {
+		body: 'img/customization/colors/body_lightPink.png',
+		leftShoulder: 'img/customization/colors/leftHand_lightPink.png',
+		leftHand: 'img/customization/colors/leftFist_lightPink.png',
+		rightShoulder: 'img/customization/colors/rightHand_lightPink.png',
+		rightHand: 'img/customization/colors/rightFist_lightPink.png',
+		legs: 'img/customization/colors/legs_lightPink.png'
+	},
+
+	lightYellow: {
+		body: 'img/customization/colors/body_lightYellow.png',
+		leftShoulder: 'img/customization/colors/leftHand_lightYellow.png',
+		leftHand: 'img/customization/colors/leftFist_lightYellow.png',
+		rightShoulder: 'img/customization/colors/rightHand_lightYellow.png',
+		rightHand: 'img/customization/colors/rightFist_lightYellow.png',
+		legs: 'img/customization/colors/legs_lightYellow.png'
 	},
 }
