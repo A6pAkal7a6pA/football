@@ -1155,8 +1155,8 @@ a {
 }
 
 .custom__platform {
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
   width: 100%;
   text-align: center;
   display: -webkit-box;

@@ -196,7 +196,6 @@ document.querySelectorAll('.head-slider__slide').forEach((slide) => {
 });
 
 function changeHumanColor(color) {
-	console.log(color);
 	document.querySelector('.custom-human__body').src = skins[color].body;
 	document.querySelector('.custom-human__right-shoulder').src = skins[color].rightShoulder;
 	document.querySelector('.custom-human__left-shoulder').src = skins[color].leftShoulder;
@@ -211,7 +210,6 @@ document.querySelectorAll('.custom__color').forEach((slide) => {
 		let color = slide.classList[2];
 		let firstElement = document.querySelector('.' + color);
 		let index = Array.from(firstElement.parentElement.children).indexOf(firstElement) + 1;
-		console.log(headSlider);
 		headSlider[0].slideTo(index - 1, 1000, true);
 		firstElement.classList.add('active');
 		changeHumanColor(color);
