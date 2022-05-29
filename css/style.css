@@ -1205,42 +1205,56 @@ a {
   height: 19.8px;
   cursor: pointer;
   border-radius: 1.32px;
+  position: relative;
+}
+
+.custom__color.active::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #4dda36;
+  border-radius: 50%;
+  top: 50%;
+  left: -12px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .custom__color_1 .custom__dermo {
-  background: #FCD09F;
+  background: #fcd09f;
 }
 
 .custom__color_2 .custom__dermo {
-  background: #FFCC99;
+  background: #ffcc99;
 }
 
 .custom__color_3 .custom__dermo {
-  background: #FFBE92;
+  background: #ffbe92;
 }
 
 .custom__color_4 .custom__dermo {
-  background: #FCC0A2;
+  background: #fcc0a2;
 }
 
 .custom__color_5 .custom__dermo {
-  background: #FFAF77;
+  background: #ffaf77;
 }
 
 .custom__color_6 .custom__dermo {
-  background: #F7B86D;
+  background: #f7b86d;
 }
 
 .custom__color_7 .custom__dermo {
-  background: #D87E41;
+  background: #d87e41;
 }
 
 .custom__color_8 .custom__dermo {
-  background: #9C755A;
+  background: #9c755a;
 }
 
 .custom__color_9 .custom__dermo {
-  background: #6D5550;
+  background: #6d5550;
 }
 
 .custom .custom__content {

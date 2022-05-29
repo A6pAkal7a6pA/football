@@ -167,25 +167,31 @@ function getSiblings(elem) {
 
 function customElementHandler(slide) {
 	let classPart = slide.parentElement.parentElement.parentElement.classList[0];
-	let childs = slide.parentElement.children
-
-	let index = Array.from(childs).indexOf(slide) + 1;
-	console.log(childs);
+	let index = Array.from(slide.parentElement.children).indexOf(slide) + 1;
+	let imgSrc = slide.childNodes[0].src;
+	let fileName = imgSrc.substring(imgSrc.lastIndexOf('/') + 1, imgSrc.length)
 	if (classPart === 'custom__content-tshirt') {
-		document.querySelector('.custom-human__tshirt').src = 'img/customization/tShirts/tShirt' + index + '.png'
+		document.querySelector('.custom-human__tshirt').src = 'img/customization/tShirts/tShirt' + index + '.png';
 	} else if (classPart === 'custom__content-short') {
-		document.querySelector('.custom-human__underpants').src = 'img/customization/shorts/shorts' + index + '.png'
+		document.querySelector('.custom-human__underpants').src = 'img/customization/shorts/shorts' + index + '.png';
 	} else if (classPart === 'custom__content-boots') {
-		document.querySelector('.custom-human__boots').src = 'img/customization/boots/boots' + index + '.png'
+		document.querySelector('.custom-human__boots').src = 'img/customization/boots/boots' + index + '.png';
+	} else if (classPart === 'custom__content-head') {
+		let color = fileName.substring(fileName.indexOf('_') + 1, fileName.lastIndexOf('_'));
+		document.querySelector('.custom-human__head').src = 'img/customization/otherHeads/' + fileName;
+		changeHumanColor(color)
 	}
 	getSiblings(slide).forEach((slide) => slide.classList.remove('active'));
+}
+
+function getFirstMini() {
+
 }
 
 document.querySelectorAll('.head-slider__slide').forEach((slide) => {
 	slide.addEventListener('click', () => {
 		slide.classList.add('active');
 		customElementHandler(slide)
-
 	});
 });
 
@@ -203,8 +209,13 @@ document.querySelectorAll('.custom__color').forEach((slide) => {
 	slide.addEventListener('click', () => {
 		slide.classList.add('active');
 		let color = slide.classList[2];
+		let firstElement = document.querySelector('.' + color);
+		let index = Array.from(firstElement.parentElement.children).indexOf(firstElement) + 1;
+		console.log(headSlider);
+		headSlider[0].slideTo(index - 1, 1000, true);
+		firstElement.classList.add('active');
 		changeHumanColor(color);
-
+		customElementHandler(firstElement)
 		getSiblings(slide).forEach((slide) => slide.classList.remove('active'));
 	});
 });
