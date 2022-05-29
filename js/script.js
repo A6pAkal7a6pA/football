@@ -165,26 +165,43 @@ function getSiblings(elem) {
 	return siblings;
 }
 
+function customElementHandler(slide) {
+	let classPart = slide.parentElement.parentElement.parentElement.classList[0];
+	let childs = slide.parentElement.children
+	console.log(classPart);
+	let index = Array.from(childs).indexOf(slide) + 1;
+	if (classPart === 'custom__content-tshirt') {
+		document.querySelector('.custom-human__tshirt').src = 'img/customization/tShirts/tShirt' + index + '.png'
+	} else if (classPart === 'custom__content-short') {
+		document.querySelector('.custom-human__underpants').src = 'img/customization/shorts/shorts' + index + '.png'
+	} else if (classPart === 'custom__content-boots') {
+		document.querySelector('.custom-human__boots').src = 'img/customization/boots/boots' + index + '.png'
+	}
+	getSiblings(slide).forEach((slide) => slide.classList.remove('active'));
+}
 
-let headSlides = document.querySelectorAll('.head-slider__slide');
-let colors = document.querySelectorAll('.custom__color');
-
-headSlides.forEach((slide) => {
+document.querySelectorAll('.head-slider__slide').forEach((slide) => {
 	slide.addEventListener('click', () => {
 		slide.classList.add('active');
-		getSiblings(slide).forEach((slide) => slide.classList.remove('active'));
+		customElementHandler(slide)
+
 	});
 });
 
-colors.forEach((slide) => {
+function changeHumanColor(color) {
+	document.querySelector('.custom-human__body').src = skins[color].body;
+	document.querySelector('.custom-human__right-shoulder').src = skins[color].rightShoulder;
+	document.querySelector('.custom-human__left-shoulder').src = skins[color].leftShoulder;
+	document.querySelector('.custom-human__right-hand').src = skins[color].rightHand;
+	document.querySelector('.custom-human__left-hand').src = skins[color].leftHand;
+	document.querySelector('.custom-human__legs').src = skins[color].legs;
+}
+
+document.querySelectorAll('.custom__color').forEach((slide) => {
 	slide.addEventListener('click', () => {
 		slide.classList.add('active');
-		document.querySelector('.custom-human__body').src = skins[slide.classList[2]].body;
-		document.querySelector('.custom-human__right-shoulder').src = skins[slide.classList[2]].rightShoulder;
-		document.querySelector('.custom-human__left-shoulder').src = skins[slide.classList[2]].leftShoulder;
-		document.querySelector('.custom-human__right-hand').src = skins[slide.classList[2]].rightHand;
-		document.querySelector('.custom-human__left-hand').src = skins[slide.classList[2]].leftHand;
-		document.querySelector('.custom-human__legs').src = skins[slide.classList[2]].legs;
+		let color = slide.classList[2];
+		changeHumanColor(color);
 
 		getSiblings(slide).forEach((slide) => slide.classList.remove('active'));
 	});

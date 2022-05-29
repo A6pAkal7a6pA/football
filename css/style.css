@@ -1361,6 +1361,10 @@ a {
   z-index: 2;
 }
 
+.custom .custom-human__tshirt {
+  z-index: 2;
+}
+
 .custom .custom-human__right-hand {
   z-index: 4;
 }
@@ -1375,6 +1379,10 @@ a {
 
 .custom .custom-human__legs {
   z-index: 1;
+}
+
+.custom .custom-human__boots {
+  z-index: 2;
 }
 
 .skills {

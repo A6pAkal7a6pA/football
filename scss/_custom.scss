@@ -236,6 +236,9 @@
 		&__body {
 			z-index: 2;
 		}
+		&__tshirt{
+			z-index: 2;
+		}
 
 		&__right-hand {
 			z-index: 4;
@@ -251,6 +254,9 @@
 
 		&__legs {
 			z-index: 1;
+		}
+		&__boots {
+			z-index: 2;
 		}
 	}
 }
