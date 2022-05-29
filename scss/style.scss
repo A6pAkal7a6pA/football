@@ -2,6 +2,7 @@
 @import "_configuration.scss";
 @import "_component.scss";
 @import "_header.scss";
+@import "_main.scss";
 @import "_trailer.scss";
 @import "_about.scss";
 @import "_info.scss";
@@ -23,6 +24,10 @@
 	width: 100%;
 	background: #FFFFFF;
 	overflow: hidden;
+}
+
+.main {
+	margin: 200px 0 140px 0;
 }
 
 .trailer {

@@ -34,12 +34,13 @@
 	}
 
 	&__item {
-		max-height: 255px;
-		max-width: 160px;
+		max-height: 250px;
+		max-width: 175px;
 		height: 100%;
-		box-shadow: 6.72301px 6.72301px 20.169px rgba(17, 227, 76, 0.1);
+		background: #FFFFFF;
+		border-radius: 5.88957px;
 		border-radius: 6px;
-		background: linear-gradient(180deg, #05ff5a 0%, #00cb51 100%);
+		padding: 5px 5px 25px 5px;
 		&.swiper-slide-visible {
 			opacity: 0.5;
 		}
@@ -66,7 +67,6 @@
 
 	&__info {
 		padding: 15px;
-		background: url("../img/card-bg.png") center / cover no-repeat;
 	}
 
 	&__text {
