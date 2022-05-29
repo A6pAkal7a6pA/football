@@ -1194,6 +1194,12 @@ a {
   background: #e3e3e3;
   border-radius: 5px;
   cursor: pointer;
+  border-bottom: 3px solid transparent;
+  border-radius: 5px;
+}
+
+.custom__color.active {
+  border-bottom: 3px solid #4DDA36;
 }
 
 .custom__color_1 .custom__dermo {
@@ -1286,6 +1292,12 @@ a {
   background: #ebebeb;
   border-radius: 5px;
   cursor: pointer;
+  border-bottom: 3px solid transparent;
+  border-radius: 5px;
+}
+
+.custom .head-slider__slide.active {
+  border-bottom: 3px solid #4DDA36;
 }
 
 .custom .head-slider__button-prev, .custom .head-slider__button-next {
@@ -1334,6 +1346,7 @@ a {
 
 .custom .custom-human img {
   position: absolute;
+  max-height: 477px;
 }
 
 .custom .custom-human__head {

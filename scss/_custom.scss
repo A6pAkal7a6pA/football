@@ -75,6 +75,11 @@
 		background: #e3e3e3;
 		border-radius: 5px;
 		cursor: pointer;
+		border-bottom: 3px solid transparent;
+		border-radius: 5px;
+		&.active {
+			border-bottom: 3px solid #4DDA36;	
+		}
 		&_1 {
 			.custom__dermo {
 				background: #ffcc99;
@@ -157,6 +162,11 @@
 			background: #ebebeb;
 			border-radius: 5px;
 			cursor: pointer;
+			border-bottom: 3px solid transparent;
+			border-radius: 5px;
+			&.active {
+				border-bottom: 3px solid #4DDA36;	
+			}
 		}
 
 		// &__navigation {
@@ -210,6 +220,7 @@
 		margin: 0 auto;
 		img {
 			position: absolute;
+			max-height: 477px;
 		}
 		&__head {
 			z-index: 4;
