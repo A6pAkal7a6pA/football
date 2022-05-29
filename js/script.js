@@ -168,8 +168,9 @@ function getSiblings(elem) {
 function customElementHandler(slide) {
 	let classPart = slide.parentElement.parentElement.parentElement.classList[0];
 	let childs = slide.parentElement.children
-	console.log(classPart);
+
 	let index = Array.from(childs).indexOf(slide) + 1;
+	console.log(childs);
 	if (classPart === 'custom__content-tshirt') {
 		document.querySelector('.custom-human__tshirt').src = 'img/customization/tShirts/tShirt' + index + '.png'
 	} else if (classPart === 'custom__content-short') {
