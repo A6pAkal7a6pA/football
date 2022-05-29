@@ -1397,6 +1397,7 @@ a {
 }
 
 .custom .custom-human__tshirt {
+  display: none;
   z-index: 2;
 }
 
@@ -1417,6 +1418,7 @@ a {
 }
 
 .custom .custom-human__boots {
+  display: none;
   z-index: 2;
 }
 

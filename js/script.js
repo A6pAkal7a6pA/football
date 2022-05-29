@@ -171,11 +171,15 @@ function customElementHandler(slide) {
 	let imgSrc = slide.childNodes[0].src;
 	let fileName = imgSrc.substring(imgSrc.lastIndexOf('/') + 1, imgSrc.length)
 	if (classPart === 'custom__content-tshirt') {
-		document.querySelector('.custom-human__tshirt').src = 'img/customization/tShirts/tShirt' + index + '.png';
+		let customTShirt = document.querySelector('.custom-human__tshirt');
+		customTShirt.style.display = 'block';
+		customTShirt.src = 'img/customization/tShirts/tShirt' + index + '.png';
 	} else if (classPart === 'custom__content-short') {
 		document.querySelector('.custom-human__underpants').src = 'img/customization/shorts/shorts' + index + '.png';
 	} else if (classPart === 'custom__content-boots') {
-		document.querySelector('.custom-human__boots').src = 'img/customization/boots/boots' + index + '.png';
+		let customBoots = document.querySelector('.custom-human__boots');
+		customBoots.style.display = 'block';
+		customBoots.src = 'img/customization/boots/boots' + index + '.png';
 	} else if (classPart === 'custom__content-head') {
 		let color = fileName.substring(fileName.indexOf('_') + 1, fileName.lastIndexOf('_'));
 		document.querySelector('.custom-human__head').src = 'img/customization/otherHeads/' + fileName;
