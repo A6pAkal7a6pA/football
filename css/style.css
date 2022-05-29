@@ -1199,7 +1199,7 @@ a {
 }
 
 .custom__color.active {
-  border-bottom: 3px solid #4DDA36;
+  border-bottom: 3px solid #4dda36;
 }
 
 .custom__color_1 .custom__dermo {
@@ -1275,7 +1275,7 @@ a {
 }
 
 .custom .head-slider::after {
-  content: '';
+  content: "";
   width: 78px;
   height: 100%;
   position: absolute;
@@ -1297,7 +1297,11 @@ a {
 }
 
 .custom .head-slider__slide.active {
-  border-bottom: 3px solid #4DDA36;
+  border-bottom: 3px solid #4dda36;
+}
+
+.custom .head-slider__slide img {
+  max-height: 50px;
 }
 
 .custom .head-slider__button-prev, .custom .head-slider__button-next {
