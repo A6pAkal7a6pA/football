@@ -1,6 +1,5 @@
 .skills {
 	width: 100%;
-	padding: 60px 0;
 	&__inner {
 	}
 
@@ -25,8 +24,25 @@
 
 	&__slider {
 	}
-}
 
+	&__button {
+	}
+}
+.button {
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__inner {
+		max-width: 419px;
+	}
+
+	&__image {
+	}
+
+	&__text {
+	}
+}
 
 .skills-slider {
 	&__wrapper {
@@ -39,18 +55,17 @@
 		box-shadow: 6.72301px 6.72301px 20.169px rgba(17, 227, 76, 0.1);
 		border-radius: 6px;
 		background: linear-gradient(180deg, #05ff5a 0%, #00cb51 100%);
-		&::after{
-			content: '';
+		&::after {
+			content: "";
 			position: absolute;
 			left: 0;
 			top: 0;
 			width: 100%;
 			height: 100%;
-
 		}
 		&.swiper-slide-visible {
 			// opacity: 0.6;
-			&::after{
+			&::after {
 				background-color: rgba($color: #fff, $alpha: 0.4);
 			}
 
@@ -59,13 +74,13 @@
 		&.swiper-slide-prev,
 		&.swiper-slide-next {
 			// opacity: 0.8;
-			&::after{
+			&::after {
 				background-color: rgba($color: #fff, $alpha: 0.2);
 			}
 			z-index: 2;
 		}
 		&.swiper-slide-active {
-			&::after{
+			&::after {
 				background-color: rgba($color: #fff, $alpha: 0);
 			}
 			// opacity: 1;
@@ -142,7 +157,7 @@
 		.swiper-pagination-bullet {
 			width: 100%;
 			border-radius: 3px;
-			background: #DFDFDF;
+			background: #dfdfdf;
 			border-radius: 3px;
 		}
 		.swiper-pagination-bullet-active {

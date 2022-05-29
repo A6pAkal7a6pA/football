@@ -294,4 +294,23 @@
 			z-index: 2;
 		}
 	}
+
+	&__button {
+	}
+	.button {
+		margin-top: 43px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&__inner {
+			max-width: 640px;
+		}
+	
+		&__image {
+		}
+	
+		&__text {
+		}
+	}
 }
+

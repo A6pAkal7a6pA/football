@@ -125,7 +125,8 @@ let headSlider = new Swiper('.head-slider', {
 	autoHeight: false,
 	grabCursor: false,
 	spaceBetween: 10,
-	allowTouchMove: false,
+	allowTouchMove: true,
+	simulateTouch: false,
 	navigation: {
 		nextEl: '.head-slider__button-next',
 		prevEl: '.head-slider__button-prev',
@@ -297,3 +298,14 @@ let skins = {
 		legs: 'img/customization/colors/legs_lightYellow.png'
 	},
 }
+
+// let roadPopups = document.querySelectorAll('.road__info');
+
+// roadPopups.forEach(popup => {
+// 	popup.addEventListener('mouseover', () => {
+// 		popup.classList.remove('active')
+// 	});
+// 	// popup.addEventListener('mouseout', () => {
+// 	// 	popup.classList.add('active')
+// 	// });
+// });

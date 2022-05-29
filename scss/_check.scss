@@ -40,5 +40,12 @@
 	}
 
 	&__text {
+		font-family: $fontfamilyMontserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
+		color: #ffffff;
 	}
 }
