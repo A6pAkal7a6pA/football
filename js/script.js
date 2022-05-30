@@ -300,6 +300,20 @@ let skins = {
 	},
 }
 
+document.querySelectorAll('.custom__variant').forEach(variant => {
+	variant.addEventListener('click', () => {
+		variant.classList.add('active');
+		let index = Array.from(variant.parentElement.children).indexOf(variant);
+		document.querySelectorAll('.custom__content-part').forEach(part => {
+			if (Array.from(part.parentElement.children).indexOf(part) === index) {
+				part.classList.add('visible');
+				getSiblings(part).forEach(part => part.classList.remove('visible'));
+			}
+		});
+		getSiblings(variant).forEach(variant => variant.classList.remove('active'));
+	});
+});
+
 // let roadPopups = document.querySelectorAll('.road__info');
 
 // roadPopups.forEach(popup => {
