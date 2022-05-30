@@ -1,9 +1,135 @@
 .main {
-
 	&__inner {
+		padding-top: 80px;
+		position: relative;
+		min-height: 100vh;
+	}
+
+	&__catridge {
+		text-align: center;
+	}
+
+	&__catridge-inner {
+		position: relative;
+		max-width: 678px;
+		margin: 0 auto;
+		width: 678px;
+		height: 440.39px;
+		// background: url("../img/epmty-cas.svg") center / cover no-repeat;
 		img {
-			max-width: 100%;
-			object-fit: cover;
+			left: 0;
+			top: 0;
 		}
+		.empty__cas {
+			position: absolute;
+			z-index: 2;
+			opacity: 0;
+			animation: infinite 5s mainAnime;
+			transition: opacity 5s ease-out;
+		}
+		.fill__cas {
+			z-index: 3;
+			position: absolute;
+		}
+	}
+
+	&__project {
+		margin-top: 25px;
+		margin-bottom: 80px;
+	}
+
+	&__project-title {
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 27px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #000000;
+		margin-bottom: 80px;
+	}
+
+	&__project-content {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 40px;
+	}
+
+	&__awards {
+	}
+
+	&__delimetr {
+	}
+
+	&__ceo {
+	}
+
+	&__button {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		left: 50%;
+		bottom: 80px;
+		gap: 20px;
+		align-items: center;
+		justify-content: center;
+		transform: translateX(-50%);
+	}
+
+	&__button-title {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		color: #000000;
+	}
+
+	&__button-arrow {
+	}
+}
+
+.main-awards {
+	&__title {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
+		color: #000000;
+		margin-bottom: 40px;
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+	}
+
+	&__award {
+	}
+}
+.main-ceo {
+	&__title {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
+		color: #000000;
+		margin-bottom: 20px;
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+		gap: 60px;
+	}
+
+	&__item {
+	}
+}
+
+@keyframes mainAnime {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
 	}
 }
