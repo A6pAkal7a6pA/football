@@ -108,6 +108,7 @@ const uniqueSlider = new Swiper('.unique-slider', {
 let headerBurger = document.querySelector('.header__burger');
 headerBurger.addEventListener('click', () => {
 	document.querySelector('.header').classList.toggle('active');
+	document.body.classList.toggle('disabled');
 });
 
 let headSlider = new Swiper('.head-slider', {
@@ -144,7 +145,7 @@ function setUpConfiguration() {
 	document.querySelector('.road-mid').style.marginLeft = marginMidLine + 'px';
 	document.querySelector('.road-bot').style.marginLeft = marginMidLine + 10 + 'px';
 	let checkInner = document.querySelector('.check__inner');
-	document.querySelector('.road__inner').style.marginLeft = checkInner.getBoundingClientRect().left + 'px';
+	document.querySelector('.road__content').style.marginLeft = checkInner.getBoundingClientRect().left + 'px';
 }
 
 setUpConfiguration();

@@ -1,5 +1,4 @@
 .tokenomic {
-
 	&__inner {
 		background: #082148;
 		border-radius: 10px;
@@ -30,6 +29,20 @@
 		justify-content: flex-start;
 		height: 100%;
 		max-width: 184px;
+		flex-wrap: wrap;
+	}
+	@media (max-width: 500px) {
+		&__inner {
+			padding: 50px 20px;
+		}
+		&__content {
+			gap: 30px 0;
+		}
+		&__item {
+			align-items: center;
+			flex-direction: row;
+			gap: 8px;
+		}
 	}
 }
 .tokenomic-item {
@@ -51,12 +64,12 @@
 		line-height: 20px;
 		color: #ffffff;
 	}
-}
-
-@media (max-width: 500px) {
-	.tokenomic {
-		&__content {
-			gap: 30px 0;
+	@media (max-width: 500px) {
+		&__image {
+			margin: 0;
+		}
+		&__title {
+			margin: 0;
 		}
 	}
 }

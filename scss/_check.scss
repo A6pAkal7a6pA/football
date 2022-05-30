@@ -25,6 +25,7 @@
 		align-items: center;
 		justify-content: center;
 		gap: 20px;
+		flex-wrap: wrap;
 	}
 
 	&__item {
@@ -47,5 +48,11 @@
 		line-height: 22px;
 		text-align: center;
 		color: #ffffff;
+	}
+	@media (max-width: 500px) {
+		&__item {
+			max-width: none;
+			width: 100%;
+		}
 	}
 }

@@ -17,7 +17,12 @@
 @import "_tokenomic.scss";
 @import "_roadmap.scss";
 @import "_contact.scss";
-@import "_copy.scss";
+
+body{
+	&.disabled {
+		overflow: hidden;
+	}
+}
 
 .wrapper {
 	min-height: 100vh;
@@ -65,7 +70,7 @@
 
 }
 .unique {
-	padding-bottom: 170px;
+	margin-bottom: 130px;
 }
 
 @media(max-width: 500px) {
@@ -80,7 +85,22 @@
 	.store {
 	
 	}
+	.tokenomic {
+		margin-bottom: 70px;
+	}
+	.deligate {
+		margin-bottom: 70px;
+	}
 	.unique {
-		padding-bottom: 170px;
+		margin-bottom: 70px;
+	}
+	.possibilities {
+		margin-bottom: 70px;
+	}
+	.check {
+		margin-bottom: 70px;
+	}
+	.road {
+		margin-bottom: 70px;
 	}
 }

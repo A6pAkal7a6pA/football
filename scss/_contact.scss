@@ -1,7 +1,7 @@
 .contact {
 	background: #082148;
-	padding: 90px 0;
 	&__inner {
+		padding: 90px 0;
 	}
 
 	&__title {
@@ -17,7 +17,8 @@
 	&__content {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
+		gap: 20px;
 		flex-wrap: wrap;
 	}
 
@@ -29,7 +30,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		max-width: 169px;
+		max-width: 168.57px;
 		width: 100%;
 	}
 
@@ -45,16 +46,55 @@
 		text-align: center;
 		color: #010038;
 	}
-}
-@media(max-width: 500px) {
-	.contact {
+	.copy {
+		background: #082148;
+		padding-bottom: 90px;
+		padding-top: 20px;
+		&__inner {
+			display: flex;
+			gap: 30px;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+	
+		&__item {
+			display: flex;
+			align-items: center;
+			gap: 5px;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 22px;
+			color: #fdfffd;
+		}
+	
+		&__image {
+		}
+	
+		&__text {
+		}
+	
+		&__line {
+			width: 1px;
+			height: 20px;
+			background: #fff;
+		}
+		@media(max-width:500px) {
+			.copy__line {
+				display: none;
+			}
+		}
+	}
+	
+	@media (max-width: 500px) {
+		&__inner {
+			padding: 40px 0;
+		}
 		&__content {
-			// justify-content: flex-start;
-			// width: calc(100% - 40px);
 			gap: 10px;
 		}
 		&__item {
-			max-width: 90px;
+			max-width: 162.5px;
 			padding: 10px 4px;
 			&:nth-child(5),
 			&:nth-child(6),

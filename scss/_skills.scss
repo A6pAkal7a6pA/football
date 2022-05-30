@@ -157,11 +157,16 @@
 		.swiper-pagination-bullet {
 			width: 100%;
 			border-radius: 3px;
-			background: #dfdfdf;
+			background: rgba(#082148, 0.5);
 			border-radius: 3px;
 		}
 		.swiper-pagination-bullet-active {
 			background: #082148;
+		}
+	}
+	@media (max-width: 500px) {
+		&__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal  {
+			max-width: calc(100% - 190px);
 		}
 	}
 }
