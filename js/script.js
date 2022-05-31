@@ -324,3 +324,10 @@ document.querySelectorAll('.custom__variant').forEach(variant => {
 // 	// 	popup.classList.add('active')
 // 	// });
 // });
+document.querySelector('.main__catridge').addEventListener('click', (e) => {
+	e.target.classList.toggle('anime')
+	document.querySelector('.main__project').classList.toggle('anime')
+	document.querySelector('.main__tv').classList.toggle('animate')
+	document.querySelector('.main__yazik').classList.toggle('active')
+	document.querySelector('.main__dendy').classList.toggle('active')
+});

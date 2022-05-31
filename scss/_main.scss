@@ -1,41 +1,123 @@
 .main {
 	&__inner {
-		padding-top: 80px;
+		// padding-top: 80px;
 		position: relative;
 		min-height: 100vh;
-	}
-
-	&__catridge {
-		text-align: center;
-	}
-
-	&__catridge-inner {
 		position: relative;
+	}
+	&__tv {
+		position: absolute;
+		top: 8%;
+		left: 50%;
+		transform: translateX(-50%);
+		top: -200%;
+		&.animate {
+			animation-delay: 3s;
+			animation: 3s tvAnime;
+			animation-fill-mode: forwards;
+		}
+		// top: 8%;
+	}
+
+	&__dendy {
+		width: 550px;
+		height: 204.29px;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		// z-index: 3;
+		bottom: 7.9131%;
+		opacity: 0;
+		&.active {
+			animation: 3s dendyTrans;
+			animation-fill-mode: forwards;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			background: url("../img/dendy.svg") center / cover no-repeat;
+			width: inherit;
+			height: inherit;
+		}
+		// &::after {
+		// 	content: "";
+		// 	position: absolute;
+		// 	width: inherit;
+		// 	height: inherit;
+
+		// 	z-index: 3;
+		// 	background: url("../img/yazik.svg") center / cover no-repeat;
+		// }
+	}
+	&__yazik {
+		position: absolute;
+		width: 550px;
+		height: 204.29px;
+		left: 50%;
+		bottom: 7.9131%;
+		transform: translateX(-50%);
+		z-index: 5;
+		opacity: 0;
+		&.active {
+			animation: 3s dendyTrans;
+			animation-fill-mode: forwards;
+		}
+	}
+	&__catridge {
+		position: absolute;
 		max-width: 678px;
 		margin: 0 auto;
 		width: 678px;
 		height: 440.39px;
+		top: 7.5%;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 4;
 		// background: url("../img/epmty-cas.svg") center / cover no-repeat;
-		img {
+		&::before {
+			content: "";
+			width: inherit;
+			height: inherit;
 			left: 0;
 			top: 0;
-		}
-		.empty__cas {
 			position: absolute;
+			background: url("../img/main-cat-logo.png") center / cover no-repeat;
 			z-index: 2;
-			opacity: 0;
-			animation: infinite 5s mainAnime;
-			transition: opacity 5s ease-out;
 		}
-		.fill__cas {
-			z-index: 3;
-			position: absolute;
+		&.anime {
+			animation: 3s transformer linear, 3s scalable linear;
+			// animation: 2s scalable;
+			animation-fill-mode: forwards;
+
+			&::after {
+				content: "";
+				width: inherit;
+				height: inherit;
+				left: 0;
+				top: 0;
+				position: absolute;
+				background: url("../img/epmty-cas.svg") center / cover no-repeat;
+				z-index: 1;
+				animation: 3s mainAnime;
+				animation-fill-mode: forwards;
+			}
 		}
 	}
 
+	&__catridge-inner {
+	}
+
 	&__project {
-		margin-top: 25px;
+		margin-top: 548px;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
 		margin-bottom: 80px;
+		&.anime {
+			animation: 3s projTrans;
+			animation-fill-mode: forwards;
+		}
 	}
 
 	&__project-title {
@@ -131,5 +213,62 @@
 	}
 	100% {
 		opacity: 1;
+	}
+}
+
+@keyframes transformer {
+	0% {
+		top: 7.5%;
+	}
+	100% {
+		top: 32%;
+	}
+}
+
+@keyframes projTrans {
+	0% {
+		opacity: 1;
+		top: 0;
+	}
+	100% {
+		opacity: 0;
+		display: none;
+		top: 200%;
+	}
+}
+
+@keyframes tvAnime {
+	0% {
+		top: -200%;
+	}
+	100% {
+		top: 8%;
+	}
+}
+
+@keyframes scalable {
+	0% {
+		transform: translateX(-50%) scale(1);
+	}
+	100% {
+		transform: translateX(-50%) scale(0.457);
+		top: 49%;
+	}
+}
+
+@keyframes dendyTrans {
+	0% {
+		bottom: -200%;
+		opacity: 0;
+
+	}
+	50% {
+
+	}
+	100% {
+		opacity: 1;
+		bottom: 7.9131%;
+
+
 	}
 }
