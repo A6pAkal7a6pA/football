@@ -22,6 +22,14 @@
 		// top: 8%;
 	}
 
+	&__delimetr {
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 27px;
+		text-align: center;
+		color: #000000;
+	}
+
 	&__dendy {
 		width: 42.35%;
 		height: 18.916%;
@@ -71,16 +79,6 @@
 		transform: translateX(-50%);
 		z-index: 4;
 		min-width: 336px;
-		// .fill__cas {
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	left: 0;
-		// 	top: 0;
-		// 	position: absolute;
-		// 	background: url("../img/main-cat-logo.png") center / contain no-repeat;
-		// 	z-index: 2;
-		// 	bottom: 0;
-		// }
 
 		&::before {
 			content: "";
@@ -89,29 +87,17 @@
 			left: 0;
 			top: 0;
 			position: absolute;
-			background: url("../img/main-cat-logo.png") bottom / contain no-repeat;
+			background: url("../img/main-cat-logo.png") top / contain no-repeat;
 			z-index: 2;
 			bottom: 0;
 		}
-		// .empty__cas.anime {
-		// 	width: inherit;
-		// 	height: inherit;
-		// 	max-width: 100%;
-		// 	left: 0;
-		// 	top: 0;
-		// 	position: absolute;
-		// 	background: url("../img/epmty-cas.svg") center / contain no-repeat;
-		// 	z-index: 1;
-		// 	animation: 3s mainAnime;
-		// 	animation-fill-mode: forwards;
-		// 	bottom: 0;
-		// }
 		&.anime {
 			animation: 3s transformer linear, 3s scalable linear;
-			// animation: 2s scalable;
 			animation-fill-mode: forwards;
-
-
+			&::before {
+				animation: 3s mainAnime;
+				animation-fill-mode: forwards;
+			}
 			&::after {
 				content: "";
 				width: 100%;
@@ -119,7 +105,7 @@
 				left: 0;
 				top: 0;
 				position: absolute;
-				background: url("../img/epmty-cas.svg") bottom / contain no-repeat;
+				background: url("../img/epmty-cas.svg") top / contain no-repeat;
 				z-index: 1;
 				animation: 3s mainAnime;
 				animation-fill-mode: forwards;
@@ -155,12 +141,13 @@
 
 	&__project-content {
 		display: flex;
-		align-items: flex-start;
+		align-items: center;
 		justify-content: center;
 		gap: 40px;
 	}
 
 	&__awards {
+		height: 127px;
 	}
 
 	&__delimetr {
@@ -198,6 +185,35 @@
 	&__button-arrow {
 		transition: all 0.5s;
 		animation: infinite arrowAnime 1s;
+	}
+	@media (max-width: 996px) {
+		&__project-content {
+			flex-direction: column;
+			gap: 20px;
+		}
+		&__catridge {
+		}
+	}
+	@media (max-width: 500px) {
+		&__project {
+			top: 300px;
+		}
+		&-awards__content {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&-awards {
+			height: auto;
+		}
+		&__button {
+			display: none;
+		}
+		&__dendy::before {
+			background-position: 0 34%;
+		}
+		&__yazik {
+			bottom: 9%;
+		}
 	}
 }
 
@@ -243,9 +259,11 @@
 @keyframes mainAnime {
 	0% {
 		opacity: 0;
+		background-position: top;
 	}
 	100% {
 		opacity: 1;
+		background-position: bottom;
 	}
 }
 

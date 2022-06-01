@@ -144,6 +144,7 @@ a {
   width: 100%;
   position: fixed;
   z-index: 99;
+  opacity: 0;
 }
 
 .header__inner {
@@ -430,6 +431,14 @@ a {
           animation-fill-mode: forwards;
 }
 
+.main__delimetr {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+}
+
 .main__dendy {
   width: 42.35%;
   height: 18.916%;
@@ -498,7 +507,7 @@ a {
   left: 0;
   top: 0;
   position: absolute;
-  background: url("../img/main-cat-logo.png") bottom/contain no-repeat;
+  background: url("../img/main-cat-logo.png") top/contain no-repeat;
   z-index: 2;
   bottom: 0;
 }
@@ -510,6 +519,13 @@ a {
           animation-fill-mode: forwards;
 }
 
+.main__catridge.anime::before {
+  -webkit-animation: 3s mainAnime;
+          animation: 3s mainAnime;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .main__catridge.anime::after {
   content: "";
   width: 100%;
@@ -517,7 +533,7 @@ a {
   left: 0;
   top: 0;
   position: absolute;
-  background: url("../img/epmty-cas.svg") bottom/contain no-repeat;
+  background: url("../img/epmty-cas.svg") top/contain no-repeat;
   z-index: 1;
   -webkit-animation: 3s mainAnime;
           animation: 3s mainAnime;
@@ -555,13 +571,17 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   gap: 40px;
+}
+
+.main__awards {
+  height: 127px;
 }
 
 .main__button {
@@ -610,6 +630,41 @@ a {
           animation: infinite arrowAnime 1s;
 }
 
+@media (max-width: 996px) {
+  .main__project-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main__project {
+    top: 300px;
+  }
+  .main-awards__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-awards {
+    height: auto;
+  }
+  .main__button {
+    display: none;
+  }
+  .main__dendy::before {
+    background-position: 0 34%;
+  }
+  .main__yazik {
+    bottom: 9%;
+  }
+}
+
 .main-awards__title {
   font-weight: 500;
   font-size: 18px;
@@ -651,18 +706,22 @@ a {
 @-webkit-keyframes mainAnime {
   0% {
     opacity: 0;
+    background-position: top;
   }
   100% {
     opacity: 1;
+    background-position: bottom;
   }
 }
 
 @keyframes mainAnime {
   0% {
     opacity: 0;
+    background-position: top;
   }
   100% {
     opacity: 1;
+    background-position: bottom;
   }
 }
 

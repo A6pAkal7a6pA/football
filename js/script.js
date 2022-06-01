@@ -324,17 +324,39 @@ document.querySelectorAll('.custom__variant').forEach(variant => {
 // 	// 	popup.classList.add('active')
 // 	// });
 // });
-document.querySelector('.main__catridge').addEventListener('click', (e) => {
-	e.target.classList.toggle('anime')
+// document.querySelector('.main__catridge').addEventListener('click', (e) => {
+// 	document.querySelector('.main__project').classList.toggle('anime')
+// 	document.querySelector('.main__tv').classList.toggle('animate')
+// 	document.querySelector('.main__yazik').classList.toggle('active')
+// 	document.querySelector('.main__dendy').classList.toggle('active')
+// 	document.querySelector('.main__button').classList.toggle('anime')
+// });
+// let main = document.querySelector('.main');
+// main.style.marginTop = '0px'
+// let temp = 0;
+
+function activateAnimation() {
+	document.querySelector('.main__catridge').classList.toggle('anime')
 	document.querySelector('.main__project').classList.toggle('anime')
 	document.querySelector('.main__tv').classList.toggle('animate')
 	document.querySelector('.main__yazik').classList.toggle('active')
 	document.querySelector('.main__dendy').classList.toggle('active')
 	document.querySelector('.main__button').classList.toggle('anime')
-});
+}
 
-window.addEventListener('scroll', e => {
-	//проверить высоту и разделить на три скролла 3 анимации
+window.scrollTo(0, 0);
 
-	console.log(window.scrollY);
+document.body.style.overflow = 'hidden'
+let count = 0;
+let flag = true;
+window.addEventListener('wheel', e => {
+	if (flag) {
+		flag = false;
+		activateAnimation()
+		setTimeout(() => {
+			document.body.style.overflow = 'visible'
+			document.querySelector('.header').style.opacity = '1';
+		}, 5000)
+	}
+
 });
