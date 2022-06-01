@@ -409,12 +409,16 @@ a {
 }
 
 .main__tv {
+  width: 90%;
+  height: 62.78%;
   position: absolute;
   top: 8%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   top: -200%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .main__tv.animate {
@@ -427,14 +431,15 @@ a {
 }
 
 .main__dendy {
-  width: 550px;
-  height: 204.29px;
+  width: 42.35%;
+  height: 18.916%;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   bottom: 7.9131%;
   opacity: 0;
+  min-width: 279px;
 }
 
 .main__dendy.active {
@@ -447,21 +452,23 @@ a {
 .main__dendy::before {
   content: "";
   position: absolute;
-  background: url("../img/dendy.svg") center/cover no-repeat;
-  width: inherit;
-  height: inherit;
+  background: url("../img/dendy.svg") center/contain no-repeat;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
 }
 
 .main__yazik {
   position: absolute;
-  width: 550px;
-  height: 204.29px;
+  width: 42.35%;
+  height: 18.916%;
   left: 50%;
   bottom: 7.9131%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 5;
   opacity: 0;
+  min-width: 279px;
 }
 
 .main__yazik.active {
@@ -473,26 +480,27 @@ a {
 
 .main__catridge {
   position: absolute;
-  max-width: 678px;
   margin: 0 auto;
-  width: 678px;
-  height: 440.39px;
+  width: 51%;
+  height: 40.78%;
   top: 7.5%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 4;
+  min-width: 336px;
 }
 
 .main__catridge::before {
   content: "";
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
   left: 0;
   top: 0;
   position: absolute;
-  background: url("../img/main-cat-logo.png") center/cover no-repeat;
+  background: url("../img/main-cat-logo.png") bottom/contain no-repeat;
   z-index: 2;
+  bottom: 0;
 }
 
 .main__catridge.anime {
@@ -504,27 +512,26 @@ a {
 
 .main__catridge.anime::after {
   content: "";
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
   left: 0;
   top: 0;
   position: absolute;
-  background: url("../img/epmty-cas.svg") center/cover no-repeat;
+  background: url("../img/epmty-cas.svg") bottom/contain no-repeat;
   z-index: 1;
   -webkit-animation: 3s mainAnime;
           animation: 3s mainAnime;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  bottom: 0;
 }
 
 .main__project {
-  margin-top: 548px;
   position: absolute;
-  top: 0;
+  top: 50.75%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  margin-bottom: 80px;
 }
 
 .main__project.anime {
@@ -567,7 +574,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   left: 50%;
-  bottom: 80px;
+  bottom: 0px;
   gap: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -577,6 +584,16 @@ a {
           justify-content: center;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  padding: 10px 20px;
+  background: #ebebeb;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.main__button.anime {
+  -webkit-animation: 3s arrowTrans;
+          animation: 3s arrowTrans;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .main__button-title {
@@ -584,6 +601,13 @@ a {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+}
+
+.main__button-arrow {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-animation: infinite arrowAnime 1s;
+          animation: infinite arrowAnime 1s;
 }
 
 .main-awards__title {
@@ -602,6 +626,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 30px;
 }
 
 .main-ceo__title {
@@ -683,6 +708,30 @@ a {
   }
 }
 
+@-webkit-keyframes arrowTrans {
+  0% {
+    opacity: 1;
+    bottom: 80px;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    bottom: -200%;
+  }
+}
+
+@keyframes arrowTrans {
+  0% {
+    opacity: 1;
+    bottom: 80px;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    bottom: -200%;
+  }
+}
+
 @-webkit-keyframes tvAnime {
   0% {
     top: -200%;
@@ -748,6 +797,28 @@ a {
   100% {
     opacity: 1;
     bottom: 7.9131%;
+  }
+}
+
+@-webkit-keyframes arrowAnime {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+@keyframes arrowAnime {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
   }
 }
 

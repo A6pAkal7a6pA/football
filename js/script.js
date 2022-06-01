@@ -330,4 +330,11 @@ document.querySelector('.main__catridge').addEventListener('click', (e) => {
 	document.querySelector('.main__tv').classList.toggle('animate')
 	document.querySelector('.main__yazik').classList.toggle('active')
 	document.querySelector('.main__dendy').classList.toggle('active')
+	document.querySelector('.main__button').classList.toggle('anime')
+});
+
+window.addEventListener('scroll', e => {
+	//проверить высоту и разделить на три скролла 3 анимации
+
+	console.log(window.scrollY);
 });
