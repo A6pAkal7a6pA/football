@@ -1,9 +1,11 @@
+window.scrollTo(0, 0);
+
 const storeSlider = new Swiper('.store-slider', {
 	loop: true,
-	// autoplay: {
-	// 	delay: 5000,
-	// 	disableOnInteraction: false
-	// },
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false
+	},
 	speed: 1000,
 	effect: 'coverflow',
 	slidesPerView: 'auto',
@@ -34,10 +36,10 @@ const storeSlider = new Swiper('.store-slider', {
 
 const skillsSlider = new Swiper('.skills-slider', {
 	loop: true,
-	// autoplay: {
-	// 	delay: 5000,
-	// 	disableOnInteraction: false
-	// },
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false
+	},
 	speed: 1000,
 	effect: 'coverflow',
 	slidesPerView: 'auto',
@@ -68,10 +70,10 @@ const skillsSlider = new Swiper('.skills-slider', {
 
 const uniqueSlider = new Swiper('.unique-slider', {
 	loop: true,
-	// autoplay: {
-	// 	delay: 5000,
-	// 	disableOnInteraction: false
-	// },
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false
+	},
 	speed: 1000,
 	effect: 'coverflow',
 	slidesPerView: 'auto',
@@ -113,10 +115,10 @@ headerBurger.addEventListener('click', () => {
 
 let headSlider = new Swiper('.head-slider', {
 	loop: false,
-	// autoplay: {
-	// 	delay: 5000,
-	// 	disableOnInteraction: false
-	// },
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false
+	},
 	speed: 1000,
 	slidesPerView: 'auto',
 	initialSlide: 0,
@@ -138,6 +140,7 @@ let headSlider = new Swiper('.head-slider', {
 	// 	}
 	// }
 });
+
 
 function setUpConfiguration() {
 	let firstChildRoadItem = document.querySelector('.road-top .road__item:first-child');
@@ -314,27 +317,6 @@ document.querySelectorAll('.custom__variant').forEach(variant => {
 	});
 });
 
-// let roadPopups = document.querySelectorAll('.road__info');
-
-// roadPopups.forEach(popup => {
-// 	popup.addEventListener('mouseover', () => {
-// 		popup.classList.remove('active')
-// 	});
-// 	// popup.addEventListener('mouseout', () => {
-// 	// 	popup.classList.add('active')
-// 	// });
-// });
-// document.querySelector('.main__catridge').addEventListener('click', (e) => {
-// 	document.querySelector('.main__project').classList.toggle('anime')
-// 	document.querySelector('.main__tv').classList.toggle('animate')
-// 	document.querySelector('.main__yazik').classList.toggle('active')
-// 	document.querySelector('.main__dendy').classList.toggle('active')
-// 	document.querySelector('.main__button').classList.toggle('anime')
-// });
-// let main = document.querySelector('.main');
-// main.style.marginTop = '0px'
-// let temp = 0;
-
 function activateAnimation() {
 	document.querySelector('.main__catridge').classList.toggle('anime')
 	document.querySelector('.main__project').classList.toggle('anime')
@@ -344,7 +326,7 @@ function activateAnimation() {
 	document.querySelector('.main__button').classList.toggle('anime')
 }
 
-window.scrollTo(0, 0);
+
 
 document.body.style.overflow = 'hidden'
 let count = 0;
