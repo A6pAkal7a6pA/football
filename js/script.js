@@ -1,4 +1,5 @@
-window.scrollTo(0, 0);
+console.log(window.scrollY);
+
 
 const storeSlider = new Swiper('.store-slider', {
 	loop: true,
@@ -193,10 +194,6 @@ function customElementHandler(slide) {
 	getSiblings(slide).forEach((slide) => slide.classList.remove('active'));
 }
 
-function getFirstMini() {
-
-}
-
 document.querySelectorAll('.head-slider__slide').forEach((slide) => {
 	slide.addEventListener('click', () => {
 		slide.classList.add('active');
@@ -332,9 +329,9 @@ document.body.style.overflow = 'hidden'
 let count = 0;
 let flag = true;
 window.addEventListener('wheel', e => {
-	console.log('wheel');
 	if (flag) {
 		flag = false;
+		window.scrollTo(0, 0);
 		activateAnimation()
 		setTimeout(() => {
 			document.body.style.overflow = 'visible'
@@ -345,8 +342,6 @@ window.addEventListener('wheel', e => {
 });
 
 window.addEventListener('touchmove', e => {
-	e.preventDefault()
-	console.log('touchmove');
 	if (flag) {
 		flag = false;
 		activateAnimation()
@@ -375,3 +370,16 @@ document.querySelectorAll('.header__locale').forEach(locale => {
 
 	});
 });
+const anchors = document.querySelectorAll('a[href*="#"]')
+for (let anchor of anchors) {
+	anchor.addEventListener('click', function (e) {
+		e.preventDefault()
+
+		const blockID = anchor.getAttribute('href').substr(1)
+
+		document.getElementById(blockID).scrollIntoView({
+			behavior: 'smooth',
+			block: 'start'
+		})
+	})
+}
