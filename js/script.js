@@ -344,6 +344,7 @@ window.addEventListener('wheel', e => {
 window.addEventListener('touchmove', e => {
 	if (flag) {
 		flag = false;
+		window.scrollTo(0, 0);
 		activateAnimation()
 		setTimeout(() => {
 			document.body.style.overflow = 'visible'
