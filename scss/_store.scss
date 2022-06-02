@@ -85,8 +85,13 @@
 		border-radius: 5.88957px;
 		border-radius: 6px;
 		padding: 5px 5px 25px 5px;
+
 		&.swiper-slide-visible {
 			opacity: 0.5;
+			transition: all 0.5s;
+		}
+		&:not(.swiper-slide-visible) {
+			opacity: 0;
 		}
 		&.swiper-slide-prev,
 		&.swiper-slide-next {
