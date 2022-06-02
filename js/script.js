@@ -363,6 +363,7 @@ window.addEventListener('wheel', e => {
 });
 
 window.addEventListener('touchmove', e => {
+	e.preventDefault()
 	console.log('touchmove');
 	if (flag) {
 		flag = false;
