@@ -346,17 +346,36 @@ function activateAnimation() {
 
 window.scrollTo(0, 0);
 
-document.body.style.overflow = 'hidden'
-let count = 0;
-let flag = true;
-window.addEventListener('wheel', e => {
-	if (flag) {
-		flag = false;
-		activateAnimation()
-		setTimeout(() => {
-			document.body.style.overflow = 'visible'
-			document.querySelector('.header').style.opacity = '1';
-		}, 5000)
-	}
+// document.body.style.overflow = 'hidden'
+// let count = 0;
+// let flag = true;
+// window.addEventListener('wheel', e => {
+// 	console.log('wheel');
+// 	if (flag) {
+// 		flag = false;
+// 		activateAnimation()
+// 		setTimeout(() => {
+// 			document.body.style.overflow = 'visible'
+// 			document.querySelector('.header').style.opacity = '1';
+// 		}, 5000)
+// 	}
 
-});
+// });
+
+// window.addEventListener('touchmove', e => {
+// 	console.log('touchmove');
+// 	if (flag) {
+// 		flag = false;
+// 		activateAnimation()
+// 		setTimeout(() => {
+// 			document.body.style.overflow = 'visible'
+// 			document.querySelector('.header').style.opacity = '1';
+// 		}, 5000)
+// 	}
+// });
+
+document.querySelectorAll('.road__info').forEach(caret => {
+	caret.addEventListener('click', () => {
+		caret.parentElement.parentElement.parentElement.classList.toggle('active')
+	});
+})

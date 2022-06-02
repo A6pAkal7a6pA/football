@@ -187,6 +187,9 @@
 		animation: infinite arrowAnime 1s;
 	}
 	@media (max-width: 996px) {
+		&__project {
+			top: 41%;
+		}
 		&__project-content {
 			flex-direction: column;
 			gap: 20px;
@@ -197,6 +200,7 @@
 	@media (max-width: 500px) {
 		&__project {
 			top: 300px;
+			width: calc(100% - 40px);
 		}
 		&-awards__content {
 			flex-wrap: wrap;
@@ -204,6 +208,16 @@
 		}
 		&-awards {
 			height: auto;
+			background: #f4f4f4;
+			border-radius: 10px;
+			width: 100%;
+			padding: 20px;
+		}
+		&__ceo {
+			background: #f4f4f4;
+			border-radius: 10px;
+			width: 100%;
+			padding: 20px;
 		}
 		&__button {
 			display: none;

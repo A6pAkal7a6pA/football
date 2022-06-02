@@ -38,6 +38,9 @@
 		gap: 10px;
 		max-width: 310px;
 		width: 100%;
+		&:hover {
+			background: #082148;
+		}
 	}
 
 	&__text {

@@ -248,12 +248,24 @@
 			&::after {
 				background: url("../img/icons/custom-arrow-left.svg") center / cover no-repeat;
 			}
+			&:hover {
+				background: #082148;
+				&::after {
+					background: url("../img/icons/arrow-white-left.svg") center / cover no-repeat;
+				}
+			}
 		}
 
 		&__button-next {
 			right: 0;
 			&::after {
 				background: url("../img/icons/custom-arrow-right.svg") center / cover no-repeat;
+			}
+			&:hover {
+				background: #082148;
+				&::after {
+					background: url("../img/icons/arrow-white-right.svg") center / cover no-repeat;
+				}
 			}
 		}
 	}
@@ -386,6 +398,30 @@
 				border-bottom: 3px solid #4DDA36;
 			}
 		}
+
+	}
+	@media(max-width:768px) {
+		&__title {
+			padding: 0 15px;
+		}
+		&__subject {
+			position: relative;
+			padding: 0 15px;
+			width: calc(100% - 30px);
+			margin: 0 auto;
+		}
+		&__inner {
+			padding: 0;
+		}
+		&__controller {
+			width: 100%;
+			// margin: 0 -15px;
+		}
+	 .head-slider {
+		 max-width: 100%;
+	 }
+	}
+	@media (max-width: 500px) {
 
 	}
 }

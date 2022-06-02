@@ -66,6 +66,9 @@
 			font-size: 18px;
 			line-height: 22px;
 			color: #fdfffd;
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	
 		&__image {
