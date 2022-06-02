@@ -114,6 +114,7 @@ headerBurger.addEventListener('click', () => {
 	document.body.classList.toggle('disabled');
 });
 
+
 let headSlider = new Swiper('.head-slider', {
 	loop: false,
 	autoplay: {
@@ -375,7 +376,8 @@ const anchors = document.querySelectorAll('a[href*="#"]')
 for (let anchor of anchors) {
 	anchor.addEventListener('click', function (e) {
 		e.preventDefault()
-
+		document.body.classList.remove('disabled')
+		document.querySelector('.header').classList.remove('active')
 		const blockID = anchor.getAttribute('href').substr(1)
 
 		document.getElementById(blockID).scrollIntoView({
