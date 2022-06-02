@@ -4,7 +4,7 @@
 	width: 100%;
 	position: fixed;
 	z-index: 99;
-	opacity: 0;
+	// opacity: 0;
 	&__inner {
 		height: 100%;
 		display: flex;
@@ -16,6 +16,8 @@
 		display: none;
 		span {
 		}
+	}
+	&__logo-desktop {
 	}
 	&__logo {
 		display: none;
@@ -32,8 +34,6 @@
 	&__anonses {
 		opacity: 0;
 		display: none;
-
-
 	}
 
 	&__list {
@@ -56,6 +56,22 @@
 		line-height: 20px;
 		color: #ffffff;
 	}
+	&__locales {
+		display: flex;
+		gap: 15px;
+		align-items: center;
+	}
+
+	&__locale {
+		cursor: pointer;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		color: #ffffff;
+		&.active {
+			text-decoration: underline;
+		}
+	}
 
 	&__tokens {
 	}
@@ -69,7 +85,6 @@
 			justify-content: flex-start;
 			align-items: flex-end;
 			display: none;
-
 		}
 		&__tokens {
 			display: none;
@@ -138,6 +153,11 @@
 			align-items: center;
 			display: flex;
 			gap: 10px;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 20px;
+			text-align: center;
+			color: #ffffff;
 			&:not(:last-child) {
 				margin-bottom: 20px;
 			}

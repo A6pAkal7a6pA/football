@@ -199,7 +199,7 @@
 	}
 	@media (max-width: 500px) {
 		&__project {
-			top: 300px;
+			top: 28%;
 			width: calc(100% - 40px);
 		}
 		&-awards__content {
@@ -218,6 +218,12 @@
 			border-radius: 10px;
 			width: 100%;
 			padding: 20px;
+			
+		}
+		&-ceo__item {
+			img {
+				max-width: 100%;
+			}
 		}
 		&__button {
 			display: none;

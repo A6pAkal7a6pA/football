@@ -346,36 +346,49 @@ function activateAnimation() {
 
 window.scrollTo(0, 0);
 
-// document.body.style.overflow = 'hidden'
-// let count = 0;
-// let flag = true;
-// window.addEventListener('wheel', e => {
-// 	console.log('wheel');
-// 	if (flag) {
-// 		flag = false;
-// 		activateAnimation()
-// 		setTimeout(() => {
-// 			document.body.style.overflow = 'visible'
-// 			document.querySelector('.header').style.opacity = '1';
-// 		}, 5000)
-// 	}
+document.body.style.overflow = 'hidden'
+let count = 0;
+let flag = true;
+window.addEventListener('wheel', e => {
+	console.log('wheel');
+	if (flag) {
+		flag = false;
+		activateAnimation()
+		setTimeout(() => {
+			document.body.style.overflow = 'visible'
+			document.querySelector('.header').style.opacity = '1';
+		}, 5000)
+	}
 
-// });
+});
 
-// window.addEventListener('touchmove', e => {
-// 	console.log('touchmove');
-// 	if (flag) {
-// 		flag = false;
-// 		activateAnimation()
-// 		setTimeout(() => {
-// 			document.body.style.overflow = 'visible'
-// 			document.querySelector('.header').style.opacity = '1';
-// 		}, 5000)
-// 	}
-// });
+window.addEventListener('touchmove', e => {
+	console.log('touchmove');
+	if (flag) {
+		flag = false;
+		activateAnimation()
+		setTimeout(() => {
+			document.body.style.overflow = 'visible'
+			document.querySelector('.header').style.opacity = '1';
+		}, 5000)
+	}
+});
 
 document.querySelectorAll('.road__info').forEach(caret => {
 	caret.addEventListener('click', () => {
 		caret.parentElement.parentElement.parentElement.classList.toggle('active')
 	});
 })
+
+document.querySelectorAll('.header__locale').forEach(locale => {
+	locale.addEventListener('click', () => {
+		if (locale.classList.contains('ru')) {
+			document.body.classList.add('ru')
+		} else {
+			document.body.classList.remove('ru')
+		}
+		locale.classList.add('active')
+		getSiblings(locale).forEach(loc => loc.classList.remove('active'))
+
+	});
+});
