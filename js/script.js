@@ -71,10 +71,10 @@ const skillsSlider = new Swiper('.skills-slider', {
 
 const uniqueSlider = new Swiper('.unique-slider', {
 	loop: true,
-	// autoplay: {
-	// 	delay: 5000,
-	// 	disableOnInteraction: false
-	// },
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false
+	},
 	speed: 1000,
 	effect: 'coverflow',
 	slidesPerView: 'auto',
@@ -326,33 +326,33 @@ function activateAnimation() {
 
 
 
-// document.body.style.overflow = 'hidden'
-// let count = 0;
-// let flag = true;
-// window.addEventListener('wheel', e => {
-// 	if (flag) {
-// 		flag = false;
-// 		window.scrollTo(0, 0);
-// 		activateAnimation()
-// 		setTimeout(() => {
-// 			document.body.style.overflow = 'visible'
-// 			document.querySelector('.header').style.opacity = '1';
-// 		}, 5000)
-// 	}
+document.body.style.overflow = 'hidden'
+let count = 0;
+let flag = true;
+window.addEventListener('wheel', e => {
+	if (flag) {
+		flag = false;
+		window.scrollTo(0, 0);
+		activateAnimation()
+		setTimeout(() => {
+			document.body.style.overflow = 'visible'
+			document.querySelector('.header').style.opacity = '1';
+		}, 5000)
+	}
 
-// });
+});
 
-// window.addEventListener('touchmove', e => {
-// 	if (flag) {
-// 		flag = false;
-// 		window.scrollTo(0, 0);
-// 		activateAnimation()
-// 		setTimeout(() => {
-// 			document.body.style.overflow = 'visible'
-// 			document.querySelector('.header').style.opacity = '1';
-// 		}, 5000)
-// 	}
-// });
+window.addEventListener('touchmove', e => {
+	if (flag) {
+		flag = false;
+		window.scrollTo(0, 0);
+		activateAnimation()
+		setTimeout(() => {
+			document.body.style.overflow = 'visible'
+			document.querySelector('.header').style.opacity = '1';
+		}, 5000)
+	}
+});
 
 document.querySelectorAll('.road__info').forEach(caret => {
 	caret.addEventListener('click', () => {
