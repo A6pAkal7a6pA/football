@@ -10,12 +10,11 @@
 
 	&__inner {
 		// margin-left: 175px;
-		overflow-x: auto;
-		overflow-y: hidden;
+
 	}
 
 	&__content {
-		width: 1634px;
+		// width: 1634px;
 	}
 
 	&__line {
@@ -154,6 +153,15 @@
 			.road__popup {
 				opacity: 1;
 			}
+		}
+	}
+	@media (max-width: 1360px){
+		&__inner {
+			overflow-x: auto;
+			overflow-y: hidden;
+		}
+		&__content {
+			width: 1360px;
 		}
 	}
 	@media (max-width: 500px) {

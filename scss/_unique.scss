@@ -73,6 +73,7 @@
 	&__item {
 		max-width: 270px;
 		height: 100%;
+		transition: all 0.5s;
 		.unique-slider__image {
 			.unique__walk {
 				display: block;
@@ -82,7 +83,7 @@
 			}
 		}
 		&.swiper-slide-visible {
-			transition: all 0.5s;
+
 			opacity: 0.4;
 		}
 		&:not(.swiper-slide-visible) {

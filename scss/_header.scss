@@ -45,6 +45,9 @@
 	}
 
 	&__item {
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 	&__email {
 		display: none;

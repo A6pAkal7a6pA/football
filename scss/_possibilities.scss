@@ -26,7 +26,6 @@
 			max-width: 100%;
 			object-fit: cover;
 		}
-
 	}
 	&__platf {
 		position: relative;
@@ -37,9 +36,9 @@
 		position: relative;
 		display: none;
 		z-index: 5;
-			&.active {
-				display: block;
-			}
+		&.active {
+			display: block;
+		}
 	}
 
 	&__content {
@@ -48,7 +47,6 @@
 		flex-wrap: wrap;
 		gap: 20px;
 		align-items: inherit;
-
 	}
 
 	&__item {
@@ -60,7 +58,7 @@
 		height: 100%;
 		display: flex;
 		flex-direction: column;
-		height: inherit;
+		height: auto;
 		cursor: pointer;
 		&.active {
 			border: 4px solid rgba(5, 255, 90, 0.5);
@@ -80,7 +78,93 @@
 		line-height: 22px;
 		color: #000000;
 	}
-	@media (max-width: 500px ) {
+	&__navigation {
+		position: relative;
+		max-width: 640px;
+		width: 100%;
+		height: 60px;
+		margin: 40px auto 0 auto;
+	}
+	&__button-prev.swiper-button-prev,
+	&__button-next.swiper-button-next {
+		position: absolute;
+		top: 0;
+		transform: translateY(50%);
+		background: #082148;
+		border-radius: 6.72301px;
+		width: 52px;
+		height: 52px;
+		&::after {
+			content: "";
+			width: 24px;
+			height: 24px;
+		}
+		&:hover {
+			background: #4dda36;
+		}
+	}
+	&__button-prev {
+		left: 0;
+		&::after {
+			position: absolute;
+			background: url("../img/icons/skills-arrow-left.svg") center no-repeat;
+		}
+	}
+	&__button-next {
+		right: 0;
+		&::after {
+			background: url("../img/icons/skills-arrow-right.svg") center no-repeat;
+		}
+	}
+	&__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+		position: absolute;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		max-width: calc(100% - 191px);
+		width: 100%;
+		height: 15px;
+		.swiper-pagination-bullet {
+			width: 100%;
+			border-radius: 3px;
+			background: #dfdfdf;
+			border-radius: 3px;
+			position: relative;
+			opacity: 1;
+			height: 10px;
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 0;
+				height: 100%;
+				border-radius: 3px;
+			}
+			&:hover {
+				height: 15px;
+				border-radius: 5px;
+				&::after {
+				}
+			}
+		}
+		.swiper-pagination-bullet-active {
+			&::after {
+				width: 100%;
+				background: #082148;
+				transition: width 5s linear;
+			}
+			&:hover {
+				&::after {
+					border-radius: 5px;
+				}
+			}
+		}
+	}
+	@media (max-width: 500px) {
 		margin-top: 70px;
 		margin-bottom: 150px;
 		&__content {
@@ -89,7 +173,7 @@
 		}
 		&__item {
 			height: auto;
-			max-width: calc(50% - 5px);
+			// max-width: calc(50% - 5px);
 		}
 		&__text {
 			height: 100%;

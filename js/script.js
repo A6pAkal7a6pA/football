@@ -1,6 +1,3 @@
-console.log(window.scrollY);
-
-
 const storeSlider = new Swiper('.store-slider', {
 	loop: true,
 	autoplay: {
@@ -52,8 +49,8 @@ const skillsSlider = new Swiper('.skills-slider', {
 	spaceBetween: 0,
 	coverflowEffect: {
 		rotate: 0,
-		stretch: 120,
-		depth: 80,
+		stretch: 135,
+		depth: 100,
 		modifier: 1,
 		scale: 0.95,
 		slideShadows: false,
@@ -119,13 +116,15 @@ let headSlider = new Swiper('.head-slider', {
 	loop: false,
 	autoplay: {
 		delay: 5000,
-		disableOnInteraction: false
+		disableOnInteraction: false,
+		pauseOnMouseEnter: true
 	},
 	speed: 1000,
 	slidesPerView: 'auto',
 	initialSlide: 0,
 	centeredSlides: false,
 	slideToClickedSlide: false,
+
 	preventClicks: false,
 	autoHeight: false,
 	grabCursor: false,
@@ -136,21 +135,57 @@ let headSlider = new Swiper('.head-slider', {
 		nextEl: '.head-slider__button-next',
 		prevEl: '.head-slider__button-prev',
 	}
-	// breakpoints: {
-	// 	500: {
-	// 		spaceBetween: 50,
-	// 	}
-	// }
 });
+
+let posSlider = new Swiper('.possibilities__slider', {
+	loop: false,
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false
+	},
+	speed: 1000,
+	slidesPerView: 'auto',
+	initialSlide: 0,
+	centeredSlides: false,
+	slideToClickedSlide: false,
+	preventClicks: false,
+	autoHeight: false,
+	grabCursor: false,
+	spaceBetween: 20,
+	allowTouchMove: true,
+	simulateTouch: false,
+	navigation: {
+		nextEl: '.possibilities__button-next',
+		prevEl: '.possibilities__button-prev',
+	},
+	pagination: {
+		el: '.possibilities__pagination',
+		type: 'bullets',
+		clickable: true
+	}
+});
+
+posSlider.on('snapIndexChange', function (slider) {
+	let item = document.querySelectorAll('.possibilities__item')[slider.snapIndex];
+	let human = document.querySelectorAll('.possibilities__human')[slider.snapIndex];
+	item.classList.add('active')
+	human.classList.add('active')
+	getSiblings(human).forEach(hu => hu.classList.remove('active'))
+	getSiblings(item).forEach(i => i.classList.remove('active'))
+
+})
+
 
 
 function setUpConfiguration() {
 	let firstChildRoadItem = document.querySelector('.road-top .road__item:first-child');
 	let marginMidLine = firstChildRoadItem.getBoundingClientRect().width / 2;
-	document.querySelector('.road-mid').style.marginLeft = marginMidLine + 'px';
+	let midLine = document.querySelector('.road-mid');
+	midLine.style.marginLeft = marginMidLine + 'px';
 	document.querySelector('.road-bot').style.marginLeft = marginMidLine + 10 + 'px';
 	let checkInner = document.querySelector('.check__inner');
 	document.querySelector('.road__content').style.marginLeft = checkInner.getBoundingClientRect().left + 'px';
+	midLine.style.width = document.documentElement.clientWidth - checkInner.getBoundingClientRect().left - marginMidLine + 'px';
 }
 
 setUpConfiguration();
@@ -397,8 +432,4 @@ document.querySelectorAll('.possibilities__item').forEach(item => {
 		getSiblings(human).forEach(hu => hu.classList.remove('active'))
 		getSiblings(item).forEach(i => i.classList.remove('active'))
 	});
-
-	// item.addEventListener('mouseout', () => {
-	// 	human.classList.remove('active')
-	// });
 });
