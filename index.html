@@ -223,7 +223,7 @@
 
 		<section class="possibilities" id="possibillity">
 			<div class="possibilities__inner container">
-				<div class="possibilities__title">
+				<div class="possibilities__title title">
 					Возможности <span class="green">Игроков</span>
 				</div>
 				<div class="possibilities__platform">
@@ -292,7 +292,7 @@
 
 		<section class="investor">
 			<div class="investor__inner container">
-				<div class="investor__title">
+				<div class="investor__title title">
 					Возможности <span class="green">Инвесторов</span>
 				</div>
 				<div class="investor__items">
@@ -334,11 +334,12 @@
 
 		<section class="check">
 			<div class="check__inner container">
-				<div class="check__title">
+				<div class="check__title title">
 					Следите за анонсом игры и NFT-коллекции
 				</div>
 				<div class="check__image">
-					<img src="img/check-img.png" alt="checking">
+					<img class="check__image_desktop" src="img/check-img.png" alt="checking">
+					<img class="check__image_mob" src="img/check-mob.png" alt="checking">
 				</div>
 				<div class="check__items">
 					<a href="https://twitter.com/shaolingame" class="check__item">
@@ -379,7 +380,7 @@
 
 		<section class="store" id="store">
 			<div class="store__inner container">
-				<div class="store__title">
+				<div class="store__title title">
 					NFT Магазин
 				</div>
 				<div class="store__subtitle">
@@ -522,7 +523,7 @@
 
 		<section class="unique" id="unique">
 			<div class="unique__inner container">
-				<div class="unique__title">
+				<div class="unique__title title">
 					Первые уникальные футболисты
 				</div>
 				<div class="unique__slider unique-slider swiper">
@@ -638,7 +639,7 @@
 
 		<section class="check">
 			<div class="check__inner container">
-				<div class="check__title">
+				<div class="check__title title">
 					Следите за анонсом игры и NFT-коллекции
 				</div>
 				<div class="check__items">
@@ -680,7 +681,7 @@
 
 
 		<section class="custom" id="customization">
-			<div class="custom__title">
+			<div class="custom__title title">
 				Возможность кастомизации
 			</div>
 			<div class="custom__inner container">
@@ -1107,7 +1108,7 @@
 
 		<section class="skills">
 			<div class="skills__inner container">
-				<div class="skills__title">
+				<div class="skills__title title">
 					Способности футболистов
 				</div>
 				<div class="skills__subtitle">
@@ -1189,11 +1190,12 @@
 
 		<section class="check">
 			<div class="check__inner container">
-				<div class="check__title">
+				<div class="check__title title">
 					Следите за анонсом игры и NFT-коллекции
 				</div>
 				<div class="check__image">
-					<img src="img/check-img.png" alt="checking">
+					<img class="check__image_desktop" src="img/check-img.png" alt="checking">
+					<img class="check__image_mob" src="img/check-mob.png" alt="checking">
 				</div>
 				<div class="check__items">
 					<a href="https://twitter.com/shaolingame" class="check__item">
@@ -1234,10 +1236,47 @@
 
 		<section class="tokenomic" id="tokenomic">
 			<div class="tokenomic__inner container">
-				<div class="tokenomic__title">
+				<div class="tokenomic__title title">
 					Токеномика
 				</div>
 				<div class="tokenomic__content">
+					<div class="tokenomic__item tokenomic-item">
+						<div class="tokenomic-item__image">
+							<img src="img/icons/gloves.svg" alt="icon">
+						</div>
+						<div class="tokenomic-item__title">
+							Играй бесплатно
+						</div>
+						<div class="tokenomic-item__text">
+							Не хочешь вкладывать много денег, а хочешь просто играть? Бросай вызов другим командам, побеждай, улучшай
+							опыт игроков, их силу, скорость и удар и получай бесплатные улучшения характеристик, новые супер удары и
+							форму!
+						</div>
+					</div>
+					<div class="tokenomic__item tokenomic-item">
+						<div class="tokenomic-item__image">
+							<img src="img/icons/clans.svg" alt="icon">
+						</div>
+						<div class="tokenomic-item__title">
+							Команды и кланы
+						</div>
+						<div class="tokenomic-item__text">
+							Объединяйся с другими игроками в команды, придумай собственный узнаваемый стиль игроков и участвуй в
+							специальных турнирах! Так же лично тебя могут вызвать в Сборную страны, чтобы играть на Чемпионате Мира.
+						</div>
+					</div>
+					<div class="tokenomic__item tokenomic-item">
+						<div class="tokenomic-item__image">
+							<img src="img/icons/staking.svg" alt="icon">
+						</div>
+						<div class="tokenomic-item__title">
+							Стейкинг и фарминг
+						</div>
+						<div class="tokenomic-item__text">
+							Сдавай футболиста в аренду, покупай стадионы и производи ресурсы. Анонсируй матчи в социальных сетях, на
+							Youtube или Twitch и получай доход с продажи билетов на матч!
+						</div>
+					</div>
 					<div class="tokenomic__item tokenomic-item">
 						<div class="tokenomic-item__image">
 							<img src="img/icons/nft.svg" alt="icon">
@@ -1246,71 +1285,41 @@
 							NFT
 						</div>
 						<div class="tokenomic-item__text">
-							Зарабатывай на NFT футболистов
+							Улучшай футболистов в игре, обучай их суперударам, покупай им бусты на маркетплейсе, тренируй их с помощью
+							тренера и получи максимальную редкость!
 						</div>
 					</div>
-					<div class="tokenomic__item tokenomic-item">
+					<!-- <div class="tokenomic__item tokenomic-item">
 						<div class="tokenomic-item__image">
 							<img src="img/icons/tokens.svg" alt="icon">
 						</div>
 						<div class="tokenomic-item__title">
-							Токены
+							Пассивный доход
 						</div>
 						<div class="tokenomic-item__text">
-							Выигрывай матчи и получай награду в виде токена
+							Выигрывай матчи, сдавай футболиста в аренду, стань спонсором команды илм купи целый стадион и получай
+							доход в токенах Shaolin!
 						</div>
-					</div>
+					</div> -->
 					<div class="tokenomic__item tokenomic-item">
 						<div class="tokenomic-item__image">
 							<img src="img/icons/tournament.svg" alt="icon">
 						</div>
 						<div class="tokenomic-item__title">
-							Токены
+							Турниры
 						</div>
 						<div class="tokenomic-item__text">
-							Выигрывай турниры и получай огромные призы и токены
+							Побеждай в Лиге чемпионов или на Чемпионате Мира и получай огромные денежные призы!
 						</div>
 					</div>
-					<div class="tokenomic__item tokenomic-item">
-						<div class="tokenomic-item__image">
-							<img src="img/icons/staking.svg" alt="icon">
-						</div>
-						<div class="tokenomic-item__title">
-							Стейкинг
-						</div>
-						<div class="tokenomic-item__text">
-							Собирай своих редких футболистов
-						</div>
-					</div>
-					<div class="tokenomic__item tokenomic-item">
-						<div class="tokenomic-item__image">
-							<img src="img/icons/gloves.svg" alt="icon">
-						</div>
-						<div class="tokenomic-item__title">
-							Стейкинг
-						</div>
-						<div class="tokenomic-item__text">
-							Тренируй своих футболистов и повышай их силу и цену
-						</div>
-					</div>
-					<div class="tokenomic__item tokenomic-item">
-						<div class="tokenomic-item__image">
-							<img src="img/icons/clans.svg" alt="icon">
-						</div>
-						<div class="tokenomic-item__title">
-							Кланы
-						</div>
-						<div class="tokenomic-item__text">
-							Объединяйся для получения совместного дохода
-						</div>
-					</div>
+
 				</div>
 			</div>
 		</section>
 
 		<section class="deligate">
 			<div class="deligate__inner">
-				<div class="deligate__title">
+				<div class="deligate__title title">
 					Распределение токенов
 				</div>
 				<div class="deligate__graph">
@@ -1320,7 +1329,7 @@
 		</section>
 
 		<section class="road" id="roadmap">
-			<div class="road__title">
+			<div class="road__title title">
 				Roadmap
 			</div>
 			<div class="road__inner">
@@ -1330,15 +1339,32 @@
 							<div class="road__item-wrapper">
 								<div class="road__date">
 									<div class="road-item__title">
-										2022, Aug
+										Q3 2022
 									</div>
 									<div class="road-item__update">
-										Update 2
+										Update 1
 									</div>
 								</div>
 								<div class="road__item-inner">
 									<div class="road__text">
 										Версия игры в тестнет сети
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="road__item">
+							<div class="road__item-wrapper">
+								<div class="road__date">
+									<div class="road-item__title">
+										Q4 2022
+									</div>
+									<div class="road-item__update">
+										Update 3
+									</div>
+								</div>
+								<div class="road__item-inner">
+									<div class="road__text">
+										Move 2 Earn механика
 									</div>
 									<div class="road__info">
 										<img class="road__info-img" src="img/icons/road-info.svg" alt="info">
@@ -1360,15 +1386,15 @@
 							<div class="road__item-wrapper">
 								<div class="road__date">
 									<div class="road-item__title">
-										2022, Aug
+										Q2 2023
 									</div>
 									<div class="road-item__update">
-										Update 2
+										Update 5
 									</div>
 								</div>
 								<div class="road__item-inner">
 									<div class="road__text">
-										Версия игры в тестнет сети
+										Футбольный менеджер
 									</div>
 									<div class="road__info">
 										<img class="road__info-img" src="img/icons/road-info.svg" alt="info">
@@ -1390,29 +1416,17 @@
 							<div class="road__item-wrapper">
 								<div class="road__date">
 									<div class="road-item__title">
-										2022, Aug
+										Q3 2023
 									</div>
 									<div class="road-item__update">
-										Update 2
+										Update 7
 									</div>
 								</div>
 								<div class="road__item-inner">
 									<div class="road__text">
-										Версия игры в тестнет сети
-									</div>
-									<div class="road__info">
-										<img class="road__info-img" src="img/icons/road-info.svg" alt="info">
-										<img class="road__info-caret" src="img/icons/caret-down.svg" alt="info">
-										<div class="road__popup">
-											Покупай виртуальные бутсы (mercurial, predator и другие) и улучшай футболиста бегая в реальном
-											мире
-										</div>
+										Версия игры в Телеграм
 									</div>
 
-								</div>
-								<div class="road-item__text">
-									Покупай виртуальные бутсы (mercurial, predator и другие) и улучшай футболиста бегая в реальном
-									мире
 								</div>
 							</div>
 						</div>
@@ -1420,59 +1434,17 @@
 							<div class="road__item-wrapper">
 								<div class="road__date">
 									<div class="road-item__title">
-										2022, Aug
+										Q1 2024
 									</div>
 									<div class="road-item__update">
-										Update 2
+										Update 9
 									</div>
 								</div>
 								<div class="road__item-inner">
 									<div class="road__text">
-										Версия игры в тестнет сети
-									</div>
-									<div class="road__info">
-										<img class="road__info-img" src="img/icons/road-info.svg" alt="info">
-										<img class="road__info-caret" src="img/icons/caret-down.svg" alt="info">
-										<div class="road__popup">
-											Покупай виртуальные бутсы (mercurial, predator и другие) и улучшай футболиста бегая в реальном
-											мире
-										</div>
+										Выпуск атрибутики клубов
 									</div>
 
-								</div>
-								<div class="road-item__text">
-									Покупай виртуальные бутсы (mercurial, predator и другие) и улучшай футболиста бегая в реальном
-									мире
-								</div>
-							</div>
-						</div>
-						<div class="road__item">
-							<div class="road__item-wrapper">
-								<div class="road__date">
-									<div class="road-item__title">
-										2022, Aug
-									</div>
-									<div class="road-item__update">
-										Update 2
-									</div>
-								</div>
-								<div class="road__item-inner">
-									<div class="road__text">
-										Версия игры в тестнет сети
-									</div>
-									<div class="road__info">
-										<img class="road__info-img" src="img/icons/road-info.svg" alt="info">
-										<img class="road__info-caret" src="img/icons/caret-down.svg" alt="info">
-										<div class="road__popup">
-											Покупай виртуальные бутсы (mercurial, predator и другие) и улучшай футболиста бегая в реальном
-											мире
-										</div>
-									</div>
-
-								</div>
-								<div class="road-item__text">
-									Покупай виртуальные бутсы (mercurial, predator и другие) и улучшай футболиста бегая в реальном
-									мире
 								</div>
 							</div>
 						</div>
@@ -1485,7 +1457,7 @@
 							<div class="road__item-wrapper">
 								<div class="road__date">
 									<div class="road-item__title">
-										2022, Aug
+										Q4 2022
 									</div>
 									<div class="road-item__update">
 										Update 2
@@ -1493,7 +1465,24 @@
 								</div>
 								<div class="road__item-inner">
 									<div class="road__text">
-										Версия игры в тестнет сети
+										Собственный NFT-маркетплейс
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="road__item">
+							<div class="road__item-wrapper">
+								<div class="road__date">
+									<div class="road-item__title">
+										Q1 2023
+									</div>
+									<div class="road-item__update">
+										Update 4
+									</div>
+								</div>
+								<div class="road__item-inner">
+									<div class="road__text">
+										Kick 2 Earn механика
 									</div>
 									<div class="road__info">
 										<img class="road__info-img" src="img/icons/road-info.svg" alt="info">
@@ -1503,7 +1492,6 @@
 											мире
 										</div>
 									</div>
-
 								</div>
 								<div class="road-item__text">
 									Покупай виртуальные бутсы (mercurial, predator и другие) и улучшай футболиста бегая в реальном
@@ -1515,15 +1503,15 @@
 							<div class="road__item-wrapper">
 								<div class="road__date">
 									<div class="road-item__title">
-										2022, Aug
+										Q2 2023
 									</div>
 									<div class="road-item__update">
-										Update 2
+										Update 6
 									</div>
 								</div>
 								<div class="road__item-inner">
 									<div class="road__text">
-										Версия игры в тестнет сети
+										Футбольный тренер
 									</div>
 									<div class="road__info">
 										<img class="road__info-img" src="img/icons/road-info.svg" alt="info">
@@ -1533,7 +1521,6 @@
 											мире
 										</div>
 									</div>
-
 								</div>
 								<div class="road-item__text">
 									Покупай виртуальные бутсы (mercurial, predator и другие) и улучшай футболиста бегая в реальном
@@ -1545,58 +1532,16 @@
 							<div class="road__item-wrapper">
 								<div class="road__date">
 									<div class="road-item__title">
-										2022, Aug
+										Q4 2023
 									</div>
 									<div class="road-item__update">
-										Update 2
+										Update 8
 									</div>
 								</div>
 								<div class="road__item-inner">
 									<div class="road__text">
-										Версия игры в тестнет сети
+										Трансферы, аренда футболистов
 									</div>
-									<div class="road__info">
-										<img class="road__info-img" src="img/icons/road-info.svg" alt="info">
-										<img class="road__info-caret" src="img/icons/caret-down.svg" alt="info">
-										<div class="road__popup">
-											Покупай виртуальные бутсы (mercurial, predator и другие) и улучшай футболиста бегая в реальном
-											мире
-										</div>
-									</div>
-
-								</div>
-								<div class="road-item__text">
-									Покупай виртуальные бутсы (mercurial, predator и другие) и улучшай футболиста бегая в реальном
-									мире
-								</div>
-							</div>
-						</div>
-						<div class="road__item">
-							<div class="road__item-wrapper">
-								<div class="road__date">
-									<div class="road-item__title">
-										2022, Aug
-									</div>
-									<div class="road-item__update">
-										Update 2
-									</div>
-								</div>
-								<div class="road__item-inner">
-									<div class="road__text">
-										Версия игры в тестнет сети
-									</div>
-									<div class="road__info">
-										<img class="road__info-img" src="img/icons/road-info.svg" alt="info">
-										<img class="road__info-caret" src="img/icons/caret-down.svg" alt="info">
-										<div class="road__popup">
-											Покупай виртуальные бутсы (mercurial, predator и другие) и улучшай футболиста бегая в реальном
-											мире
-										</div>
-									</div>
-								</div>
-								<div class="road-item__text">
-									Покупай виртуальные бутсы (mercurial, predator и другие) и улучшай футболиста бегая в реальном
-									мире
 								</div>
 							</div>
 						</div>
@@ -1607,7 +1552,7 @@
 
 		<section class="check">
 			<div class="check__inner container">
-				<div class="check__title">
+				<div class="check__title title">
 					Следите за анонсом игры и NFT-коллекции
 				</div>
 				<div class="check__items">
@@ -1649,7 +1594,7 @@
 
 		<section class="contact">
 			<div class="contact__inner container">
-				<div class="contact__title">
+				<div class="contact__title title">
 					Follow Us
 				</div>
 				<div class="contact__content">

@@ -42,4 +42,9 @@
 
 		color: #000000;
 	}
+	@media (max-width: 500px) {
+		&__item {
+			height: 100%;
+		}
+	}
 }

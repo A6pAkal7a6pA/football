@@ -1190,6 +1190,12 @@ a {
   color: #000000;
 }
 
+@media (max-width: 500px) {
+  .investor__item {
+    height: 100%;
+  }
+}
+
 .check__title {
   font-weight: 800;
   font-size: 32px;
@@ -1208,6 +1214,14 @@ a {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.check__image_desktop {
+  display: block;
+}
+
+.check__image_mob {
+  display: none;
 }
 
 .check__items {
@@ -1261,6 +1275,12 @@ a {
   .check__item {
     max-width: none;
     width: 100%;
+  }
+  .check__image_desktop {
+    display: none;
+  }
+  .check__image_mob {
+    display: block;
   }
 }
 
@@ -1994,9 +2014,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2294,6 +2314,7 @@ a {
 
 .custom .custom-human img {
   position: absolute;
+  max-width: 100%;
   max-height: 477px;
 }
 
@@ -2379,6 +2400,7 @@ a {
   .custom__subject .custom__subtitle {
     margin-top: 26px;
     display: block;
+    text-align: center;
   }
   .custom__part {
     display: none;
@@ -2425,11 +2447,12 @@ a {
     font-size: 16px;
     line-height: 20px;
     color: #000000;
-    border-bottom: 3px solid #E3E3E3;
+    border-bottom: 3px solid #e3e3e3;
+    border-radius: 4px 4px 0px 0px;
   }
   .custom__variant.active {
-    background: #EBEBEB;
-    border-bottom: 3px solid #4DDA36;
+    background: #ebebeb;
+    border-bottom: 3px solid #4dda36;
   }
 }
 
@@ -2451,6 +2474,17 @@ a {
   }
   .custom .head-slider {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .custom .custom__human {
+    width: 275px;
+    height: 366.67px;
+  }
+  .custom__colors {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
   }
 }
 
@@ -3123,6 +3157,11 @@ a {
           justify-content: center;
   max-width: 168.57px;
   width: 100%;
+  border: 3px solid transparent;
+}
+
+.contact__item:hover {
+  border: 3px solid #4DDA36;
 }
 
 .contact__image {
@@ -3130,10 +3169,9 @@ a {
 }
 
 .contact__name {
-  font-family: "Roboto Slab", serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
   color: #010038;
 }
@@ -3206,10 +3244,20 @@ body.disabled {
   overflow: hidden;
 }
 
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
 .wrapper {
   min-height: 100vh;
   width: 100%;
-  background: #FFFFFF;
+  background: #ffffff;
   overflow: hidden;
 }
 
