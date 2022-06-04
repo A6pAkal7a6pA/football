@@ -184,13 +184,13 @@
 		width: 100%;
 		&::after {
 			content: "";
-			width: 78px;
+			width: 107px;
 			height: 100%;
 			position: absolute;
 			z-index: 2;
 			right: 0;
 			top: 0;
-			background: #fff;
+			background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
 		}
 		&__wrapper {
 		}
@@ -349,6 +349,17 @@
 		}
 		.head-slider {
 			padding-right: 0;
+			padding-left: 10px;
+			padding-bottom: 20px;
+		}
+		.swiper-scrollbar {
+			bottom: 0;
+			background: #f4f4f4;
+			border-radius: 4px;
+			&-drag {
+				background: #d9d9d9;
+				border-radius: 4px;
+			}
 		}
 		.head-slider__button-prev,
 		.head-slider__button-next,

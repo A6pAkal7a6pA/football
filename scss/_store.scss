@@ -55,6 +55,7 @@
 		display: flex;
 		align-items: center;
 		gap: 10px;
+
 	}
 
 	&__soon-image {
@@ -87,6 +88,7 @@
 		border-radius: 6px;
 		padding: 5px 5px 25px 5px;
 		transition: all 0.5s;
+		border: 4px solid #4dda36;
 		&.swiper-slide-visible {
 			opacity: 0.5;
 
@@ -176,7 +178,8 @@
 			background: rgba(#fdfffd, 0.2);
 			position: relative;
 			opacity: 1;
-			height: 10px;
+			width: 6px;
+			height: 6px;
 			&::after {
 				content: "";
 				position: absolute;
@@ -195,16 +198,17 @@
 			}
 		}
 		.swiper-pagination-bullet-active {
-			&::after {
-				width: 100%;
-				background: #4dda36;
-				transition: width 5s linear;
-			}
-			&:hover {
-				&::after {
-					border-radius: 5px;
-				}
-			}
+			background: #4dda36;
+			// &::after {
+			// 	width: 100%;
+
+			// 	transition: width 5s linear;
+			// }
+			// &:hover {
+			// 	&::after {
+			// 		border-radius: 5px;
+			// 	}
+			// }
 		}
 	}
 

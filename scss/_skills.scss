@@ -28,8 +28,11 @@
 	&__button {
 	}
 	@media (max-width: 768px) {
+		&__inner {
+			padding: 0;
+		}
 		&__slider {
-			margin: 0 -15px;
+			padding: 0 15px;
 		}
 	}
 }
@@ -205,11 +208,12 @@
 		}
 	}
 	@media (max-width: 500px) {
+		
 		&__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal  {
 			max-width: calc(100% - 190px);
 		}
 		&__navigation {
-			max-width: calc(100% - 30px);
+			// max-width: calc(100% - 30px);
 		}
 	}
 }

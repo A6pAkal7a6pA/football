@@ -31,6 +31,7 @@ const storeSlider = new Swiper('.store-slider', {
 		prevEl: '.store-slider__button-prev',
 	}
 });
+storeSlider.init();
 
 const skillsSlider = new Swiper('.skills-slider', {
 	loop: true,
@@ -65,6 +66,7 @@ const skillsSlider = new Swiper('.skills-slider', {
 		prevEl: '.skills-slider__button-prev',
 	}
 });
+skillsSlider.init();
 
 const uniqueSlider = new Swiper('.unique-slider', {
 	loop: true,
@@ -104,6 +106,7 @@ const uniqueSlider = new Swiper('.unique-slider', {
 		}
 	}
 });
+uniqueSlider.init();
 
 let headerBurger = document.querySelector('.header__burger');
 headerBurger.addEventListener('click', () => {
@@ -130,17 +133,21 @@ let headSlider = new Swiper('.head-slider', {
 	grabCursor: false,
 	spaceBetween: 10,
 	allowTouchMove: true,
-	simulateTouch: false,
+	simulateTouch: true,
 	navigation: {
 		nextEl: '.head-slider__button-next',
 		prevEl: '.head-slider__button-prev',
-	}
+	},
+	scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  }
 });
 
 let posSlider = new Swiper('.possibilities__slider', {
 	loop: false,
 	autoplay: {
-		delay: 5000,
+		delay: 3000,
 		disableOnInteraction: false
 	},
 	speed: 1000,
@@ -174,6 +181,19 @@ posSlider.on('snapIndexChange', function (slider) {
 	getSiblings(item).forEach(i => i.classList.remove('active'))
 
 })
+
+document.querySelectorAll('.possibilities__item').forEach(item => {
+	let index = Array.from(item.parentElement.children).indexOf(item);
+	let human = document.querySelectorAll('.possibilities__human')[index]
+	item.addEventListener('click', () => {
+		item.classList.add('active')
+		human.classList.add('active')
+		getSiblings(human).forEach(hu => hu.classList.remove('active'))
+		getSiblings(item).forEach(i => i.classList.remove('active'))
+	});
+
+
+});
 
 
 
@@ -361,7 +381,7 @@ function activateAnimation() {
 
 
 
-document.body.style.overflow = 'hidden'
+document.body.classList.add('disabled')
 let count = 0;
 let flag = true;
 window.addEventListener('wheel', e => {
@@ -370,7 +390,7 @@ window.addEventListener('wheel', e => {
 		window.scrollTo(0, 0);
 		activateAnimation()
 		setTimeout(() => {
-			document.body.style.overflow = 'visible'
+			document.body.classList.remove('disabled')
 			document.querySelector('.header').style.opacity = '1';
 		}, 5000)
 	}
@@ -383,7 +403,7 @@ window.addEventListener('touchmove', e => {
 		window.scrollTo(0, 0);
 		activateAnimation()
 		setTimeout(() => {
-			document.body.style.overflow = 'visible'
+			document.body.classList.remove('disabled')
 			document.querySelector('.header').style.opacity = '1';
 		}, 5000)
 	}
@@ -422,14 +442,22 @@ for (let anchor of anchors) {
 	})
 }
 
-document.querySelectorAll('.possibilities__item').forEach(item => {
-	let index = Array.from(item.parentElement.children).indexOf(item);
-	let human = document.querySelectorAll('.possibilities__human')[index]
 
-	item.addEventListener('mouseover', () => {
-		item.classList.add('active')
-		human.classList.add('active')
-		getSiblings(human).forEach(hu => hu.classList.remove('active'))
-		getSiblings(item).forEach(i => i.classList.remove('active'))
+
+function tokensProgress() {
+	let max = 0;
+	document.querySelectorAll('.deligate__num').forEach(item => {
+		let num = +item.innerText.replace(/%/g, '');
+		if (max <= num) {
+			max = num;
+		}
 	});
-});
+	max = 100 / max;
+	document.querySelectorAll('.deligate__item').forEach(item => {
+		let num = item.children[0].innerText.replace(/%/g, '');
+		item.children[2].children[0].style.width = num * max + '%';
+	});
+}
+tokensProgress()
+
+
