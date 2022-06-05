@@ -446,7 +446,7 @@ a {
 }
 
 .main {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .main__inner {
@@ -1830,7 +1830,7 @@ a {
 .unique-slider::after {
   content: "";
   width: 270px;
-  height: 457px;
+  height: 441px;
   position: absolute;
   left: 50%;
   top: 0;
@@ -2068,6 +2068,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 20px;
+  margin-bottom: 60px;
 }
 
 .custom__controller {
@@ -2421,6 +2422,51 @@ a {
   max-width: 640px;
 }
 
+.custom__gets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 427px;
+  margin: 0 auto;
+  gap: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.custom__soon {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
+
+.custom__button {
+  max-width: 340px;
+  width: 100%;
+  background: #a3f296;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
 @media (max-width: 1330px) {
   .custom__inner {
     -webkit-box-orient: vertical;
@@ -2537,6 +2583,15 @@ a {
 }
 
 @media (max-width: 500px) {
+  .custom__gets {
+    max-width: none;
+  }
+  .custom__button {
+    max-width: 248px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
   .custom .custom__human {
     width: 275px;
     height: 366.67px;
