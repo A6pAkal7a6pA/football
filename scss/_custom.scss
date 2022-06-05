@@ -372,6 +372,7 @@
 
 	@media (max-width: 1330px) {
 		&__inner {
+			align-items: center;
 			flex-direction: column-reverse;
 		}
 	}
@@ -486,4 +487,5 @@
 			transform: translateY(-20%);
 		}
 	}
+
 }

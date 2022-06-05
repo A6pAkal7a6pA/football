@@ -1,5 +1,5 @@
 .main {
-	margin-top: 30px;
+	margin-top: 15px;
 	&__inner {
 		// padding-top: 80px;
 		position: relative;
@@ -20,7 +20,7 @@
 			width: 100%;
 			height: 100%;
 			object-fit: contain;
-			background: url('../img/tv.png') center / contain no-repeat;
+			background: url("../img/tv.png") center / contain no-repeat;
 		}
 		&.animate {
 			animation-delay: 3s;
@@ -226,7 +226,6 @@
 			border-radius: 10px;
 			width: 100%;
 			padding: 20px;
-			
 		}
 		&-ceo__item {
 			img {
@@ -281,6 +280,25 @@
 	}
 
 	&__item {
+	}
+}
+@media (max-height: 885px) {
+	.main {
+		&__catridge {
+			top: -7%;
+		}
+		&__project-title {
+			margin-bottom: 30px;
+		}
+		&__delimetr {
+			display: none;
+		}
+		&-awards__title {
+			margin-bottom: 30px;
+		}
+		&__project {
+			top: 20%;
+		}
 	}
 }
 
