@@ -72,6 +72,11 @@
 			padding: 0;
 		}
 	}
+	@media(max-width: 500px) {
+		&__subtitle {
+			padding: 0 15px;
+		}
+	}
 
 }
 

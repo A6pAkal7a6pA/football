@@ -17,11 +17,27 @@
 @import "_tokenomic.scss";
 @import "_roadmap.scss";
 @import "_contact.scss";
+@import "_translate.scss";
 
 body {
 	&.disabled {
 		overflow: hidden;
 	}
+	.en {
+		display: block;
+	}
+	.ru {
+		display: none;
+	}
+	.road__item.active {
+		.road-item__text.en {
+			display: block;
+		}
+		.road-item__text.ru {
+			display: none;
+		}
+	}
+
 }
 .title {
 	font-family: $fontfamilyMontserrat;
@@ -115,5 +131,23 @@ body {
 	}
 	.custom {
 		margin-bottom: 70px;
+	}
+}
+
+body.ru {
+	.en {
+		display: none;
+	}
+	.ru {
+		display: block;
+	}
+
+	.road__item.active {
+		.road-item__text.en {
+			display: none;
+		}
+		.road-item__text.ru {
+			display: block;
+		}
 	}
 }

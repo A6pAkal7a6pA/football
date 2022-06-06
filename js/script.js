@@ -139,9 +139,9 @@ let headSlider = new Swiper('.head-slider', {
 		prevEl: '.head-slider__button-prev',
 	},
 	scrollbar: {
-    el: '.swiper-scrollbar',
-    draggable: true,
-  }
+		el: '.swiper-scrollbar',
+		draggable: true,
+	}
 });
 
 let posSlider = new Swiper('.possibilities__slider', {
@@ -360,6 +360,7 @@ document.querySelectorAll('.custom__variant').forEach(variant => {
 	variant.addEventListener('click', () => {
 		variant.classList.add('active');
 		let index = Array.from(variant.parentElement.children).indexOf(variant);
+
 		document.querySelectorAll('.custom__content-part').forEach(part => {
 			if (Array.from(part.parentElement.children).indexOf(part) === index) {
 				part.classList.add('visible');
@@ -458,6 +459,25 @@ function tokensProgress() {
 		item.children[2].children[0].style.width = num * max + '%';
 	});
 }
-tokensProgress()
+tokensProgress();
+
+let posContainer = document.querySelector('.possibilities__inner');
+let ball = document.querySelector('.secret-ball');
+function ballPosition() {
+	document.documentElement.style.setProperty('--ball-desktop', posContainer.getBoundingClientRect().left - 35 + 'px');
+	document.documentElement.style.setProperty('--ball-mob', posContainer.getBoundingClientRect().width / 3 + 'px');
+}
+window.addEventListener('scroll', () => {
+	if (posContainer.getBoundingClientRect().y <= 0 && posContainer.getBoundingClientRect().y >= -(posContainer.getBoundingClientRect().height)) {
+		ball.classList.add('anime')
+		ball.classList.remove('disabled')
+	} else if (posContainer.getBoundingClientRect().y <= -posContainer.getBoundingClientRect().height || posContainer.getBoundingClientRect().y > 0) {
+		ball.classList.add('anime')
+		ball.classList.add('disabled')
+	}
+
+});
+
+ballPosition();
 
 

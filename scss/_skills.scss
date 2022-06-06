@@ -57,13 +57,13 @@
 	}
 
 	&__item {
-		max-height: 315px;
-		max-width: 420px;
+		max-height: 290px;
+		max-width: 418px;
 		height: 100%;
 		box-shadow: 6.72301px 6.72301px 20.169px rgba(17, 227, 76, 0.1);
 		border-radius: 6px;
-		background: linear-gradient(180deg, #05ff5a 0%, #00cb51 100%);
 		transition: all 0.5s;
+		border: 6px solid #082148;
 		&::after {
 			content: "";
 			position: absolute;
@@ -102,7 +102,6 @@
 	}
 
 	&__image {
-		padding: 4px 4px 0 4px;
 
 		img {
 			max-width: 100%;
@@ -114,6 +113,7 @@
 	}
 
 	&__info {
+		display: none;
 		padding: 15px;
 		background: url("../img/skills-item-bg.png") center / cover no-repeat;
 	}
