@@ -480,4 +480,5 @@ window.addEventListener('scroll', () => {
 
 ballPosition();
 
-
+let secretBall = document.querySelector('.secret-ball');
+secretBall.addEventListener('click', () => secretBall.classList.toggle('active'))

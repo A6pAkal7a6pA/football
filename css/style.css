@@ -1783,6 +1783,11 @@ a {
   border-radius: 50%;
   right: -15%;
   bottom: 0;
+  z-index: 2;
+}
+
+.possibilities .secret-ball .secret-ball__text {
+  display: none;
 }
 
 .possibilities .secret-ball.anime {
@@ -1798,6 +1803,23 @@ a {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   animation-direction: reverse;
+}
+
+.possibilities .secret-ball.active .secret-ball__text {
+  width: 274px;
+  height: auto;
+  position: absolute;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px;
+  background: #ffffff;
+  border: 3px solid #ebebeb;
+  border-radius: 10px;
 }
 
 @media (max-width: 1330px) {
@@ -1840,6 +1862,11 @@ a {
   }
   .possibilities__text {
     height: 100%;
+  }
+  .possibilities .secret-ball__text {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
@@ -1981,6 +2008,14 @@ a {
             transform: rotate(1080deg);
     right: var(--ball-mob);
   }
+}
+
+body .possibilities .secret-ball .secret-ball__text {
+  opacity: 0;
+}
+
+body .possibilities .secret-ball.active .secret-ball__text {
+  opacity: 1;
 }
 
 .unique {
@@ -3642,6 +3677,14 @@ body .road__item.active .road-item__text.ru {
   display: none;
 }
 
+body .possibilities .secret-ball .secret-ball__text.en {
+  display: block;
+}
+
+body .possibilities .secret-ball .secret-ball__text.ru {
+  display: none;
+}
+
 .title {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -3745,5 +3788,13 @@ body.ru .road__item.active .road-item__text.en {
 }
 
 body.ru .road__item.active .road-item__text.ru {
+  display: block;
+}
+
+body.ru .possibilities .secret-ball .secret-ball__text.en {
+  display: none;
+}
+
+body.ru .possibilities .secret-ball .secret-ball__text.ru {
   display: block;
 }

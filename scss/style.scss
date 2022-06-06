@@ -37,7 +37,14 @@ body {
 			display: none;
 		}
 	}
-
+	.possibilities .secret-ball .secret-ball__text{
+		&.en {
+			display: block;
+		}
+		&.ru {
+			display: none;
+		}
+	}
 }
 .title {
 	font-family: $fontfamilyMontserrat;
@@ -147,6 +154,14 @@ body.ru {
 			display: none;
 		}
 		.road-item__text.ru {
+			display: block;
+		}
+	}
+	.possibilities .secret-ball .secret-ball__text{
+		&.en {
+			display: none;
+		}
+		&.ru {
 			display: block;
 		}
 	}

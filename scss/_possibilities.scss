@@ -186,6 +186,10 @@
 		border-radius: 50%;
 		right: -15%;
 		bottom: 0;
+		z-index: 2;
+		.secret-ball__text {
+			display: none;
+		}
 
 		&.anime {
 			animation: 1.5s ballAnimeDesk linear;
@@ -195,6 +199,25 @@
 			animation: 1.5s ballAnimeReverseDesk linear;
 			animation-fill-mode: forwards;
 			animation-direction: reverse;
+		}
+		&.active {
+			.secret-ball__text {
+				width: 274px;
+				height: auto;
+				position: absolute;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 20px;
+				color: #000000;
+				right: 20px;
+				bottom: 20px;
+				padding: 10px;
+				background: #ffffff;
+				border: 3px solid #ebebeb;
+				border-radius: 10px;
+				// display: block;
+			}
 		}
 	}
 	@media (max-width: 1330px) {
@@ -229,6 +252,12 @@
 		}
 		&__text {
 			height: 100%;
+		}
+		.secret-ball {
+			&__text {
+				left: 50%;
+				transform: translateX(-50%);
+			}
 		}
 	}
 }
@@ -275,7 +304,7 @@
 @keyframes ballAnimeMob {
 	0% {
 		transform: rotate(0);
-		
+
 		right: -15%;
 	}
 	100% {
@@ -293,4 +322,10 @@
 		transform: rotate(1080deg);
 		right: var(--ball-mob);
 	}
+}
+body .possibilities .secret-ball .secret-ball__text{
+opacity: 0;
+}
+body .possibilities .secret-ball.active .secret-ball__text{
+opacity: 1;
 }
