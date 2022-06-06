@@ -1784,6 +1784,7 @@ a {
   right: -15%;
   bottom: 0;
   z-index: 2;
+  cursor: pointer;
 }
 
 .possibilities .secret-ball .secret-ball__text {
