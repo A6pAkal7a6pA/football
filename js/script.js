@@ -495,8 +495,9 @@ window.addEventListener('scroll', () => {
 		ball.classList.add('anime')
 		ball.classList.remove('disabled')
 	} else if (posContainer.getBoundingClientRect().y <= -posContainer.getBoundingClientRect().height || posContainer.getBoundingClientRect().y > 0) {
-		ball.classList.add('anime')
+		// ball.classList.add('anime')
 		ball.classList.add('disabled')
+		document.querySelector('.secret-ball__text').parentElement.classList.remove('active');
 	}
 
 });
