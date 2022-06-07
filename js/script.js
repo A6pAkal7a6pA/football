@@ -360,7 +360,9 @@ document.querySelectorAll('.custom__variant').forEach(variant => {
 	variant.addEventListener('click', () => {
 		variant.classList.add('active');
 		let index = Array.from(variant.parentElement.children).indexOf(variant);
-
+		if (index != 0) {
+			index = Math.floor(index / 2);
+		}
 		document.querySelectorAll('.custom__content-part').forEach(part => {
 			if (Array.from(part.parentElement.children).indexOf(part) === index) {
 				part.classList.add('visible');
@@ -380,35 +382,39 @@ function activateAnimation() {
 	document.querySelector('.main__button').classList.toggle('anime')
 }
 
+function enableAnimationFirstScreen() {
+	document.body.classList.add('disabled')
+	let flag = true;
+	window.addEventListener('wheel', e => {
+		if (flag) {
+			flag = false;
+			window.scrollTo(0, 0);
+			activateAnimation()
+			setTimeout(() => {
+				document.body.classList.remove('disabled')
+				document.querySelector('.header').style.opacity = '1';
+			}, 5000)
+		}
+	
+	});
+	
+	window.addEventListener('touchmove', e => {
+		if (flag) {
+			flag = false;
+			window.scrollTo(0, 0);
+			activateAnimation()
+			setTimeout(() => {
+				document.body.classList.remove('disabled')
+				document.querySelector('.header').style.opacity = '1';
+			}, 5000)
+		}
+	});
+}
+
+// enableAnimationFirstScreen()
 
 
-document.body.classList.add('disabled')
-let count = 0;
-let flag = true;
-window.addEventListener('wheel', e => {
-	if (flag) {
-		flag = false;
-		window.scrollTo(0, 0);
-		activateAnimation()
-		setTimeout(() => {
-			document.body.classList.remove('disabled')
-			document.querySelector('.header').style.opacity = '1';
-		}, 5000)
-	}
 
-});
-
-window.addEventListener('touchmove', e => {
-	if (flag) {
-		flag = false;
-		window.scrollTo(0, 0);
-		activateAnimation()
-		setTimeout(() => {
-			document.body.classList.remove('disabled')
-			document.querySelector('.header').style.opacity = '1';
-		}, 5000)
-	}
-});
 
 document.querySelectorAll('.road__info').forEach(caret => {
 	caret.addEventListener('click', () => {
@@ -442,8 +448,6 @@ for (let anchor of anchors) {
 		})
 	})
 }
-
-
 
 function tokensProgress() {
 	let max = 0;
