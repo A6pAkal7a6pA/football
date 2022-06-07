@@ -212,7 +212,7 @@
 				justify-content: flex-start;
 				flex-direction: column;
 				// gap: 45px;
-				padding: 18px 15px;
+				padding: 18px 5px;
 			}
 			.header__burger {
 				&::before {
@@ -238,6 +238,7 @@
 				flex-direction: column;
 				gap: 45px;
 				overflow-y: auto;
+				padding: 45px 10px 0px 10px;
 			}
 			.header__list {
 				justify-content: flex-start;
