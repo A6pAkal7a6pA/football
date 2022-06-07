@@ -15,17 +15,43 @@
 		transform: translateX(-50%);
 		top: -200%;
 		object-fit: contain;
-		video {
-			padding: 3% 8% 7% 8%;
+		background: url("../img/tv.png") center / contain no-repeat;
+		img {
+			padding: 3% 13% 7% 13%;
 			width: 100%;
 			height: 100%;
 			object-fit: contain;
-			background: url("../img/tv.png") center / contain no-repeat;
+			position: absolute;
+			// animation: 15s tvAnimation linear infinite;
+			// opacity: 0;
 		}
+
 		&.animate {
-			animation-delay: 3s;
 			animation: 3s tvAnime;
 			animation-fill-mode: forwards;
+			img:nth-child(1) {
+				animation-delay: 3s;
+				animation: 3s tvAnimation linear;
+			}
+			// img:nth-child(2) {
+			// 	animation-delay: 6s;
+			// 	animation: 3s tvAnimation linear;
+			// }
+			// img:nth-child(3) {
+			// 	animation-delay: 6s;
+			// 	animation: 3s tvAnimation linear;
+			// 	animation-fill-mode: forwards;
+			// }
+			// img:nth-child(4) {
+			// 	animation-delay: 9s;
+			// 	animation: 3s tvAnimation linear;
+			// 	animation-fill-mode: forwards;
+			// }
+			// img:nth-child(5) {
+			// 	animation-delay: 12s;
+			// 	animation: 3s tvAnimation linear;
+			// 	animation-fill-mode: forwards;
+			// }
 		}
 		// top: 8%;
 	}
@@ -384,5 +410,18 @@
 	}
 	100% {
 		transform: translateY(-20px);
+	}
+}
+
+@keyframes tvAnimation {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
 	}
 }

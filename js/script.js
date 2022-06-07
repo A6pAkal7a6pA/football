@@ -33,6 +33,21 @@ const storeSlider = new Swiper('.store-slider', {
 });
 storeSlider.init();
 
+const mainSlider = new Swiper('.main__slider', {
+	loop: true,
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false
+	},
+	speed: 1000,
+	slidesPerView: 1,
+	initialSlide: 0,
+	centeredSlides: true,
+	slideToClickedSlide: true,
+	autoHeight: false,
+	grabCursor: true,
+});
+
 const skillsSlider = new Swiper('.skills-slider', {
 	loop: true,
 	autoplay: {
@@ -390,14 +405,21 @@ function enableAnimationFirstScreen() {
 			flag = false;
 			window.scrollTo(0, 0);
 			activateAnimation()
+
 			setTimeout(() => {
 				document.body.classList.remove('disabled')
 				document.querySelector('.header').style.opacity = '1';
+				document.querySelectorAll('.main__tv.animate img').forEach(img => {
+					setTimeout(() => {
+						console.log(img);
+					}, 2000)
+
+					});
 			}, 5000)
 		}
-	
+
 	});
-	
+
 	window.addEventListener('touchmove', e => {
 		if (flag) {
 			flag = false;
@@ -411,10 +433,7 @@ function enableAnimationFirstScreen() {
 	});
 }
 
-// enableAnimationFirstScreen()
-
-
-
+enableAnimationFirstScreen()
 
 document.querySelectorAll('.road__info').forEach(caret => {
 	caret.addEventListener('click', () => {
@@ -486,3 +505,18 @@ ballPosition();
 
 let secretBall = document.querySelector('.secret-ball');
 secretBall.addEventListener('click', () => secretBall.classList.toggle('active'))
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("main__slideshow");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
