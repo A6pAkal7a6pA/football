@@ -35,6 +35,14 @@
 			padding: 0 15px;
 		}
 	}
+	@media (max-width: 500px) {
+		&__title {
+			padding: 0 15px;
+		}
+		&__subtitle {
+			padding: 0 20px;
+		}
+	}
 }
 .button {
 	margin-top: 50px;
@@ -105,8 +113,6 @@
 
 		img {
 			max-width: 100%;
-			border-top-left-radius: 6px;
-			border-top-right-radius: 6px;
 			height: 100%;
 			width: 100%;
 		}
@@ -211,6 +217,7 @@
 		
 		&__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal  {
 			max-width: calc(100% - 190px);
+			height: 10px;
 		}
 		&__navigation {
 			// max-width: calc(100% - 30px);

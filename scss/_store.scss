@@ -76,6 +76,9 @@
 		&__subtitle {
 			padding: 0 15px;
 		}
+		&__soon {
+			padding: 0 30px;
+		}
 	}
 
 }
@@ -232,5 +235,6 @@
 			max-width: calc(100% - 30px);
 			margin: 40px auto 0 auto;
 		}
+
 	}
 }

@@ -279,6 +279,13 @@ function changeHumanColor(color) {
 	document.querySelector('.custom-human__right-hand').src = skins[color].rightHand;
 	document.querySelector('.custom-human__left-hand').src = skins[color].leftHand;
 	document.querySelector('.custom-human__legs').src = skins[color].legs;
+	document.querySelectorAll('.custom__color').forEach(сol => {
+		if (сol.classList.contains(color)) {
+			сol.classList.add('active');
+		} else {
+			сol.classList.remove('active');
+		}
+	});
 }
 
 document.querySelectorAll('.custom__color').forEach((slide) => {
@@ -414,7 +421,7 @@ function enableAnimationFirstScreen() {
 						console.log(img);
 					}, 2000)
 
-					});
+				});
 			}, 5000)
 		}
 
@@ -507,17 +514,16 @@ ballPosition();
 let secretBall = document.querySelector('.secret-ball');
 secretBall.addEventListener('click', () => secretBall.classList.toggle('active'))
 
-var slideIndex = 0;
+let slideIndex = 0;
 carousel();
 
 function carousel() {
-    var i;
-    var x = document.getElementsByClassName("main__slideshow");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1}
-    x[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 3000); // Change image every 2 seconds
+	let x = document.getElementsByClassName("main__slideshow");
+	for (let i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	}
+	slideIndex++;
+	if (slideIndex > x.length) { slideIndex = 1 }
+	x[slideIndex - 1].style.display = "block";
+	setTimeout(carousel, 3000); // Change image every 2 seconds
 }

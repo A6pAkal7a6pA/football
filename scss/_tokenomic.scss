@@ -34,6 +34,7 @@
 	@media (max-width: 500px) {
 		&__inner {
 			padding: 50px 20px;
+			border-radius: 0;
 		}
 		&__content {
 			gap: 30px 0;
@@ -43,6 +44,19 @@
 			flex-direction: row;
 			gap: 8px;
 			max-width: 159.5px;
+		}
+		&__item:nth-child(1) {
+			align-items: flex-start;
+			flex-direction: column;
+		}
+		&__item:nth-child(4) {
+			align-items: flex-start;
+			flex-direction: column;
+		}
+		&__item:last-child {
+			width: 100%;
+			max-width: 100%;
+			justify-content: center;
 		}
 	}
 }
@@ -58,6 +72,9 @@
 		line-height: 29px;
 		color: #4dda36;
 		margin-bottom: 10px;
+		br {
+			display: none;
+		}
 	}
 	&__text {
 		font-weight: 500;
@@ -71,6 +88,11 @@
 		}
 		&__title {
 			margin: 0;
+		}
+		&__title {
+			br {
+				display: block;
+			}
 		}
 	}
 }
