@@ -112,6 +112,12 @@ a {
   height: 10px;
 }
 
+.preload img {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+
 .button {
   width: 100%;
 }
@@ -2812,7 +2818,7 @@ body .possibilities .secret-ball.active .secret-ball__text {
   }
   .custom__variant {
     padding: 10px;
-    min-width: 90px;
+    min-width: 75px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
