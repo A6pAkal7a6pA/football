@@ -449,6 +449,7 @@ a {
 
 .main {
   margin-top: 15px;
+  overflow: hidden;
 }
 
 .main__inner {

@@ -1,87 +1,75 @@
-const storeSlider = new Swiper('.store-slider', {
-	loop: true,
-	autoplay: {
-		delay: 5000,
-		disableOnInteraction: false
-	},
-	speed: 1000,
-	effect: 'coverflow',
-	slidesPerView: 'auto',
-	initialSlide: 0,
-	centeredSlides: true,
-	slideToClickedSlide: true,
-	autoHeight: false,
-	grabCursor: true,
-	spaceBetween: 55,
-	coverflowEffect: {
-		rotate: 0,
-		stretch: 20,
-		depth: 20,
-		modifier: 1,
-		scale: 0.95,
-		slideShadows: false,
-	},
-	pagination: {
-		el: '.store-slider__pagination',
-		type: 'bullets',
-		clickable: true
-	},
-	navigation: {
-		nextEl: '.store-slider__button-next',
-		prevEl: '.store-slider__button-prev',
-	}
-});
-storeSlider.init();
 
-const mainSlider = new Swiper('.main__slider', {
-	loop: true,
-	autoplay: {
-		delay: 5000,
-		disableOnInteraction: false
-	},
-	speed: 1000,
-	slidesPerView: 1,
-	initialSlide: 0,
-	centeredSlides: true,
-	slideToClickedSlide: true,
-	autoHeight: false,
-	grabCursor: true,
-});
+setTimeout(() => {
+	const storeSlider = new Swiper('.store-slider', {
+		loop: true,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false
+		},
+		speed: 1000,
+		effect: 'coverflow',
+		slidesPerView: 'auto',
+		initialSlide: 0,
+		centeredSlides: true,
+		slideToClickedSlide: true,
+		autoHeight: false,
+		grabCursor: true,
+		spaceBetween: 55,
+		coverflowEffect: {
+			rotate: 0,
+			stretch: 20,
+			depth: 20,
+			modifier: 1,
+			scale: 0.95,
+			slideShadows: false,
+		},
+		pagination: {
+			el: '.store-slider__pagination',
+			type: 'bullets',
+			clickable: true
+		},
+		navigation: {
+			nextEl: '.store-slider__button-next',
+			prevEl: '.store-slider__button-prev',
+		}
+	});
+	storeSlider.init();
 
-const skillsSlider = new Swiper('.skills-slider', {
-	loop: true,
-	autoplay: {
-		delay: 5000,
-		disableOnInteraction: false
-	},
-	speed: 1000,
-	effect: 'coverflow',
-	slidesPerView: 'auto',
-	initialSlide: 0,
-	centeredSlides: true,
-	slideToClickedSlide: true,
-	autoHeight: false,
-	grabCursor: true,
-	spaceBetween: 0,
-	coverflowEffect: {
-		rotate: 0,
-		stretch: 135,
-		depth: 100,
-		modifier: 1,
-		scale: 0.95,
-		slideShadows: false,
-	},
-	pagination: {
-		el: '.skills-slider__pagination',
-		type: 'bullets',
-		clickable: true
-	},
-	navigation: {
-		nextEl: '.skills-slider__button-next',
-		prevEl: '.skills-slider__button-prev',
-	}
-});
-skillsSlider.init();
+	const skillsSlider = new Swiper('.skills-slider', {
+		loop: true,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false
+		},
+		speed: 1000,
+		effect: 'coverflow',
+		slidesPerView: 'auto',
+		initialSlide: 0,
+		centeredSlides: true,
+		slideToClickedSlide: true,
+		autoHeight: false,
+		grabCursor: true,
+		spaceBetween: 0,
+		coverflowEffect: {
+			rotate: 0,
+			stretch: 135,
+			depth: 100,
+			modifier: 1,
+			scale: 0.95,
+			slideShadows: false,
+		},
+		pagination: {
+			el: '.skills-slider__pagination',
+			type: 'bullets',
+			clickable: true
+		},
+		navigation: {
+			nextEl: '.skills-slider__button-next',
+			prevEl: '.skills-slider__button-prev',
+		}
+	});
+	skillsSlider.init();
+
 
 const uniqueSlider = new Swiper('.unique-slider', {
 	loop: true,
@@ -122,6 +110,26 @@ const uniqueSlider = new Swiper('.unique-slider', {
 	}
 });
 uniqueSlider.init();
+	
+});
+
+
+const mainSlider = new Swiper('.main__slider', {
+	loop: true,
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false
+	},
+	speed: 1000,
+	slidesPerView: 1,
+	initialSlide: 0,
+	centeredSlides: true,
+	slideToClickedSlide: true,
+	autoHeight: false,
+	grabCursor: true,
+});
+
+
 
 let headerBurger = document.querySelector('.header__burger');
 headerBurger.addEventListener('click', () => {
@@ -422,7 +430,7 @@ function enableAnimationFirstScreen() {
 					}, 2000)
 
 				});
-			}, 3000)
+			}, 0)
 		}
 
 	});
@@ -435,7 +443,7 @@ function enableAnimationFirstScreen() {
 			setTimeout(() => {
 				document.body.classList.remove('disabled')
 				document.querySelector('.header').style.opacity = '1';
-			}, 3000)
+			}, 0)
 		}
 	});
 }
