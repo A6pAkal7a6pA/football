@@ -422,7 +422,7 @@ function enableAnimationFirstScreen() {
 					}, 2000)
 
 				});
-			}, 5000)
+			}, 3000)
 		}
 
 	});
@@ -435,7 +435,7 @@ function enableAnimationFirstScreen() {
 			setTimeout(() => {
 				document.body.classList.remove('disabled')
 				document.querySelector('.header').style.opacity = '1';
-			}, 5000)
+			}, 3000)
 		}
 	});
 }
