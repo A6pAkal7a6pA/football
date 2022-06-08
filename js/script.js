@@ -111,7 +111,7 @@ const uniqueSlider = new Swiper('.unique-slider', {
 });
 uniqueSlider.init();
 	
-});
+}, 1000);
 
 
 const mainSlider = new Swiper('.main__slider', {

@@ -103,6 +103,15 @@ a {
   margin: 0 auto;
 }
 
+.preload {
+  position: absolute;
+  opacity: 0;
+  left: -100px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+}
+
 .button {
   width: 100%;
 }
