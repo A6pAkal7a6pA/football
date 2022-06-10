@@ -2878,6 +2878,12 @@ body .possibilities .secret-ball.active .secret-ball__text {
     -webkit-transform: translateY(-30%);
             transform: translateY(-30%);
   }
+  .custom .swiper-scrollbar {
+    max-width: calc(100% - 30px);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 .skills {
@@ -3462,6 +3468,7 @@ body .possibilities .secret-ball.active .secret-ball__text {
 
 .road-item__text {
   opacity: 0;
+  position: absolute;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -3568,6 +3575,7 @@ body .possibilities .secret-ball.active .secret-ball__text {
   }
   .road__item.active .road-item__text {
     display: block;
+    position: relative;
     opacity: 1;
   }
   .road__item.active .road__info img {

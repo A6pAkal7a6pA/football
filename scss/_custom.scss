@@ -485,6 +485,11 @@
 		&__colors {
 			transform: translateY(-30%);
 		}
+		.swiper-scrollbar {
+			max-width: calc(100% - 30px);
+			left: 50%;
+			transform: translateX(-50%);
+		}
 	}
 
 }
