@@ -464,7 +464,7 @@ let scene = new ScrollMagic.Scene({ triggerElement: ".main", duration: "100%", o
 	.setTween(timeline)
 	.triggerElement(0)
 	.setPin(".main")
-	// .addIndicators({ name: "resize" }) // add indicators (requires plugin)
+	// .addIndicators({ name: "resize" })
 	.addTo(controller);
 
 	
