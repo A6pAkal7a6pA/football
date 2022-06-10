@@ -450,7 +450,7 @@ let controller = new ScrollMagic.Controller();
 let timeline = new TimelineMax();
 // console.log(document.querySelector(".main__catridge").querySelector("::before"));
 
-let catridge = TweenMax.to(".main__catridge", 1, { scale: 0.457, top:"49%", ease: Linear.easeNone, background: "url(../img/epmty-cas.svg) bottom / contain no-repeat" });
+let catridge = TweenMax.to(".main__catridge", 1, { scale: 0.457, top:"49%", ease: Linear.easeNone, background: "url(img/epmty-cas.svg) bottom / contain no-repeat" });
 let project = TweenMax.to(".main__project", 1, { opacity: 0, top:"100%", ease: Linear.easeNone});
 let tv = TweenMax.to('.main__tv', 1, {top: '8%', ease: Linear.easeNone});
 let dendy = TweenMax.to('.main__dendy', 1, {bottom: '7.9131%', ease: Linear.easeNone});
