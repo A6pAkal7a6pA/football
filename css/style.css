@@ -2399,6 +2399,8 @@ body .possibilities .secret-ball.active .secret-ball__text {
 
 .custom__subtitle {
   display: none;
+  opacity: 0;
+  position: absolute;
 }
 
 .custom__platform {
@@ -2743,6 +2745,17 @@ body .possibilities .secret-ball.active .secret-ball__text {
   text-align: center;
 }
 
+.custom .swiper-scrollbar {
+  bottom: 0;
+  background: #f4f4f4;
+  border-radius: 4px;
+}
+
+.custom .swiper-scrollbar-drag {
+  background: #D9D9D9;
+  border-radius: 4px;
+}
+
 @media (max-width: 1330px) {
   .custom__inner {
     -webkit-box-align: center;
@@ -2772,7 +2785,7 @@ body .possibilities .secret-ball.active .secret-ball__text {
     border-radius: 4px;
   }
   .custom .swiper-scrollbar-drag {
-    background: #d9d9d9;
+    background: #D9D9D9;
     border-radius: 4px;
   }
   .custom .head-slider__button-prev,
@@ -2783,6 +2796,8 @@ body .possibilities .secret-ball.active .secret-ball__text {
   .custom__subtitle {
     margin-top: 26px;
     display: block;
+    opacity: 1;
+    position: relative;
     text-align: center;
   }
   .custom__part {
