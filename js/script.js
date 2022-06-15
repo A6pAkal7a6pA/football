@@ -69,14 +69,15 @@ setTimeout(() => {
 	});
 	skillsSlider.init();
 
+});
 
-	const uniqueSlider = new Swiper('.unique-slider', {
-		loop: true,
-		autoplay: {
-			delay: 5000,
-			disableOnInteraction: false
-		},
-		speed: 1000,
+const uniqueSlider = new Swiper('.unique-slider', {
+	loop: true,
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false
+	},
+	speed: 1000,
 		effect: 'coverflow',
 		slidesPerView: 'auto',
 		initialSlide: 0,
@@ -85,6 +86,7 @@ setTimeout(() => {
 		autoHeight: false,
 		grabCursor: true,
 		spaceBetween: 50,
+		wrapperClass: 'unique-slider__wrapper',
 		coverflowEffect: {
 			rotate: 0,
 			stretch: 0,
@@ -108,9 +110,48 @@ setTimeout(() => {
 			}
 		}
 	});
-	uniqueSlider.init();
 
-}, 2000);
+	window.addEventListener('load', () => {
+		const uniqueSlider = new Swiper('.unique-slider', {
+			loop: true,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false
+			},
+			speed: 1000,
+				effect: 'coverflow',
+				slidesPerView: 'auto',
+				initialSlide: 0,
+				centeredSlides: true,
+				slideToClickedSlide: true,
+				autoHeight: false,
+				grabCursor: true,
+				spaceBetween: 50,
+				wrapperClass: 'unique-slider__wrapper',
+				coverflowEffect: {
+					rotate: 0,
+					stretch: 0,
+					depth: 40,
+					modifier: 1,
+					scale: 0.9,
+					slideShadows: false,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'bullets',
+					clickable: true
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				breakpoints: {
+					500: {
+						spaceBetween: 50,
+					}
+				}
+			});
+		}, false);
 
 
 const mainSlider = new Swiper('.main__slider', {
