@@ -1427,7 +1427,7 @@ a {
   font-weight: 600;
   font-size: 24px;
   line-height: 30px;
-  color: #4dda36;
+  color: #fff;
 }
 
 .store__buy {
@@ -1458,24 +1458,16 @@ a {
   padding: 0 15px;
 }
 
-.store__buy img.hover {
+.store__buy img.common {
   display: none;
+}
+
+.store__buy img.hover {
+  display: block;
 }
 
 .store__buy:hover {
   background: #4DDA36;
-}
-
-.store__buy:hover img.common {
-  display: none;
-}
-
-.store__buy:hover img.hover {
-  display: block;
-}
-
-.store__buy:hover .store__text {
-  color: #fff;
 }
 
 @media (max-width: 1300px) {
@@ -2383,6 +2375,13 @@ body .possibilities .secret-ball.active .secret-ball__text {
 @media (max-width: 1090px) {
   .unique-slider__wrapper {
     max-width: 700px;
+  }
+}
+
+@media (max-width: 500px) {
+  .unique-slider__button-prev:hover,
+  .unique-slider__button-next:hover {
+    background: #082148;
   }
 }
 
