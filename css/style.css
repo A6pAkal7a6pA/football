@@ -1354,6 +1354,10 @@ a {
   padding: 60px 0;
 }
 
+.store__inner {
+  margin-bottom: 60px;
+}
+
 .store__title {
   font-family: "Roboto Slab", serif;
   font-weight: 900;
@@ -1417,6 +1421,61 @@ a {
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
+}
+
+.store__text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4dda36;
+}
+
+.store__buy {
+  max-width: 416px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 5px solid #4DDA36;
+  padding: 20px 30px;
+  border-radius: 14px;
+  gap: 5px;
+}
+
+.store__buy-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+}
+
+.store__buy img.hover {
+  display: none;
+}
+
+.store__buy:hover {
+  background: #4DDA36;
+}
+
+.store__buy:hover img.common {
+  display: none;
+}
+
+.store__buy:hover img.hover {
+  display: block;
+}
+
+.store__buy:hover .store__text {
+  color: #fff;
 }
 
 @media (max-width: 1300px) {
@@ -1505,7 +1564,7 @@ a {
 }
 
 .store-slider__button-prev.swiper-button-prev:hover, .store-slider__button-next.swiper-button-next:hover {
-  background: #C9CDD3;
+  background: #c9cdd3;
 }
 
 .store-slider__button-prev {
