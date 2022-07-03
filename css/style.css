@@ -793,7 +793,7 @@ a {
   gap: 60px;
 }
 
-@media (max-height: 885px) {
+@media (max-height: 500px) {
   .main__project-title {
     margin-bottom: 30px;
   }
@@ -1245,6 +1245,10 @@ a {
           flex: 1 0 310px;
   height: 100%;
   height: 150px;
+}
+
+.investor__image img {
+  max-height: 41px;
 }
 
 .investor__text {
