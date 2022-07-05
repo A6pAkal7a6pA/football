@@ -88,7 +88,6 @@
 			}
 		}
 		&.swiper-slide-visible {
-
 			opacity: 0.4;
 		}
 		&:not(.swiper-slide-visible) {
@@ -217,11 +216,16 @@
 	}
 }
 
-@media(max-width: 500px) {
-	.unique-slider__button-prev,
-	.unique-slider__button-next {
+@media (max-width: 500px) {
+	.unique-slider .unique-slider__button-prev,
+	.unique-slider .unique-slider__button-next {
+		user-select: none;
 		&:hover {
+			user-select: none;
 			background: #082148;
+		}
+		&:focus {
+			outline: none;
 		}
 	}
 }

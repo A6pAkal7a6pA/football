@@ -496,7 +496,7 @@ let project = TweenMax.to(".main__project", 1, { opacity: 0, top:"100%", ease: L
 let tv = TweenMax.to('.main__tv', 1, {top: '8%', ease: Linear.easeNone});
 let dendy = TweenMax.to('.main__dendy', 1, {bottom: '7.9131%', ease: Linear.easeNone});
 let yazik = TweenMax.to('.main__yazik', 1, {bottom: '7.9131%', ease: Linear.easeNone});
-let header = TweenMax.to('.header', 0.1, {opacity: 1, ease: Linear.easeNone});
+let header = TweenMax.to('.header', 15, {opacity: 1, ease: Linear.easeNone});
 let scrollDown = TweenMax.to('.main__button', 1, {opacity: 0, ease: Linear.easeNone});
 timeline.add(project, 'first').add(catridge, 'first').add(tv, 'first').add(dendy, 'first').add(yazik, 'first').add(scrollDown, 'first').add(header);
 

@@ -2383,9 +2383,24 @@ body .possibilities .secret-ball.active .secret-ball__text {
 }
 
 @media (max-width: 500px) {
-  .unique-slider__button-prev:hover,
-  .unique-slider__button-next:hover {
+  .unique-slider .unique-slider__button-prev,
+  .unique-slider .unique-slider__button-next {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .unique-slider .unique-slider__button-prev:hover,
+  .unique-slider .unique-slider__button-next:hover {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     background: #082148;
+  }
+  .unique-slider .unique-slider__button-prev:focus,
+  .unique-slider .unique-slider__button-next:focus {
+    outline: none;
   }
 }
 
