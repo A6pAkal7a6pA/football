@@ -16,6 +16,7 @@
 @import "_deligate.scss";
 @import "_tokenomic.scss";
 @import "_roadmap.scss";
+@import "_team.scss";
 @import "_contact.scss";
 
 body {
@@ -96,7 +97,9 @@ body {
 .road {
 	margin-bottom: 140px;
 }
-
+.team {
+	margin-bottom: 140px;
+}
 .store {
 }
 .unique {
@@ -139,6 +142,9 @@ body {
 		margin-bottom: 70px;
 	}
 	.custom {
+		margin-bottom: 70px;
+	}
+	.team {
 		margin-bottom: 70px;
 	}
 }
