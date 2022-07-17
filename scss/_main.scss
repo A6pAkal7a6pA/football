@@ -237,6 +237,7 @@
 			padding: 20px;
 		}
 		&-ceo__item {
+			width: 87px;
 			img {
 				max-width: 100%;
 			}
@@ -291,7 +292,7 @@
 	&__item {
 	}
 }
-@media (max-height: 500px) {
+@media (max-height: 900px) {
 	.main {
 		&__catridge {
 			// top: -7%;
@@ -308,7 +309,13 @@
 			margin-bottom: 30px;
 		}
 		&__project {
-			top: 20%;
+			top: 18%;
+		}
+		&-awards__title {
+			margin-bottom: 15px;
+		}
+		&-ceo__title {
+			margin-bottom: 15px;
 		}
 	}
 }
