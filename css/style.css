@@ -614,6 +614,38 @@ a {
   bottom: 0;
 }
 
+.main-ceo__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-ceo__item:first-child {
+  gap: 7.5px;
+}
+
+.main-ceo__item:first-child img {
+  max-width: 50px;
+}
+
+.main-ceo__item:first-child .ceo-item__text {
+  font-weight: 500;
+  font-size: 11.25px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.main-ceo__item:last-child {
+  gap: 30px;
+}
+
+.main-ceo__item:last-child img {
+  max-width: 109px;
+}
+
 .main__project {
   position: absolute;
   top: 50.75%;
@@ -1729,7 +1761,7 @@ a {
 
 .possibilities__item {
   border-radius: 6px;
-  max-width: 244px;
+  max-width: 420px;
   padding: 20px;
   background: url("../img/skills-bg.png") center/cover no-repeat;
   border: 4px solid rgba(5, 255, 90, 0.1);
@@ -1766,6 +1798,100 @@ a {
           animation-fill-mode: forwards;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
+}
+
+.possibilities__slider {
+  margin-bottom: 60px;
+}
+
+.possibilities .earn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.possibilities .earn__wrapper:first-child .earn__item {
+  margin-bottom: 40px;
+}
+
+.possibilities .earn__wrapper:last-child .earn__item {
+  margin-bottom: 80px;
+}
+
+.possibilities .earn__item {
+  border-radius: 6px;
+  padding: 20px;
+  background: url("../img/skills-bg.png") center/cover no-repeat;
+  border: 4px solid rgba(5, 255, 90, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.possibilities .earn__item .possibilities__logo img {
+  width: 70px;
+}
+
+.possibilities .earn__subitems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 85px;
+}
+
+.possibilities .earn__subitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.possibilities .earn__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.possibilities .earn__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
 }
 
 .possibilities__logo {
@@ -1888,7 +2014,7 @@ a {
   background: url("../img/ball.svg") center/contain no-repeat;
   border-radius: 50%;
   right: -15%;
-  bottom: 0;
+  bottom: 50%;
   z-index: 2;
   cursor: pointer;
 }
@@ -1945,6 +2071,58 @@ a {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     animation-direction: reverse;
+  }
+}
+
+@media (max-width: 768px) {
+  .possibilities {
+    padding-bottom: 35px;
+  }
+  .possibilities .possibilities__item {
+    max-width: 244px;
+  }
+}
+
+@media (max-width: 767px) {
+  .possibilities .earn__wrapper:first-child .earn__subitems {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 35px;
+  }
+  .possibilities .earn__wrapper:first-child .earn__subitem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .possibilities .earn__wrapper:first-child .earn__logo {
+    margin: 0;
+    max-width: 162px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .possibilities .earn__wrapper:first-child .earn__text {
+    text-align: left;
+  }
+  .possibilities .earn__wrapper:last-child .earn__subitems {
+    gap: 15px;
   }
 }
 

@@ -1,9 +1,7 @@
 .main {
 	margin-top: 15px;
 	overflow: hidden;
-	// height: 300vh;
 	&__inner {
-		// padding-top: 80px;
 		position: relative;
 		min-height: 100vh;
 		position: relative;
@@ -24,8 +22,6 @@
 			height: 100%;
 			object-fit: contain;
 			position: absolute;
-			// animation: 15s tvAnimation linear infinite;
-			// opacity: 0;
 		}
 
 		&.animate {
@@ -132,6 +128,30 @@
 	&__catridge-inner {
 	}
 
+	&-ceo__item {
+		display: flex;
+		align-items: center;
+
+		&:first-child {
+			gap: 7.5px;
+			img {
+				max-width: 50px;
+			}
+			.ceo-item__text {
+				font-weight: 500;
+				font-size: 11.25px;
+				line-height: 14px;
+				color: #000000;
+			}
+		}
+		&:last-child {
+			gap: 30px;
+			img {
+				max-width: 109px;
+			}
+		}
+	}
+
 	&__project {
 		position: absolute;
 		top: 50.75%;
@@ -211,7 +231,7 @@
 			gap: 20px;
 		}
 		&__catridge {
-			 top: -16.5005%;
+			top: -16.5005%;
 		}
 	}
 	@media (max-width: 500px) {
@@ -296,8 +316,6 @@
 	.main {
 		&__catridge {
 			// top: -7%;
-
-			
 		}
 		&__project-title {
 			margin-bottom: 30px;
