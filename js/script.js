@@ -487,29 +487,23 @@ function enableAnimationFirstScreen() {
 		}
 	});
 }
-let controller = new ScrollMagic.Controller();
-let timeline = new TimelineMax();
-// console.log(document.querySelector(".main__catridge").querySelector("::before"));
+// let controller = new ScrollMagic.Controller();
+// let timeline = new TimelineMax();
 
-let catridge = TweenMax.to(".main__catridge", 1, { scale: 0.457, top:"49%", ease: Linear.easeNone, background: "url(img/epmty-cas.svg) bottom / contain no-repeat" });
-let project = TweenMax.to(".main__project", 1, { opacity: 0, top:"100%", ease: Linear.easeNone});
-let tv = TweenMax.to('.main__tv', 1, {top: '8%', ease: Linear.easeNone});
-let dendy = TweenMax.to('.main__dendy', 1, {bottom: '7.9131%', ease: Linear.easeNone});
-let yazik = TweenMax.to('.main__yazik', 1, {bottom: '7.9131%', ease: Linear.easeNone});
-let header = TweenMax.to('.header', 1, {opacity: 1, ease: Linear.easeNone});
-let scrollDown = TweenMax.to('.main__button', 1, {opacity: 0, ease: Linear.easeNone});
-timeline.add(project, 'first').add(catridge, 'first').add(tv, 'first').add(dendy, 'first').add(yazik, 'first').add(scrollDown, 'first').add(header);
+// let catridge = TweenMax.to(".main__catridge", 1, { scale: 0.457, top:"49%", ease: Linear.easeNone, background: "url(img/epmty-cas.svg) bottom / contain no-repeat" });
+// let project = TweenMax.to(".main__project", 1, { opacity: 0, top:"100%", ease: Linear.easeNone});
+// let tv = TweenMax.to('.main__tv', 1, {top: '8%', ease: Linear.easeNone});
+// let dendy = TweenMax.to('.main__dendy', 1, {bottom: '7.9131%', ease: Linear.easeNone});
+// let yazik = TweenMax.to('.main__yazik', 1, {bottom: '7.9131%', ease: Linear.easeNone});
+// let header = TweenMax.to('.header', 1, {opacity: 1, ease: Linear.easeNone});
+// let scrollDown = TweenMax.to('.main__button', 1, {opacity: 0, ease: Linear.easeNone});
+// timeline.add(project, 'first').add(catridge, 'first').add(tv, 'first').add(dendy, 'first').add(yazik, 'first').add(scrollDown, 'first').add(header);
 
-// build scene
-let scene = new ScrollMagic.Scene({ triggerElement: ".main", duration: "100%", offset: 0 })
-	.setTween(timeline)
-	.triggerElement(0)
-	.setPin(".main")
-	// .addIndicators({ name: "resize" })
-	.addTo(controller);
-
-	
-// enableAnimationFirstScreen()
+// let scene = new ScrollMagic.Scene({ triggerElement: ".main", duration: "100%", offset: 0 })
+// 	.setTween(timeline)
+// 	.triggerElement(0)
+// 	.setPin(".main")
+// 	.addTo(controller);
 
 document.querySelectorAll('.road__info').forEach(caret => {
 	caret.addEventListener('click', () => {
