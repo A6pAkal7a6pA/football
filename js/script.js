@@ -92,6 +92,47 @@ const uniqueSlider = new Swiper('.unique-slider', {
 		disableOnInteraction: false
 	},
 	speed: 1000,
+	effect: 'coverflow',
+	slidesPerView: 'auto',
+	initialSlide: 0,
+	centeredSlides: true,
+	slideToClickedSlide: true,
+	autoHeight: false,
+	grabCursor: true,
+	spaceBetween: 50,
+	wrapperClass: 'unique-slider__wrapper',
+	coverflowEffect: {
+		rotate: 0,
+		stretch: 0,
+		depth: 40,
+		modifier: 1,
+		scale: 0.9,
+		slideShadows: false,
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	breakpoints: {
+		500: {
+			spaceBetween: 50,
+		}
+	}
+});
+
+window.addEventListener('load', () => {
+	const uniqueSlider = new Swiper('.unique-slider', {
+		loop: true,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false
+		},
+		speed: 1000,
 		effect: 'coverflow',
 		slidesPerView: 'auto',
 		initialSlide: 0,
@@ -124,48 +165,7 @@ const uniqueSlider = new Swiper('.unique-slider', {
 			}
 		}
 	});
-
-	window.addEventListener('load', () => {
-		const uniqueSlider = new Swiper('.unique-slider', {
-			loop: true,
-			autoplay: {
-				delay: 5000,
-				disableOnInteraction: false
-			},
-			speed: 1000,
-				effect: 'coverflow',
-				slidesPerView: 'auto',
-				initialSlide: 0,
-				centeredSlides: true,
-				slideToClickedSlide: true,
-				autoHeight: false,
-				grabCursor: true,
-				spaceBetween: 50,
-				wrapperClass: 'unique-slider__wrapper',
-				coverflowEffect: {
-					rotate: 0,
-					stretch: 0,
-					depth: 40,
-					modifier: 1,
-					scale: 0.9,
-					slideShadows: false,
-				},
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'bullets',
-					clickable: true
-				},
-				navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev',
-				},
-				breakpoints: {
-					500: {
-						spaceBetween: 50,
-					}
-				}
-			});
-		}, false);
+}, false);
 
 
 const mainSlider = new Swiper('.main__slider', {
@@ -271,8 +271,6 @@ document.querySelectorAll('.possibilities__item').forEach(item => {
 
 
 });
-
-
 
 function setUpConfiguration() {
 	let firstChildRoadItem = document.querySelector('.road-top .road__item:first-child');
@@ -501,23 +499,56 @@ function enableAnimationFirstScreen() {
 		}
 	});
 }
-// let controller = new ScrollMagic.Controller();
-// let timeline = new TimelineMax();
+let controller = new ScrollMagic.Controller();
+let timeline = new TimelineMax();
 
-// let catridge = TweenMax.to(".main__catridge", 1, { scale: 0.457, top:"49%", ease: Linear.easeNone, background: "url(img/epmty-cas.svg) bottom / contain no-repeat" });
-// let project = TweenMax.to(".main__project", 1, { opacity: 0, top:"100%", ease: Linear.easeNone});
-// let tv = TweenMax.to('.main__tv', 1, {top: '8%', ease: Linear.easeNone});
-// let dendy = TweenMax.to('.main__dendy', 1, {bottom: '7.9131%', ease: Linear.easeNone});
-// let yazik = TweenMax.to('.main__yazik', 1, {bottom: '7.9131%', ease: Linear.easeNone});
-// let header = TweenMax.to('.header', 1, {opacity: 1, ease: Linear.easeNone});
-// let scrollDown = TweenMax.to('.main__button', 1, {opacity: 0, ease: Linear.easeNone});
-// timeline.add(project, 'first').add(catridge, 'first').add(tv, 'first').add(dendy, 'first').add(yazik, 'first').add(scrollDown, 'first').add(header);
+let catridge = TweenMax.to(".main__catridge", 1, { scale: 0.6723, top: "51.42%", ease: Linear.easeNone, background: "url(img/epmty-cas.svg) bottom / contain no-repeat" });
+let project = TweenMax.to(".main__project", 1, { opacity: 0, top: "100%", ease: Linear.easeNone });
+let tv = TweenMax.to('.main__tv', 1, { top: '8.7038%', ease: Linear.easeNone });
+let dendy = TweenMax.to('.main__dendy', 1, { bottom: '-9.2593%', ease: Linear.easeNone });
+let yazik = TweenMax.to('.main__yazik', 1, { bottom: '-9.2593%', ease: Linear.easeNone });
+let header = TweenMax.to('.header', 1, { opacity: 1, ease: Linear.easeNone });
+let scrollDown = TweenMax.to('.main__button', 1, { opacity: 0, ease: Linear.easeNone });
+let leftMap = TweenMax.to('.main__left-map', 1, {top: '4.2596%', left: '7.7085%', ease: Linear.easeNone});
+let rightMap = TweenMax.to('.main__right-map', 1, {top: '4.2596%', right: '8.4378%', ease: Linear.easeNone});
+let cat = TweenMax.to('.main__cat', 1, {bottom: '0', left: '-8.6459%', ease: Linear.easeNone});
+let cube = TweenMax.to('.main__cube', 1, {bottom: '0', right: '-8.6459%', ease: Linear.easeNone});
+let leftFlower = TweenMax.to('.main__left-flower', 1, {bottom: '10.8334%', left: '-4.1667%', ease: Linear.easeNone});
+let rightFlower = TweenMax.to('.main__right-flower', 1, {bottom: '10.8334%', right: '-4.1667%', ease: Linear.easeNone});
+let books = TweenMax.to('.main__books', 1, {bottom: '8.6112%', right: '13.0209%', ease: Linear.easeNone});
+let cassets = TweenMax.to('.main__cassets', 1, {bottom: '8.6112%', left: '13.0209%', ease: Linear.easeNone});
+let boots = TweenMax.to('.main__boots', 1, {bottom: '26.2963%', right: '-7.1355%', ease: Linear.easeNone});
+let joystick = TweenMax.to('.main__joystick', 1, {bottom: '0', left: '50%', ease: Linear.easeNone});
+let stat = TweenMax.to('.main__stat', 1, {top: '1.1112%', left: '50%', ease: Linear.easeNone});
+let mainInner = TweenMax.to('.main__inner', 0.5, {background: 'transparent', ease: Linear.easeNone});
 
-// let scene = new ScrollMagic.Scene({ triggerElement: ".main", duration: "100%", offset: 0 })
-// 	.setTween(timeline)
-// 	.triggerElement(0)
-// 	.setPin(".main")
-// 	.addTo(controller);
+
+timeline
+.add(project, 'first')
+.add(catridge, 'first')
+.add(tv, 'first')
+.add(dendy, 'first')
+.add(yazik, 'first')
+.add(scrollDown, 'first')
+.add(leftMap, 'first')
+.add(rightMap, 'first')
+.add(cat, 'first')
+.add(cube, 'first')
+.add(books, 'first')
+.add(cassets, 'first')
+.add(leftFlower, 'first')
+.add(rightFlower, 'first')
+.add(boots, 'first')
+.add(joystick, 'first')
+.add(stat, 'first')
+.add(mainInner, 'first')
+.add(header);
+
+let scene = new ScrollMagic.Scene({ triggerElement: ".main", duration: "100%", offset: 0 })
+	.setTween(timeline)
+	.triggerElement(0)
+	.setPin(".main")
+	.addTo(controller);
 
 document.querySelectorAll('.road__info').forEach(caret => {
 	caret.addEventListener('click', () => {

@@ -496,6 +496,7 @@ a {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  background: #fff;
   position: relative;
 }
 
@@ -509,6 +510,104 @@ a {
      object-fit: contain;
   width: 100%;
   height: 100%;
+}
+
+.main__left-map {
+  top: -200%;
+  left: 7.7085%;
+  width: 19.1146%;
+  height: 52.315%;
+  min-width: 131.53px;
+  min-height: 202.5px;
+}
+
+.main__right-map {
+  top: -200%;
+  right: 8.4378%;
+  width: 19.1146%;
+  height: 52.315%;
+  min-width: 131.53px;
+  min-height: 202.5px;
+}
+
+.main__cat {
+  width: 34.2188%;
+  height: 50.926%;
+  bottom: -200%;
+  left: -8.6459%;
+  z-index: 5;
+}
+
+.main__cube {
+  width: 34.2188%;
+  height: 50.926%;
+  right: -8.6459%;
+  bottom: -200%;
+  z-index: 4;
+}
+
+.main__left-flower {
+  width: 30.1563%;
+  height: 47.5926%;
+  left: -4.1667%;
+  bottom: -200%;
+  z-index: 4;
+  min-width: 239.94px;
+  min-height: 213px;
+}
+
+.main__right-flower {
+  width: 30.1563%;
+  height: 47.5926%;
+  right: -4.1667%;
+  bottom: -200%;
+  z-index: 4;
+  min-width: 239.94px;
+  min-height: 213px;
+}
+
+.main__books {
+  width: 24.1146%;
+  height: 23.7038%;
+  bottom: -200%;
+  right: 13.0209%;
+  z-index: 3;
+}
+
+.main__cassets {
+  width: 24.1146%;
+  height: 23.7038%;
+  bottom: -200%;
+  left: 13.0209%;
+  z-index: 3;
+}
+
+.main__boots {
+  width: 25.2084%;
+  height: 15.6482%;
+  right: -7.1355%;
+  bottom: -200%;
+  z-index: 3;
+}
+
+.main__joystick {
+  width: 29.8959%;
+  height: 13.3334%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  bottom: -200%;
+  z-index: 7;
+}
+
+.main__stat {
+  top: -200%;
+  width: 3.837%;
+  height: 7.6389%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
 }
 
 .main__catridge {
@@ -675,6 +774,7 @@ a {
   z-index: 5;
   opacity: 1;
   min-width: 279px;
+  z-index: 5;
 }
 
 .main__yazik.active {
@@ -1159,189 +1259,13 @@ a {
   }
 }
 
-.main__catridge {
-  -webkit-transform: translateX(-50%) scale(0.6723);
-          transform: translateX(-50%) scale(0.6723);
-  top: 51.42%;
-  background: url("../img/epmty-cas.svg") bottom/contain no-repeat;
-}
-
-.main__tv {
-  top: 8.7038%;
-}
-
-.main__project {
-  opacity: 0;
-}
-
-.main__button {
-  opacity: 0;
-}
-
-.main__dendy {
-  bottom: -9.2593%;
-}
-
-.main__left-map {
-  top: 4.2596%;
-  left: 7.7085%;
-  width: 19.1146%;
-  height: 52.315%;
-  min-width: 131.53px;
-  min-height: 202.5px;
-}
-
-.main__right-map {
-  top: 4.2596%;
-  right: 8.4378%;
-  width: 19.1146%;
-  height: 52.315%;
-  min-width: 131.53px;
-  min-height: 202.5px;
-}
-
-.main__cat {
-  width: 34.2188%;
-  height: 50.926%;
-  bottom: 0;
-  left: -8.6459%;
-  z-index: 5;
-}
-
-.main__left-flower {
-  width: 30.1563%;
-  height: 47.5926%;
-  left: -4.1667%;
-  bottom: 10.8334%;
-  z-index: 4;
-  min-width: 239.94px;
-  min-height: 213px;
-}
-
-.main__right-flower {
-  width: 30.1563%;
-  height: 47.5926%;
-  right: -4.1667%;
-  bottom: 10.8334%;
-  z-index: 4;
-  min-width: 239.94px;
-  min-height: 213px;
-}
-
-.main__cube {
-  width: 34.2188%;
-  height: 50.926%;
-  right: -8.6459%;
-  bottom: 0;
-  z-index: 4;
-}
-
-.main__books {
-  width: 24.1146%;
-  height: 23.7038%;
-  bottom: 8.6112%;
-  right: 13.0209%;
-  z-index: 3;
-}
-
-.main__cassets {
-  width: 24.1146%;
-  height: 23.7038%;
-  bottom: 8.6112%;
-  left: 13.0209%;
-  z-index: 3;
-}
-
-.main__boots {
-  width: 25.2084%;
-  height: 15.6482%;
-  right: -7.1355%;
-  bottom: 26.2963%;
-  z-index: 3;
-}
-
-.main__joystick {
-  width: 29.8959%;
-  height: 13.3334%;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  bottom: 0;
-  z-index: 7;
-}
-
-.main__stat {
-  top: 1.1112%;
-  width: 3.837%;
-  height: 7.6389%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  display: none;
-}
-
-.main__yazik {
-  bottom: -9.2593%;
-  z-index: 5;
-}
-
 @media (max-width: 1650px) {
-  .main__inner {
-    width: 1650px;
-  }
-  .main__tv {
-    top: 14.7038%;
-    height: 54.6038%;
-  }
-  .main__project {
-    opacity: 0;
-  }
-  .main__button {
-    opacity: 0;
-  }
-  .main__dendy {
-    bottom: -9.2593%;
-  }
-  .main__left-map {
-    top: 7%;
-    left: 7.7085%;
-    width: 19.1146%;
-    height: 52.315%;
-    min-width: 131.53px;
-    min-height: 202.5px;
-  }
-  .main__right-map {
-    top: 7%;
-    right: 8.4378%;
-    width: 19.1146%;
-    height: 52.315%;
-    min-width: 131.53px;
-    min-height: 202.5px;
-  }
   .main__cat {
     width: 34.2188%;
     height: 50.926%;
     bottom: -30px;
     left: -8.6459%;
     z-index: 5;
-  }
-  .main__left-flower {
-    width: 30.1563%;
-    height: 47.5926%;
-    left: -4.1667%;
-    bottom: 10.8334%;
-    z-index: 4;
-    min-width: 239.94px;
-    min-height: 213px;
-  }
-  .main__right-flower {
-    width: 30.1563%;
-    height: 47.5926%;
-    right: -4.1667%;
-    bottom: 10.8334%;
-    z-index: 4;
-    min-width: 239.94px;
-    min-height: 213px;
   }
   .main__cube {
     width: 34.2188%;
@@ -1350,20 +1274,6 @@ a {
     bottom: -30px;
     z-index: 4;
   }
-  .main__books {
-    width: 24.1146%;
-    height: 23.7038%;
-    bottom: 8.6112%;
-    right: 13.0209%;
-    z-index: 3;
-  }
-  .main__cassets {
-    width: 24.1146%;
-    height: 23.7038%;
-    bottom: 8.6112%;
-    left: 13.0209%;
-    z-index: 3;
-  }
   .main__boots {
     width: 25.2084%;
     height: 15.6482%;
@@ -1371,31 +1281,9 @@ a {
     bottom: 26.2963%;
     z-index: 3;
   }
-  .main__joystick {
-    width: 29.8959%;
-    height: 13.3334%;
-    left: 50%;
-    -webkit-transform: translate(-50%);
-            transform: translate(-50%);
-    bottom: 0;
-    z-index: 7;
-  }
-  .main__stat {
-    top: 1.1112%;
-    width: 3.837%;
-    height: 7.6389%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    display: none;
-  }
-  .main__yazik {
-    bottom: -9.2593%;
-    z-index: 5;
-  }
 }
 
-@media (max-width: 1650px) {
+@media (max-width: 1600px) {
   .main__inner {
     width: 1650px;
   }
@@ -1431,31 +1319,6 @@ a {
     min-width: 131.53px;
     min-height: 202.5px;
   }
-  .main__cat {
-    width: 34.2188%;
-    height: 50.926%;
-    bottom: -30px;
-    left: -8.6459%;
-    z-index: 6;
-  }
-  .main__left-flower {
-    width: 30.1563%;
-    height: 47.5926%;
-    left: 0;
-    bottom: 10.8334%;
-    z-index: 4;
-    min-width: 239.94px;
-    min-height: 213px;
-  }
-  .main__right-flower {
-    width: 30.1563%;
-    height: 47.5926%;
-    right: 0;
-    bottom: 10.8334%;
-    z-index: 4;
-    min-width: 239.94px;
-    min-height: 213px;
-  }
   .main__cube {
     width: 34.2188%;
     height: 50.926%;
@@ -1476,13 +1339,6 @@ a {
     bottom: 8.6112%;
     left: 15%;
     z-index: 5;
-  }
-  .main__boots {
-    width: 25.2084%;
-    height: 15.6482%;
-    right: -7.1355%;
-    bottom: 26.2963%;
-    z-index: 3;
   }
   .main__joystick {
     width: 29.8959%;
@@ -1509,16 +1365,6 @@ a {
 }
 
 @media (max-width: 1536px) {
-  .main__inner {
-    width: 1650px;
-  }
-  .main__tv {
-    top: 14.7038%;
-    height: 54.6038%;
-  }
-  .main__tv-wrapper {
-    padding: 24px 0;
-  }
   .main__project {
     opacity: 0;
   }
@@ -1576,36 +1422,6 @@ a {
     bottom: -30px;
     z-index: 6;
   }
-  .main__books {
-    width: 24.1146%;
-    height: 23.7038%;
-    bottom: 8.6112%;
-    right: 15%;
-    z-index: 5;
-  }
-  .main__cassets {
-    width: 24.1146%;
-    height: 23.7038%;
-    bottom: 8.6112%;
-    left: 15%;
-    z-index: 5;
-  }
-  .main__boots {
-    width: 25.2084%;
-    height: 15.6482%;
-    right: -7.1355%;
-    bottom: 26.2963%;
-    z-index: 3;
-  }
-  .main__joystick {
-    width: 29.8959%;
-    height: 13.3334%;
-    left: 50%;
-    -webkit-transform: translate(-50%);
-            transform: translate(-50%);
-    bottom: 0;
-    z-index: 7;
-  }
   .main__stat {
     top: 7.1112%;
     width: 3.837%;
@@ -1615,23 +1431,9 @@ a {
             transform: translateX(-50%);
     display: block;
   }
-  .main__yazik {
-    bottom: -9.2593%;
-    z-index: 5;
-  }
 }
 
 @media (max-width: 1440px) and (max-height: 900px) {
-  .main__inner {
-    width: 1650px;
-  }
-  .main__tv {
-    top: 14.7038%;
-    height: 54.6038%;
-  }
-  .main__tv-wrapper {
-    padding: 24px 0;
-  }
   .main__project {
     opacity: 0;
   }
@@ -1664,44 +1466,12 @@ a {
     left: -6.6459%;
     z-index: 6;
   }
-  .main__left-flower {
-    width: 30.1563%;
-    height: 47.5926%;
-    left: 0;
-    bottom: 10.8334%;
-    z-index: 4;
-    min-width: 239.94px;
-    min-height: 213px;
-  }
-  .main__right-flower {
-    width: 30.1563%;
-    height: 47.5926%;
-    right: 0;
-    bottom: 10.8334%;
-    z-index: 4;
-    min-width: 239.94px;
-    min-height: 213px;
-  }
   .main__cube {
     width: 34.2188%;
     height: 50.926%;
     right: -6.6459%;
     bottom: -30px;
     z-index: 6;
-  }
-  .main__books {
-    width: 24.1146%;
-    height: 23.7038%;
-    bottom: 8.6112%;
-    right: 15%;
-    z-index: 5;
-  }
-  .main__cassets {
-    width: 24.1146%;
-    height: 23.7038%;
-    bottom: 8.6112%;
-    left: 15%;
-    z-index: 5;
   }
   .main__boots {
     width: 25.2084%;
@@ -1710,41 +1480,9 @@ a {
     bottom: 26.2963%;
     z-index: 3;
   }
-  .main__joystick {
-    width: 29.8959%;
-    height: 13.3334%;
-    left: 50%;
-    -webkit-transform: translate(-50%);
-            transform: translate(-50%);
-    bottom: 0;
-    z-index: 7;
-  }
-  .main__stat {
-    top: 7.1112%;
-    width: 3.837%;
-    height: 7.6389%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    display: block;
-  }
-  .main__yazik {
-    bottom: -9.2593%;
-    z-index: 5;
-  }
 }
 
 @media (max-width: 1366px) and (max-height: 768px) {
-  .main__inner {
-    width: 1650px;
-  }
-  .main__tv {
-    top: 14.7038%;
-    height: 54.6038%;
-  }
-  .main__tv-wrapper {
-    padding: 24px 0;
-  }
   .main__project {
     opacity: 0;
   }
@@ -1825,24 +1563,6 @@ a {
     bottom: 26.2963%;
     z-index: 3;
   }
-  .main__joystick {
-    width: 29.8959%;
-    height: 13.3334%;
-    left: 50%;
-    -webkit-transform: translate(-50%);
-            transform: translate(-50%);
-    bottom: 0;
-    z-index: 7;
-  }
-  .main__stat {
-    top: 7.1112%;
-    width: 3.837%;
-    height: 7.6389%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    display: block;
-  }
   .main__yazik {
     width: 34.1459%;
     height: 33.2593%;
@@ -1857,26 +1577,11 @@ a {
 }
 
 @media (max-width: 1280px) and (max-height: 720px) {
-  .main__inner {
-    width: 1650px;
-  }
-  .main__tv {
-    top: 14.7038%;
-    height: 54.6038%;
-  }
-  .main__tv-wrapper {
-    padding: 24px 0;
-  }
   .main__project {
     opacity: 0;
   }
   .main__button {
     opacity: 0;
-  }
-  .main__dendy {
-    width: 34.1459%;
-    height: 33.2593%;
-    bottom: -9.2593%;
   }
   .main__left-map {
     top: 11%;
@@ -1947,30 +1652,6 @@ a {
     bottom: 26.2963%;
     z-index: 3;
   }
-  .main__joystick {
-    width: 29.8959%;
-    height: 13.3334%;
-    left: 50%;
-    -webkit-transform: translate(-50%);
-            transform: translate(-50%);
-    bottom: 0;
-    z-index: 7;
-  }
-  .main__stat {
-    top: 7.1112%;
-    width: 3.837%;
-    height: 7.6389%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    display: block;
-  }
-  .main__yazik {
-    width: 34.1459%;
-    height: 33.2593%;
-    bottom: -9.2593%;
-    z-index: 5;
-  }
   .main__catridge {
     -webkit-transform: translateX(-50%) scale(0.55);
             transform: translateX(-50%) scale(0.55);
@@ -1979,26 +1660,11 @@ a {
 }
 
 @media (max-width: 1024px) and (max-height: 768px) {
-  .main__inner {
-    width: 1650px;
-  }
-  .main__tv {
-    top: 14.7038%;
-    height: 54.6038%;
-  }
-  .main__tv-wrapper {
-    padding: 24px 0;
-  }
   .main__project {
     opacity: 0;
   }
   .main__button {
     opacity: 0;
-  }
-  .main__dendy {
-    width: 34.1459%;
-    height: 33.2593%;
-    bottom: -9.2593%;
   }
   .main__left-map {
     top: 11%;
@@ -2016,27 +1682,83 @@ a {
     min-width: 131.53px;
     min-height: 202.5px;
   }
+  .main__catridge {
+    -webkit-transform: translateX(-50%) scale(0.55);
+            transform: translateX(-50%) scale(0.55);
+    top: 58.4%;
+  }
+}
+
+@media (max-width: 768px) and (max-height: 1024px) {
+  .main::before {
+    background: radial-gradient(47.09% 74.22% at 50% 92.71%, #473b69 0%, #14101f 100%);
+    height: 43.47%;
+    top: 0;
+  }
+  .main::after {
+    background: radial-gradient(47.09% 74.22% at 50% 92.71%, #7868a5 0%, #504470 100%);
+    height: 56.53%;
+    bottom: 0;
+  }
+  .main__inner {
+    width: 1650px;
+  }
+  .main__tv {
+    top: 26%;
+    width: 37.82%;
+    height: 38.3%;
+  }
+  .main__tv-wrapper {
+    padding: 24px 0;
+  }
+  .main__project {
+    opacity: 0;
+  }
+  .main__button {
+    opacity: 0;
+  }
+  .main__dendy {
+    width: 43.05%;
+    height: 31.65%;
+    bottom: -9.2593%;
+  }
+  .main__left-map {
+    top: 11%;
+    left: 21%;
+    width: 17.6%;
+    height: 41.5%;
+    min-width: 131.53px;
+    min-height: 202.5px;
+  }
+  .main__right-map {
+    top: 11%;
+    right: 21%;
+    width: 17.6%;
+    height: 41.5%;
+    min-width: 131.53px;
+    min-height: 202.5px;
+  }
   .main__cat {
     width: 34.2188%;
     height: 50.926%;
     bottom: -30px;
-    left: 1.3541%;
+    left: -10.6459%;
     z-index: 6;
   }
   .main__left-flower {
-    width: 30.1563%;
-    height: 47.5926%;
-    left: 115px;
-    bottom: 10.8334%;
+    width: 20.3%;
+    height: 29.1%;
+    left: 240px;
+    bottom: 23.8334%;
     z-index: 4;
     min-width: 239.94px;
     min-height: 213px;
   }
   .main__right-flower {
-    width: 30.1563%;
-    height: 47.5926%;
-    right: 115px;
-    bottom: 10.8334%;
+    width: 20.3%;
+    height: 29.1%;
+    right: 240px;
+    bottom: 23.8334%;
     z-index: 4;
     min-width: 239.94px;
     min-height: 213px;
@@ -2044,7 +1766,7 @@ a {
   .main__cube {
     width: 34.2188%;
     height: 50.926%;
-    right: 1.3541%;
+    right: -4.6459%;
     bottom: -30px;
     z-index: 6;
   }
@@ -2052,26 +1774,19 @@ a {
     width: 24.1146%;
     height: 23.7038%;
     bottom: 8.6112%;
-    right: 21%;
+    right: 14%;
     z-index: 5;
   }
   .main__cassets {
     width: 24.1146%;
     height: 23.7038%;
     bottom: 8.6112%;
-    left: 21%;
+    left: 14%;
     z-index: 5;
   }
-  .main__boots {
-    width: 25.2084%;
-    height: 15.6482%;
-    right: 2.8645%;
-    bottom: 26.2963%;
-    z-index: 3;
-  }
   .main__joystick {
-    width: 29.8959%;
-    height: 13.3334%;
+    width: 34.8%;
+    height: 14.1%;
     left: 50%;
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
@@ -2079,7 +1794,7 @@ a {
     z-index: 7;
   }
   .main__stat {
-    top: 7.1112%;
+    top: 18.8%;
     width: 3.837%;
     height: 7.6389%;
     left: 50%;
@@ -2088,15 +1803,306 @@ a {
     display: block;
   }
   .main__yazik {
-    width: 34.1459%;
-    height: 33.2593%;
+    width: 43.05%;
+    height: 31.65%;
     bottom: -9.2593%;
     z-index: 5;
   }
   .main__catridge {
     -webkit-transform: translateX(-50%) scale(0.55);
             transform: translateX(-50%) scale(0.55);
-    top: 58.4%;
+    top: 60%;
+  }
+}
+
+@media (max-width: 500px) and (max-height: 1024px) {
+  .main::before {
+    background: radial-gradient(47.09% 74.22% at 50% 92.71%, #473b69 0%, #14101f 100%);
+    height: 43.47%;
+    top: 0;
+  }
+  .main::after {
+    background: radial-gradient(47.09% 74.22% at 50% 92.71%, #7868a5 0%, #504470 100%);
+    height: 56.53%;
+    bottom: 0;
+  }
+  .main__inner {
+    width: 1650px;
+  }
+  .main__tv {
+    top: 34%;
+    width: 317px;
+    height: 199.33px;
+  }
+  .main__tv-wrapper {
+    padding: 24px 0;
+  }
+  .main__project {
+    opacity: 0;
+  }
+  .main__button {
+    opacity: 0;
+  }
+  .main__dendy {
+    width: 28.7%;
+    height: 24.8%;
+    bottom: -3.2593%;
+  }
+  .main__left-map {
+    top: 11%;
+    left: 36%;
+    width: 6%;
+    height: 17.5%;
+    min-width: 131.53px;
+    min-height: 202.5px;
+  }
+  .main__right-map {
+    top: 11%;
+    right: 36%;
+    width: 6%;
+    height: 17.5%;
+    min-width: 131.53px;
+    min-height: 202.5px;
+  }
+  .main__left-flower {
+    width: 14.3%;
+    height: 20.1%;
+    left: 487px;
+    bottom: 35.8334%;
+    z-index: 4;
+    min-width: 239.94px;
+    min-height: 213px;
+  }
+  .main__right-flower {
+    width: 14.3%;
+    height: 20.1%;
+    right: 487px;
+    bottom: 35.8334%;
+    z-index: 4;
+    min-width: 239.94px;
+    min-height: 213px;
+  }
+  .main__books {
+    width: 14%;
+    height: 12.5%;
+    bottom: 26.6112%;
+    right: 29%;
+    z-index: 5;
+  }
+  .main__cassets {
+    width: 14%;
+    height: 12.5%;
+    bottom: 26.6112%;
+    left: 29%;
+    z-index: 5;
+  }
+  .main__joystick {
+    width: 20.85%;
+    height: 8.4%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    bottom: 0;
+    z-index: 7;
+  }
+  .main__stat {
+    top: 26.5%;
+    width: 3.837%;
+    height: 7.6389%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: block;
+  }
+  .main__yazik {
+    width: 28.7%;
+    height: 24.8%;
+    bottom: -3.2593%;
+    z-index: 5;
+  }
+  .main__catridge {
+    -webkit-transform: translateX(-50%) scale(0.55);
+            transform: translateX(-50%) scale(0.55);
+    top: 60%;
+  }
+}
+
+@media (max-width: 425px) and (max-height: 1024px) {
+  .main::before {
+    background: radial-gradient(47.09% 74.22% at 50% 92.71%, #473b69 0%, #14101f 100%);
+    height: 43.47%;
+    top: 0;
+  }
+  .main::after {
+    background: radial-gradient(47.09% 74.22% at 50% 92.71%, #7868a5 0%, #504470 100%);
+    height: 56.53%;
+    bottom: 0;
+  }
+  .main__inner {
+    width: 1650px;
+  }
+  .main__tv {
+    top: 34%;
+    width: 317px;
+    height: 199.33px;
+  }
+  .main__tv-wrapper {
+    padding: 24px 0;
+  }
+  .main__project {
+    opacity: 0;
+  }
+  .main__button {
+    opacity: 0;
+  }
+  .main__dendy {
+    width: 28.7%;
+    height: 24.8%;
+    left: 51.5%;
+    bottom: -3.2593%;
+  }
+  .main__left-map {
+    top: 11%;
+    left: 36%;
+    width: 6%;
+    height: 17.5%;
+    min-width: 131.53px;
+    min-height: 202.5px;
+  }
+  .main__right-map {
+    top: 11%;
+    right: 36%;
+    width: 6%;
+    height: 17.5%;
+    min-width: 131.53px;
+    min-height: 202.5px;
+  }
+  .main__yazik {
+    width: 28.7%;
+    height: 24.8%;
+    bottom: -3.2593%;
+    z-index: 5;
+  }
+  .main__catridge {
+    -webkit-transform: translateX(-50%) scale(0.55);
+            transform: translateX(-50%) scale(0.55);
+    top: 60%;
+  }
+}
+
+@media (max-width: 414px) and (max-height: 1024px) {
+  __dendy {
+    width: 28.7%;
+    height: 24.8%;
+    left: 51.5%;
+    bottom: -3.2593%;
+  }
+  __yazik {
+    width: 28.7%;
+    height: 24.8%;
+    bottom: -3.2593%;
+    z-index: 5;
+  }
+}
+
+@media (max-width: 390px) and (max-height: 1024px) {
+  .main__dendy {
+    width: 28.7%;
+    height: 24.8%;
+    left: 52.5%;
+    bottom: -3.2593%;
+  }
+  .main__yazik {
+    width: 28.7%;
+    height: 24.8%;
+    bottom: -3.2593%;
+    z-index: 5;
+  }
+}
+
+@media (max-width: 375px) and (max-height: 680px) {
+  .main::before {
+    background: radial-gradient(47.09% 74.22% at 50% 92.71%, #473b69 0%, #14101f 100%);
+    height: 43.47%;
+    top: 0;
+  }
+  .main::after {
+    background: radial-gradient(47.09% 74.22% at 50% 92.71%, #7868a5 0%, #504470 100%);
+    height: 56.53%;
+    bottom: 0;
+  }
+  .main__inner {
+    width: 1650px;
+  }
+  .main__tv {
+    top: 20%;
+    width: 317px;
+    height: 199.33px;
+  }
+  .main__tv-wrapper {
+    padding: 24px 0;
+  }
+  .main__project {
+    opacity: 0;
+  }
+  .main__button {
+    opacity: 0;
+  }
+  .main__dendy {
+    width: 33.7%;
+    height: 32.8%;
+    left: 54.5%;
+    bottom: -3.2593%;
+  }
+  .main__left-map {
+    top: 11%;
+    left: 36%;
+    width: 6%;
+    height: 17.5%;
+    min-width: 131.53px;
+    min-height: 202.5px;
+  }
+  .main__right-map {
+    top: 11%;
+    right: 36%;
+    width: 6%;
+    height: 17.5%;
+    min-width: 131.53px;
+    min-height: 202.5px;
+  }
+  .main__books {
+    width: 14%;
+    height: 12.5%;
+    bottom: 26.6112%;
+    right: 33%;
+    z-index: 5;
+  }
+  .main__cassets {
+    width: 14%;
+    height: 12.5%;
+    bottom: 26.6112%;
+    left: 33%;
+    z-index: 5;
+  }
+  .main__joystick {
+    width: 24.85%;
+    height: 11.4%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    bottom: 0;
+    z-index: 7;
+  }
+  .main__yazik {
+    width: 33.7%;
+    height: 32.8%;
+    bottom: -3.2593%;
+    z-index: 5;
+  }
+  .main__catridge {
+    -webkit-transform: translateX(-50%) scale(0.55);
+            transform: translateX(-50%) scale(0.55);
+    top: 52.8%;
   }
 }
 
