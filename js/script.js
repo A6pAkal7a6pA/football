@@ -509,40 +509,137 @@ let dendy = TweenMax.to('.main__dendy', 1, { bottom: '-9.2593%', ease: Linear.ea
 let yazik = TweenMax.to('.main__yazik', 1, { bottom: '-9.2593%', ease: Linear.easeNone });
 let header = TweenMax.to('.header', 1, { opacity: 1, ease: Linear.easeNone });
 let scrollDown = TweenMax.to('.main__button', 1, { opacity: 0, ease: Linear.easeNone });
-let leftMap = TweenMax.to('.main__left-map', 1, {top: '4.2596%', left: '7.7085%', ease: Linear.easeNone});
-let rightMap = TweenMax.to('.main__right-map', 1, {top: '4.2596%', right: '8.4378%', ease: Linear.easeNone});
-let cat = TweenMax.to('.main__cat', 1, {bottom: '0', left: '-8.6459%', ease: Linear.easeNone});
-let cube = TweenMax.to('.main__cube', 1, {bottom: '0', right: '-8.6459%', ease: Linear.easeNone});
-let leftFlower = TweenMax.to('.main__left-flower', 1, {bottom: '10.8334%', left: '-4.1667%', ease: Linear.easeNone});
-let rightFlower = TweenMax.to('.main__right-flower', 1, {bottom: '10.8334%', right: '-4.1667%', ease: Linear.easeNone});
-let books = TweenMax.to('.main__books', 1, {bottom: '8.6112%', right: '13.0209%', ease: Linear.easeNone});
-let cassets = TweenMax.to('.main__cassets', 1, {bottom: '8.6112%', left: '13.0209%', ease: Linear.easeNone});
-let boots = TweenMax.to('.main__boots', 1, {bottom: '26.2963%', right: '-7.1355%', ease: Linear.easeNone});
-let joystick = TweenMax.to('.main__joystick', 1, {bottom: '0', left: '50%', ease: Linear.easeNone});
-let stat = TweenMax.to('.main__stat', 1, {top: '1.1112%', left: '50%', ease: Linear.easeNone});
-let mainInner = TweenMax.to('.main__inner', 0.5, {background: 'transparent', ease: Linear.easeNone});
+let leftMap = TweenMax.to('.main__left-map', 1, { top: '4.2596%', left: '7.7085%', ease: Linear.easeNone });
+let rightMap = TweenMax.to('.main__right-map', 1, { top: '4.2596%', right: '8.4378%', ease: Linear.easeNone });
+let cat = TweenMax.to('.main__cat', 1, { bottom: '0', left: '-8.6459%', ease: Linear.easeNone });
+let cube = TweenMax.to('.main__cube', 1, { bottom: '0', right: '-8.6459%', ease: Linear.easeNone });
+let leftFlower = TweenMax.to('.main__left-flower', 1, { bottom: '10.8334%', left: '-4.1667%', ease: Linear.easeNone });
+let rightFlower = TweenMax.to('.main__right-flower', 1, { bottom: '10.8334%', right: '-4.1667%', ease: Linear.easeNone });
+let books = TweenMax.to('.main__books', 1, { bottom: '8.6112%', right: '13.0209%', ease: Linear.easeNone });
+let cassets = TweenMax.to('.main__cassets', 1, { bottom: '8.6112%', left: '13.0209%', ease: Linear.easeNone });
+let boots = TweenMax.to('.main__boots', 1, { bottom: '26.2963%', right: '-7.1355%', ease: Linear.easeNone });
+let joystick = TweenMax.to('.main__joystick', 1, { bottom: '0', left: '50%', ease: Linear.easeNone });
+let stat = TweenMax.to('.main__stat', 1, { top: '1.1112%', left: '50%', ease: Linear.easeNone });
+let mainInner = TweenMax.to('.main__inner', 0.5, { background: 'transparent', ease: Linear.easeNone });
 
+if (window.innerWidth <= 1650 && window.innerHeight <= 1050) {
+	cat = TweenMax.to('.main__cat', 1, { bottom: '-30px', left: '-8.6459%', ease: Linear.easeNone });
+	cube = TweenMax.to('.main__cube', 1, { bottom: '-30px', right: '-8.6459%', ease: Linear.easeNone });
+	boots = TweenMax.to('.main__boots', 1, { bottom: '26.2963%', right: '-7.1355%', ease: Linear.easeNone });
+}
+
+if (window.innerWidth <= 1600 && window.innerHeight <= 900) {
+	tv = TweenMax.to('.main__tv', 1, { top: '14.7038%', ease: Linear.easeNone });
+	leftMap = TweenMax.to('.main__left-map', 1, { top: '11%', left: '10.7085%', ease: Linear.easeNone });
+	rightMap = TweenMax.to('.main__right-map', 1, { top: '11%', right: '10.7085%', ease: Linear.easeNone });
+	books = TweenMax.to('.main__books', 1, { bottom: '8.6112%', right: '15%', ease: Linear.easeNone });
+	cassets = TweenMax.to('.main__cassets', 1, { bottom: '8.6112%', left: '15%', ease: Linear.easeNone });
+}
+if (window.innerWidth <= 1536 && window.innerHeight <= 864) {
+	leftMap = TweenMax.to('.main__left-map', 1, { top: '11%', left: '12%', ease: Linear.easeNone });
+	rightMap = TweenMax.to('.main__right-map', 1, { top: '11%', right: '12%', ease: Linear.easeNone });
+	leftFlower = TweenMax.to('.main__left-flower', 1, { bottom: '10.8334%', left: '0%', ease: Linear.easeNone });
+	rightFlower = TweenMax.to('.main__right-flower', 1, { bottom: '10.8334%', right: '0%', ease: Linear.easeNone });
+	stat = TweenMax.to('.main__stat', 1, { top: '7.1112%', left: '50%', ease: Linear.easeNone });
+}
+if (window.innerWidth <= 1440 && window.innerHeight <= 900) {
+	cat = TweenMax.to('.main__cat', 1, { bottom: '-30px', left: '-6.6459%', ease: Linear.easeNone });
+	cube = TweenMax.to('.main__cube', 1, { bottom: '-30px', right: '-6.6459%', ease: Linear.easeNone });
+	boots = TweenMax.to('.main__boots', 1, { bottom: '26.2963%', right: '-5.1355%', ease: Linear.easeNone });
+}
+
+if (window.innerWidth <= 1366 && window.innerHeight <= 768) {
+	leftMap = TweenMax.to('.main__left-map', 1, { top: '11%', left: '15%', ease: Linear.easeNone });
+	rightMap = TweenMax.to('.main__right-map', 1, { top: '11%', right: '15%', ease: Linear.easeNone });
+	cat = TweenMax.to('.main__cat', 1, { bottom: '-30px', left: '-1.6459%', ease: Linear.easeNone });
+	leftFlower = TweenMax.to('.main__left-flower', 1, { bottom: '10.8334%', left: '86px', ease: Linear.easeNone });
+	rightFlower = TweenMax.to('.main__right-flower', 1, { bottom: '10.8334%', right: '86px', ease: Linear.easeNone });
+	cube = TweenMax.to('.main__cube', 1, { bottom: '-30px', right: '-1.6459%', ease: Linear.easeNone });
+	books = TweenMax.to('.main__books', 1, { bottom: '8.6112%', right: '18%', ease: Linear.easeNone });
+	cassets = TweenMax.to('.main__cassets', 1, { bottom: '8.6112%', left: '18%', ease: Linear.easeNone });
+	boots = TweenMax.to('.main__boots', 1, { bottom: '26.2963%', right: '-0.1355%', ease: Linear.easeNone });
+	catridge = TweenMax.to(".main__catridge", 1, { scale: 0.55, top: "58.4%", ease: Linear.easeNone, background: "url(img/epmty-cas.svg) bottom / contain no-repeat" });
+}
+
+if (window.innerWidth <= 1280 && window.innerHeight <= 720) {
+	leftMap = TweenMax.to('.main__left-map', 1, { top: '11%', left: '17%', ease: Linear.easeNone });
+	rightMap = TweenMax.to('.main__right-map', 1, { top: '11%', right: '17%', ease: Linear.easeNone });
+	cat = TweenMax.to('.main__cat', 1, { bottom: '-30px', left: '1.3541%', ease: Linear.easeNone });
+	leftFlower = TweenMax.to('.main__left-flower', 1, { bottom: '10.8334%', left: '115px', ease: Linear.easeNone });
+	rightFlower = TweenMax.to('.main__right-flower', 1, { bottom: '10.8334%', right: '115px', ease: Linear.easeNone });
+	cube = TweenMax.to('.main__cube', 1, { bottom: '-30px', right: '1.3541%', ease: Linear.easeNone });
+	books = TweenMax.to('.main__books', 1, { bottom: '8.6112%', right: '21%', ease: Linear.easeNone });
+	cassets = TweenMax.to('.main__cassets', 1, { bottom: '8.6112%', left: '21%', ease: Linear.easeNone });
+	boots = TweenMax.to('.main__boots', 1, { bottom: '26.2963%', right: '2.8645%', ease: Linear.easeNone });
+	catridge = TweenMax.to(".main__catridge", 1, { scale: 0.55, top: "58.4%", ease: Linear.easeNone, background: "url(img/epmty-cas.svg) bottom / contain no-repeat" });
+}
+
+if (window.innerWidth <= 1024 && window.innerHeight <= 768) {
+	leftMap = TweenMax.to('.main__left-map', 1, { top: '11%', left: '18%', ease: Linear.easeNone });
+	rightMap = TweenMax.to('.main__right-map', 1, { top: '11%', right: '18%', ease: Linear.easeNone });
+}
+
+if (window.innerWidth <= 768 && window.innerHeight <= 1024) {
+	tv = TweenMax.to('.main__tv', 1, { top: '26%', ease: Linear.easeNone });
+	leftMap = TweenMax.to('.main__left-map', 1, { top: '11%', left: '21%', ease: Linear.easeNone });
+	rightMap = TweenMax.to('.main__right-map', 1, { top: '11%', right: '21%', ease: Linear.easeNone });
+	cat = TweenMax.to('.main__cat', 1, { bottom: '-30px', left: '-10.6459%', ease: Linear.easeNone });
+	leftFlower = TweenMax.to('.main__left-flower', 1, { bottom: '23.8334%', left: '240px', ease: Linear.easeNone });
+	rightFlower = TweenMax.to('.main__right-flower', 1, { bottom: '23.8334%', right: '240px', ease: Linear.easeNone });
+	books = TweenMax.to('.main__books', 1, { bottom: '8.6112%', right: '14%', ease: Linear.easeNone });
+	cassets = TweenMax.to('.main__cassets', 1, { bottom: '8.6112%', left: '14%', ease: Linear.easeNone });
+	stat = TweenMax.to('.main__stat', 1, { top: '18.8%', left: '50%', ease: Linear.easeNone });
+	catridge = TweenMax.to(".main__catridge", 1, { scale: 0.55, top: "60%", ease: Linear.easeNone, background: "url(img/epmty-cas.svg) bottom / contain no-repeat" });
+}
+
+if (window.innerWidth <= 500 && window.innerHeight <= 1024) {
+	tv = TweenMax.to('.main__tv', 1, { top: '34%', ease: Linear.easeNone });
+	dendy = TweenMax.to('.main__dendy', 1, { bottom: '-3.2593%', ease: Linear.easeNone });
+	yazik = TweenMax.to('.main__yazik', 1, { bottom: '-3.2593%', ease: Linear.easeNone });
+	leftMap = TweenMax.to('.main__left-map', 1, { top: '11%', left: '36%', ease: Linear.easeNone });
+	rightMap = TweenMax.to('.main__right-map', 1, { top: '11%', right: '36%', ease: Linear.easeNone });
+	leftFlower = TweenMax.to('.main__left-flower', 1, { bottom: '35.8334%', left: '487px', ease: Linear.easeNone });
+	rightFlower = TweenMax.to('.main__right-flower', 1, { bottom: '35.8334%', right: '487px', ease: Linear.easeNone });
+	books = TweenMax.to('.main__books', 1, { bottom: '26.6112%', right: '29%', ease: Linear.easeNone });
+	cassets = TweenMax.to('.main__cassets', 1, { bottom: '26.6112%', left: '29%', ease: Linear.easeNone });
+	stat = TweenMax.to('.main__stat', 1, { top: '26.5%', left: '50%', ease: Linear.easeNone });
+}
+
+if (window.innerWidth <= 425 && window.innerHeight <= 1024) {
+	dendy = TweenMax.to('.main__dendy', 1, { bottom: '-3.2593%', left: '51.5%', ease: Linear.easeNone });
+}
+
+if (window.innerWidth <= 390 && window.innerHeight <= 1024) {
+	dendy = TweenMax.to('.main__dendy', 1, { bottom: '-3.2593%', left: '52.5%', ease: Linear.easeNone });
+}
+if (window.innerWidth <= 375 && window.innerHeight <= 680) {
+	tv = TweenMax.to('.main__tv', 1, { top: '20%', ease: Linear.easeNone });
+	dendy = TweenMax.to('.main__dendy', 1, { bottom: '-3.2593%', left: '54.5%', ease: Linear.easeNone });
+	books = TweenMax.to('.main__books', 1, { bottom: '26.6112%', right: '33%', ease: Linear.easeNone });
+	cassets = TweenMax.to('.main__cassets', 1, { bottom: '26.6112%', left: '33%', ease: Linear.easeNone });
+	catridge = TweenMax.to(".main__catridge", 1, { scale: 0.55, top: "52.8%", ease: Linear.easeNone, background: "url(img/epmty-cas.svg) bottom / contain no-repeat" });
+}
 
 timeline
-.add(project, 'first')
-.add(catridge, 'first')
-.add(tv, 'first')
-.add(dendy, 'first')
-.add(yazik, 'first')
-.add(scrollDown, 'first')
-.add(leftMap, 'first')
-.add(rightMap, 'first')
-.add(cat, 'first')
-.add(cube, 'first')
-.add(books, 'first')
-.add(cassets, 'first')
-.add(leftFlower, 'first')
-.add(rightFlower, 'first')
-.add(boots, 'first')
-.add(joystick, 'first')
-.add(stat, 'first')
-.add(mainInner, 'first')
-.add(header);
+	.add(project, 'first')
+	.add(catridge, 'first')
+	.add(tv, 'first')
+	.add(dendy, 'first')
+	.add(yazik, 'first')
+	.add(scrollDown, 'first')
+	.add(leftMap, 'first')
+	.add(rightMap, 'first')
+	.add(cat, 'first')
+	.add(cube, 'first')
+	.add(books, 'first')
+	.add(cassets, 'first')
+	.add(leftFlower, 'first')
+	.add(rightFlower, 'first')
+	.add(boots, 'first')
+	.add(joystick, 'first')
+	.add(stat, 'first')
+	.add(mainInner, 'first')
+	.add(header);
 
 let scene = new ScrollMagic.Scene({ triggerElement: ".main", duration: "100%", offset: 0 })
 	.setTween(timeline)
