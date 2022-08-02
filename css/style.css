@@ -1280,7 +1280,7 @@ a {
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1600px) and (max-height: 900px) {
   .main__tv {
     height: 54.6038%;
   }
@@ -1317,8 +1317,6 @@ a {
   .main__joystick {
     width: 29.8959%;
     height: 13.3334%;
-    -webkit-transform: translate(-50%);
-            transform: translate(-50%);
     z-index: 7;
   }
   .main__stat {
@@ -1467,10 +1465,6 @@ a {
     width: 34.1459%;
     height: 33.2593%;
     z-index: 5;
-  }
-  .main__catridge {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
   }
 }
 
