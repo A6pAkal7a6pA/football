@@ -523,6 +523,8 @@ let joystickBottom = '0';
 let joystickLeft = '50%';
 let statTop = '1.1112%';
 let statLeft = '50%';
+let mainInnerWidth = window.innerWidth + 'px';
+
 
 if (window.innerWidth <= 1650 && window.innerHeight <= 1050) {
 	catBottom = '-30px';
@@ -531,6 +533,7 @@ if (window.innerWidth <= 1650 && window.innerHeight <= 1050) {
 	cubeRight = '-8.6459%';
 	bootsBottom = '26.2963%';
 	bootsRight = '-7.1355%';
+	mainInnerWidth = '1650px';
 }
 
 if (window.innerWidth <= 1600 && window.innerHeight <= 900) {
@@ -574,7 +577,6 @@ if (window.innerWidth <= 1366 && window.innerHeight <= 768) {
 	catridgeTop = "58.4%";
 	catridgeScale = 0.55;
 }
-
 if (window.innerWidth <= 1280 && window.innerHeight <= 720) {
 	leftMapLeft = '17%';
 	rightMapRight = '17%';
@@ -588,6 +590,7 @@ if (window.innerWidth <= 1280 && window.innerHeight <= 720) {
 	bootsBottom = '26.2963%';
 	bootsRight = '2.8645%';
 	catridgeTop = "58.4%";
+
 	catridgeScale = 0.55;
 }
 
@@ -620,10 +623,12 @@ if (window.innerWidth <= 500 && window.innerHeight <= 1024) {
 	booksCassetsBottom = '26.6112%';
 	booksCassetsSide = '29%';
 	statTop = '26.5%';
+	catridgeScale = 0.55;
 }
 
 if (window.innerWidth <= 425 && window.innerHeight <= 1024) {
 	dendyLeft = '51.5%';
+
 }
 
 if (window.innerWidth <= 390 && window.innerHeight <= 1024) {
@@ -654,7 +659,7 @@ let cassets = TweenMax.to('.main__cassets', 1, { bottom: booksCassetsBottom, lef
 let boots = TweenMax.to('.main__boots', 1, { bottom: bootsBottom, right: bootsRight, ease: Linear.easeNone });
 let joystick = TweenMax.to('.main__joystick', 1, { bottom: joystickBottom, left: joystickLeft, ease: Linear.easeNone });
 let stat = TweenMax.to('.main__stat', 1, { top: statTop, left: statLeft, ease: Linear.easeNone });
-let mainInner = TweenMax.to('.main__inner', 0.5, { background: 'transparent', ease: Linear.easeNone });
+let mainInner = TweenMax.to('.main__inner', 0.5, { background: 'transparent', width: mainInnerWidth, ease: Linear.easeNone });
 
 timeline
 	.add(project, 'first')
