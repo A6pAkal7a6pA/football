@@ -1,3 +1,35 @@
+document.addEventListener('DOMContentLoaded', () => {
+	const preloader = document.getElementById('preloader');
+  const mediaFiles = document.querySelectorAll('img, scripts, json, svg');
+  const preloaderPercent = document.querySelector('.preloader__percent');
+	const preloaderProgressbarLine = document.querySelector('.preloader__progressbar_line');
+  let i = 0;
+
+  function calcLoader() {
+		let percent = ((i * 100) / mediaFiles.length).toFixed() + '%';
+    preloaderPercent.innerText = percent;
+		preloaderProgressbarLine.style.width = percent
+    if (i === mediaFiles.length) {
+      preloaderPercent.innerText = 100 + '%';
+			preloaderProgressbarLine.style.width = 100 + '%';
+			preloader.remove();
+    }
+  }
+
+  Array.from(mediaFiles).forEach((file, index) => {
+    if (file.complete) {
+      i++
+      calcLoader()
+    } else {
+      file.onload = () => {
+        i++
+        calcLoader()
+      }
+    }
+  });
+})
+
+
 let slideIndex = 0;
 carousel();
 
@@ -13,6 +45,7 @@ function carousel() {
 }
 
 setTimeout(() => {
+
 	const storeSlider = new Swiper('.store-slider', {
 		loop: true,
 		autoplay: {
@@ -125,47 +158,47 @@ const uniqueSlider = new Swiper('.unique-slider', {
 	}
 });
 
-window.addEventListener('load', () => {
-	const uniqueSlider = new Swiper('.unique-slider', {
-		loop: true,
-		autoplay: {
-			delay: 5000,
-			disableOnInteraction: false
-		},
-		speed: 1000,
-		effect: 'coverflow',
-		slidesPerView: 'auto',
-		initialSlide: 0,
-		centeredSlides: true,
-		slideToClickedSlide: true,
-		autoHeight: false,
-		grabCursor: true,
-		spaceBetween: 50,
-		wrapperClass: 'unique-slider__wrapper',
-		coverflowEffect: {
-			rotate: 0,
-			stretch: 0,
-			depth: 40,
-			modifier: 1,
-			scale: 0.9,
-			slideShadows: false,
-		},
-		pagination: {
-			el: '.swiper-pagination',
-			type: 'bullets',
-			clickable: true
-		},
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-		breakpoints: {
-			500: {
-				spaceBetween: 50,
-			}
-		}
-	});
-}, false);
+// window.addEventListener('load', () => {
+// 	const uniqueSlider = new Swiper('.unique-slider', {
+// 		loop: true,
+// 		autoplay: {
+// 			delay: 5000,
+// 			disableOnInteraction: false
+// 		},
+// 		speed: 1000,
+// 		effect: 'coverflow',
+// 		slidesPerView: 'auto',
+// 		initialSlide: 0,
+// 		centeredSlides: true,
+// 		slideToClickedSlide: true,
+// 		autoHeight: false,
+// 		grabCursor: true,
+// 		spaceBetween: 50,
+// 		wrapperClass: 'unique-slider__wrapper',
+// 		coverflowEffect: {
+// 			rotate: 0,
+// 			stretch: 0,
+// 			depth: 40,
+// 			modifier: 1,
+// 			scale: 0.9,
+// 			slideShadows: false,
+// 		},
+// 		pagination: {
+// 			el: '.swiper-pagination',
+// 			type: 'bullets',
+// 			clickable: true
+// 		},
+// 		navigation: {
+// 			nextEl: '.swiper-button-next',
+// 			prevEl: '.swiper-button-prev',
+// 		},
+// 		breakpoints: {
+// 			500: {
+// 				spaceBetween: 50,
+// 			}
+// 		}
+// 	});
+// }, false);
 
 
 const mainSlider = new Swiper('.main__slider', {

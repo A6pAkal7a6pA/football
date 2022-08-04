@@ -17,8 +17,17 @@
 </head>
 
 <body>
-
 	<div class="wrapper">
+		<div class="preloader" id="preloader">
+			<div class="preloader__image">
+				<img class="preloader__image_runner" src="img/runner.svg" alt="">
+				<img class="preloader__image_platform" src="img/platform-pos.svg" alt="">
+			</div>
+			<div class="preloader__percent">0%</div>
+			<div class="preloader__progressbar">
+				<div class="preloader__progressbar_line"></div>
+			</div>
+	</div>
 		<div class="preload">
 			<img src="img/store/item1.png" alt="">
 			<img src="img/store/item2.png" alt="">
@@ -179,17 +188,14 @@
 				<div class="main__cat main__component">
 					<lottie-player src="https://assets2.lottiefiles.com/packages/lf20_iaocpxq5.json" background="transparent"
 						speed="1" loop autoplay></lottie-player>
-					<!-- <img src="img/cat_left.svg" alt=""> -->
 				</div>
 				<div class="main__left-flower main__component">
 					<lottie-player src="https://assets3.lottiefiles.com/packages/lf20_pxixew2o.json" background="transparent"
 						speed="1" loop autoplay></lottie-player>
-					<!-- <img src="img/flower_left.svg" alt=""> -->
 				</div>
 				<div class="main__right-flower main__component">
 					<lottie-player src="https://assets7.lottiefiles.com/packages/lf20_ermzeord.json" background="transparent"
 						speed="1" loop autoplay></lottie-player>
-					<!-- <img src="img/flower_right.svg" alt=""> -->
 				</div>
 				<div class="main__cube main__component"><img src="img/cube_right.svg" alt=""></div>
 				<div class="main__books main__component"><img src="img/books_right.svg" alt=""></div>
@@ -198,16 +204,15 @@
 				<div class="main__joystick main__component">
 					<lottie-player src="https://assets2.lottiefiles.com/packages/lf20_8w2osy9k.json" background="transparent"
 						speed="1" loop autoplay></lottie-player>
-					<!-- <img src="img/joystick.svg" alt=""> -->
 				</div>
 				<div class="main__stat main__component"><img src="img/stat.svg" alt=""></div>
 				<div class="main__tv">
 					<div class="main__tv-wrapper">
 						<img class="main__slideshow" src="img/pic1.png" alt="">
 						<img class="main__slideshow" src="img/pic2.png" alt="">
-						<img class="main__slideshow" src="img/pic3.png" alt="" loading="lazy">
-						<img class="main__slideshow" src="img/pic4.png" alt="" loading="lazy">
-						<img class="main__slideshow" src="img/pic5.png" alt="" loading="lazy">
+						<img class="main__slideshow" src="img/pic3.png" alt="">
+						<img class="main__slideshow" src="img/pic4.png" alt="">
+						<img class="main__slideshow" src="img/pic5.png" alt="">
 					</div>
 					<div class="main__tv-bottom"></div>
 				</div>
@@ -294,7 +299,7 @@
 							<img src="img/ton2.svg" alt="logo">
 						</a>
 						<div class="vertical"></div>
-						<a href="#" class="about__link">
+						<a href="https://t.me/shaolinsoccergame" class="about__link">
 							<img src="img/icons/media/telegram.svg" alt="media">
 							<div class="about__telegram">Telegram-version Game</div>
 						</a>
@@ -314,10 +319,10 @@
 					Возможности <span class="green">Игроков</span>
 				</div>
 				<div class="possibilities__platform">
-					<img class="possibilities__human active" src="img/pos/pics-1.svg" alt="" loading="lazy">
-					<img class="possibilities__human" src="img/pos/pics-2.svg" alt="" loading="lazy">
-					<img class="possibilities__human" src="img/pos/pics-3.svg" alt="" loading="lazy">
-					<img class="possibilities__platf" src="img/platform-pos.svg" loading="lazy" alt="">
+					<img class="possibilities__human active" src="img/pos/pics-1.svg" alt="">
+					<img class="possibilities__human" src="img/pos/pics-2.svg" alt="">
+					<img class="possibilities__human" src="img/pos/pics-3.svg" alt="">
+					<img class="possibilities__platf" src="img/platform-pos.svg" alt="">
 				</div>
 
 				<div class="possibilities__slider swiper">
@@ -1387,7 +1392,7 @@
 					<img src="img/customization/colors/rightHand_light.png" alt="human" class="custom-human__right-shoulder">
 					<img src="img/customization/colors/leftHand_light.png" alt="human" class="custom-human__left-shoulder">
 					<img src="img/customization/colors/body_light.png" alt="human" class="custom-human__body">
-					<img src="" alt="human" class="custom-human__tshirt">
+					<img src="img/customization/colors/body_light.png" alt="human" class="custom-human__tshirt">
 					<img src="img/customization/colors/rightFist_light.png" alt="human" class="custom-human__right-hand">
 					<img src="img/customization/colors/leftFist_light.png" alt="human" class="custom-human__left-hand">
 					<img src="img/customization/underpands-1.png" alt="human" class="custom-human__underpants">
@@ -1395,7 +1400,7 @@
 					<img src="" alt="human" class="custom-human__boots">
 				</div>
 				<div class="custom__platform">
-					<img src="img/customization/platform.svg" loading="lazy" alt="platform">
+					<img src="img/customization/platform.svg" alt="platform">
 				</div>
 				<div class="custom__colors">
 					<div class="custom__color custom__color_1 light active">
@@ -1468,7 +1473,7 @@
 				<div class="skills-slider__wrapper swiper-wrapper">
 					<div class="skills-slider__item swiper-slide">
 						<div class="skills-slider__image">
-							<img src="img/skills/pic1.png" alt="skills" loading="lazy">
+							<img src="img/skills/pic1.png" alt="skills">
 						</div>
 						<div class="skills-slider__info">
 							<div class="skills-slider__text">
@@ -1478,7 +1483,7 @@
 					</div>
 					<div class="skills-slider__item swiper-slide">
 						<div class="skills-slider__image">
-							<img src="img/skills/pic2.png" alt="skills" loading="lazy">
+							<img src="img/skills/pic2.png" alt="skills">
 						</div>
 						<div class="skills-slider__info">
 							<div class="skills-slider__text">
@@ -1488,7 +1493,7 @@
 					</div>
 					<div class="skills-slider__item swiper-slide">
 						<div class="skills-slider__image">
-							<img src="img/skills/pic3.png" alt="skills" loading="lazy">
+							<img src="img/skills/pic3.png" alt="skills">
 						</div>
 						<div class="skills-slider__info">
 							<div class="skills-slider__text">
@@ -1498,7 +1503,7 @@
 					</div>
 					<div class="skills-slider__item swiper-slide">
 						<div class="skills-slider__image">
-							<img src="img/skills/pic4.png" alt="skills" loading="lazy">
+							<img src="img/skills/pic4.png" alt="skills">
 						</div>
 						<div class="skills-slider__info">
 							<div class="skills-slider__text">
@@ -1508,7 +1513,7 @@
 					</div>
 					<div class="skills-slider__item swiper-slide">
 						<div class="skills-slider__image">
-							<img src="img/skills/pic5.png" alt="skills" loading="lazy">
+							<img src="img/skills/pic5.png" alt="skills">
 						</div>
 						<div class="skills-slider__info">
 							<div class="skills-slider__text">
@@ -1535,8 +1540,8 @@
 				Follow the game and NFT collection announcements
 			</div>
 			<div class="check__image">
-				<img class="check__image_desktop" src="img/check-img.png" alt="checking" loading="lazy">
-				<img class="check__image_mob" src="img/check-mob.png" alt="checking" loading="lazy">
+				<img class="check__image_desktop" src="img/check-img.png" alt="checking">
+				<img class="check__image_mob" src="img/check-mob.png" alt="checking">
 			</div>
 			<div class="check__items">
 				<a href="https://twitter.com/shaolingame" class="check__item">
@@ -2525,9 +2530,6 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
-	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 	<script src="js/script.js"></script>
 	<!-- <script type="text/javascript">
