@@ -1,3 +1,5 @@
+setTimeout(() => document.getElementById('preloader')?.remove(), 10000);
+
 document.addEventListener('DOMContentLoaded', () => {
 	const preloader = document.getElementById('preloader');
   const mediaFiles = document.querySelectorAll('img, scripts, json, svg');
@@ -8,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function calcLoader() {
 		let percent = ((i * 100) / mediaFiles.length).toFixed() + '%';
     preloaderPercent.innerText = percent;
-		preloaderProgressbarLine.style.width = percent
+		preloaderProgressbarLine.style.width = percent;
     if (i === mediaFiles.length) {
       preloaderPercent.innerText = 100 + '%';
 			preloaderProgressbarLine.style.width = 100 + '%';
@@ -661,11 +663,49 @@ if (window.innerWidth <= 500 && window.innerHeight <= 1024) {
 
 if (window.innerWidth <= 425 && window.innerHeight <= 1024) {
 	dendyLeft = '51.5%';
-
 }
 
-if (window.innerWidth <= 390 && window.innerHeight <= 1024) {
+if (window.innerWidth <= 414 && window.innerHeight <= 896) {
+	tvTop = '32%';
+	statTop = '26%';
+	booksCassetsSide =  '31%';
+}
+
+if (window.innerWidth <= 414 && window.innerHeight <= 736) {
+	tvTop = '26%';
+	booksCassetsSide = '32%';
+	booksCassetsBottom = '27.6112%';
+	dendyLeft = '54%';
+}
+
+if (window.innerWidth <= 390 && window.innerHeight <= 844) {
 	dendyLeft = '52.5%';
+	tvTop = '29%';
+	statTop = '23%';
+	booksCassetsSide =  '33%';
+	booksCassetsBottom = '28.6112%';
+}
+
+if (window.innerWidth <= 384 && window.innerHeight <= 854) {
+	tvTop = '29%';
+	statTop = '23%'
+	booksCassetsSide =  '33%';
+	booksCassetsBottom = '28.6112%';
+}
+
+if (window.innerWidth <= 360 && window.innerHeight <= 800) {
+	dendyLeft = '53.2%';
+	catridgeTop = "60.5%";
+	catridgeScale = 0.5;
+	dendyLeft = '53%';
+	tvTop = '25%';
+	statTop = '19%';
+}
+
+
+if (window.innerWidth <= 360 && window.innerHeight <= 760) {
+	dendyLeft = '53.7%';
+	statTop = '19%';
 }
 if (window.innerWidth <= 375 && window.innerHeight <= 680) {
 	tvTop = '20%';
@@ -673,6 +713,7 @@ if (window.innerWidth <= 375 && window.innerHeight <= 680) {
 	booksCassetsSide = '33%';
 	catridgeTop = "52.8%";
 }
+
 
 let catridge = TweenMax.to(".main__catridge", 1, { scale: catridgeScale, top: catridgeTop, ease: Linear.easeNone, background: "url(img/epmty-cas.svg) bottom / contain no-repeat" });
 let project = TweenMax.to(".main__project", 1, { opacity: 0, top: "100%", ease: Linear.easeNone });
