@@ -160,49 +160,6 @@ const uniqueSlider = new Swiper('.unique-slider', {
 	}
 });
 
-// window.addEventListener('load', () => {
-// 	const uniqueSlider = new Swiper('.unique-slider', {
-// 		loop: true,
-// 		autoplay: {
-// 			delay: 5000,
-// 			disableOnInteraction: false
-// 		},
-// 		speed: 1000,
-// 		effect: 'coverflow',
-// 		slidesPerView: 'auto',
-// 		initialSlide: 0,
-// 		centeredSlides: true,
-// 		slideToClickedSlide: true,
-// 		autoHeight: false,
-// 		grabCursor: true,
-// 		spaceBetween: 50,
-// 		wrapperClass: 'unique-slider__wrapper',
-// 		coverflowEffect: {
-// 			rotate: 0,
-// 			stretch: 0,
-// 			depth: 40,
-// 			modifier: 1,
-// 			scale: 0.9,
-// 			slideShadows: false,
-// 		},
-// 		pagination: {
-// 			el: '.swiper-pagination',
-// 			type: 'bullets',
-// 			clickable: true
-// 		},
-// 		navigation: {
-// 			nextEl: '.swiper-button-next',
-// 			prevEl: '.swiper-button-prev',
-// 		},
-// 		breakpoints: {
-// 			500: {
-// 				spaceBetween: 50,
-// 			}
-// 		}
-// 	});
-// }, false);
-
-
 const mainSlider = new Swiper('.main__slider', {
 	loop: true,
 	autoplay: {
@@ -222,6 +179,7 @@ const mainSlider = new Swiper('.main__slider', {
 
 let headerBurger = document.querySelector('.header__burger');
 headerBurger.addEventListener('click', () => {
+	document.querySelector('.header').style.opacity = '1';
 	document.querySelector('.header').classList.toggle('active');
 	document.body.classList.toggle('disabled');
 });
@@ -678,6 +636,10 @@ if (window.innerWidth <= 414 && window.innerHeight <= 736) {
 	dendyLeft = '54%';
 }
 
+if (window.innerWidth <= 412 && window.innerHeight <= 869) {
+	dendyLeft = '52.2%';
+}
+
 if (window.innerWidth <= 390 && window.innerHeight <= 844) {
 	dendyLeft = '52.5%';
 	tvTop = '29%';
@@ -762,9 +724,9 @@ let scene = new ScrollMagic.Scene({ triggerElement: ".main", duration: "100%", o
 	.setPin(".main")
 	.addTo(controller);
 
-document.querySelectorAll('.road__info').forEach(caret => {
+document.querySelectorAll('.road__item').forEach(caret => {
 	caret.addEventListener('click', () => {
-		caret.parentElement.parentElement.parentElement.classList.toggle('active')
+		caret.classList.toggle('active')
 	});
 })
 

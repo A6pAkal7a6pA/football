@@ -2800,6 +2800,10 @@ body {
   color: #000000;
 }
 
+.possibilities .earn__image img {
+  max-width: 100%;
+}
+
 .possibilities__logo {
   margin-bottom: 10px;
 }
@@ -5101,6 +5105,10 @@ body .possibilities .secret-ball.active .secret-ball__text {
 
 .contact__image {
   margin-bottom: 10px;
+}
+
+.contact__image img {
+  max-height: 40px;
 }
 
 .contact__name {

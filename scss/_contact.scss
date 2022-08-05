@@ -40,6 +40,9 @@
 
 	&__image {
 		margin-bottom: 10px;
+		img {
+			max-height: 40px;
+		}
 	}
 
 	&__name {
