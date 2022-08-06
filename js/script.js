@@ -4,7 +4,7 @@ setTimeout(() => document.getElementById('preloader')?.remove(), 10000);
 
 document.addEventListener('DOMContentLoaded', () => {
 	const preloader = document.getElementById('preloader');
-  const mediaFiles = document.querySelectorAll('img, scripts, json, svg, video');
+  const mediaFiles = document.querySelectorAll('img, scripts, json, svg, video, gif');
   const preloaderPercent = document.querySelector('.preloader__percent');
 	const preloaderProgressbarLine = document.querySelector('.preloader__progressbar_line');
   let i = 1;
