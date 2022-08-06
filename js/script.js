@@ -1,5 +1,7 @@
 setTimeout(() => document.getElementById('preloader')?.remove(), 10000);
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
 	const preloader = document.getElementById('preloader');
   const mediaFiles = document.querySelectorAll('img, scripts, json, svg, video');
@@ -175,11 +177,12 @@ const mainSlider = new Swiper('.main__slider', {
 	grabCursor: true,
 });
 
-
+document.querySelector('.header__logo').innerHTML = window.innerWidth + 'x' + window.innerHeight
 
 let headerBurger = document.querySelector('.header__burger');
 headerBurger.addEventListener('click', () => {
 	document.querySelector('.header').style.opacity = '1';
+
 	document.querySelector('.header').classList.toggle('active');
 	document.body.classList.toggle('disabled');
 });
