@@ -1150,9 +1150,6 @@ body {
   .main__button {
     display: none;
   }
-  .main__dendy::before {
-    background-position: 0 34%;
-  }
 }
 
 @media (max-height: 1024px) and (max-width: 768px) {

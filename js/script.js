@@ -177,8 +177,6 @@ const mainSlider = new Swiper('.main__slider', {
 	grabCursor: true,
 });
 
-document.querySelector('.header__logo').innerHTML = window.innerWidth + 'x' + window.innerHeight
-
 let headerBurger = document.querySelector('.header__burger');
 headerBurger.addEventListener('click', () => {
 	document.querySelector('.header').style.opacity = '1';
@@ -623,7 +621,7 @@ if (window.innerWidth <= 500 && window.innerHeight <= 1024) {
 }
 
 if (window.innerWidth <= 425 && window.innerHeight <= 1024) {
-	dendyLeft = '51.5%';
+	// dendyLeft = '51.5%';
 }
 
 if (window.innerWidth <= 414 && window.innerHeight <= 896) {
@@ -636,15 +634,15 @@ if (window.innerWidth <= 414 && window.innerHeight <= 736) {
 	tvTop = '26%';
 	booksCassetsSide = '32%';
 	booksCassetsBottom = '27.6112%';
-	dendyLeft = '54%';
+	// dendyLeft = '54%';
 }
 
 if (window.innerWidth <= 412 && window.innerHeight <= 869) {
-	dendyLeft = '52.2%';
+	// dendyLeft = '52.2%';
 }
 
 if (window.innerWidth <= 390 && window.innerHeight <= 844) {
-	dendyLeft = '52.5%';
+	// dendyLeft = '52.5%';
 	tvTop = '29%';
 	statTop = '23%';
 	booksCassetsSide =  '33%';
@@ -659,22 +657,22 @@ if (window.innerWidth <= 384 && window.innerHeight <= 854) {
 }
 
 if (window.innerWidth <= 360 && window.innerHeight <= 800) {
-	dendyLeft = '53.2%';
+	// dendyLeft = '53.2%';
 	catridgeTop = "60.5%";
 	catridgeScale = 0.5;
-	dendyLeft = '53%';
+	// dendyLeft = '53%';
 	tvTop = '25%';
 	statTop = '19%';
 }
 
 
 if (window.innerWidth <= 360 && window.innerHeight <= 760) {
-	dendyLeft = '53.7%';
+	// dendyLeft = '53.7%';
 	statTop = '19%';
 }
 if (window.innerWidth <= 375 && window.innerHeight <= 680) {
 	tvTop = '20%';
-	dendyLeft = '54.5%';
+	// dendyLeft = '54.5%';
 	booksCassetsSide = '33%';
 	catridgeTop = "52.8%";
 }
