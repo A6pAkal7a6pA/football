@@ -200,12 +200,14 @@
 			display: inline-flex;
 			flex-direction: column;
 			justify-content: center;
-			img {
+			img,
+			video {
 				object-fit: contain;
 				max-width: 100%;
 				width: 100%;
 				height: 100%;
 			}
+			
 		}
 		&-bottom {
 			background: url("../img/bottom-tv.svg") top / contain no-repeat;

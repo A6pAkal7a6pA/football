@@ -821,7 +821,8 @@ body {
   justify-content: center;
 }
 
-.main__tv-wrapper img {
+.main__tv-wrapper img,
+.main__tv-wrapper video {
   -o-object-fit: contain;
      object-fit: contain;
   max-width: 100%;
