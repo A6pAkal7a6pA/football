@@ -5,12 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const mediaFiles = document.querySelectorAll('img, scripts, json, svg, video');
   const preloaderPercent = document.querySelector('.preloader__percent');
 	const preloaderProgressbarLine = document.querySelector('.preloader__progressbar_line');
-  let i = 0;
+  let i = 1;
 
   function calcLoader() {
 		let percent = ((i * 100) / mediaFiles.length).toFixed() + '%';
     preloaderPercent.innerText = percent;
 		preloaderProgressbarLine.style.width = percent;
+		console.log('i: ' + i);
+		console.log(mediaFiles.length);
     if (i === mediaFiles.length) {
       preloaderPercent.innerText = 100 + '%';
 			preloaderProgressbarLine.style.width = 100 + '%';
