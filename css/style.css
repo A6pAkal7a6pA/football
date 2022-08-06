@@ -151,8 +151,8 @@ body {
 }
 
 .preloader__image_platform {
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
   max-width: 402.14px;
 }
 
