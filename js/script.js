@@ -11,8 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		let percent = ((i * 100) / mediaFiles.length).toFixed() + '%';
     preloaderPercent.innerText = percent;
 		preloaderProgressbarLine.style.width = percent;
-		console.log('i: ' + i);
-		console.log(mediaFiles.length);
     if (i === mediaFiles.length) {
       preloaderPercent.innerText = 100 + '%';
 			preloaderProgressbarLine.style.width = 100 + '%';
