@@ -677,6 +677,12 @@ if (window.innerWidth <= 375 && window.innerHeight <= 680) {
 	catridgeTop = "52.8%";
 }
 
+if (window.innerWidth <= 415 && window.innerHeight <= 750) {
+	flowerBottom = '28.8334%';
+	booksCassetsBottom = '25.6112%';
+
+}
+
 
 let catridge = TweenMax.to(".main__catridge", 1, { scale: catridgeScale, top: catridgeTop, ease: Linear.easeNone, background: "url(img/epmty-cas.svg) bottom / contain no-repeat" });
 let project = TweenMax.to(".main__project", 1, { opacity: 0, top: "100%", ease: Linear.easeNone });
