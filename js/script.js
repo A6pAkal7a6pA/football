@@ -35,18 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 let slideIndex = 0;
-// carousel();
-
-// function carousel() {
-// 	let x = document.getElementsByClassName("main__slideshow");
-// 	for (let i = 0; i < x.length; i++) {
-// 		x[i].style.display = "none";
-// 	}
-// 	slideIndex++;
-// 	if (slideIndex > x.length) { slideIndex = 1 }
-// 	x[slideIndex - 1].style.display = "block";
-// 	setTimeout(carousel, 3000); // Change image every 2 seconds
-// }
 
 setTimeout(() => {
 
@@ -121,7 +109,6 @@ setTimeout(() => {
 	skillsSlider.init();
 
 });
-
 const uniqueSlider = new Swiper('.unique-slider', {
 	loop: true,
 	autoplay: {
@@ -160,6 +147,83 @@ const uniqueSlider = new Swiper('.unique-slider', {
 			spaceBetween: 50,
 		}
 	}
+});
+
+
+window.addEventListener('load', () => {
+	uniqueSlider = new Swiper('.unique-slider', {
+		loop: true,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false
+		},
+		speed: 1000,
+		effect: 'coverflow',
+		slidesPerView: 'auto',
+		initialSlide: 0,
+		centeredSlides: true,
+		slideToClickedSlide: true,
+		autoHeight: false,
+		grabCursor: true,
+		spaceBetween: 50,
+		wrapperClass: 'unique-slider__wrapper',
+		coverflowEffect: {
+			rotate: 0,
+			stretch: 0,
+			depth: 40,
+			modifier: 1,
+			scale: 0.9,
+			slideShadows: false,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+			clickable: true
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		breakpoints: {
+			500: {
+				spaceBetween: 50,
+			}
+		}
+	});
+	storeSlider = new Swiper('.store-slider', {
+		loop: true,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false
+		},
+		speed: 1000,
+		effect: 'coverflow',
+		slidesPerView: 'auto',
+		initialSlide: 0,
+		centeredSlides: true,
+		slideToClickedSlide: true,
+		autoHeight: false,
+		grabCursor: true,
+		spaceBetween: 55,
+		coverflowEffect: {
+			rotate: 0,
+			stretch: 20,
+			depth: 20,
+			modifier: 1,
+			scale: 0.95,
+			slideShadows: false,
+		},
+		pagination: {
+			el: '.store-slider__pagination',
+			type: 'bullets',
+			clickable: true
+		},
+		navigation: {
+			nextEl: '.store-slider__button-next',
+			prevEl: '.store-slider__button-prev',
+		}
+	});
+	storeSlider.init();
 });
 
 const mainSlider = new Swiper('.main__slider', {
