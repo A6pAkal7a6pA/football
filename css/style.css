@@ -572,6 +572,16 @@ body {
   }
 }
 
+@media (max-width: 500px) {
+  .header.active .header__menu {
+    margin: 0;
+    padding: 45px 30px 0px 10px;
+  }
+  .header.active .header__inner {
+    padding: 0;
+  }
+}
+
 .main {
   overflow: hidden;
   position: relative;
@@ -619,6 +629,40 @@ body {
      object-fit: contain;
   width: 100%;
   height: 100%;
+}
+
+.main__nft {
+  position: absolute;
+  opacity: 0;
+  z-index: 7;
+  right: 0;
+  bottom: 74px;
+  background: rgba(8, 33, 72, 0.6);
+  border-radius: 16px 0px 0px 16px;
+  padding: 20px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  width: 208px;
+  height: 100px;
+}
+
+.main__nft-image img {
+  max-height: 29px;
+}
+
+.main__nft-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  text-decoration: underline;
+  max-width: 115px;
+  color: #ffffff;
 }
 
 .main__left-map {
@@ -1117,6 +1161,14 @@ body {
   .main__project {
     top: 28%;
     width: calc(100% - 40px);
+  }
+  .main__nft {
+    max-width: 166px;
+    height: 80px;
+  }
+  .main__nft-text {
+    font-size: 15px;
+    line-height: 20px;
   }
   .main-awards__content {
     -ms-flex-wrap: wrap;

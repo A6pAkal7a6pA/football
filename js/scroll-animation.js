@@ -189,7 +189,7 @@ if (window.innerWidth <= 415 && window.innerHeight <= 750) {
 
 }
 
-
+let nft = TweenMax.to(".main__nft", 1, { opacity: 1, ease: Linear.easeNone })
 let catridge = TweenMax.to(".main__catridge", 1, { scale: catridgeScale, top: catridgeTop, ease: Linear.easeNone, background: "url(img/epmty-cas.svg) bottom / contain no-repeat" });
 let project = TweenMax.to(".main__project", 1, { opacity: 0, top: "100%", ease: Linear.easeNone });
 let tv = TweenMax.to('.main__tv', 1, { top: tvTop, ease: Linear.easeNone });
@@ -212,6 +212,7 @@ let mainInner = TweenMax.to('.main__inner', 0.5, { background: 'transparent', wi
 
 timeline
 	.add(project, 'first')
+	.add(nft, 'first')
 	.add(catridge, 'first')
 	.add(tv, 'first')
 	.add(dendy, 'first')
