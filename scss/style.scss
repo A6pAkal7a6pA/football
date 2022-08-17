@@ -3,6 +3,7 @@
 @import "_component.scss";
 @import "_header.scss";
 @import "_main.scss";
+@import "_collections.scss";
 @import "_trailer.scss";
 @import "_about.scss";
 @import "_info.scss";
@@ -18,6 +19,7 @@
 @import "_roadmap.scss";
 @import "_team.scss";
 @import "_contact.scss";
+
 
 body {
 	&.disabled {
@@ -63,10 +65,6 @@ body {
 	overflow: hidden;
 }
 
-.main {
-	// margin: 0 0 80px 0;
-}
-
 .trailer {
 	margin-bottom: 80px;
 }
@@ -104,6 +102,9 @@ body {
 }
 .unique {
 	margin-bottom: 130px;
+}
+.collections {
+	margin: 140px 0;
 }
 
 @media (max-width: 500px) {

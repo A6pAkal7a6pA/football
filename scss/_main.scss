@@ -65,7 +65,7 @@
 			font-size: 22px;
 			line-height: 30px;
 			text-decoration: underline;
-			max-width: 115px;
+			max-width: 120px;
 			color: #ffffff;
 		}
 	}
@@ -168,7 +168,7 @@
 		margin: 0 auto;
 		width: 24.6355%;
 		height: 28.3716%;
-		top: 13.334%;
+		top: 2%;
 		left: 50%;
 		transform: translateX(-50%);
 		z-index: 4;
@@ -300,12 +300,12 @@
 		&:first-child {
 			gap: 7.5px;
 			img {
-				max-width: 50px;
+				max-width: 70px;
 			}
 			.ceo-item__text {
 				font-weight: 500;
-				font-size: 15px;
-				line-height: 19px;
+				font-size: 18px;
+				line-height: 22px;
 				color: #000000;
 			}
 		}
@@ -319,7 +319,7 @@
 
 	&__project {
 		position: absolute;
-		top: 50.741%;
+		top: 34%;
 		left: 50%;
 		transform: translateX(-50%);
 		max-width: 1300px;
@@ -328,6 +328,105 @@
 		&.anime {
 			animation: 3s projTrans;
 			animation-fill-mode: forwards;
+		}
+	}
+
+	&-road {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 66%;
+		max-width: 1330px;
+		width: 100%;
+		padding: 0 15px;
+		&__inner {
+		}
+
+		&__items {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 20px;
+		}
+
+		&__item {
+			background: #f8f8f8;
+			border-radius: 10px;
+			max-width: 244px;
+			height: 106px;
+			padding: 20px;
+			position: relative;
+			cursor: pointer;
+			&:not(:last-child) {
+				&::after {
+					content: "";
+					width: 20px;
+					height: 4px;
+					background: #4dda36;
+					position: absolute;
+					top: 50%;
+					left: 100%;
+					transform: translateY(-50%);
+				}
+			}
+		}
+
+		&__head {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			margin-bottom: 10px;
+		}
+
+		&__date {
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 20px;
+			color: #021228;
+		}
+
+		&__update {
+			font-size: 16px;
+			line-height: 20px;
+			color: #021228;
+			opacity: 0.7;
+		}
+
+		&__body {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+
+		&__text {
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 24px;
+			color: #4dda36;
+		}
+
+		&__info {
+			position: relative;
+		}
+
+		&__info-popup {
+			position: absolute;
+			width: 250px;
+			bottom: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+			background: #fff;
+			color: #021228;
+			padding: 20px;
+			border: 1px solid #021228;
+			z-index: 2;
+			opacity: 0;
+			&.active {
+				opacity: 1;
+			}
+		}
+
+		&__info-image {
 		}
 	}
 
@@ -871,6 +970,12 @@
 			height: 33.2593%;
 			z-index: 5;
 		}
+	}
+}
+
+@media (max-width: 1300px) {
+	.main-road {
+		display: none;
 	}
 }
 

@@ -1,6 +1,6 @@
-
 let controller = new ScrollMagic.Controller();
 let timeline = new TimelineMax();
+
 let catridgeScale = 0.6723;
 let catridgeTop = "51.42%";
 let tvTop = '8.7038%';
@@ -24,7 +24,6 @@ let joystickLeft = '50%';
 let statTop = '1.1112%';
 let statLeft = '50%';
 let mainInnerWidth = window.innerWidth + 'px';
-
 
 if (window.innerWidth <= 1650 && window.innerHeight <= 1050) {
 	catBottom = '-30px';
@@ -126,10 +125,6 @@ if (window.innerWidth <= 500 && window.innerHeight <= 1024) {
 	catridgeScale = 0.55;
 }
 
-if (window.innerWidth <= 425 && window.innerHeight <= 1024) {
-	// dendyLeft = '51.5%';
-}
-
 if (window.innerWidth <= 414 && window.innerHeight <= 896) {
 	tvTop = '32%';
 	statTop = '26%';
@@ -140,15 +135,9 @@ if (window.innerWidth <= 414 && window.innerHeight <= 736) {
 	tvTop = '26%';
 	booksCassetsSide = '32%';
 	booksCassetsBottom = '27.6112%';
-	// dendyLeft = '54%';
-}
-
-if (window.innerWidth <= 412 && window.innerHeight <= 869) {
-	// dendyLeft = '52.2%';
 }
 
 if (window.innerWidth <= 390 && window.innerHeight <= 844) {
-	// dendyLeft = '52.5%';
 	tvTop = '29%';
 	statTop = '23%';
 	booksCassetsSide =  '33%';
@@ -163,22 +152,18 @@ if (window.innerWidth <= 384 && window.innerHeight <= 854) {
 }
 
 if (window.innerWidth <= 360 && window.innerHeight <= 800) {
-	// dendyLeft = '53.2%';
 	catridgeTop = "60.5%";
 	catridgeScale = 0.5;
-	// dendyLeft = '53%';
 	tvTop = '25%';
 	statTop = '19%';
 }
 
 
 if (window.innerWidth <= 360 && window.innerHeight <= 760) {
-	// dendyLeft = '53.7%';
 	statTop = '19%';
 }
 if (window.innerWidth <= 375 && window.innerHeight <= 680) {
 	tvTop = '20%';
-	// dendyLeft = '54.5%';
 	booksCassetsSide = '33%';
 	catridgeTop = "52.8%";
 }
@@ -192,6 +177,7 @@ if (window.innerWidth <= 415 && window.innerHeight <= 750) {
 let nft = TweenMax.to(".main__nft", 1, { opacity: 1, ease: Linear.easeNone })
 let catridge = TweenMax.to(".main__catridge", 1, { scale: catridgeScale, top: catridgeTop, ease: Linear.easeNone, background: "url(img/epmty-cas.svg) bottom / contain no-repeat" });
 let project = TweenMax.to(".main__project", 1, { opacity: 0, top: "100%", ease: Linear.easeNone });
+let mainRoad = TweenMax.to(".main-road", 1, { opacity: 0, top: "150%", ease: Linear.easeNone });
 let tv = TweenMax.to('.main__tv', 1, { top: tvTop, ease: Linear.easeNone });
 let dendy = TweenMax.to('.main__dendy', 1, { bottom: dendyBottom, left: dendyLeft, ease: Linear.easeNone });
 let yazik = TweenMax.to('.main__yazik', 1, { bottom: dendyBottom, ease: Linear.easeNone });
@@ -212,6 +198,7 @@ let mainInner = TweenMax.to('.main__inner', 0.5, { background: 'transparent', wi
 
 timeline
 	.add(project, 'first')
+	.add(mainRoad, 'first')
 	.add(nft, 'first')
 	.add(catridge, 'first')
 	.add(tv, 'first')

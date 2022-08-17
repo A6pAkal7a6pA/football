@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  Array.from(mediaFiles).forEach((file, index) => {
+  Array.from(mediaFiles).forEach((file) => {
     if (file.complete) {
       i++
       calcLoader()
@@ -29,6 +29,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
-	
-	
 });

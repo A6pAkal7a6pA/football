@@ -113,3 +113,13 @@ window.addEventListener('scroll', () => {
 
 let secretBall = document.querySelector('.secret-ball');
 secretBall.addEventListener('click', () => secretBall.classList.toggle('active'));
+
+document.querySelectorAll('.main-road__item')
+	.forEach(item =>
+		item.addEventListener('click', () =>
+			item.children[1].children[1].children[0].classList.toggle('active')));
+
+document.querySelectorAll('.collections-road__item')
+	.forEach(item =>
+		item.addEventListener('click', () =>
+			item.children[2].children[1].children[0].classList.toggle('active')));
