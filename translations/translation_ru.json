@@ -1,0 +1,927 @@
+[
+	{
+		"id": "header__link_1",
+		"text": "Возможности"
+	},
+	{
+		"id": "header__link_2",
+		"text": "NFT-магазин"
+	},
+	{
+		"id": "header__link_3",
+		"text": "Уникальные футболисты"
+	},
+	{
+		"id": "header__link_4",
+		"text": "Кастомизация"
+	},
+	{
+		"id": "header__link_5",
+		"text": "Токеномика"
+	},
+	{
+		"id": "header__link_6",
+		"text": "Roadmap"
+	},
+	{
+		"id": "header__link_7",
+		"text": "Pitchdeck"
+	},
+	{
+		"id": "header__anonses-title_1",
+		"text": "Следите за анонсом игры и NFT-коллекции"
+	},
+	{
+		"id": "header__text_1",
+		"text": "Twitter"
+	},
+	{
+		"id": "header__text_2",
+		"text": "Telegram Official"
+	},
+	{
+		"id": "header__text_3",
+		"text": "Telegram Chat RU"
+	},
+	{
+		"id": "header__text_4",
+		"text": "Telegram Chat EN"
+	},
+	{
+		"id": "main__nft-text_1",
+		"text": "NFT Raffle available"
+	},
+	{
+		"id": "main__project-title_1",
+		"text": "The project from"
+	},
+	{
+		"id": "main-awards__title_1",
+		"text": "«Binance Smart Chain» Hackathon winners team"
+	},
+	{
+		"id": "main-ceo__title_1",
+		"text": "«IMPS Kingdom» and «Pain Crusade» CEO"
+	},
+	{
+		"id": "ceo-item__text",
+		"text": "Igor CEO"
+	},
+	{
+		"id": "main-road__update_1",
+		"text": "Update 2"
+	},
+	{
+		"id": "main-road__text_1",
+		"text": "Launch of NFT-collection"
+	},
+	{
+		"id": "main-road__info-popup_1",
+		"text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, autem!"
+	},
+	{
+		"id": "main-road__update_2",
+		"text": "Update 2"
+	},
+	{
+		"id": "main-road__text_2",
+		"text": "Launch of NFT-collection"
+	},
+	{
+		"id": "main-road__info-popup_2",
+		"text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, autem!"
+	},
+	{
+		"id": "main-road__update_3",
+		"text": "Update 2"
+	},
+	{
+		"id": "main-road__text_3",
+		"text": "Launch of NFT-collection"
+	},
+	{
+		"id": "main-road__info-popup_3",
+		"text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, autem!"
+	},
+	{
+		"id": "main-road__update_4",
+		"text": "Update 2"
+	},
+	{
+		"id": "main-road__text_4",
+		"text": "Launch of NFT-collection"
+	},
+	{
+		"id": "main-road__info-popup_4",
+		"text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, autem!"
+	},
+	{
+		"id": "main-road__update_5",
+		"text": "Update 2"
+	},
+	{
+		"id": "main-road__text_5",
+		"text": "Launch of NFT-collection"
+	},
+	{
+		"id": "main-road__info-popup_5",
+		"text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, autem!"
+	},
+	{
+		"id": "main__button-title_1",
+		"text": "Scroll down"
+	},
+	
+
+
+
+
+
+	
+	{
+		"id": "collections__title",
+		"text": "Roadmap NFT-collections"
+	},
+	{
+		"id": "collections-road__date_1",
+		"text": "Q3 2022"
+	},
+	{
+		"id": "collections-road__update_1",
+		"text": "Update 1"
+	},
+	{
+		"id": "collections-road__text_1",
+		"text": "Launch of a large-scale draw"
+	},
+	{
+		"id": "collections-road__info-popup_1",
+		"text": "Launch of a large-scale draw. On the threshold of the collection mint on Ethereum, we are launching RAFFLE, where 5,000 people will be able to win access to a closed sale and be the first to get NFT at the best price"
+	},
+	{
+		"id": "collections-road__date_2",
+		"text": "Q3 2022"
+	},
+	{
+		"id": "collections-road__update_2",
+		"text": "Update 2"
+	},
+	{
+		"id": "collections-road__text_2",
+		"text": "Launch of a large-scale draw"
+	},
+	{
+		"id": "collections-road__info-popup_2",
+		"text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, autem!"
+	},
+	{
+		"id": "collections-road__date_3",
+		"text": "Q3 2022"
+	},
+	{
+		"id": "collections-road__update_3",
+		"text": "Update 1"
+	},
+	{
+		"id": "collections-road__text_3",
+		"text": "Launch of a large-scale draw"
+	},
+	{
+		"id": "collections-road__info-popup_3",
+		"text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, autem!"
+	},
+	{
+		"id": "collections-road__date_4",
+		"text": "Q3 2022"
+	},
+	{
+		"id": "collections-road__update_4",
+		"text": "Update 1"
+	},
+	{
+		"id": "collections-road__text_4",
+		"text": "Launch of a large-scale draw"
+	},
+	{
+		"id": "collections-road__info-popup_4",
+		"text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, autem!"
+	},
+	{
+		"id": "collections-road__date_5",
+		"text": "Q3 2022"
+	},
+	{
+		"id": "collections-road__update_5",
+		"text": "Update 1"
+	},
+	{
+		"id": "collections-road__text_5",
+		"text": "Launch of a large-scale draw"
+	},
+	{
+		"id": "collections-road__info-popup_5",
+		"text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, autem!"
+	},
+	{
+		"id": "about__title",
+		"text": "Это первая многослойная crosshain-игра на <span class='ton'>TON</span> с возможностью выбрать роль – <br><span class='green'>Игрок</span> или <span class="green">Инвестор</span>"
+	},
+
+	
+
+
+	{
+		"id": "about__subtitle",
+		"text": "Скоро"
+	},
+	{
+		"id": "about__telegram",
+		"text": "Telegram-version Game"
+	},
+
+{
+		"id": "possibilities__title title",
+		"text": "Возможности <span class="green">Игроков</span>"
+	},
+
+
+
+
+	{
+		"id": "possibilities__text_1",
+		"text": "Играй в футбол и зарабатывай на победах своей команды"
+	},
+	{
+		"id": "possibilities__text_2",
+		"text": "Собирай уникального футболиста и продавай на NFT-маркетплейсе"
+	},
+	{
+		"id": "possibilities__text_3",
+		"text": "Используй суперудары, чтобы сокрушить защитников и вратаря"
+	},
+	{
+		"id": "secret-ball__text_1",
+		"text": "Находи скрытые команды, в т.ч. игроков легендароной сборной Аргетины 1986 с Диего Марадонной!"
+	},
+	{
+		"id": "possibilities__text_4",
+		"text": "Kick 2 Earn механика: улучшай параметры футболиста, соверешенствуя свой удар в реальном мире с умными мячами Adidas, Xiaomi или DribbleUp"
+	},
+	{
+		"id": "earn__text_1",
+		"text": "Xiaomi INSAIT JOY Smart Football"
+	},
+	{
+		"id": "earn__text_2",
+		"text": "Adidias<br>miCoach"
+	},
+	{
+		"id": "earn__text_3",
+		"text": "DribbleUp<br>Smart Soccer Ball"
+	},
+	{
+		"id": "possibilities__text_5",
+		"text": "Move 2 Earn механика: прокачивай силу и скорость своего футболиста купив виртуальные бутсы и занимаясь бегом в реальном мире"
+	},
+	{
+		"id": "investor__title title",
+		"text": "Возможности <span class="green">Инвесторов</span>"
+	},
+	{
+		"id": "investor__text_1",
+		"text": "Зарабатывай на собственном стадионе, сдавая его в аренду для топовых матчей"
+	},
+	{
+		"id": "investor__text_2",
+		"text": "Сдавай своего футболиста в аренду и получай доход"
+	},
+	{
+		"id": "investor__text_3",
+		"text": "Стань инвестором команды и зарабатывай процент от дохода за победы"
+	},
+	{
+		"id": "investor__text_4",
+		"text": "Зарабатывай на проданных билетах и рекламе от спонсоров"
+	},
+	{
+		"id": "investor__text_5",
+		"text": "Используйте свою реферальную ссылку и зарабатывайте на продаже билетов на матчи, если у вас есть YouTube, twitch или другой канал"
+	},
+	{
+		"id": "check__title_1",
+		"text": "Следите за анонсом игры и NFT-коллекции"
+	},
+	{
+		"id": "check__text_1",
+		"text": "Twitter"
+	},
+	{
+		"id": "check__text_2",
+		"text": "Telegram Official"
+	},
+	{
+		"id": "check__text_3",
+		"text": "Telegram Chat EN"
+	},
+	{
+		"id": "check__text_4",
+		"text": "Telegram Chat RU"
+	},
+	{
+		"id": "store__title",
+		"text": "NFT Store"
+	},
+	{
+		"id": "store__subtitle",
+		"text": "NFT футболисты – это уникальный способ иметь самого сильного и дорогого игрока. Мы готовы открыть уникальный NFT-магазин, где вы можете купить или продать:"
+	},
+	{
+		"id": "store__text",
+		"text": "Купить NFT"
+	},
+	{
+		"id": "store__soon-title",
+		"text": "Также скоро будут доступны"
+	},
+	{
+		"id": "store__soon-text_1",
+		"text": "Бусты"
+	},
+	{
+		"id": "store__soon-text_2",
+		"text": "Навыки"
+	},
+	{
+		"id": "store__soon-text_3",
+		"text": "Суперудары"
+	},
+	{
+		"id": "store__soon-text_4",
+		"text": "Кастомные поля"
+	},
+	{
+		"id": "store__soon-text_5",
+		"text": "Погодные условия"
+	},
+	{
+		"id": "store__soon-text_6",
+		"text": "Стадионы"
+	},
+	{
+		"id": "store__soon-text_7",
+		"text": "Спортивная форма"
+	},
+	{
+		"id": "store__soon-text_8",
+		"text": "Клубная атрибутика"
+	},
+	{
+		"id": "unique__title",
+		"text": "Первые уникальные футболисты"
+	},
+	{
+		"id": "unique-slider__text_1",
+		"text": "Придумай ему имя!"
+	},
+	{
+		"id": "unique-slider__text_2",
+		"text": "Придумай ему имя!"
+	},
+	{
+		"id": "unique-slider__text_3",
+		"text": "Придумай ему имя!"
+	},
+	{
+		"id": "unique-slider__text_4",
+		"text": "Придумай ему имя!"
+	},
+	{
+		"id": "unique-slider__text_5",
+		"text": "Придумай ему имя!"
+	},
+	{
+		"id": "unique-slider__text_6",
+		"text": "Придумай ему имя!"
+	},
+	{
+		"id": "unique-slider__text_7",
+		"text": "Придумай ему имя!"
+	},
+	{
+		"id": "unique-slider__text_8",
+		"text": "Придумай ему имя!"
+	},
+	{
+		"id": "unique-slider__text_9",
+		"text": "Придумай ему имя!"
+	},
+	{
+		"id": "unique-slider__text_10",
+		"text": "Придумай ему имя!"
+	},
+	{
+		"id": "check__title_2",
+		"text": "Следите за анонсом игры и NFT-коллекции"
+	},
+	{
+		"id": "check__text_5",
+		"text": "Twitter"
+	},
+	{
+		"id": "check__text_6",
+		"text": "Telegram Official"
+	},
+	{
+		"id": "check__text_7",
+		"text": "Telegram Chat EN"
+	},
+	{
+		"id": "check__text_8",
+		"text": "Telegram Chat RU"
+	},
+	{
+		"id": "custom__title",
+		"text": "Возможность кастомизации"
+	},
+	{
+		"id": "custom__variant _1",
+		"text": "Голова"
+	},
+	{
+		"id": "custom__variant _2",
+		"text": "Футболка"
+	},
+	{
+		"id": "custom__variant _3",
+		"text": "Шорты"
+	},
+	{
+		"id": "custom__variant _4",
+		"text": "Бутсы"
+	},
+	{
+		"id": "custom__subtitle_1",
+		"text": "Вы можете собрать своего уникального футболиста, который будет обладать неповторимыми характеристиками и затем продать его на NFT-маркетплейсе"
+	},
+	{
+		"id": "custom__part_1",
+		"text": "Голова"
+	},
+	{
+		"id": "custom__part_2",
+		"text": "Футболка"
+	},
+	{
+		"id": "custom__part_3",
+		"text": "Шорты"
+	},
+	{
+		"id": "custom__part_4",
+		"text": "Бутсы"
+	},
+	{
+		"id": "custom__text",
+		"text": "а также можно отдельно собрать свою форму и прическу"
+	},
+	{
+		"id": "custom__subtitle_2",
+		"text": "Вы можете собрать своего уникального футболиста, который будет обладать неповторимыми характеристиками и затем продать его на NFT-маркетплейсе"
+	},
+	{
+		"id": "custom__soon",
+		"text": "Скоро"
+	},
+	{
+		"id": "custom__button",
+		"text": "Получить в игре"
+	},
+	{
+		"id": "skills__title",
+		"text": "Способности футболистов"
+	},
+	{
+		"id": "skills__subtitle",
+		"text": "Это позволит вырастить своего самого сильного и техничного футболиста. Вы также можете улучшать параметры футболиста, покупая бусты в NFT магазине или получая новые навыки за игровой опыт. Все это позволяет вам сделать из вашего футболиста лучшего защитника, как Рафаэль Варан, самого быстрого нападающего, как Роналду или непробиваемого вратаря, как Буффон."
+	},
+	{
+		"id": "skills-slider__text_1",
+		"text": "Призрак"
+	},
+	{
+		"id": "skills-slider__text_2",
+		"text": "Крученный"
+	},
+	{
+		"id": "skills-slider__text_3",
+		"text": "Метеорит"
+	},
+	{
+		"id": "skills-slider__text_4",
+		"text": "Призрак"
+	},
+	{
+		"id": "skills-slider__text_5",
+		"text": "Призрак"
+	},
+	{
+		"id": "check__title_3",
+		"text": "Следите за анонсом игры и NFT-коллекции"
+	},
+	{
+		"id": "check__text_9",
+		"text": "Twitter"
+	},
+	{
+		"id": "check__text_10",
+		"text": "Telegram Official"
+	},
+	{
+		"id": "check__text_11",
+		"text": "Telegram Chat EN"
+	},
+	{
+		"id": "check__text_12",
+		"text": "Telegram Chat RU"
+	},
+	{
+		"id": "tokenomic__title",
+		"text": "Токеномика"
+	},
+	{
+		"id": "tokenomic-item__title_1",
+		"text": "Играй бесплатно"
+	},
+	{
+		"id": "tokenomic-item__text_1",
+		"text": "Не хочешь вкладывать много денег, а хочешь просто играть? Бросай вызов другим командам, побеждай, улучшай опыт игроков, их силу, скорость и удар и получай бесплатные улучшения характеристик, новые супер удары и форму!"
+	},
+	{
+		"id": "tokenomic-item__title_2",
+		"text": "Команды и кланы"
+	},
+	{
+		"id": "tokenomic-item__text_2",
+		"text": "Объединяйся с другими игроками в команды, придумай собственный узнаваемый стиль игроков и участвуй в специальных турнирах! Так же лично тебя могут вызвать в Сборную страны, чтобы играть на Чемпионате Мира."
+	},
+	{
+		"id": "tokenomic-item__title_3",
+		"text": "Стейкинг и фарминг"
+	},
+	{
+		"id": "tokenomic-item__text_3",
+		"text": "Сдавай футболиста в аренду, покупай стадионы и производи ресурсы. Анонсируй матчи в социальных сетях, на Youtube или Twitch и получай доход с продажи билетов на матч!"
+	},
+	{
+		"id": "tokenomic-item__title_4",
+		"text": "NFT"
+	},
+	{
+		"id": "tokenomic-item__text_4",
+		"text": "Улучшай футболистов в игре, обучай их суперударам, покупай им бусты на маркетплейсе, тренируй их с помощью тренера и получи максимальную редкость!"
+	},
+	{
+		"id": "tokenomic-item__title_5",
+		"text": "Турниры"
+	},
+	{
+		"id": "tokenomic-item__text_5",
+		"text": "Побеждай в Лиге чемпионов или на Чемпионате Мира и получай огромные денежные призы!"
+	},
+	{
+		"id": "deligate__title",
+		"text": "Распределение токенов"
+	},
+	{
+		"id": "deligate__text_1",
+		"text": "P2E"
+	},
+	{
+		"id": "deligate__text_2",
+		"text": "Ecosystem"
+	},
+	{
+		"id": "deligate__text_3",
+		"text": "Private Round"
+	},
+	{
+		"id": "deligate__text_4",
+		"text": "Team"
+	},
+	{
+		"id": "deligate__text_5",
+		"text": "Liquidity"
+	},
+	{
+		"id": "deligate__text_6",
+		"text": "Marketing"
+	},
+	{
+		"id": "deligate__text_7",
+		"text": "Farming"
+	},
+	{
+		"id": "deligate__text_8",
+		"text": "Seed Round"
+	},
+	{
+		"id": "deligate__text_9",
+		"text": "Public Round"
+	},
+	{
+		"id": "deligate__text_10",
+		"text": "Advisors"
+	},
+	{
+		"id": "road__title",
+		"text": "Roadmap"
+	},
+	{
+		"id": "road-item__update_1",
+		"text": "Update 1"
+	},
+	{
+		"id": "road__text_1",
+		"text": "Версия игры в тестнет сети"
+	},
+	{
+		"id": "road-item__update_2",
+		"text": "Update 2"
+	},
+	{
+		"id": "road__text_2",
+		"text": "Собственный NFT-маркетплейс"
+	},
+	{
+		"id": "road-item__update_3",
+		"text": "Update 3"
+	},
+	{
+		"id": "road__text_3",
+		"text": "Move 2 Earn механика"
+	},
+	{
+		"id": "road__popup_1",
+		"text": "Покупай виртуальные бутсы (mercurial, predator и другие) и улучшай футболиста бегая в реальном мире"
+	},
+	{
+		"id": "road-item__text_1",
+		"text": "Покупай виртуальные бутсы (mercurial, predator и другие) и улучшай футболиста бегая в реальном мире"
+	},
+	{
+		"id": "road-item__update_4",
+		"text": "Update 4"
+	},
+	{
+		"id": "road__text_4",
+		"text": "Kick 2 Earn механика"
+	},
+	{
+		"id": "road__popup_2",
+		"text": "Улучшай параметры футболиста, соверешенствуя свой удар в реальном мире с умными мячами Adidas, Xiaomi или DribbleUp"
+	},
+	{
+		"id": "road-item__text_2",
+		"text": "Улучшай параметры футболиста, соверешенствуя свой удар в реальном мире с умными мячами Adidas, Xiaomi или DribbleUp"
+	},
+	{
+		"id": "road-item__update_5",
+		"text": "Update 5"
+	},
+	{
+		"id": "road__text_5",
+		"text": "Футбольный менеджер"
+	},
+	{
+		"id": "road__popup_3",
+		"text": "Покупай стадионы, привлекай зрителей, продавай билеты и инвестируй в команды"
+	},
+	{
+		"id": "road-item__text_3",
+		"text": "Покупай стадионы, привлекай зрителей, продавай билеты и инвестируй в команды"
+	},
+	{
+		"id": "road-item__update_6",
+		"text": "Update 6"
+	},
+	{
+		"id": "road__text_6",
+		"text": "Футбольный тренер"
+	},
+	{
+		"id": "road__popup_4",
+		"text": "Стань опытным тренером и нанимайся в команды"
+	},
+	{
+		"id": "road-item__text_4",
+		"text": "Стань опытным тренером и нанимайся в команды"
+	},
+	{
+		"id": "road-item__update_7",
+		"text": "Update 7"
+	},
+	{
+		"id": "road__text_7",
+		"text": "Версия игры в Телеграм"
+	},
+	{
+		"id": "road-item__update_8",
+		"text": "Update 8"
+	},
+	{
+		"id": "road__text_8",
+		"text": "Трансферы, аренда футболистов"
+	},
+	{
+		"id": "road-item__update_9",
+		"text": "Update 9"
+	},
+	{
+		"id": "road__text_9",
+		"text": "Выпуск атрибутики клубов"
+	},
+	{
+		"id": "road-item__update_10",
+		"text": "Update 2"
+	},
+	{
+		"id": "road__text_10",
+		"text": "Собственный NFT-маркетплейс"
+	},
+	{
+		"id": "road-item__update_11",
+		"text": "Update 4"
+	},
+	{
+		"id": "road__text_11",
+		"text": "Kick 2 Earn механика"
+	},
+	{
+		"id": "road__popup_5",
+		"text": "Улучшай параметры футболиста, соверешенствуя свой удар в реальном мире с умными мячами Adidas,Xiaomi или DribbleUp"
+	},
+	{
+		"id": "road-item__text_5",
+		"text": "Улучшай параметры футболиста, соверешенствуя свой удар в реальном мире с умными мячами Adidas,Xiaomi или DribbleUp"
+	},
+	{
+		"id": "road-item__update_12",
+		"text": "Update 6"
+	},
+	{
+		"id": "road__text_12",
+		"text": "Футбольный тренер"
+	},
+	{
+		"id": "road__popup_6",
+		"text": "Стань опытным тренером и нанимайся в команды"
+	},
+	{
+		"id": "road-item__text_6",
+		"text": "Стань опытным тренером и нанимайся в команды"
+	},
+	{
+		"id": "road-item__update_13",
+		"text": "Update 8"
+	},
+	{
+		"id": "road__text_13",
+		"text": "Трансферы, аренда футболистов"
+	},
+	{
+		"id": "team__title",
+		"text": "Команда"
+	},
+	{
+		"id": "team__part-title_1",
+		"text": "Igor"
+	},
+	{
+		"id": "team__part-position_1",
+		"text": "CEO,<br> Co-founder"
+	},
+	{
+		"id": "team__exp_1",
+		"text": "- 11 years experience in IT"
+	},
+	{
+		"id": "team__exp_2",
+		"text": "- 5 years in Crypto Industry"
+	},
+	{
+		"id": "team__exp_3",
+		"text": "- CEO IMPS Kingdom, Pain Crusade"
+	},
+	{
+		"id": "team__exp_4",
+		"text": "- Adviser Gladiators honor"
+	},
+	{
+		"id": "team__part-title_2",
+		"text": "Michael"
+	},
+	{
+		"id": "team__part-position_2",
+		"text": "Fullstack & blockchain developer"
+	},
+	{
+		"id": "team__exp_5",
+		"text": "Experienced and resilts-oriented Fullstack & blockchain developer with more that 6 years of commercial and	8 years of general development experience"
+	},
+	{
+		"id": "team__part-title_3",
+		"text": "Mike"
+	},
+	{
+		"id": "team__part-position_3",
+		"text": "Senior blockchain developer"
+	},
+	{
+		"id": "team__exp_6",
+		"text": "- Winner of Imaguru Blockchain Hackathon 2017 (“ICO Booster” project)"
+	},
+	{
+		"id": "team__exp_7",
+		"text": "- Winner of Imaguru Fintech Hackathon 2018 (“Credit Chain” project)"
+	},
+	{
+		"id": "team__part-title_4",
+		"text": "Rostam"
+	},
+	{
+		"id": "team__part-position_4",
+		"text": "UI/UX, Product Designer"
+	},
+	{
+		"id": "team__exp_7",
+		"text": "Interface deisigner with 5 years experience oriented on combining aesthetic, functionality & business values"
+	},
+	{
+		"id": "team__part-title_5",
+		"text": "Alexander"
+	},
+	{
+		"id": "team__part-position_5",
+		"text": "Graphic Designer"
+	},
+	{
+		"id": "team__exp_8",
+		"text": "Graphic designer and illustrator of various kind of game styles with 11 years experience"
+	},
+	{
+		"id": "team__part-title_6",
+		"text": "Rostam"
+	},
+	{
+		"id": "team__part-position_6",
+		"text": "UI/UX, Product Designer"
+	},
+	{
+		"id": "team__exp_9",
+		"text": "Interface deisigner with 5 years experience oriented on combining aesthetic, functionality & business values"
+	},
+	{
+		"id": "team__part-title_7",
+		"text": "Alexander"
+	},
+	{
+		"id": "team__part-position_7",
+		"text": "Graphic Designer"
+	},
+	{
+		"id": "team__exp_10",
+		"text": "Graphic designer and illustrator of various kind of game styles with 11 years experience"
+	},
+	{
+		"id": "check__title title_4",
+		"text": "Следите за анонсом игры и NFT-коллекции"
+	},
+	{
+		"id": "check__text_13",
+		"text": "Twitter"
+	},
+	{
+		"id": "check__text_14",
+		"text": "Telegram Official"
+	},
+	{
+		"id": "check__text_15",
+		"text": "Telegram Chat EN"
+	},
+	{
+		"id": "check__text_16",
+		"text": "Telegram Chat RU"
+	},
+	{
+		"id": "contact__title title",
+		"text": "Подписывайтесь на нас"
+	},
+	{
+		"id": "copy__text_1",
+		"text": "Лицензионное соглашение"
+	},
+	{
+		"id": "copy__text_2",
+		"text": "Соглашение о возмещении ущерба"
+	},
+	
+]
