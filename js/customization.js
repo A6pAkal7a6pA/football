@@ -139,9 +139,9 @@ document.querySelectorAll('.custom__variant').forEach(variant => {
 	variant.addEventListener('click', () => {
 		variant.classList.add('active');
 		let index = Array.from(variant.parentElement.children).indexOf(variant);
-		if (index != 0) {
-			index = Math.floor(index / 2);
-		}
+		// if (index != 0) {
+		// 	index = Math.floor(index / 2);
+		// }
 		document.querySelectorAll('.custom__content-part').forEach(part => {
 			if (Array.from(part.parentElement.children).indexOf(part) === index) {
 				part.classList.add('visible');
