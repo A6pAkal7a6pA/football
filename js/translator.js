@@ -1,3 +1,4 @@
+changeLanguage("en")
 document.querySelectorAll('.header__locale').forEach(locale => {
 	locale.addEventListener('click', () => {
 		let lang = locale.innerText.toLowerCase();
