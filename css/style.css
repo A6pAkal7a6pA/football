@@ -5622,6 +5622,9 @@ body .possibilities .secret-ball .secret-ball__text.ru {
   .team {
     margin-bottom: 70px;
   }
+  .collections {
+    margin: 70px 0;
+  }
 }
 
 body.ru .en {
