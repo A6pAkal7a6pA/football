@@ -1,5 +1,136 @@
 [
-	
+	{
+		"id": "header__link_1",
+		"text": "Opportunities"
+	},
+	{
+		"id": "header__link_2",
+		"text": "NFT Store"
+	},
+	{
+		"id": "header__link_3",
+		"text": "Unique football players"
+	},
+	{
+		"id": "header__link_4",
+		"text": "Customization"
+	},
+	{
+		"id": "header__link_5",
+		"text": "Tokenomics"
+	},
+	{
+		"id": "header__link_6",
+		"text": "Roadmap"
+	},
+	{
+		"id": "header__link_7",
+		"text": "Pitchdeck"
+	},
+	{
+		"id": "header__anonses-title_1",
+		"text": "Follow the game and NFT collection announcements"
+	},
+	{
+		"id": "header__text_1",
+		"text": "Twitter"
+	},
+	{
+		"id": "header__text_2",
+		"text": "Telegram Official"
+	},
+	{
+		"id": "header__text_3",
+		"text": "Telegram Chat RU"
+	},
+	{
+		"id": "header__text_4",
+		"text": "Telegram Chat EN"
+	},
+	{
+		"id": "main__nft-text_1",
+		"text": "NFT Raffle available"
+	},
+	{
+		"id": "main__project-title_1",
+		"text": "The project from"
+	},
+	{
+		"id": "main-awards__title_1",
+		"text": "«Binance Smart Chain» Hackathon winners team"
+	},
+	{
+		"id": "main-ceo__title_1",
+		"text": "«IMPS Kingdom» and «Pain Crusade» CEO"
+	},
+	{
+		"id": "ceo-item__text",
+		"text": "Igor CEO"
+	},
+	{
+		"id": "main-road__update_1",
+		"text": "Update 1"
+	},
+	{
+		"id": "main-road__text_1",
+		"text": "Launch of a large-scale draw"
+	},
+	{
+		"id": "main-road__info-popup_1",
+		"text": "Launch of a large-scale draw. On the threshold of the collection mint on Ethereum, we are launching RAFFLE, where 5,000 people will be able to win access to a closed sale and be the first to get NFT at the best price"
+	},
+	{
+		"id": "main-road__update_2",
+		"text": "Update 2"
+	},
+	{
+		"id": "main-road__text_2",
+		"text": "Mint of 11,264 NFTs"
+	},
+	{
+		"id": "main-road__info-popup_2",
+		"text": "Mint of a generative collection of 11,264 NFTs on the Ether blockchain. Every NFT owner will be among the first to have access to Shaolin Soccer and will be the first to use all available features of the game! Also, everyone who joined the game among the first users will receive unique gifts from the developers and become a member of various AIRDROPs that will be available only to NFT holders"
+	},
+	{
+		"id": "main-road__update_3",
+		"text": "Update 3"
+	},
+	{
+		"id": "main-road__text_3",
+		"text": "Game first version launch"
+	},
+	{
+		"id": "main-road__info-popup_3",
+		"text": "Official launch of the first version of the cross-chain game for web browsers and telegram. All collection holders will be given access to take part in the game and upgrade their player among the first. In the first version of the game, penalty mechanics and the ability to upgrade your player will be available."
+	},
+	{
+		"id": "main-road__update_4",
+		"text": "Update 4"
+	},
+	{
+		"id": "main-road__text_4",
+		"text": "Start of a PVP mode"
+	},
+	{
+		"id": "main-road__info-popup_4",
+		"text": "Start of a PVP mode. At this stage, we are introducing a competition mode between players. Now each of you will be able to test your strength and fight with other users. Before each game, you can place a bet, and if you win, it will multiply your winnings and earning. Take part in competitions, upgrade your football player and earn on your victories!"
+	},
+	{
+		"id": "main-road__update_5",
+		"text": "Update 5"
+	},
+	{
+		"id": "main-road__text_5",
+		"text": "GENESIS collections launch"
+	},
+	{
+		"id": "main-road__info-popup_5",
+		"text": "Launch of several GENESIS collections with various loot boxes, legendary football players and coaches. The following few collections will expand the possibilities of the game and open up new interaction mechanics"
+	},
+	{
+		"id": "main__button-title_1",
+		"text": "Scroll down"
+	},
 	{
 		"id": "collections__title",
 		"text": "Roadmap NFT-collections"
@@ -22,7 +153,7 @@
 	},
 	{
 		"id": "collections-road__date_2",
-		"text": "Q3 2022"
+		"text": "Q4 2022"
 	},
 	{
 		"id": "collections-road__update_2",
@@ -38,11 +169,11 @@
 	},
 	{
 		"id": "collections-road__date_3",
-		"text": "Q3 2022"
+		"text": "Q4 2022"
 	},
 	{
 		"id": "collections-road__update_3",
-		"text": "Update 1"
+		"text": "Update 3"
 	},
 	{
 		"id": "collections-road__text_3",
@@ -54,11 +185,11 @@
 	},
 	{
 		"id": "collections-road__date_4",
-		"text": "Q3 2022"
+		"text": "Q1 2023"
 	},
 	{
 		"id": "collections-road__update_4",
-		"text": "Update 1"
+		"text": "Update 4"
 	},
 	{
 		"id": "collections-road__text_4",
@@ -70,11 +201,11 @@
 	},
 	{
 		"id": "collections-road__date_5",
-		"text": "Q3 2022"
+		"text": "Q2 2023"
 	},
 	{
 		"id": "collections-road__update_5",
-		"text": "Update 1"
+		"text": "Update 5"
 	},
 	{
 		"id": "collections-road__text_5",
@@ -84,4 +215,696 @@
 		"id": "collections-road__info-popup_5",
 		"text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, autem!"
 	},
+	{
+		"id": "about__title",
+		"text": "This is the first free-to-earn multi-layered cross-chain PVP-game based on<span class='ton' > TON</span> with the option to choose a role – <br><span class='green'>Player</span> or <span class='green'>Investor</span>"
+	},
+	{
+		"id": "about__subtitle",
+		"text": "Soon"
+	},
+	{
+		"id": "about__telegram",
+		"text": "Telegram-version Game"
+	},
+	{
+		"id": "possibilities__title title",
+		"text": "<span class'green'>Player's</span>  Opportunities"
+	},
+	{
+		"id": "possibilities__text_1",
+		"text": "Play football with friends and earn when your team wins"
+	},
+	{
+		"id": "possibilities__text_2",
+		"text": "Build a unique football player and sell it on the NFT marketplace"
+	},
+	{
+		"id": "possibilities__text_3",
+		"text": "Use super strikes to crush defenders and goalkeeper"
+	},
+	{
+		"id": "secret-ball__text_1",
+		"text": "Find the missing team, incl. players of the legendary Argentina national team 1986 with Diego Maradona!"
+	},
+	{
+		"id": "possibilities__text_4",
+		"text": "Kick 2 Earn mechanics: improve the parameters of a football player by improving your kick in the real world with Adidas, Xiaomi or DribbleUp smart balls"
+	},
+	{
+		"id": "earn__text_1",
+		"text": "Xiaomi INSAIT JOY Smart Football"
+	},
+	{
+		"id": "earn__text_2",
+		"text": "Adidias<br>miCoach"
+	},
+	{
+		"id": "earn__text_3",
+		"text": "DribbleUp<br>Smart Soccer Ball"
+	},
+	{
+		"id": "possibilities__text_5",
+		"text": "Move 2 Earn mechanics: improve the strength and speed of your football player by buying virtual boots and running in the real world"
+	},
+	{
+		"id": "investor__title title",
+		"text": "<span class='green'>Investor's</span> Opportunities"
+	},
+	{
+		"id": "investor__text_1",
+		"text": "Earn money at your own stadium by renting it out for top matches"
+	},
+	{
+		"id": "investor__text_2",
+		"text": "Rent out your football player and earn income"
+	},
+	{
+		"id": "investor__text_3",
+		"text": "Become an investor of the team and earn a percentage of the income for winning"
+	},
+	{
+		"id": "investor__text_4",
+		"text": "Earn money on tickets sold and advertising by sponsors"
+	},
+	{
+		"id": "investor__text_5",
+		"text": "Use your referral link and earn money by selling match tickets if you have a YouTube, twitch or other channel."
+	},
+	{
+		"id": "check__title_1",
+		"text": "Follow the game and NFT collection announcements"
+	},
+	{
+		"id": "check__text_1",
+		"text": "Twitter"
+	},
+	{
+		"id": "check__text_2",
+		"text": "Telegram Official"
+	},
+	{
+		"id": "check__text_3",
+		"text": "Telegram Chat EN"
+	},
+	{
+		"id": "check__text_4",
+		"text": "Telegram Chat RU"
+	},
+	{
+		"id": "store__title",
+		"text": "NFT Store"
+	},
+	{
+		"id": "store__subtitle",
+		"text": "NFT football players are a unique way to have the strongest and most expensive player. We are ready to open a unique NFT store where you can buy or sell:"
+	},
+	{
+		"id": "store__text",
+		"text": "Buy NFT"
+	},
+	{
+		"id": "store__soon-title",
+		"text": "The following items will be also available soon"
+	},
+	{
+		"id": "store__soon-text_1",
+		"text": "Boosts"
+	},
+	{
+		"id": "store__soon-text_2",
+		"text": "Skills"
+	},
+	{
+		"id": "store__soon-text_3",
+		"text": "Super Strikes"
+	},
+	{
+		"id": "store__soon-text_4",
+		"text": "Custom Fields"
+	},
+	{
+		"id": "store__soon-text_5",
+		"text": "Weather Conditions"
+	},
+	{
+		"id": "store__soon-text_6",
+		"text": "Stadiums"
+	},
+	{
+		"id": "store__soon-text_7",
+		"text": "Uniform"
+	},
+	{
+		"id": "store__soon-text_8",
+		"text": "Club Merchandise"
+	},
+	{
+		"id": "unique__title",
+		"text": "The first unique football players"
+	},
+	{
+		"id": "unique-slider__text_1",
+		"text": "Come up with a name for him"
+	},
+	{
+		"id": "unique-slider__text_2",
+		"text": "Come up with a name for him"
+	},
+	{
+		"id": "unique-slider__text_3",
+		"text": "Come up with a name for him"
+	},
+	{
+		"id": "unique-slider__text_4",
+		"text": "Come up with a name for him"
+	},
+	{
+		"id": "unique-slider__text_5",
+		"text": "Come up with a name for him"
+	},
+	{
+		"id": "unique-slider__text_6",
+		"text": "Come up with a name for him"
+	},
+	{
+		"id": "unique-slider__text_7",
+		"text": "Come up with a name for him"
+	},
+	{
+		"id": "unique-slider__text_8",
+		"text": "Come up with a name for him"
+	},
+	{
+		"id": "unique-slider__text_9",
+		"text": "Come up with a name for him"
+	},
+	{
+		"id": "unique-slider__text_10",
+		"text": "Come up with a name for him"
+	},
+	{
+		"id": "check__title_2",
+		"text": "Follow the game and NFT collection announcements"
+	},
+	{
+		"id": "check__text_5",
+		"text": "Twitter"
+	},
+	{
+		"id": "check__text_6",
+		"text": "Telegram Official"
+	},
+	{
+		"id": "check__text_7",
+		"text": "Telegram Chat EN"
+	},
+	{
+		"id": "check__text_8",
+		"text": "Telegram Chat RU"
+	},
+	{
+		"id": "custom__title",
+		"text": "Customization Possibility"
+	},
+	{
+		"id": "custom__variant _1",
+		"text": "Head"
+	},
+	{
+		"id": "custom__variant _2",
+		"text": "T-shirt"
+	},
+	{
+		"id": "custom__variant _3",
+		"text": "Shorts"
+	},
+	{
+		"id": "custom__variant _4",
+		"text": "Boots"
+	},
+	{
+		"id": "custom__subtitle_1",
+		"text": "You can build your own unique football player who will have unique characteristics and then sell it on the NFT marketplace"
+	},
+	{
+		"id": "custom__part_1",
+		"text": "Head"
+	},
+	{
+		"id": "custom__part_2",
+		"text": "T-shirt"
+	},
+	{
+		"id": "custom__part_3",
+		"text": "Shorts"
+	},
+	{
+		"id": "custom__part_4",
+		"text": "Boots"
+	},
+	{
+		"id": "custom__text",
+		"text": "besides, you can also separately make up your uniform and hairstyle"
+	},
+	{
+		"id": "custom__subtitle_2",
+		"text": "You can build your own unique football player who will have unique characteristics and then sell it on the NFT marketplace"
+	},
+	{
+		"id": "custom__soon",
+		"text": "Soon"
+	},
+	{
+		"id": "custom__button",
+		"text": "Get in the game"
+	},
+	{
+		"id": "skills__title",
+		"text": "Football players' abilities"
+	},
+	{
+		"id": "skills__subtitle",
+		"text": "It will allow you to grow the strongest and most highly-skilled football player. You can also improve a football player's parameters by buying boosts in the NFT store or gaining new skills for the gaming experience. It allows you to make your football player the best defender, like Raphael Varane, the fastest forward, like Ronaldo or an impenetrable goalkeeper, like Buffon."
+	},
+	{
+		"id": "skills-slider__text_1",
+		"text": "Призрак"
+	},
+	{
+		"id": "skills-slider__text_2",
+		"text": "Крученный"
+	},
+	{
+		"id": "skills-slider__text_3",
+		"text": "Метеорит"
+	},
+	{
+		"id": "skills-slider__text_4",
+		"text": "Призрак"
+	},
+	{
+		"id": "skills-slider__text_5",
+		"text": "Призрак"
+	},
+	{
+		"id": "check__title_3",
+		"text": "Follow the game and NFT collection announcements"
+	},
+	{
+		"id": "check__text_9",
+		"text": "Twitter"
+	},
+	{
+		"id": "check__text_10",
+		"text": "Telegram Official"
+	},
+	{
+		"id": "check__text_11",
+		"text": "Telegram Chat EN"
+	},
+	{
+		"id": "check__text_12",
+		"text": "Telegram Chat RU"
+	},
+	{
+		"id": "tokenomic__title",
+		"text": "Tokenomics"
+	},
+	{
+		"id": "tokenomic-item__title_1",
+		"text": "Play <br>for free"
+	},
+	{
+		"id": "tokenomic-item__text_1",
+		"text": "Don't want to invest a lot of money, but just want to play? Challenge other teams, win, improve the players' experience, their strength, speed and kick and get free upgrades of performance, new super kicks and uniforms!"
+	},
+	{
+		"id": "tokenomic-item__title_2",
+		"text": "Teams and Clans"
+	},
+	{
+		"id": "tokenomic-item__text_2",
+		"text": "Join with other players into teams, come up with your own recognizable style of players and participate in special tournaments! Besides, you can be personally called up to the National Team to play at the World Cup."
+	},
+	{
+		"id": "tokenomic-item__title_3",
+		"text": "Staking and Farming"
+	},
+	{
+		"id": "tokenomic-item__text_3",
+		"text": "Rent out a football player, buy stadiums and produce resources. Announce matches on the social networks, Youtube or Twitch and earn income by selling tickets for the match!"
+	},
+	{
+		"id": "tokenomic-item__title_4",
+		"text": "NFT"
+	},
+	{
+		"id": "tokenomic-item__text_4",
+		"text": "Improve the players in the game, teach them super kicks, buy them boosts on the marketplace, train them with a coach and get the maximum uniqueness!"
+	},
+	{
+		"id": "tokenomic-item__title_5",
+		"text": "Tournaments"
+	},
+	{
+		"id": "tokenomic-item__text_5",
+		"text": "Win the Champions League or the World Cup and get huge cash prizes!"
+	},
+	{
+		"id": "deligate__title",
+		"text": "Token Distribution"
+	},
+	{
+		"id": "deligate__text_1",
+		"text": "P2E"
+	},
+	{
+		"id": "deligate__text_2",
+		"text": "Ecosystem"
+	},
+	{
+		"id": "deligate__text_3",
+		"text": "Private Round"
+	},
+	{
+		"id": "deligate__text_4",
+		"text": "Team"
+	},
+	{
+		"id": "deligate__text_5",
+		"text": "Liquidity"
+	},
+	{
+		"id": "deligate__text_6",
+		"text": "Marketing"
+	},
+	{
+		"id": "deligate__text_7",
+		"text": "Farming"
+	},
+	{
+		"id": "deligate__text_8",
+		"text": "Seed Round"
+	},
+	{
+		"id": "deligate__text_9",
+		"text": "Public Round"
+	},
+	{
+		"id": "deligate__text_10",
+		"text": "Advisors"
+	},
+	{
+		"id": "road__title",
+		"text": "Roadmap"
+	},
+	{
+		"id": "road-item__update_1",
+		"text": "Update 1"
+	},
+	{
+		"id": "road__text_1",
+		"text": "The testnet game version"
+	},
+	{
+		"id": "road-item__update_2",
+		"text": "Update 2"
+	},
+	{
+		"id": "road__text_2",
+		"text": "Own NFT marketplace"
+	},
+	{
+		"id": "road-item__update_3",
+		"text": "Update 3"
+	},
+	{
+		"id": "road__text_3",
+		"text": "Move 2 Earn Mechanics"
+	},
+	{
+		"id": "road__popup_1",
+		"text": "Buy virtual boots (Mercurial, Predator and others) and improve a football player by running in the real world"
+	},
+	{
+		"id": "road-item__text_1",
+		"text": "Buy virtual boots (Mercurial, Predator and others) and improve a football player by running in the real world"
+	},
+	{
+		"id": "road-item__update_4",
+		"text": "Update 4"
+	},
+	{
+		"id": "road__text_4",
+		"text": "Kick 2 Earn Mechanics"
+	},
+	{
+		"id": "road__popup_2",
+		"text": "Improve the parameters of a football player by improving your kick in the real world with Adidas, Xiaomi or DribbleUp smart balls"
+	},
+	{
+		"id": "road-item__text_2",
+		"text": "Improve the parameters of a football player by improving your kick in the real world with Adidas, Xiaomi or DribbleUp smart balls"
+	},
+	{
+		"id": "road-item__update_5",
+		"text": "Update 5"
+	},
+	{
+		"id": "road__text_5",
+		"text": "Football Manager"
+	},
+	{
+		"id": "road__popup_3",
+		"text": "Buy stadiums, attract spectators, sell tickets and invest in the teams"
+	},
+	{
+		"id": "road-item__text_3",
+		"text": "Buy stadiums, attract spectators, sell tickets and invest in the teams"
+	},
+	{
+		"id": "road-item__update_6",
+		"text": "Update 6"
+	},
+	{
+		"id": "road__text_6",
+		"text": "Football Coach"
+	},
+	{
+		"id": "road__popup_4",
+		"text": "Become an experienced coach and get hired in the teams"
+	},
+	{
+		"id": "road-item__text_4",
+		"text": "Become an experienced coach and get hired in the teams"
+	},
+	{
+		"id": "road-item__update_7",
+		"text": "Update 7"
+	},
+	{
+		"id": "road__text_7",
+		"text": "Telegram game version"
+	},
+	{
+		"id": "road-item__update_8",
+		"text": "Update 8"
+	},
+	{
+		"id": "road__text_8",
+		"text": "Transfers, rental of football players"
+	},
+	{
+		"id": "road-item__update_9",
+		"text": "Update 9"
+	},
+	{
+		"id": "road__text_9",
+		"text": "Production of club merchandise"
+	},
+	{
+		"id": "road-item__update_10",
+		"text": "Update 2"
+	},
+	{
+		"id": "road__text_10",
+		"text": "Own NFT marketplace"
+	},
+	{
+		"id": "road-item__update_11",
+		"text": "Update 4"
+	},
+	{
+		"id": "road__text_11",
+		"text": "Kick 2 Earn Mechanics"
+	},
+	{
+		"id": "road__popup_5",
+		"text": "Improve the parameters of a football player by improving your kick in the real world with Adidas, Xiaomi or DribbleUp smart balls"
+	},
+	{
+		"id": "road-item__text_5",
+		"text": "Improve the parameters of a football player by improving your kick in the real world with Adidas, Xiaomi or DribbleUp smart balls"
+	},
+	{
+		"id": "road-item__update_12",
+		"text": "Update 6"
+	},
+	{
+		"id": "road__text_12",
+		"text": "Football Coach"
+	},
+	{
+		"id": "road__popup_6",
+		"text": "Become an experienced coach and get hired in the teams"
+	},
+	{
+		"id": "road-item__text_6",
+		"text": "Become an experienced coach and get hired in the teams"
+	},
+	{
+		"id": "road-item__update_13",
+		"text": "Update 8"
+	},
+	{
+		"id": "road__text_13",
+		"text": "Transfers, rental of football players"
+	},
+	{
+		"id": "team__title",
+		"text": "Team"
+	},
+	{
+		"id": "team__part-title_1",
+		"text": "Igor"
+	},
+	{
+		"id": "team__part-position_1",
+		"text": "CEO,<br> Co-founder"
+	},
+	{
+		"id": "team__exp_1",
+		"text": "- 11 years experience in IT"
+	},
+	{
+		"id": "team__exp_2",
+		"text": "- 5 years in Crypto Industry"
+	},
+	{
+		"id": "team__exp_3",
+		"text": "- CEO IMPS Kingdom, Pain Crusade"
+	},
+	{
+		"id": "team__exp_4",
+		"text": "- Adviser Gladiators honor"
+	},
+	{
+		"id": "team__part-title_2",
+		"text": "Michael"
+	},
+	{
+		"id": "team__part-position_2",
+		"text": "Fullstack & blockchain developer"
+	},
+	{
+		"id": "team__exp_5",
+		"text": "Experienced and resilts-oriented Fullstack & blockchain developer with more that 6 years of commercial and 8 years of general development experience"
+	},
+	{
+		"id": "team__part-title_3",
+		"text": "Mike"
+	},
+	{
+		"id": "team__part-position_3",
+		"text": "Senior blockchain developer"
+	},
+	{
+		"id": "team__exp_6",
+		"text": "- Winner of Imaguru Blockchain Hackathon 2017 (“ICO Booster” project)"
+	},
+	{
+		"id": "team__exp_7",
+		"text": "- Winner of Imaguru Fintech Hackathon 2018 (“Credit Chain” project)"
+	},
+	{
+		"id": "team__part-title_4",
+		"text": "Rostam"
+	},
+	{
+		"id": "team__part-position_4",
+		"text": "UI/UX, Product Designer"
+	},
+	{
+		"id": "team__exp_7",
+		"text": "Interface deisigner with 5 years experience oriented on combining aesthetic, functionality & business values"
+	},
+	{
+		"id": "team__part-title_5",
+		"text": "Alexander"
+	},
+	{
+		"id": "team__part-position_5",
+		"text": "Graphic Designer"
+	},
+	{
+		"id": "team__exp_8",
+		"text": "Graphic designer and illustrator of various kind of game styles with 11 years experience"
+	},
+	{
+		"id": "team__part-title_6",
+		"text": "Rostam"
+	},
+	{
+		"id": "team__part-position_6",
+		"text": "UI/UX, Product Designer"
+	},
+	{
+		"id": "team__exp_9",
+		"text": "Interface deisigner with 5 years experience oriented on combining aesthetic, functionality & business values"
+	},
+	{
+		"id": "team__part-title_7",
+		"text": "Alexander"
+	},
+	{
+		"id": "team__part-position_7",
+		"text": "Graphic Designer"
+	},
+	{
+		"id": "team__exp_10",
+		"text": "Graphic designer and illustrator of various kind of game styles with 11 years experience"
+	},
+	{
+		"id": "check__title title_4",
+		"text": "Follow the game and NFT collection announcements"
+	},
+	{
+		"id": "check__text_13",
+		"text": "Twitter"
+	},
+	{
+		"id": "check__text_14",
+		"text": "Telegram Official"
+	},
+	{
+		"id": "check__text_15",
+		"text": "Telegram Chat EN"
+	},
+	{
+		"id": "check__text_16",
+		"text": "Telegram Chat RU"
+	},
+	{
+		"id": "contact__title title",
+		"text": "Follow Us"
+	},
+	{
+		"id": "copy__text_1",
+		"text": "License Agreement"
+	},
+	{
+		"id": "copy__text_2",
+		"text": "Indemnity Agreement"
+	}
 ]

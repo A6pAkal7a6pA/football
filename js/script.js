@@ -49,18 +49,6 @@ document.querySelectorAll('.road__item').forEach(caret => {
 	});
 })
 
-document.querySelectorAll('.header__locale').forEach(locale => {
-	locale.addEventListener('click', () => {
-		if (locale.classList.contains('ru')) {
-			document.body.classList.add('ru')
-		} else {
-			document.body.classList.remove('ru')
-		}
-		locale.classList.add('active')
-		getSiblings(locale).forEach(loc => loc.classList.remove('active'))
-	});
-});
-
 const anchors = document.querySelectorAll('a[href*="#"]')
 for (let anchor of anchors) {
 	anchor.addEventListener('click', function (e) {
@@ -114,12 +102,29 @@ window.addEventListener('scroll', () => {
 let secretBall = document.querySelector('.secret-ball');
 secretBall.addEventListener('click', () => secretBall.classList.toggle('active'));
 
-document.querySelectorAll('.main-road__item')
-	.forEach(item =>
-		item.addEventListener('click', () =>
-			item.children[1].children[1].children[0].classList.toggle('active')));
-
 document.querySelectorAll('.collections-road__item')
-	.forEach(item =>
-		item.addEventListener('click', () =>
-			item.children[2].children[1].children[0].classList.toggle('active')));
+	.forEach(item => item.addEventListener('click', () => {
+		let popup = item.children[2].children[1].children[0];
+		if (popup.classList.contains('active')) {
+			popup.classList.remove('active');
+		} else {
+			Array.from(document.querySelectorAll('.collections-road__info-popup'))
+				.forEach(e => e.classList.remove('active'));
+			popup.classList.add('active');
+		}
+	}
+	));
+
+document.querySelectorAll('.main-road__item')
+	.forEach(item => item.addEventListener('click', () => {
+		let popup = item.children[1].children[1].children[0];
+		if (popup.classList.contains('active')) {
+			popup.classList.remove('active');
+		} else {
+			Array.from(document.querySelectorAll('.main-road__info-popup'))
+				.forEach(e => e.classList.remove('active'));
+			popup.classList.add('active');
+		}
+	}
+));
+

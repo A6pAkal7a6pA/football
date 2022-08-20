@@ -400,8 +400,8 @@
 
 		&__text {
 			font-weight: 600;
-			font-size: 20px;
-			line-height: 24px;
+			font-size: 14px;
+			line-height: 20px;
 			color: #4dda36;
 		}
 
@@ -412,6 +412,8 @@
 		&__info-popup {
 			position: absolute;
 			width: 250px;
+			max-height: 152px;
+			overflow-y: auto;
 			bottom: 100%;
 			left: 50%;
 			transform: translateX(-50%);
