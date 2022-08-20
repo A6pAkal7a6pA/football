@@ -165,10 +165,10 @@ setTimeout(() => {
 
 		storeSlider = new Swiper('.store-slider', {
 			loop: true,
-			autoplay: {
-				delay: 5000,
-				disableOnInteraction: false
-			},
+			// autoplay: {
+			// 	delay: 5000,
+			// 	disableOnInteraction: false
+			// },
 			speed: 1000,
 			effect: 'coverflow',
 			slidesPerView: 'auto',
@@ -200,10 +200,10 @@ setTimeout(() => {
 
 		uniqueSlider = new Swiper('.unique-slider', {
 			loop: true,
-			autoplay: {
-				delay: 5000,
-				disableOnInteraction: false
-			},
+			// autoplay: {
+			// 	delay: 5000,
+			// 	disableOnInteraction: false
+			// },
 			speed: 1000,
 			effect: 'coverflow',
 			slidesPerView: 'auto',

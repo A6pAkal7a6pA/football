@@ -131,13 +131,6 @@
 		"id": "main__button-title_1",
 		"text": "Scroll down"
 	},
-	
-
-
-
-
-
-	
 	{
 		"id": "collections__title",
 		"text": "Roadmap NFT-collections"
@@ -224,12 +217,8 @@
 	},
 	{
 		"id": "about__title",
-		"text": "This is the first free-to-earn multi-layered cross-chain PVP-game based on<span class= "ton" > TON</span> with the option to choose a role – <br><span class="green">Player</span> or <span class="green">Investor</span>"
+		"text": "This is the first free-to-earn multi-layered cross-chain PVP-game based on<span class='ton' > TON</span> with the option to choose a role – <br><span class='green'>Player</span> or <span class='green'>Investor</span>"
 	},
-
-	
-
-
 	{
 		"id": "about__subtitle",
 		"text": "Soon"
@@ -238,15 +227,10 @@
 		"id": "about__telegram",
 		"text": "Telegram-version Game"
 	},
-
-{
+	{
 		"id": "possibilities__title title",
-		"text": "<span class="green">Player's</span>  Opportunities"
+		"text": "<span class'green'>Player's</span>  Opportunities"
 	},
-
-
-
-
 	{
 		"id": "possibilities__text_1",
 		"text": "Play football with friends and earn when your team wins"
@@ -285,7 +269,7 @@
 	},
 	{
 		"id": "investor__title title",
-		"text": "<span class="green">Investor's</span> Opportunities"
+		"text": "<span class='green'>Investor's</span> Opportunities"
 	},
 	{
 		"id": "investor__text_1",
@@ -553,7 +537,7 @@
 	},
 	{
 		"id": "tokenomic-item__text_1",
-		"text": "Don't want to invest a lot of money, but just want to play? Challenge other teams, win, improve the players' experience, their strength, speed and kick and get free upgrades of performance, new super kicks	and uniforms!"
+		"text": "Don't want to invest a lot of money, but just want to play? Challenge other teams, win, improve the players' experience, their strength, speed and kick and get free upgrades of performance, new super kicks and uniforms!"
 	},
 	{
 		"id": "tokenomic-item__title_2",
@@ -825,7 +809,7 @@
 	},
 	{
 		"id": "team__exp_5",
-		"text": "Experienced and resilts-oriented Fullstack & blockchain developer with more that 6 years of commercial and	8 years of general development experience"
+		"text": "Experienced and resilts-oriented Fullstack & blockchain developer with more that 6 years of commercial and 8 years of general development experience"
 	},
 	{
 		"id": "team__part-title_3",
@@ -922,6 +906,5 @@
 	{
 		"id": "copy__text_2",
 		"text": "Indemnity Agreement"
-	},
-	
+	}
 ]

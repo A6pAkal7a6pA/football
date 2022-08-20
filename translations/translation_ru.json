@@ -49,7 +49,7 @@
 	},
 	{
 		"id": "main__nft-text_1",
-		"text": "NFT Raffle available"
+		"text": "NFT Raffle доступно"
 	},
 	{
 		"id": "main__project-title_1",
@@ -69,78 +69,71 @@
 	},
 	{
 		"id": "main-road__update_1",
-		"text": "Update 2"
+		"text": "Обновление 1"
 	},
 	{
 		"id": "main-road__text_1",
-		"text": "Launch of NFT-collection"
+		"text": "Запуск масштабного розыгрыша"
 	},
 	{
 		"id": "main-road__info-popup_1",
-		"text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, autem!"
+		"text": "Запуск масштабного розыгрыша. В предверии минта коллекции на эфириуме, мы запускаем RAFFLE, где 5000 человек смогут выиграть доступ к закрытой продаже и успеть приобрести NFT по самой выгодной цене первыми"
 	},
 	{
 		"id": "main-road__update_2",
-		"text": "Update 2"
+		"text": "Обновление 2"
 	},
 	{
 		"id": "main-road__text_2",
-		"text": "Launch of NFT-collection"
+		"text": "Минт коллекции из 11 264 NFT"
 	},
 	{
 		"id": "main-road__info-popup_2",
-		"text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, autem!"
+		"text": "Минт генеративной коллекции из 11 264 NFT на блокчейне эфир. Каждый обладатель NFT получит доступ к игре Shaolin Soccer в числе первых и сможет использовать все доступные функции игры первым! Также, каждый, кто присоединился к игре в числе первых пользователей - получит уникальные подарки от разработчиков и станет участником различных AIRDROP, которые будут доступны только холдерам NFT"
 	},
 	{
 		"id": "main-road__update_3",
-		"text": "Update 2"
+		"text": "Обновление 3"
 	},
 	{
 		"id": "main-road__text_3",
-		"text": "Launch of NFT-collection"
+		"text": "Официальный старт"
 	},
 	{
 		"id": "main-road__info-popup_3",
-		"text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, autem!"
+		"text": "Официальный старт первой версии кроссчейн игры для веб-браузеров и телеграмма. Всем холдерам коллекции предоставится доступ в числе первых принять участие в игре и прокачать своего футболиста. В первой версии игры будет доступна механика пенальти и возможность прокачивать своего футболиста."
 	},
 	{
 		"id": "main-road__update_4",
-		"text": "Update 2"
+		"text": "Обновление 4"
 	},
 	{
 		"id": "main-road__text_4",
-		"text": "Launch of NFT-collection"
+		"text": "Запуск PVP режима"
 	},
 	{
 		"id": "main-road__info-popup_4",
-		"text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, autem!"
+		"text": "Запуск PVP режима. На данном этапе, мы вводим режим соревнований между игроками. Теперь каждый из вас сможет проверить свои силы и сразиться с другими пользователями. Перед каждой игрой вы сможете сделать ставку, и в случае победы приумножить свой выигрыш и заработать. Участвуйте в соревнованиях, прокачивайте футболиста и зарабатывайте на своих победах!"
 	},
 	{
 		"id": "main-road__update_5",
-		"text": "Update 2"
+		"text": "Обновление 5"
 	},
 	{
 		"id": "main-road__text_5",
-		"text": "Launch of NFT-collection"
+		"text": "Запуск GENESIS-коллекций"
 	},
 	{
 		"id": "main-road__info-popup_5",
-		"text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, autem!"
+		"text": "Запуск нескольких GENESIS-коллекций с различными лутбоксами, легендарными футболистами и тренерами. Следующие несколько коллекций расширят возможности игры и откроют новые механики взаимодействия"
 	},
 	{
 		"id": "main__button-title_1",
-		"text": "Scroll down"
+		"text": "Скролл вниз"
 	},
-	
-
-
-
-
-
-	
 	{
 		"id": "collections__title",
-		"text": "Roadmap NFT-collections"
+		"text": "Roadmap NFT-коллекции"
 	},
 	{
 		"id": "collections-road__date_1",
@@ -148,15 +141,15 @@
 	},
 	{
 		"id": "collections-road__update_1",
-		"text": "Update 1"
+		"text": "Обновление 1"
 	},
 	{
 		"id": "collections-road__text_1",
-		"text": "Launch of a large-scale draw"
+		"text": "Запуск масштабного розыгрыша"
 	},
 	{
 		"id": "collections-road__info-popup_1",
-		"text": "Launch of a large-scale draw. On the threshold of the collection mint on Ethereum, we are launching RAFFLE, where 5,000 people will be able to win access to a closed sale and be the first to get NFT at the best price"
+		"text": "Запуск масштабного розыгрыша. В предверии минта коллекции на эфириуме, мы запускаем RAFFLE, где 5000 человек смогут выиграть доступ к закрытой продаже и успеть приобрести NFT по самой выгодной цене первыми"
 	},
 	{
 		"id": "collections-road__date_2",
@@ -164,15 +157,15 @@
 	},
 	{
 		"id": "collections-road__update_2",
-		"text": "Update 2"
+		"text": "Обновление 2"
 	},
 	{
 		"id": "collections-road__text_2",
-		"text": "Launch of a large-scale draw"
+		"text": "Минт коллекции из 11 264 NFT"
 	},
 	{
 		"id": "collections-road__info-popup_2",
-		"text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, autem!"
+		"text": "Минт генеративной коллекции из 11 264 NFT на блокчейне эфир. Каждый обладатель NFT получит доступ к игре Shaolin Soccer в числе первых и сможет использовать все доступные функции игры первым! Также, каждый, кто присоединился к игре в числе первых пользователей - получит уникальные подарки от разработчиков и станет участником различных AIRDROP, которые будут доступны только холдерам NFT"
 	},
 	{
 		"id": "collections-road__date_3",
@@ -180,15 +173,15 @@
 	},
 	{
 		"id": "collections-road__update_3",
-		"text": "Update 1"
+		"text": "Обновление 3"
 	},
 	{
 		"id": "collections-road__text_3",
-		"text": "Launch of a large-scale draw"
+		"text": "Официальный старт"
 	},
 	{
 		"id": "collections-road__info-popup_3",
-		"text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, autem!"
+		"text": "Официальный старт первой версии кроссчейн игры для веб-браузеров и телеграмма. Всем холдерам коллекции предоставится доступ в числе первых принять участие в игре и прокачать своего футболиста. В первой версии игры будет доступна механика пенальти и возможность прокачивать своего футболиста."
 	},
 	{
 		"id": "collections-road__date_4",
@@ -196,15 +189,15 @@
 	},
 	{
 		"id": "collections-road__update_4",
-		"text": "Update 1"
+		"text": "Обновление 4"
 	},
 	{
 		"id": "collections-road__text_4",
-		"text": "Launch of a large-scale draw"
+		"text": "Запуск PVP режима."
 	},
 	{
 		"id": "collections-road__info-popup_4",
-		"text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, autem!"
+		"text": "Запуск PVP режима. На данном этапе, мы вводим режим соревнований между игроками. Теперь каждый из вас сможет проверить свои силы и сразиться с другими пользователями. Перед каждой игрой вы сможете сделать ставку, и в случае победы приумножить свой выигрыш и заработать. Участвуйте в соревнованиях, прокачивайте футболиста и зарабатывайте на своих победах!"
 	},
 	{
 		"id": "collections-road__date_5",
@@ -212,41 +205,32 @@
 	},
 	{
 		"id": "collections-road__update_5",
-		"text": "Update 1"
+		"text": "Обновление 5"
 	},
 	{
 		"id": "collections-road__text_5",
-		"text": "Launch of a large-scale draw"
+		"text": "Запуск GENESIS-коллекций"
 	},
 	{
 		"id": "collections-road__info-popup_5",
-		"text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, autem!"
+		"text": "Запуск нескольких GENESIS-коллекций с различными лутбоксами, легендарными футболистами и тренерами. Следующие несколько коллекций расширят возможности игры и откроют новые механики взаимодействия"
 	},
 	{
 		"id": "about__title",
-		"text": "Это первая многослойная crosshain-игра на <span class='ton'>TON</span> с возможностью выбрать роль – <br><span class='green'>Игрок</span> или <span class="green">Инвестор</span>"
+		"text": "Это первая многослойная crosshain-игра на <span class='ton'>TON</span> с возможностью выбрать роль – <br><span class='green'>Игрок</span> или <span class='green'>Инвестор</span>"
 	},
-
-	
-
-
 	{
 		"id": "about__subtitle",
 		"text": "Скоро"
 	},
 	{
 		"id": "about__telegram",
-		"text": "Telegram-version Game"
+		"text": "Telegram-version Игра"
 	},
-
-{
+	{
 		"id": "possibilities__title title",
-		"text": "Возможности <span class="green">Игроков</span>"
+		"text": "Возможности <span class='green'>Игроков</span>"
 	},
-
-
-
-
 	{
 		"id": "possibilities__text_1",
 		"text": "Играй в футбол и зарабатывай на победах своей команды"
@@ -285,7 +269,7 @@
 	},
 	{
 		"id": "investor__title title",
-		"text": "Возможности <span class="green">Инвесторов</span>"
+		"text": "Возможности <span class='green'>Инвесторов</span>"
 	},
 	{
 		"id": "investor__text_1",
@@ -329,7 +313,7 @@
 	},
 	{
 		"id": "store__title",
-		"text": "NFT Store"
+		"text": "NFT Магазин"
 	},
 	{
 		"id": "store__subtitle",
@@ -801,11 +785,11 @@
 	},
 	{
 		"id": "team__exp_1",
-		"text": "- 11 years experience in IT"
+		"text": "- 11 лет опыта в IT"
 	},
 	{
 		"id": "team__exp_2",
-		"text": "- 5 years in Crypto Industry"
+		"text": "- 5 лет в крипто индустрии"
 	},
 	{
 		"id": "team__exp_3",
@@ -825,7 +809,7 @@
 	},
 	{
 		"id": "team__exp_5",
-		"text": "Experienced and resilts-oriented Fullstack & blockchain developer with more that 6 years of commercial and	8 years of general development experience"
+		"text": "Опытный и ориентированный на результат разработчик полного стека и блокчейна с более чем 6-летним коммерческим и 8-летним опытом общей разработки."
 	},
 	{
 		"id": "team__part-title_3",
@@ -837,11 +821,11 @@
 	},
 	{
 		"id": "team__exp_6",
-		"text": "- Winner of Imaguru Blockchain Hackathon 2017 (“ICO Booster” project)"
+		"text": "- Победитель of Imaguru Blockchain Hackathon 2017 (“ICO Booster” проект)"
 	},
 	{
 		"id": "team__exp_7",
-		"text": "- Winner of Imaguru Fintech Hackathon 2018 (“Credit Chain” project)"
+		"text": "- Победитель of Imaguru Fintech Hackathon 2018 (“Credit Chain” проект)"
 	},
 	{
 		"id": "team__part-title_4",
@@ -853,7 +837,7 @@
 	},
 	{
 		"id": "team__exp_7",
-		"text": "Interface deisigner with 5 years experience oriented on combining aesthetic, functionality & business values"
+		"text": "Дизайнер интерфейсов с 5-летним опытом, ориентированный на сочетание эстетики, функциональности и бизнес-ценности."
 	},
 	{
 		"id": "team__part-title_5",
@@ -865,7 +849,7 @@
 	},
 	{
 		"id": "team__exp_8",
-		"text": "Graphic designer and illustrator of various kind of game styles with 11 years experience"
+		"text": "Графический дизайнер и иллюстратор различных игровых стилей с 11-летним опытом"
 	},
 	{
 		"id": "team__part-title_6",
@@ -877,7 +861,7 @@
 	},
 	{
 		"id": "team__exp_9",
-		"text": "Interface deisigner with 5 years experience oriented on combining aesthetic, functionality & business values"
+		"text": "Дизайнер интерфейсов с 5-летним опытом, ориентированный на сочетание эстетики, функциональности и бизнес-ценности."
 	},
 	{
 		"id": "team__part-title_7",
@@ -889,7 +873,7 @@
 	},
 	{
 		"id": "team__exp_10",
-		"text": "Graphic designer and illustrator of various kind of game styles with 11 years experience"
+		"text": "Графический дизайнер и иллюстратор различных игровых стилей с 11-летним опытом"
 	},
 	{
 		"id": "check__title title_4",
@@ -922,6 +906,5 @@
 	{
 		"id": "copy__text_2",
 		"text": "Соглашение о возмещении ущерба"
-	},
-	
+	}
 ]

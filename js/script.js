@@ -49,18 +49,6 @@ document.querySelectorAll('.road__item').forEach(caret => {
 	});
 })
 
-document.querySelectorAll('.header__locale').forEach(locale => {
-	locale.addEventListener('click', () => {
-		if (locale.classList.contains('ru')) {
-			document.body.classList.add('ru')
-		} else {
-			document.body.classList.remove('ru')
-		}
-		locale.classList.add('active')
-		getSiblings(locale).forEach(loc => loc.classList.remove('active'))
-	});
-});
-
 const anchors = document.querySelectorAll('a[href*="#"]')
 for (let anchor of anchors) {
 	anchor.addEventListener('click', function (e) {
