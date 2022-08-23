@@ -115,7 +115,15 @@
 		line-height: 20px;
 		color: rgba(#fdfffd, 0.6);
 	}
-
+	&__exp {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		p {
+			max-width: 443px;
+		}
+	}
 	@media (max-width: 1330px) {
 		&__items {
 			display: flex;

@@ -5294,6 +5294,24 @@ body .possibilities .secret-ball.active .secret-ball__text {
   color: rgba(253, 255, 253, 0.6);
 }
 
+.team__exp {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team__exp p {
+  max-width: 443px;
+}
+
 @media (max-width: 1330px) {
   .team__items {
     display: -webkit-box;

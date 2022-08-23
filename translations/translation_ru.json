@@ -777,7 +777,7 @@
 	},
 	{
 		"id": "team__part-title_1",
-		"text": "Igor"
+		"text": "Игорь"
 	},
 	{
 		"id": "team__part-position_1",
@@ -797,11 +797,11 @@
 	},
 	{
 		"id": "team__exp_4",
-		"text": "- Adviser Gladiators honor"
+		"text": "- Адвайзер Gladiators honor"
 	},
 	{
 		"id": "team__part-title_2",
-		"text": "Michael"
+		"text": "Миша"
 	},
 	{
 		"id": "team__part-position_2",
@@ -813,7 +813,7 @@
 	},
 	{
 		"id": "team__part-title_3",
-		"text": "Mike"
+		"text": "Миша"
 	},
 	{
 		"id": "team__part-position_3",
@@ -829,19 +829,23 @@
 	},
 	{
 		"id": "team__part-title_4",
-		"text": "Rostam"
+		"text": "Рустам"
 	},
 	{
 		"id": "team__part-position_4",
 		"text": "UI/UX, Product Designer"
 	},
 	{
-		"id": "team__exp_7",
+		"id": "team__exp_11",
 		"text": "Дизайнер интерфейсов с 5-летним опытом, ориентированный на сочетание эстетики, функциональности и бизнес-ценности."
 	},
 	{
+		"id": "team__exp_12",
+		"text": "- CTO SeedLaunch.org"
+	},
+	{
 		"id": "team__part-title_5",
-		"text": "Alexander"
+		"text": "Александр"
 	},
 	{
 		"id": "team__part-position_5",
@@ -853,7 +857,7 @@
 	},
 	{
 		"id": "team__part-title_6",
-		"text": "Rostam"
+		"text": "Рустам"
 	},
 	{
 		"id": "team__part-position_6",
@@ -865,7 +869,7 @@
 	},
 	{
 		"id": "team__part-title_7",
-		"text": "Alexander"
+		"text": "Александр"
 	},
 	{
 		"id": "team__part-position_7",
