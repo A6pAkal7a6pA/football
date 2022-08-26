@@ -128,3 +128,5 @@ document.querySelectorAll('.main-road__item')
 	}
 ));
 
+document.querySelector('.main-presale__exit')
+.addEventListener('click', () => document.querySelector('.main-presale').remove())
