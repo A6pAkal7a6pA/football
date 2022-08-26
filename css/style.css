@@ -1185,7 +1185,6 @@ body {
 .main-road__info-popup {
   position: absolute;
   width: 290px;
-  max-height: 152px;
   overflow-y: auto;
   bottom: 100%;
   left: 50%;
@@ -1194,7 +1193,10 @@ body {
   background: #fff;
   color: #021228;
   padding: 15px;
-  border: 1px solid #021228;
+  border: 3px solid #ebebeb;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 10px;
   z-index: 2;
   opacity: 0;
 }
@@ -2269,10 +2271,10 @@ body {
   line-height: 39px;
   text-align: center;
   color: #082148;
-  margin-bottom: 66px;
 }
 
 .collections-road__inner {
+  padding-top: 110px;
   overflow-x: auto;
 }
 
@@ -2371,7 +2373,6 @@ body {
 .collections-road__info-popup {
   position: absolute;
   width: 250px;
-  max-height: 152px;
   overflow-y: auto;
   bottom: 100%;
   left: 50%;
@@ -2383,6 +2384,10 @@ body {
   border: 1px solid #021228;
   z-index: 2;
   opacity: 0;
+  border: 3px solid #ebebeb;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 10px;
 }
 
 .collections-road__info-popup.active {

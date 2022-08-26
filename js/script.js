@@ -102,31 +102,46 @@ window.addEventListener('scroll', () => {
 let secretBall = document.querySelector('.secret-ball');
 secretBall.addEventListener('click', () => secretBall.classList.toggle('active'));
 
-document.querySelectorAll('.collections-road__item')
-	.forEach(item => item.addEventListener('click', () => {
-		let popup = item.children[2].children[1].children[0];
-		if (popup.classList.contains('active')) {
-			popup.classList.remove('active');
-		} else {
-			Array.from(document.querySelectorAll('.collections-road__info-popup'))
-				.forEach(e => e.classList.remove('active'));
+
+if (window.innerWidth > 769) {
+	document.querySelectorAll('.collections-road__item')
+		.forEach(item => item.addEventListener('mouseover', () => {
+			let popup = item.children[2].children[1].children[0];
 			popup.classList.add('active');
+		}));
+	document.querySelectorAll('.collections-road__item')
+		.forEach(item => item.addEventListener('mouseout', () => {
+			let popup = item.children[2].children[1].children[0];
+			popup.classList.remove('active');
+		}));
+}
+
+
+if (window.innerWidth <= 769) {
+	document.querySelectorAll('.collections-road__item')
+		.forEach(item => item.addEventListener('click', () => {
+			let popup = item.children[2].children[1].children[0];
+			if (popup.classList.contains('active')) {
+				popup.classList.remove('active');
+			} else {
+				Array.from(document.querySelectorAll('.collections-road__info-popup'))
+					.forEach(e => e.classList.remove('active'));
+				popup.classList.add('active');
+			}
 		}
-	}
-	));
+		));
+}
 
 document.querySelectorAll('.main-road__item')
-	.forEach(item => item.addEventListener('click', () => {
+	.forEach(item => item.addEventListener('mouseover', () => {
 		let popup = item.children[1].children[1].children[0];
-		if (popup.classList.contains('active')) {
-			popup.classList.remove('active');
-		} else {
-			Array.from(document.querySelectorAll('.main-road__info-popup'))
-				.forEach(e => e.classList.remove('active'));
-			popup.classList.add('active');
-		}
-	}
-));
+		popup.classList.add('active');
+	}));
+document.querySelectorAll('.main-road__item')
+	.forEach(item => item.addEventListener('mouseout', () => {
+		let popup = item.children[1].children[1].children[0];
+		popup.classList.remove('active');
+	}));
 
 document.querySelector('.main-presale__exit')
-.addEventListener('click', () => document.querySelector('.main-presale').remove())
+	.addEventListener('click', () => document.querySelector('.main-presale').remove())

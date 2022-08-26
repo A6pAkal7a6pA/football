@@ -495,7 +495,6 @@
 		&__info-popup {
 			position: absolute;
 			width: 290px;
-			max-height: 152px;
 			overflow-y: auto;
 			bottom: 100%;
 			left: 50%;
@@ -503,7 +502,10 @@
 			background: #fff;
 			color: #021228;
 			padding: 15px;
-			border: 1px solid #021228;
+			border: 3px solid #ebebeb;
+			font-size: 14px;
+			line-height: 17px;
+			border-radius: 10px;
 			z-index: 2;
 			opacity: 0;
 			&.active {

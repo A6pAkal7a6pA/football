@@ -8,11 +8,11 @@
 		line-height: 39px;
 		text-align: center;
 		color: #082148;
-		margin-bottom: 66px;
 	}
 
 	&-road {
 		&__inner {
+			padding-top: 110px;
 			overflow-x: auto;
 		}
 
@@ -97,7 +97,6 @@
 		&__info-popup {
 			position: absolute;
 			width: 250px;
-			max-height: 152px;
 			overflow-y: auto;
 			bottom: 100%;
 			left: 50%;
@@ -108,10 +107,13 @@
 			border: 1px solid #021228;
 			z-index: 2;
 			opacity: 0;
+			border: 3px solid #ebebeb;
+			font-size: 14px;
+			line-height: 17px;
+			border-radius: 10px;
 			&.active {
 				opacity: 1;
 			}
-
 		}
 
 		&__info-image {
