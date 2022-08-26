@@ -104,15 +104,13 @@ secretBall.addEventListener('click', () => secretBall.classList.toggle('active')
 
 
 if (window.innerWidth > 769) {
-	document.querySelectorAll('.collections-road__item')
+	document.querySelectorAll('.collections-road__info')
 		.forEach(item => item.addEventListener('mouseover', () => {
-			let popup = item.children[2].children[1].children[0];
-			popup.classList.add('active');
+			item.children[0].classList.add('active');
 		}));
-	document.querySelectorAll('.collections-road__item')
+	document.querySelectorAll('.collections-road__info')
 		.forEach(item => item.addEventListener('mouseout', () => {
-			let popup = item.children[2].children[1].children[0];
-			popup.classList.remove('active');
+			item.children[0].classList.remove('active');
 		}));
 }
 
@@ -132,15 +130,14 @@ if (window.innerWidth <= 769) {
 		));
 }
 
-document.querySelectorAll('.main-road__item')
+document.querySelectorAll('.main-road__info')
 	.forEach(item => item.addEventListener('mouseover', () => {
-		let popup = item.children[1].children[1].children[0];
-		popup.classList.add('active');
+		console.log(item);
+		item.children[0].classList.add('active');
 	}));
-document.querySelectorAll('.main-road__item')
+document.querySelectorAll('.main-road__info')
 	.forEach(item => item.addEventListener('mouseout', () => {
-		let popup = item.children[1].children[1].children[0];
-		popup.classList.remove('active');
+		item.children[0].classList.remove('active');
 	}));
 
 document.querySelector('.main-presale__exit')
