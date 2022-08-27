@@ -104,21 +104,21 @@ secretBall.addEventListener('click', () => secretBall.classList.toggle('active')
 
 
 if (window.innerWidth > 769) {
-	document.querySelectorAll('.collections-road__info')
+	document.querySelectorAll('.collections-road__info-image')
 		.forEach(item => item.addEventListener('mouseover', () => {
-			item.children[0].classList.add('active');
+			item.parentElement.children[0].classList.add('active');
 		}));
-	document.querySelectorAll('.collections-road__info')
+	document.querySelectorAll('.collections-road__info-image')
 		.forEach(item => item.addEventListener('mouseout', () => {
-			item.children[0].classList.remove('active');
+			item.parentElement.children[0].classList.remove('active');
 		}));
 }
 
 
 if (window.innerWidth <= 769) {
-	document.querySelectorAll('.collections-road__item')
+	document.querySelectorAll('.collections-road__info-image')
 		.forEach(item => item.addEventListener('click', () => {
-			let popup = item.children[2].children[1].children[0];
+			let popup = item.parentElement.children[0];
 			if (popup.classList.contains('active')) {
 				popup.classList.remove('active');
 			} else {
@@ -128,16 +128,24 @@ if (window.innerWidth <= 769) {
 			}
 		}
 		));
+	window.addEventListener('click', e => {
+		let roadMap = document.querySelector('.collections__roadmap');
+		console.log(!roadMap.contains(e.target));
+		if (!roadMap.contains(e.target)) {
+			Array.from(document.querySelectorAll('.collections-road__info-popup'))
+				.forEach(e => e.classList.remove('active'));
+		}
+	});
 }
 
-document.querySelectorAll('.main-road__info')
+document.querySelectorAll('.main-road__info-image')
 	.forEach(item => item.addEventListener('mouseover', () => {
 		console.log(item);
-		item.children[0].classList.add('active');
+		item.parentElement.children[0].classList.add('active');
 	}));
-document.querySelectorAll('.main-road__info')
+document.querySelectorAll('.main-road__info-image')
 	.forEach(item => item.addEventListener('mouseout', () => {
-		item.children[0].classList.remove('active');
+		item.parentElement.children[0].classList.remove('active');
 	}));
 
 document.querySelector('.main-presale__exit')
