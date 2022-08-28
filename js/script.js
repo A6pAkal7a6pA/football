@@ -114,7 +114,7 @@ if (window.innerWidth > 769) {
 		}));
 }
 
-let currentItem;
+let currentItem = null;
 if (window.innerWidth <= 769) {
 	document.querySelectorAll('.collections-road__info-image')
 		.forEach(item => item.addEventListener('click', () => {
@@ -130,7 +130,7 @@ if (window.innerWidth <= 769) {
 		}
 		));
 	window.addEventListener('click', e => {
-		if (!currentItem.contains(e.target.parentElement)) {
+		if (currentItem !== null && !currentItem.contains(e.target.parentElement)) {
 			Array.from(document.querySelectorAll('.collections-road__info-popup'))
 				.forEach(e => e.classList.remove('active'));
 		}
