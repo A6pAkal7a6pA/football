@@ -114,7 +114,7 @@ if (window.innerWidth > 769) {
 		}));
 }
 
-
+let currentItem;
 if (window.innerWidth <= 769) {
 	document.querySelectorAll('.collections-road__info-image')
 		.forEach(item => item.addEventListener('click', () => {
@@ -126,12 +126,11 @@ if (window.innerWidth <= 769) {
 					.forEach(e => e.classList.remove('active'));
 				popup.classList.add('active');
 			}
+			currentItem = item.parentElement;
 		}
 		));
 	window.addEventListener('click', e => {
-		let roadMap = document.querySelector('.collections__roadmap');
-		console.log(!roadMap.contains(e.target));
-		if (!roadMap.contains(e.target)) {
+		if (!currentItem.contains(e.target.parentElement)) {
 			Array.from(document.querySelectorAll('.collections-road__info-popup'))
 				.forEach(e => e.classList.remove('active'));
 		}
