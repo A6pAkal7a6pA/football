@@ -2302,6 +2302,7 @@ body {
   padding: 20px;
   position: relative;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .collections-road__item:not(:last-child)::after {
@@ -3119,6 +3120,7 @@ body {
           flex-direction: column;
   height: auto;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .possibilities__item::before {
@@ -5797,4 +5799,9 @@ body.ru .possibilities .secret-ball .secret-ball__text.en {
 
 body.ru .possibilities .secret-ball .secret-ball__text.ru {
   display: block;
+}
+
+a,
+.swiper-slide {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
