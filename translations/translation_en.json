@@ -321,7 +321,7 @@
 	},
 	{
 		"id": "store__text",
-		"text": "Buy NFT"
+		"text": "Join Presale"
 	},
 	{
 		"id": "store__soon-title",
@@ -914,5 +914,13 @@
 	{
 		"id": "copy__text_2",
 		"text": "Indemnity Agreement"
+	},
+	{
+		"id": "banner_text",
+		"text": "Join Presale now"
+	},
+	{
+		"id": "banner_button",
+		"text": "Join Presale"
 	}
 ]

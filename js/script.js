@@ -106,6 +106,7 @@ secretBall.addEventListener('click', () => secretBall.classList.toggle('active')
 if (window.innerWidth > 769) {
 	document.querySelectorAll('.collections-road__info-image')
 		.forEach(item => item.addEventListener('mouseover', () => {
+			console.log(item.parentElement.children[0]);
 			item.parentElement.children[0].classList.add('active');
 		}));
 	document.querySelectorAll('.collections-road__info-image')

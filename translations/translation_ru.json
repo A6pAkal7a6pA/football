@@ -321,7 +321,7 @@
 	},
 	{
 		"id": "store__text",
-		"text": "Купить NFT"
+		"text": "Участвовать"
 	},
 	{
 		"id": "store__soon-title",
@@ -910,5 +910,13 @@
 	{
 		"id": "copy__text_2",
 		"text": "Соглашение о возмещении ущерба"
+	},
+	{
+		"id": "banner_text",
+		"text": "Участвовать в пресейле"
+	},
+	{
+		"id": "banner_button",
+		"text": "Участвовать"
 	}
 ]

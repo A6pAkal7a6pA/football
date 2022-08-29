@@ -257,6 +257,7 @@
 		bottom: 50%;
 		z-index: 2;
 		cursor: pointer;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 		.secret-ball__text {
 			display: none;
 		}
