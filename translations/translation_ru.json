@@ -217,7 +217,7 @@
 	},
 	{
 		"id": "about__title",
-		"text": "Это первая многослойная crosshain-игра на <span class='ton'>TON</span> с возможностью выбрать роль – <br><span class='green'>Игрок</span> или <span class='green'>Инвестор</span>"
+		"text": "Это первая многослойная crosshain-игра на <span class='ton'>TON</span> и <span class='eth'>ETH</span> с возможностью выбрать роль – <br><span class='green'>Игрок</span> или <span class='green'>Инвестор</span>"
 	},
 	{
 		"id": "about__subtitle",

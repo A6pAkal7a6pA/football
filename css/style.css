@@ -2521,6 +2521,10 @@ body {
   color: #0088cc;
 }
 
+.about__title .eth {
+  color: #627EEA;
+}
+
 .about__subtitle {
   font-size: 18px;
   font-weight: 500;

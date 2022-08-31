@@ -217,7 +217,7 @@
 	},
 	{
 		"id": "about__title",
-		"text": "This is the first free-to-earn multi-layered cross-chain PVP-game based on<span class='ton' > TON</span> with the option to choose a role – <br><span class='green'>Player</span> or <span class='green'>Investor</span>"
+		"text": "This is the first free-to-earn multi-layered cross-chain PVP-game based on <span class='ton'>TON</span> and <span class='eth'>ETH</span> with the option to choose a role – <br><span class='green'>Player</span> or <span class='green'>Investor</span>"
 	},
 	{
 		"id": "about__subtitle",
