@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
 			delay: 5000,
 			disableOnInteraction: false
 		},
-		speed: 1000,
+		speed: 500,
 		effect: 'coverflow',
 		slidesPerView: 'auto',
 		initialSlide: 0,
@@ -40,7 +40,7 @@ window.addEventListener('load', () => {
 			delay: 5000,
 			disableOnInteraction: false
 		},
-		speed: 1000,
+		speed: 500,
 		effect: 'coverflow',
 		slidesPerView: 'auto',
 		initialSlide: 0,
@@ -75,7 +75,7 @@ window.addEventListener('load', () => {
 			delay: 5000,
 			disableOnInteraction: false
 		},
-		speed: 1000,
+		speed: 500,
 		effect: 'coverflow',
 		slidesPerView: 'auto',
 		initialSlide: 0,
@@ -116,7 +116,7 @@ window.addEventListener('load', () => {
 			delay: 5000,
 			disableOnInteraction: false
 		},
-		speed: 1000,
+		speed: 500,
 		slidesPerView: 1,
 		initialSlide: 0,
 		centeredSlides: true,
@@ -134,7 +134,7 @@ setTimeout(() => {
 				delay: 5000,
 				disableOnInteraction: false
 			},
-			speed: 1000,
+			speed: 500,
 			effect: 'coverflow',
 			slidesPerView: 'auto',
 			initialSlide: 0,
@@ -169,7 +169,7 @@ setTimeout(() => {
 			// 	delay: 5000,
 			// 	disableOnInteraction: false
 			// },
-			speed: 1000,
+			speed: 500,
 			effect: 'coverflow',
 			slidesPerView: 'auto',
 			initialSlide: 0,
@@ -204,7 +204,7 @@ setTimeout(() => {
 			// 	delay: 5000,
 			// 	disableOnInteraction: false
 			// },
-			speed: 1000,
+			speed: 500,
 			effect: 'coverflow',
 			slidesPerView: 'auto',
 			initialSlide: 0,
@@ -245,7 +245,7 @@ setTimeout(() => {
 				delay: 5000,
 				disableOnInteraction: false
 			},
-			speed: 1000,
+			speed: 500,
 			slidesPerView: 1,
 			initialSlide: 0,
 			centeredSlides: true,
@@ -266,7 +266,7 @@ let headSlider = new Swiper('.head-slider', {
 		disableOnInteraction: false,
 		pauseOnMouseEnter: true
 	},
-	speed: 1000,
+	speed: 500,
 	slidesPerView: 'auto',
 	initialSlide: 0,
 	centeredSlides: false,
@@ -294,7 +294,7 @@ let posSlider = new Swiper('.possibilities__slider', {
 		delay: 3000,
 		disableOnInteraction: false
 	},
-	speed: 1000,
+	speed: 500,
 	slidesPerView: 'auto',
 	initialSlide: 0,
 	centeredSlides: false,

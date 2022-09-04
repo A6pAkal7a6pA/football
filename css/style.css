@@ -4639,8 +4639,6 @@ body .possibilities .secret-ball.active .secret-ball__text {
   -webkit-box-shadow: 6.72301px 6.72301px 20.169px rgba(17, 227, 76, 0.1);
           box-shadow: 6.72301px 6.72301px 20.169px rgba(17, 227, 76, 0.1);
   border-radius: 6px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
   border: 6px solid #082148;
 }
 
@@ -4651,8 +4649,6 @@ body .possibilities .secret-ball.active .secret-ball__text {
   top: 0;
   width: 100%;
   height: 100%;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
 }
 
 .skills-slider__item.swiper-slide-visible {
@@ -4817,9 +4813,20 @@ body .possibilities .secret-ball.active .secret-ball__text {
   margin-bottom: 60px;
 }
 
+.deligate__graph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .deligate__graph img {
   max-width: 100%;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -5343,6 +5350,7 @@ body .possibilities .secret-ball.active .secret-ball__text {
       grid-template-rows: repeat(6, 80px);
   gap: 20px;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .team__item {
@@ -5454,6 +5462,29 @@ body .possibilities .secret-ball.active .secret-ball__text {
           transform: translate(-50%, -50%);
 }
 
+.team__adviser {
+  background: #021228;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 30px 60px;
+}
+
+.team__adviser .team__part-position {
+  color: #4dda36;
+}
+
+.team__adviser-text {
+  font-size: 18px;
+  line-height: 22px;
+  color: #fdfffd;
+}
+
 .team__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5541,12 +5572,17 @@ body .possibilities .secret-ball.active .secret-ball__text {
 }
 
 @media (max-width: 600px) {
-  .team__item {
+  .team__item, .team__adviser {
     padding: 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .team__adviser-text,
+  .team__exp p {
+    font-size: 18px;
+    line-height: 22px;
   }
   .team__about {
     padding: 0 20px;
@@ -5554,6 +5590,47 @@ body .possibilities .secret-ball.active .secret-ball__text {
         -ms-flex: auto;
             flex: auto;
     max-width: none;
+  }
+}
+
+.partners__inner {
+  background: #082148;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px;
+  gap: 90px;
+}
+
+.partners__title {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #fdfffd;
+}
+
+.partners__item img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 680px) {
+  .partners__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+    padding: 30px;
   }
 }
 
@@ -5781,6 +5858,10 @@ body .possibilities .secret-ball .secret-ball__text.ru {
   margin-bottom: 140px;
 }
 
+.partners {
+  margin-bottom: 140px;
+}
+
 .unique {
   margin-bottom: 130px;
 }
@@ -5828,6 +5909,9 @@ body .possibilities .secret-ball .secret-ball__text.ru {
   }
   .collections {
     margin: 70px 0;
+  }
+  .partners {
+    margin-bottom: 70px;
   }
 }
 

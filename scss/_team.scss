@@ -20,6 +20,10 @@
 		grid-template-rows: repeat(6, 80px);
 		gap: 20px;
 		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	&__advisers {
 	}
 
 	&__item {
@@ -95,6 +99,22 @@
 		}
 	}
 
+	&__adviser {
+		background: #021228;
+		border-radius: 12px;
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		padding: 30px 60px;
+		.team__part-position {
+			color: #4dda36;
+		}
+		&-text {
+			font-size: 18px;
+			line-height: 22px;
+			color: #fdfffd;
+		}
+	}
 	&__content {
 		display: flex;
 		flex-direction: column;
@@ -159,9 +179,15 @@
 		}
 	}
 	@media (max-width: 600px) {
-		&__item {
+		&__item,
+		&__adviser {
 			padding: 20px;
 			flex-direction: column;
+		}
+		&__adviser-text,
+		&__exp p {
+			font-size: 18px;
+			line-height: 22px;
 		}
 		&__about {
 			padding: 0 20px;

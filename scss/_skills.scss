@@ -70,7 +70,7 @@
 		height: 100%;
 		box-shadow: 6.72301px 6.72301px 20.169px rgba(17, 227, 76, 0.1);
 		border-radius: 6px;
-		transition: all 0.5s;
+		// transition: all 0.5s;
 		border: 6px solid #082148;
 		&::after {
 			content: "";
@@ -79,7 +79,7 @@
 			top: 0;
 			width: 100%;
 			height: 100%;
-			transition: all 0.5s;
+			// transition: all 0.5s;
 		}
 		&.swiper-slide-visible {
 			// opacity: 0.6;

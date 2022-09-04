@@ -1,0 +1,39 @@
+.partners {
+	&__inner {
+		background: #082148;
+		border-radius: 12px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 40px;
+		gap: 90px;
+	}
+
+	&__title {
+		font-weight: 800;
+		font-size: 32px;
+		line-height: 39px;
+		text-align: center;
+		color: #fdfffd;
+	}
+
+	&__items {
+	}
+
+	&__item {
+		img {
+			max-width: 100%;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	@media(max-width: 680px) {
+		&__inner {
+			flex-direction: column;
+			gap: 30px;
+			padding: 30px;
+		}
+	}
+	
+}
+

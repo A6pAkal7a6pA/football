@@ -922,5 +922,9 @@
 	{
 		"id": "banner_button",
 		"text": "Join Presale"
+	},
+	{
+		"id": "partners_title",
+		"text": "Partners"
 	}
 ]
