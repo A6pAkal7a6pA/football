@@ -1,4 +1,8 @@
-setTimeout(() => document.getElementById('preloader')?.remove(), 10000);
+document.body.style.overflow = 'hidden';
+setTimeout(() => {
+	document.getElementById('preloader')?.remove();
+	document.body.style.overflow = 'visible';
+}, 10000);
 
 document.addEventListener('DOMContentLoaded', () => {
 	const preloader = document.getElementById('preloader');
@@ -15,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       preloaderPercent.innerText = 100 + '%';
 			preloaderProgressbarLine.style.width = 100 + '%';
 			preloader.remove();
+			document.body.style.overflow = 'visible';
     }
   }
 

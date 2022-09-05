@@ -2293,6 +2293,15 @@ body {
 .collections-road__inner {
   padding-top: 110px;
   overflow-x: auto;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.collections-road__inner::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
 }
 
 .collections-road__items {
@@ -3333,8 +3342,10 @@ body {
   height: 24px;
 }
 
-.possibilities__button-prev.swiper-button-prev:hover, .possibilities__button-next.swiper-button-next:hover {
-  background: #4dda36;
+@media (min-width: 500px) {
+  .possibilities__button-prev.swiper-button-prev:hover, .possibilities__button-next.swiper-button-next:hover {
+    background: #4dda36;
+  }
 }
 
 .possibilities__button-prev {
@@ -3406,8 +3417,10 @@ body {
   transition: width 5s linear;
 }
 
-.possibilities__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet-active:hover::after {
-  border-radius: 5px;
+@media (min-width: 500px) {
+  .possibilities__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet-active:hover::after {
+    border-radius: 5px;
+  }
 }
 
 .possibilities .secret-ball {
@@ -3488,6 +3501,10 @@ body {
 }
 
 @media (max-width: 767px) {
+  .possibilities .earn {
+    gap: 35px;
+    padding: 0 20px;
+  }
   .possibilities .earn__wrapper:first-child .earn__subitems {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

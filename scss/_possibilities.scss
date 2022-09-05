@@ -182,8 +182,10 @@
 			width: 24px;
 			height: 24px;
 		}
-		&:hover {
-			background: #4dda36;
+		@media (min-width: 500px) {
+			&:hover {
+				background: #4dda36;
+			}
 		}
 	}
 	&__button-prev {
@@ -240,9 +242,11 @@
 				background: #082148;
 				transition: width 5s linear;
 			}
-			&:hover {
-				&::after {
-					border-radius: 5px;
+			@media (min-width: 500px) {
+				&:hover {
+					&::after {
+						border-radius: 5px;
+					}
 				}
 			}
 		}
@@ -312,6 +316,8 @@
 	}
 	@media (max-width: 767px) {
 		.earn {
+			gap: 35px;
+			padding: 0 20px;
 			&__wrapper {
 				&:first-child {
 					.earn__item {
