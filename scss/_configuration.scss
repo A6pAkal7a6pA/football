@@ -14,6 +14,7 @@ body {
 	width: 100%;
 	height: 100%;
 	z-index: 1000;
+	padding: 0 15px;
 	background: #fff;
 	display: flex;
 	align-items: center;
@@ -25,6 +26,7 @@ body {
 		align-items: center;
 		margin-bottom: 80px;
 		img {
+
 		}
 		&_runner {
 			max-width: 127.04px;
@@ -33,6 +35,7 @@ body {
 		&_platform {
 			transform: translateY(-100%);
 			max-width: 402.14px;
+			padding: 0 15px;
 		}
 	}
 	&__percent {

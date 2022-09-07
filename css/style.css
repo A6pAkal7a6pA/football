@@ -115,6 +115,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 1000;
+  padding: 0 15px;
   background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,6 +155,7 @@ body {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   max-width: 402.14px;
+  padding: 0 15px;
 }
 
 .preloader__percent {
@@ -2032,17 +2034,21 @@ body {
 }
 
 @media (max-width: 585px) {
-  .main-presale__inner {
+  .main .main-presale {
+    bottom: 35px;
+  }
+  .main .main-presale__inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 30px;
   }
-  .main-presale__text {
-    font-size: 25px;
-    line-height: 30px;
+  .main .main-presale__text {
+    font-size: 22px;
+    line-height: 25px;
   }
-  .main-presale__button {
+  .main .main-presale__button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

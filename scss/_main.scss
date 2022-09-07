@@ -1261,13 +1261,15 @@
 }
 
 @media (max-width: 585px) {
-	.main-presale {
+	.main .main-presale {
+		bottom: 35px;
 		&__inner {
 			flex-direction: column;
+			gap: 30px;
 		}
 		&__text {
-			font-size: 25px;
-			line-height: 30px;
+			font-size: 22px;
+			line-height: 25px;
 		}
 		&__button {
 			display: flex;
