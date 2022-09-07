@@ -54,9 +54,11 @@
 			display: none;
 		}
 		&-wrapper {
-			background: url("../img/road-bg.png") center / cover no-repeat;
+			// background: url("../img/road-bg.png") center / cover no-repeat;
+			background: url("../img/road-bg.png") top/100% repeat-y;
 			padding: 20px;
 			height: 124px;
+			border-radius: 10px;
 		}
 		&::before,
 		&::after {
@@ -133,7 +135,7 @@
 		border: 3px solid #ebebeb;
 		border-radius: 10px;
 		background: #ffffff;
-		top: 100%;
+		bottom: 100%;
 		left: 50%;
 		transform: translateX(-50%);
 		opacity: 0;

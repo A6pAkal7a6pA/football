@@ -2291,7 +2291,7 @@ body {
 }
 
 .collections-road__inner {
-  padding-top: 110px;
+  padding-top: 120px;
   overflow-x: auto;
   -ms-overflow-style: none;
   /* Internet Explorer 10+ */
@@ -3215,7 +3215,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 50px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -3826,9 +3826,8 @@ body .possibilities .secret-ball.active .secret-ball__text {
 
 .unique-slider__item {
   max-width: 270px;
+  min-height: 1px;
   height: 100%;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
 }
 
 .unique-slider__item .unique-slider__image .unique__walk {
@@ -4437,6 +4436,8 @@ body .possibilities .secret-ball.active .secret-ball__text {
   bottom: 0;
   background: #f4f4f4;
   border-radius: 4px;
+  left: 0;
+  width: 100%;
 }
 
 .custom .swiper-scrollbar-drag {
@@ -4568,6 +4569,9 @@ body .possibilities .secret-ball.active .secret-ball__text {
 @media (max-width: 500px) {
   .custom__gets {
     max-width: none;
+  }
+  .custom__subtitle {
+    margin-top: 0;
   }
   .custom__button {
     max-width: 248px;
@@ -4983,7 +4987,7 @@ body .possibilities .secret-ball.active .secret-ball__text {
         -ms-flex-direction: row;
             flex-direction: row;
     gap: 8px;
-    max-width: 159.5px;
+    max-width: 154.5px;
   }
   .tokenomic__item:nth-child(1) {
     -webkit-box-align: start;
@@ -5119,9 +5123,10 @@ body .possibilities .secret-ball.active .secret-ball__text {
 }
 
 .road__item-wrapper {
-  background: url("../img/road-bg.png") center/cover no-repeat;
+  background: url("../img/road-bg.png") top/100% repeat-y;
   padding: 20px;
   height: 124px;
+  border-radius: 10px;
 }
 
 .road__item::before, .road__item::after {
@@ -5208,7 +5213,7 @@ body .possibilities .secret-ball.active .secret-ball__text {
   border: 3px solid #ebebeb;
   border-radius: 10px;
   background: #ffffff;
-  top: 100%;
+  bottom: 100%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -5634,6 +5639,21 @@ body .possibilities .secret-ball.active .secret-ball__text {
   color: #fdfffd;
 }
 
+.partners__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 28px;
+}
+
 .partners__item img {
   max-width: 100%;
   width: 100%;
@@ -5648,6 +5668,18 @@ body .possibilities .secret-ball.active .secret-ball__text {
             flex-direction: column;
     gap: 30px;
     padding: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .partners {
+    padding: 0 15px;
+  }
+  .partners__item:nth-child(1) img {
+    max-height: 48px;
+  }
+  .partners__item:nth-child(2) img {
+    max-height: 56px;
   }
 }
 

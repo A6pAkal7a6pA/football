@@ -1,45 +1,3 @@
-let uniqueSlider = new Swiper('.unique-slider', {
-	loop: true,
-	autoplay: {
-		delay: 5000,
-		disableOnInteraction: false
-	},
-	speed: 500,
-	effect: 'coverflow',
-	slidesPerView: 'auto',
-	initialSlide: 0,
-	centeredSlides: true,
-	slideToClickedSlide: true,
-	autoHeight: false,
-	grabCursor: true,
-	spaceBetween: 50,
-	loopedSlides: 10,
-	preloadImages: true,
-	coverflowEffect: {
-		rotate: 0,
-		stretch: 0,
-		depth: 40,
-		modifier: 1,
-		scale: 0.9,
-		slideShadows: false,
-	},
-	pagination: {
-		el: '.swiper-pagination',
-		type: 'bullets',
-		clickable: true
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-	breakpoints: {
-		500: {
-			spaceBetween: 50,
-		}
-	}
-});
-
-
 window.addEventListener('load', () => {
 	const skillsSlider = new Swiper('.skills-slider', {
 		loop: true,
@@ -111,6 +69,41 @@ window.addEventListener('load', () => {
 	});
 	storeSlider.init();
 
+	const uniqueSlider = new Swiper('.unique-slider', {
+		loop: true,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false
+		},
+		speed: 500,
+		effect: 'coverflow',
+		slidesPerView: 'auto',
+		initialSlide: 0,
+		centeredSlides: true,
+		slideToClickedSlide: true,
+		autoHeight: false,
+		grabCursor: true,
+		spaceBetween: 50,
+		coverflowEffect: {
+			rotate: 0,
+			stretch: 0,
+			depth: 40,
+			modifier: 1,
+			scale: 0.9,
+			slideShadows: false,
+		},
+		pagination: {
+			el: '.unique-slider__pagination',
+			type: 'bullets',
+			clickable: true
+		},
+		navigation: {
+			nextEl: '.unique-slider__button-next',
+			prevEl: '.unique-slider__button-prev',
+		}
+	});
+	uniqueSlider.init();
+
 	const mainSlider = new Swiper('.main__slider', {
 		loop: true,
 		autoplay: {
@@ -126,49 +119,55 @@ window.addEventListener('load', () => {
 		grabCursor: true,
 	});
 	mainSlider.init();
-	uniqueSlider = null;
-	uniqueSlider = new Swiper('.unique-slider', {
-		loop: true,
-		autoplay: {
-			delay: 5000,
-			disableOnInteraction: false
-		},
-		speed: 500,
-		effect: 'coverflow',
-		slidesPerView: 'auto',
-		initialSlide: 0,
-		centeredSlides: true,
-		slideToClickedSlide: true,
-		autoHeight: false,
-		grabCursor: true,
-		spaceBetween: 50,
-		loopedSlides: 10,
-		preloadImages: true,
-		coverflowEffect: {
-			rotate: 0,
-			stretch: 0,
-			depth: 40,
-			modifier: 1,
-			scale: 0.9,
-			slideShadows: false,
-		},
-		pagination: {
-			el: '.swiper-pagination',
-			type: 'bullets',
-			clickable: true
-		},
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-		breakpoints: {
-			500: {
-				spaceBetween: 50,
-			}
-		}
-	});
-	uniqueSlider.init();
 });
+
+
+
+
+window.onload = () => {
+	// const uniqueSlider = new Swiper('.unique-slider', {
+	// 	loop: true,
+	// 	autoplay: {
+	// 		delay: 5000,
+	// 		disableOnInteraction: false
+	// 	},
+	// 	speed: 500,
+	// 	effect: 'coverflow',
+	// 	slidesPerView: 'auto',
+	// 	initialSlide: 0,
+	// 	centeredSlides: true,
+	// 	slideToClickedSlide: true,
+	// 	autoHeight: false,
+	// 	grabCursor: true,
+	// 	spaceBetween: 50,
+	// 	loopedSlides: 10,
+	// 	preloadImages: true,
+	// 	coverflowEffect: {
+	// 		rotate: 0,
+	// 		stretch: 0,
+	// 		depth: 40,
+	// 		modifier: 1,
+	// 		scale: 0.9,
+	// 		slideShadows: false,
+	// 	},
+	// 	pagination: {
+	// 		el: '.swiper-pagination',
+	// 		type: 'bullets',
+	// 		clickable: true
+	// 	},
+	// 	navigation: {
+	// 		nextEl: '.swiper-button-next',
+	// 		prevEl: '.swiper-button-prev',
+	// 	},
+	// 	breakpoints: {
+	// 		500: {
+	// 			spaceBetween: 50,
+	// 		}
+	// 	}
+	// });
+	// uniqueSlider.init();
+}
+
 
 let headSlider = new Swiper('.head-slider', {
 	loop: false,

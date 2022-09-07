@@ -377,6 +377,8 @@
 		bottom: 0;
 		background: #f4f4f4;
 		border-radius: 4px;
+		left: 0;
+		width: 100%;
 		&-drag {
 			background: #d9d9d9;
 			border-radius: 4px;
@@ -488,6 +490,9 @@
 	@media (max-width: 500px) {
 		&__gets {
 			max-width: none;
+		}
+		&__subtitle {
+			margin-top: 0;
 		}
 		&__button {
 			max-width: 248px;
