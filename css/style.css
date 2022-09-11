@@ -3788,6 +3788,10 @@ body .possibilities .secret-ball.active .secret-ball__text {
   -webkit-transform: translate(0%, -75%);
           transform: translate(0%, -75%);
   width: 28.39%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-animation: members 1s infinite;
+          animation: members 1s infinite;
 }
 
 .cyber__left img {
@@ -3801,6 +3805,10 @@ body .possibilities .secret-ball.active .secret-ball__text {
   -webkit-transform: translate(0%, -75%);
           transform: translate(0%, -75%);
   width: 28.39%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-animation: members 1s infinite;
+          animation: members 1s infinite;
 }
 
 .cyber__right img {
@@ -3840,6 +3848,36 @@ body .possibilities .secret-ball.active .secret-ball__text {
 @media (max-width: 768px) {
   .cyber__vs {
     max-width: 41px;
+  }
+}
+
+@-webkit-keyframes members {
+  0% {
+    -webkit-transform: translate(0%, -80%);
+            transform: translate(0%, -80%);
+  }
+  50% {
+    -webkit-transform: translate(0%, -75%);
+            transform: translate(0%, -75%);
+  }
+  100% {
+    -webkit-transform: translate(0%, -80%);
+            transform: translate(0%, -80%);
+  }
+}
+
+@keyframes members {
+  0% {
+    -webkit-transform: translate(0%, -80%);
+            transform: translate(0%, -80%);
+  }
+  50% {
+    -webkit-transform: translate(0%, -75%);
+            transform: translate(0%, -75%);
+  }
+  100% {
+    -webkit-transform: translate(0%, -80%);
+            transform: translate(0%, -80%);
   }
 }
 
