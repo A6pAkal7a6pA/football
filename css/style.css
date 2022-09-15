@@ -3779,38 +3779,72 @@ body .possibilities .secret-ball.active .secret-ball__text {
   width: 100%;
 }
 
-.cyber__left {
+.cyber__right, .cyber__left {
   position: absolute;
-  left: 0;
-  top: 0;
+  top: -40px;
   -webkit-transform: translate(0%, -75%);
           transform: translate(0%, -75%);
   width: 28.39%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-animation: members 1s infinite;
-          animation: members 1s infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.cyber__left {
+  left: 0;
+  rotate: -12deg;
 }
 
 .cyber__left img {
-  max-width: 100%;
+  max-width: 33.333%;
+}
+
+.cyber__left_1 {
+  -webkit-animation: membersTop 2s infinite;
+          animation: membersTop 2s infinite;
+}
+
+.cyber__left_2 {
+  -webkit-animation: membersBottom 2s infinite;
+          animation: membersBottom 2s infinite;
+}
+
+.cyber__left_3 {
+  -webkit-animation: membersTop 2s infinite;
+          animation: membersTop 2s infinite;
 }
 
 .cyber__right {
-  position: absolute;
   right: 0;
-  top: 0;
-  -webkit-transform: translate(0%, -75%);
-          transform: translate(0%, -75%);
-  width: 28.39%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-animation: members 1s infinite;
-          animation: members 1s infinite;
+  rotate: 12deg;
 }
 
 .cyber__right img {
-  max-width: 100%;
+  max-width: 33.333%;
+}
+
+.cyber__right_1 {
+  -webkit-animation: membersTop 2s infinite;
+          animation: membersTop 2s infinite;
+}
+
+.cyber__right_2 {
+  -webkit-animation: membersBottom 2s infinite;
+          animation: membersBottom 2s infinite;
+}
+
+.cyber__right_3 {
+  -webkit-animation: membersTop 2s infinite;
+          animation: membersTop 2s infinite;
 }
 
 .cyber__title {
@@ -3849,33 +3883,70 @@ body .possibilities .secret-ball.active .secret-ball__text {
   }
 }
 
-@-webkit-keyframes members {
-  0% {
-    -webkit-transform: translate(0%, -80%);
-            transform: translate(0%, -80%);
-  }
-  50% {
-    -webkit-transform: translate(0%, -75%);
-            transform: translate(0%, -75%);
-  }
-  100% {
-    -webkit-transform: translate(0%, -80%);
-            transform: translate(0%, -80%);
+@media (max-width: 500px) {
+  .cyber__right, .cyber__left {
+    top: -25px;
+    gap: 10px;
   }
 }
 
-@keyframes members {
+@-webkit-keyframes membersTop {
   0% {
-    -webkit-transform: translate(0%, -80%);
-            transform: translate(0%, -80%);
+    -webkit-transform: translate(0%, -5%);
+            transform: translate(0%, -5%);
   }
   50% {
-    -webkit-transform: translate(0%, -75%);
-            transform: translate(0%, -75%);
+    -webkit-transform: translate(0%, 0);
+            transform: translate(0%, 0);
   }
   100% {
-    -webkit-transform: translate(0%, -80%);
-            transform: translate(0%, -80%);
+    -webkit-transform: translate(0%, -5%);
+            transform: translate(0%, -5%);
+  }
+}
+
+@keyframes membersTop {
+  0% {
+    -webkit-transform: translate(0%, -5%);
+            transform: translate(0%, -5%);
+  }
+  50% {
+    -webkit-transform: translate(0%, 0);
+            transform: translate(0%, 0);
+  }
+  100% {
+    -webkit-transform: translate(0%, -5%);
+            transform: translate(0%, -5%);
+  }
+}
+
+@-webkit-keyframes membersBottom {
+  0% {
+    -webkit-transform: translate(0%, 5%);
+            transform: translate(0%, 5%);
+  }
+  50% {
+    -webkit-transform: translate(0%, 0);
+            transform: translate(0%, 0);
+  }
+  100% {
+    -webkit-transform: translate(0%, 5%);
+            transform: translate(0%, 5%);
+  }
+}
+
+@keyframes membersBottom {
+  0% {
+    -webkit-transform: translate(0%, 5%);
+            transform: translate(0%, 5%);
+  }
+  50% {
+    -webkit-transform: translate(0%, 0);
+            transform: translate(0%, 0);
+  }
+  100% {
+    -webkit-transform: translate(0%, 5%);
+            transform: translate(0%, 5%);
   }
 }
 

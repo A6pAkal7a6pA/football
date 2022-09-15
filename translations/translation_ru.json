@@ -321,7 +321,7 @@
 	},
 	{
 		"id": "store__text",
-		"text": "Участвовать"
+		"text": "Минт"
 	},
 	{
 		"id": "store__soon-title",
@@ -925,14 +925,30 @@
 	},
 	{
 		"id": "banner_text",
-		"text": "Участвовать в пресейле"
+		"text": "Участвовать в минт"
 	},
 	{
 		"id": "banner_button",
-		"text": "Участвовать"
+		"text": "Минт"
 	},
 	{
 		"id": "partners_title",
 		"text": "Партнеры:"
+	},
+	{
+		"id": "telegram_en_chat",
+		"text": "Чат"
+	},
+	{
+		"id": "telegram_en_channel",
+		"text": "Офиц. канал"
+	},
+	{
+		"id": "telegram_ru_chat",
+		"text": "Чат"
+	},
+	{
+		"id": "telegram_ru_channel",
+		"text": "Офиц. канал"
 	}
 ]

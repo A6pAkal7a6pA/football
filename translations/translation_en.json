@@ -321,7 +321,7 @@
 	},
 	{
 		"id": "store__text",
-		"text": "Join Presale"
+		"text": "Join Mint"
 	},
 	{
 		"id": "store__soon-title",
@@ -929,14 +929,30 @@
 	},
 	{
 		"id": "banner_text",
-		"text": "Join Presale now"
+		"text": "Join Mint now"
 	},
 	{
 		"id": "banner_button",
-		"text": "Join Presale"
+		"text": "Join Mint"
 	},
 	{
 		"id": "partners_title",
 		"text": "Partners:"
+	},
+	{
+		"id": "telegram_en_chat",
+		"text": "Chat"
+	},
+	{
+		"id": "telegram_en_channel",
+		"text": "Offcial Channel"
+	},
+	{
+		"id": "telegram_ru_chat",
+		"text": "Chat"
+	},
+	{
+		"id": "telegram_ru_channel",
+		"text": "Offcial Channel"
 	}
 ]
