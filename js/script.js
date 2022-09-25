@@ -150,26 +150,3 @@ document.querySelectorAll('.main-road__info-image')
 
 document.querySelector('.main-presale__exit')
 	.addEventListener('click', () => document.querySelector('.main-presale').remove());
-
-
-// const animation = [
-// 	{ transform: 'translate(0%, -5%)' },
-// 	{ transform: 'translate(0%, 0%)' },
-// 	{ transform: 'translate(0%, -5%)' },
-// ];
-
-// const newspaperTiming = {
-// 	duration: 2000,
-// 	iterations: Infinity,
-// }
-// let item = Array.from(document.querySelectorAll('.cyber__arena div img'));
-// console.log(item[0]);
-// for(let i = 0; i < item.length; i++){
-// 	setTimeout(() => item[i].animate(animation, newspaperTiming), 2000);
-// };
-
-// document.querySelectorAll('.cyber__arena div img').forEach(item => {
-// 	item.addEventListener('animationend', () => {
-// 		console.log(item);
-// 	})
-// });

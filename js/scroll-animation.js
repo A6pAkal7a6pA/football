@@ -128,7 +128,7 @@ if (window.innerWidth <= 500 && window.innerHeight <= 1024) {
 if (window.innerWidth <= 414 && window.innerHeight <= 896) {
 	tvTop = '32%';
 	statTop = '26%';
-	booksCassetsSide =  '31%';
+	booksCassetsSide = '31%';
 }
 
 if (window.innerWidth <= 414 && window.innerHeight <= 736) {
@@ -140,14 +140,14 @@ if (window.innerWidth <= 414 && window.innerHeight <= 736) {
 if (window.innerWidth <= 390 && window.innerHeight <= 844) {
 	tvTop = '29%';
 	statTop = '23%';
-	booksCassetsSide =  '33%';
+	booksCassetsSide = '33%';
 	booksCassetsBottom = '28.6112%';
 }
 
 if (window.innerWidth <= 384 && window.innerHeight <= 854) {
 	tvTop = '29%';
 	statTop = '23%'
-	booksCassetsSide =  '33%';
+	booksCassetsSide = '33%';
 	booksCassetsBottom = '28.6112%';
 }
 
@@ -224,3 +224,37 @@ let scene = new ScrollMagic.Scene({ triggerElement: ".main", duration: "100%", o
 	.triggerElement(0)
 	.setPin(".main")
 	.addTo(controller);
+
+let mainVideo = document.getElementById('main-video');
+scene.on("end", function (event) {
+	console.log("start");
+	// mainVideo.muted = false;
+
+	// mainVideo.play();
+	// playVideo()
+});
+
+async function playVideo() {
+	try {
+		await mainVideo.play();
+
+	} catch (err) {
+		console.log(err);
+	}
+}
+
+let volumes = document.querySelectorAll('.main__volume img');
+
+volumes.forEach(volume => {
+	volume.addEventListener('click', () => {
+		volume.classList.remove('active')
+		getSiblings(volume).forEach(v => v.classList.add('active'))
+		let volumeClass = volume.classList[0];
+
+		if (volumeClass.substring(volumeClass.lastIndexOf('_') + 1) === 'off') {
+			mainVideo.muted = true;
+		} else {
+			mainVideo.muted = false;
+		}
+	})
+})
