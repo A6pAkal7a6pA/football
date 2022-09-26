@@ -2,7 +2,7 @@ document.body.style.overflow = 'hidden';
 setTimeout(() => {
 	document.getElementById('preloader')?.remove();
 	document.body.style.overflow = 'visible';
-}, 10000);
+}, 17000);
 
 document.addEventListener('DOMContentLoaded', () => {
 	const preloader = document.getElementById('preloader');

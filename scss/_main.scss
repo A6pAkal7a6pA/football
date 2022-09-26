@@ -315,8 +315,8 @@
 			position: relative;
 			.main__volume {
 				position: absolute;
-				right: calc(70px + 79.88px);
-				bottom: 30px;
+				right: 8vw;
+				bottom: 70px;
 				z-index: 10;
 				img {
 					max-width: 30px;
@@ -324,7 +324,7 @@
 				&_on {
 					display: none;
 				}
-				&_off{
+				&_off {
 					display: none;
 				}
 				& img.active {
@@ -986,6 +986,11 @@
 			min-height: 202.5px;
 		}
 
+		.main__volume {
+			right: 14vw;
+			bottom: 50px;
+		}
+
 		&__right-map {
 			width: 19.1146%;
 			height: 47.315%;
@@ -1310,6 +1315,11 @@
 			background: radial-gradient(47.09% 74.22% at 50% 92.71%, #7868a5 0%, #504470 100%);
 			height: 56.53%;
 			bottom: 0;
+		}
+
+		.main__volume {
+			right: 12vw;
+			bottom: 30px;
 		}
 		&__inner {
 			// width: 1650px;
