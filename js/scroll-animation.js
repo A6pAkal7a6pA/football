@@ -224,24 +224,17 @@ let scene = new ScrollMagic.Scene({ triggerElement: ".main", duration: "100%", o
 	.triggerElement(0)
 	.setPin(".main")
 	.addTo(controller);
-
+	var root = document.querySelector(':root');
 let mainVideo = document.getElementById('main-video');
-scene.on("end", function (event) {
-	console.log("start");
-	// mainVideo.muted = false;
+let coordVideo = mainVideo.getBoundingClientRect();
+let marginVolume = 25;
+let volume_x = coordVideo.x + coordVideo.width - marginVolume;
+let volume_y = coordVideo.y + coordVideo.height - marginVolume;
+root.style.setProperty('--volume_x', volume_x + 'px');
+root.style.setProperty('--volume_y', volume_y + 'px');
 
-	// mainVideo.play();
-	// playVideo()
-});
+console.log(coordVideo.x + coordVideo.width);
 
-async function playVideo() {
-	try {
-		await mainVideo.play();
-
-	} catch (err) {
-		console.log(err);
-	}
-}
 
 let volumes = document.querySelectorAll('.main__volume img');
 

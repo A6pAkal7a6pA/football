@@ -122,53 +122,6 @@ window.addEventListener('load', () => {
 });
 
 
-
-
-window.onload = () => {
-	// const uniqueSlider = new Swiper('.unique-slider', {
-	// 	loop: true,
-	// 	autoplay: {
-	// 		delay: 5000,
-	// 		disableOnInteraction: false
-	// 	},
-	// 	speed: 500,
-	// 	effect: 'coverflow',
-	// 	slidesPerView: 'auto',
-	// 	initialSlide: 0,
-	// 	centeredSlides: true,
-	// 	slideToClickedSlide: true,
-	// 	autoHeight: false,
-	// 	grabCursor: true,
-	// 	spaceBetween: 50,
-	// 	loopedSlides: 10,
-	// 	preloadImages: true,
-	// 	coverflowEffect: {
-	// 		rotate: 0,
-	// 		stretch: 0,
-	// 		depth: 40,
-	// 		modifier: 1,
-	// 		scale: 0.9,
-	// 		slideShadows: false,
-	// 	},
-	// 	pagination: {
-	// 		el: '.swiper-pagination',
-	// 		type: 'bullets',
-	// 		clickable: true
-	// 	},
-	// 	navigation: {
-	// 		nextEl: '.swiper-button-next',
-	// 		prevEl: '.swiper-button-prev',
-	// 	},
-	// 	breakpoints: {
-	// 		500: {
-	// 			spaceBetween: 50,
-	// 		}
-	// 	}
-	// });
-	// uniqueSlider.init();
-}
-
-
 let headSlider = new Swiper('.head-slider', {
 	loop: false,
 	autoplay: {
