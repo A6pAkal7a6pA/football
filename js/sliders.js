@@ -1,10 +1,10 @@
 window.addEventListener('load', () => {
 	const skillsSlider = new Swiper('.skills-slider', {
 		loop: true,
-		autoplay: {
-			delay: 5000,
-			disableOnInteraction: false
-		},
+		// autoplay: {
+		// 	delay: 5000,
+		// 	disableOnInteraction: false
+		// },
 		speed: 500,
 		effect: 'coverflow',
 		slidesPerView: 'auto',

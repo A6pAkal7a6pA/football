@@ -129,6 +129,7 @@ if (window.innerWidth <= 414 && window.innerHeight <= 896) {
 	tvTop = '32%';
 	statTop = '26%';
 	booksCassetsSide = '31%';
+	flowerSide = '465px';
 }
 
 if (window.innerWidth <= 414 && window.innerHeight <= 736) {
