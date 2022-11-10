@@ -4979,12 +4979,6 @@ body .possibilities .secret-ball.active .secret-ball__text {
   background-color: rgba(255, 255, 255, 0);
 }
 
-.skills-slider__item.swiper-slide-active .skills-slider__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .skills-slider__image {
   border: 6px solid #082148;
   border-radius: 6px;

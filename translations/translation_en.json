@@ -488,6 +488,30 @@
 		"text": "It will allow you to grow the strongest and most highly-skilled football player. You can also improve a football player's parameters by buying boosts in the NFT store or gaining new skills for the gaming experience. It allows you to make your football player the best defender, like Raphael Varane, the fastest forward, like Ronaldo or an impenetrable goalkeeper, like Buffon."
 	},
 	{
+		"id": "skills-slider__title_1",
+		"text": "Boots"
+	},
+	{
+		"id": "skills-slider__title_2",
+		"text": "Skills"
+	},
+	{
+		"id": "skills-slider__title_3",
+		"text": "Weather"
+	},
+	{
+		"id": "skills-slider__title_4",
+		"text": "Stadiums and upgrades"
+	},
+	{
+		"id": "skills-slider__title_5",
+		"text": "Club merchandise"
+	},
+	{
+		"id": "skills-slider__title_6",
+		"text": "Balls"
+	},
+	{
 		"id": "skills-slider__text_1",
 		"text": "Description text with features and player’s possibilities"
 	},
@@ -505,6 +529,10 @@
 	},
 	{
 		"id": "skills-slider__text_5",
+		"text": "Description text with features and player’s possibilities"
+	},
+	{
+		"id": "skills-slider__text_6",
 		"text": "Description text with features and player’s possibilities"
 	},
 	{

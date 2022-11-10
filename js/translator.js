@@ -24,6 +24,10 @@ function translate(data) {
 		Array.from(document.querySelectorAll('.unique-slider__text'))
 		.filter(e => e.id === element.id)
 		.forEach(e => e.innerHTML = element.text)
+
+		Array.from(document.querySelectorAll('.skills-slider__title'))
+		.filter(e => e.id === element.id)
+		.forEach(e => e.innerHTML = element.text)
 	});
 
 }
