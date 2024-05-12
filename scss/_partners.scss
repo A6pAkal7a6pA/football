@@ -1,0 +1,57 @@
+.partners {
+	&__inner {
+		background: #082148;
+		border-radius: 12px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 40px;
+		gap: 90px;
+	}
+
+	&__title {
+		font-weight: 800;
+		font-size: 32px;
+		line-height: 39px;
+		text-align: center;
+		color: #fdfffd;
+	}
+
+	&__items {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 28px;
+	}
+
+	&__item {
+		img {
+			max-width: 100%;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	@media(max-width: 680px) {
+		&__inner {
+			flex-direction: column;
+			gap: 30px;
+			padding: 30px;
+		}
+	}
+	@media(max-width: 500px) {
+		padding: 0 15px;
+		&__item:nth-child(1) {
+			img {
+				max-height: 48px;
+			}
+		}
+		&__item:nth-child(2) {
+			img {
+				max-height: 56px;
+			}
+		}
+	}
+	
+}
+
