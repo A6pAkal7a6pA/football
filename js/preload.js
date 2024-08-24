@@ -35,3 +35,42 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	});
 });
+document.addEventListener('DOMContentLoaded', () => {
+	const sections = Array.from(document.querySelectorAll('section'));
+	const sectionInView = new Set();
+	let loading = false;
+
+	function loadSection(section) {
+		if (section.dataset.loaded) return;
+		section.dataset.loaded = true;
+	}
+
+	function checkSectionsInView() {
+		const viewportHeight = window.innerHeight;
+
+		sections.forEach(section => {
+			const { top, bottom } = section.getBoundingClientRect();
+			const isInView = top < viewportHeight && bottom > 0;
+
+			if (isInView && !sectionInView.has(section)) {
+				sectionInView.add(section);
+				loadSection(section);
+			} else if (!isInView && sectionInView.has(section)) {
+				sectionInView.delete(section);
+			}
+		});
+
+		if (!loading && sectionInView.size > 0) {
+			loading = true;
+			requestAnimationFrame(() => {
+				loading = false;
+				checkSectionsInView();
+			});
+		}
+	}
+
+	window.addEventListener('scroll', checkSectionsInView);
+	window.addEventListener('resize', checkSectionsInView);
+
+	checkSectionsInView();
+});
