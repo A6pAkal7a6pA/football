@@ -1,0 +1,198 @@
+@import "_zeroing.scss";
+@import "_configuration.scss";
+@import "_component.scss";
+@import "_swiper-bundle.min.scss";
+@import "_header.scss";
+@import "_main.scss";
+@import "_collections.scss";
+@import "_trailer.scss";
+@import "_about.scss";
+@import "_info.scss";
+@import "_investor.scss";
+@import "_check.scss";
+@import "_store.scss";
+@import "_possibilities.scss";
+@import "_cyber.scss";
+@import "_unique.scss";
+@import "_custom.scss";
+@import "_skills.scss";
+@import "_deligate.scss";
+@import "_tokenomic.scss";
+@import "_roadmap.scss";
+@import "_team.scss";
+@import "_partners.scss";
+@import "_contact.scss";
+
+body {
+  &.disabled {
+    overflow: hidden;
+  }
+  .en {
+    display: block;
+  }
+  .ru {
+    display: none;
+  }
+  .road__item.active {
+    .road-item__text.en {
+      display: block;
+    }
+    .road-item__text.ru {
+      display: none;
+    }
+  }
+  .possibilities .secret-ball .secret-ball__text {
+    &.en {
+      display: block;
+    }
+    &.ru {
+      display: none;
+    }
+  }
+}
+.title {
+  font-family: $fontfamilyMontserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.trailer {
+  margin-bottom: 80px;
+}
+
+.info {
+  margin-bottom: 85px;
+}
+
+.investor {
+  margin-bottom: 140px;
+}
+.skills {
+  margin-bottom: 130px;
+}
+.custom {
+  margin-bottom: 130px;
+}
+
+.check {
+  margin-bottom: 140px;
+}
+.tokenomic {
+  margin-bottom: 140px;
+}
+.deligate {
+  margin-bottom: 140px;
+}
+.road {
+  margin-bottom: 140px;
+}
+.team {
+  margin-bottom: 140px;
+}
+.partners {
+  margin-bottom: 140px;
+}
+.store {
+}
+.unique {
+  margin-bottom: 130px;
+}
+.collections {
+  margin: 140px 0;
+}
+.cyber {
+  margin: 140px 0;
+}
+
+@media (max-width: 500px) {
+  .trailer {
+    margin-bottom: 25px;
+  }
+
+  .info {
+    margin-bottom: 85px;
+  }
+  .skills {
+    margin-bottom: 70px;
+  }
+
+  .store {
+  }
+  .tokenomic {
+    margin-bottom: 70px;
+  }
+  .deligate {
+    margin-bottom: 70px;
+  }
+  .unique {
+    margin-bottom: 70px;
+  }
+  .possibilities {
+    margin-bottom: 150px;
+  }
+  .check {
+    margin-bottom: 70px;
+  }
+  .road {
+    margin-bottom: 70px;
+  }
+  .investor {
+    margin-bottom: 70px;
+  }
+  .custom {
+    margin-bottom: 70px;
+  }
+  .team {
+    margin-bottom: 70px;
+  }
+  .collections {
+    margin: 70px 0;
+  }
+  .partners {
+    margin-bottom: 70px;
+  }
+  .cyber {
+    margin: 70px 0;
+  }
+}
+
+body.ru {
+  .en {
+    display: none;
+  }
+  .ru {
+    display: block;
+  }
+
+  .road__item.active {
+    .road-item__text.en {
+      display: none;
+    }
+    .road-item__text.ru {
+      display: block;
+    }
+  }
+  .possibilities .secret-ball .secret-ball__text {
+    &.en {
+      display: none;
+    }
+    &.ru {
+      display: block;
+    }
+  }
+}
+a,
+.swiper-slide {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
