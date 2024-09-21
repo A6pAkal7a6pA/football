@@ -1,75 +1,78 @@
 .deligate {
-	&__inner {
-	}
+  &__inner {
+  }
 
-	&__title {
-		font-weight: 800;
-		font-size: 32px;
-		line-height: 39px;
-		text-align: center;
-		color: #082148;
-		margin-bottom: 60px;
-	}
+  &__title {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #082148;
+    margin-bottom: 60px;
+  }
 
-	&__graph {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		img {
-			max-width: 100%;
-			object-fit: cover;
-		}
-	}
-	&__content {
-		display: none;
-	}
-	@media (max-width: 500px) {
-		&__graph {
-			display: none;
-		}
-		&__content {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-wrap: wrap;
-			gap: 20px;
-			padding: 0 19.5px;
-		}
-		&__item {
-			display: flex;
-			align-items: flex-start;
-			flex-direction: column;
-			max-width: calc(50% - 10px);
-			width: 100%;
-		}
-		&__num {
-			font-weight: 600;
-			font-size: 20px;
-			line-height: 24px;
-			color: #082148;
-		}
-		&__text {
-			font-weight: 500;
-			font-size: 16px;
-			line-height: 20px;
-			color: #082148;
-			margin-bottom: 8px;
-		}
-		&__progress {
-			background: rgba(#4dda36, 0.2);
-			border-radius: 3px;
-			height: 6px;
-			width: 100%;
-			position: relative;
-		}
-		&__bar {
-			border-radius: 3px;
-			height: 100%;
-			width: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-			background: #4dda36;
-		}
-	}
+  &__graph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    display: none;
+  }
+
+  @media (max-width: 500px) {
+    &__graph {
+      display: none;
+    }
+    &__content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 0 19.5px;
+    }
+    &__item {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      max-width: calc(50% - 10px);
+      width: 100%;
+    }
+    &__num {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      color: #082148;
+    }
+    &__text {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #082148;
+      margin-bottom: 8px;
+    }
+    &__progress {
+      background: rgba(#4dda36, 0.2);
+      border-radius: 3px;
+      height: 6px;
+      width: 100%;
+      position: relative;
+    }
+    &__bar {
+      border-radius: 3px;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #4dda36;
+    }
+  }
 }

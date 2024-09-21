@@ -1,27 +1,24 @@
 .trailer {
-	&__inner {
+  &__image {
+    margin-bottom: 50px;
 
-	}
+    img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
 
-	&__image {
-		margin-bottom: 50px;
-		img {
-			max-width: 100%;
-			object-fit: cover;
-		}
-	}
-
-	&__button {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media(max-width: 500px) {
-	.trailer {
-		&__image {
-			margin-bottom: 20px;
-		}
-	}
+  .trailer {
+    &__image {
+      margin-bottom: 20px;
+    }
+  }
 }

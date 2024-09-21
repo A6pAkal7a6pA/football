@@ -1,135 +1,132 @@
 .collections {
-	&__inner {
-	}
+  &__inner {
+  }
 
-	&__title {
-		font-weight: 800;
-		font-size: 32px;
-		line-height: 39px;
-		text-align: center;
-		color: #082148;
-	}
+  &__title {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #082148;
+  }
 
-	&-road {
-		&__inner {
-			padding-top: 120px;
-			overflow-x: auto;
-			-ms-overflow-style: none; /* Internet Explorer 10+ */
-			scrollbar-width: none; /* Firefox */
-			&::-webkit-scrollbar {
-				display: none; /* Safari and Chrome */
-			}
-		}
+  &-road {
+    &__inner {
+      padding-top: 120px;
+      overflow-x: auto;
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+      scrollbar-width: none; /* Firefox */
+      &::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+      }
+    }
 
-		&__items {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			gap: 20px;
-			width: 1300px;
-			margin: 0 auto;
-			padding-top: 105px;
+    &__items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      width: 1300px;
+      margin: 0 auto;
+      padding-top: 105px;
 
-		}
+    }
 
-		&__item {
-			background: #f8f8f8;
-			border-radius: 10px;
-			max-width: 244px;
-			height: 106px;
-			padding: 20px;
-			position: relative;
-			cursor: pointer;
-			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-			&:not(:last-child) {
-				&::after {
-					content: "";
-					width: 20px;
-					height: 4px;
-					background: #4dda36;
-					position: absolute;
-					top: 50%;
-					left: 100%;
-					transform: translateY(-50%);
-				}
-			}
-		}
-		&__image {
-			position: absolute;
-			bottom: 100%;
-			left: 50%;
-			transform: translateX(-50%);
-			img {
-			}
-		}
+    &__item {
+      background: #f8f8f8;
+      border-radius: 10px;
+      max-width: 244px;
+      height: 106px;
+      padding: 20px;
+      position: relative;
+      cursor: pointer;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
-		&__head {
-			display: flex;
-			align-items: center;
-			gap: 10px;
-			margin-bottom: 10px;
-		}
+      &:not(:last-child) {
+        &::after {
+          content: "";
+          width: 20px;
+          height: 4px;
+          background: #4dda36;
+          position: absolute;
+          top: 50%;
+          left: 100%;
+          transform: translateY(-50%);
+        }
+      }
+    }
 
-		&__date {
-			font-weight: 500;
-			font-size: 16px;
-			line-height: 20px;
-			color: #021228;
-		}
+    &__image {
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
 
-		&__update {
-			font-size: 16px;
-			line-height: 20px;
-			color: #021228;
-			opacity: 0.7;
-		}
+      img {
+      }
+    }
 
-		&__body {
-			display: flex;
-			align-items: center;
-			gap: 10px;
-		}
+    &__head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
 
-		&__text {
-			font-weight: 600;
-			font-size: 14px;
-			line-height: 20px;
-			color: #4dda36;
-		}
+    &__date {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #021228;
+    }
 
-		&__info {
-			position: relative;
-		}
+    &__update {
+      font-size: 16px;
+      line-height: 20px;
+      color: #021228;
+      opacity: 0.7;
+    }
 
-		&__info-popup {
-			position: absolute;
-			width: 250px;
-			overflow-y: auto;
-			bottom: 100%;
-			left: 50%;
-			transform: translateX(-50%);
-			background: #fff;
-			color: #021228;
-			padding: 15px;
-			border: 1px solid #021228;
-			z-index: 2;
-			opacity: 0;
-			border: 3px solid #ebebeb;
-			font-size: 14px;
-			line-height: 17px;
-			border-radius: 10px;
-			&.active {
-				opacity: 1;
-			}
-		}
+    &__body {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
-		&__info-image {
-		}
-	}
-	@media (max-width: 1300px) {
-		&-road__inner {
-		}
-		&-road__items {
-		}
-	}
+    &__text {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: #4dda36;
+    }
+
+    &__info {
+      position: relative;
+    }
+
+    &__info-popup {
+      position: absolute;
+      width: 250px;
+      overflow-y: auto;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fff;
+      color: #021228;
+      padding: 15px;
+      z-index: 2;
+      opacity: 0;
+      border: 3px solid #ebebeb;
+      font-size: 14px;
+      line-height: 17px;
+      border-radius: 10px;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+
+    &__info-image {
+    }
+  }
 }

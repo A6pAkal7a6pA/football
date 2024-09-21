@@ -27,29 +27,36 @@ body {
   &.disabled {
     overflow: hidden;
   }
+
   .en {
     display: block;
   }
+
   .ru {
     display: none;
   }
+
   .road__item.active {
     .road-item__text.en {
       display: block;
     }
+
     .road-item__text.ru {
       display: none;
     }
   }
+
   .possibilities .secret-ball .secret-ball__text {
     &.en {
       display: block;
     }
+
     &.ru {
       display: none;
     }
   }
 }
+
 .title {
   font-family: $fontfamilyMontserrat;
   font-style: normal;
@@ -78,9 +85,11 @@ body {
 .investor {
   margin-bottom: 140px;
 }
+
 .skills {
   margin-bottom: 130px;
 }
+
 .custom {
   margin-bottom: 130px;
 }
@@ -88,29 +97,38 @@ body {
 .check {
   margin-bottom: 140px;
 }
+
 .tokenomic {
   margin-bottom: 140px;
 }
+
 .deligate {
   margin-bottom: 140px;
 }
+
 .road {
   margin-bottom: 140px;
 }
+
 .team {
   margin-bottom: 140px;
 }
+
 .partners {
   margin-bottom: 140px;
 }
+
 .store {
 }
+
 .unique {
   margin-bottom: 130px;
 }
+
 .collections {
   margin: 140px 0;
 }
+
 .cyber {
   margin: 140px 0;
 }
@@ -171,6 +189,7 @@ body.ru {
   .en {
     display: none;
   }
+
   .ru {
     display: block;
   }
@@ -179,19 +198,23 @@ body.ru {
     .road-item__text.en {
       display: none;
     }
+
     .road-item__text.ru {
       display: block;
     }
   }
+
   .possibilities .secret-ball .secret-ball__text {
     &.en {
       display: none;
     }
+
     &.ru {
       display: block;
     }
   }
 }
+
 a,
 .swiper-slide {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);

@@ -1,238 +1,258 @@
 .contact {
-	background: #082148;
-	&__inner {
-		padding: 90px 0;
-	}
+  background: #082148;
 
-	&__title {
-		font-family: $fontfamilyRobotoSlab;
-		font-weight: 900;
-		font-size: 32px;
-		line-height: 42px;
-		text-align: center;
-		color: #fdfffd;
-		margin-bottom: 50px;
-	}
+  &__inner {
+    padding: 90px 0;
+  }
 
-	&__content {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 50px;
-		flex-direction: column;
-		// flex-wrap: wrap;
-		margin: 0 auto;
-	}
-	&__item {
-		background: #fdfffd;
-		border-radius: 10px;
-		padding: 10px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		border: 3px solid transparent;
-		max-height: 90px;
-		&:hover {
-			border: 3px solid #4dda36;
-		}
-	}
-	&__socs {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		gap: 20px;
-		flex-wrap: wrap;
-		.contact__item {
-			max-width: 205px;
-		}
-	}
-	&-telegrams {
-		max-width: 1182px;
-		padding: 0 15px;
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 64px;
-		flex-wrap: wrap;
-		&__item {
-			display: flex;
-			align-items: center;
-			gap: 24px;
-			max-width: 50%;
-		}
-		&__title {
-			max-width: 108px;
-			font-weight: 700;
-			font-size: 22px;
-			line-height: 27px;
-			color: #ffffff;
-		}
-		&__chat,
-		&__channel {
-			background: #fdfffd;
-			border-radius: 10px;
-			display: flex;
-			align-items: center;
-			padding: 22px 32px;
-			gap: 15px;
-			border: 3px solid transparent;
-			&:hover {
-				border: 3px solid #4dda36;
-			}
-		}
-		.contact__image {
-			margin-bottom: 0;
-		}
-		.contact__name {
-			font-weight: 500;
-			font-size: 16px;
-			line-height: 20px;
-			text-align: center;
-			color: #010038;
-			&_1 {
-				max-width: 69px;
-			}
-			&_2 {
-				max-width: 126px;
-			}
-		}
-	}
+  &__title {
+    font-family: $fontfamilyRobotoSlab;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    color: #fdfffd;
+    margin-bottom: 50px;
+  }
 
-	&__image {
-		margin-bottom: 10px;
-		img {
-			max-width: 40px;
-			max-height: 40px;
-		}
-	}
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
 
-	&__name {
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 20px;
-		text-align: center;
-		color: #010038;
-	}
-	.copy {
-		background: #082148;
-		padding-bottom: 60px;
-		padding-top: 20px;
-		&__inner {
-			display: flex;
-			gap: 30px;
-			justify-content: center;
-			align-items: center;
-			flex-wrap: wrap;
-		}
+  &__item {
+    background: #fdfffd;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 3px solid transparent;
+    max-height: 90px;
 
-		&__item {
-			display: flex;
-			align-items: center;
-			gap: 5px;
-			font-weight: 500;
-			font-size: 18px;
-			line-height: 22px;
-			color: #fdfffd;
-			&:hover {
-				text-decoration: underline;
-			}
-		}
+    &:hover {
+      border: 3px solid #4dda36;
+    }
+  }
 
-		&__image {
-		}
+  &__socs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
 
-		&__text {
-		}
+    .contact__item {
+      max-width: 205px;
+    }
+  }
 
-		&__line {
-			width: 1px;
-			height: 20px;
-			background: #fff;
-		}
-		@media (max-width: 500px) {
-			.copy__line {
-				display: none;
-			}
-		}
-	}
+  &-telegrams {
+    max-width: 1182px;
+    padding: 0 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    flex-wrap: wrap;
 
-	@media (max-width: 1138px) {
-		.contact-telegrams {
-			flex-direction: column;
-			gap: 20px;
-			&__item {
-				max-width: 562px;
-				width: 100%;
-			}
-			&__title {
-				font-weight: 500;
-				font-size: 16px;
-				line-height: 20px;
-			}
-			&__chat,
-			&__channel {
-				width: 100%;
-			}
-			.contact__name {
-				&_1,
-				&_2 {
-					max-width: 100%;
-				}
-			}
-		}
-	}
-	@media (max-width: 592px) {
-		&__socs {
-			gap: 10px;
-			.contact__item {
-				max-width: 162.5px;
-			}
-		}
-		&__content {
-			gap: 20px;
-		}
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      max-width: 50%;
+    }
 
-		.contact-telegrams {
-			&__chat,
-			&__channel {
-				// max-width: 120px;
-				max-height: 63px;
-				width: 100%;
-				height: 100%;
-				flex-direction: column;
-				padding: 10px;
-				gap: 8px;
-			}
-			.contact__image {
-				img {
-					max-width: 22px;
-					width: 100%;
-				}
-			}
-			.contact__name {
-				font-weight: 400;
-				font-size: 12px;
-				line-height: 14px;
-			}
-		}
-	}
+    &__title {
+      max-width: 108px;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 27px;
+      color: #ffffff;
+    }
 
-	@media (max-width: 500px) {
-		&__inner {
-			padding: 40px 0;
-		}
-		&__item {
-			max-width: 162.5px;
-			padding: 10px 4px;
-			&:nth-child(5),
-			&:nth-child(6),
-			&:nth-child(7) {
-				// max-width: 123px;
-			}
-		}
-	}
+    &__chat,
+    &__channel {
+      background: #fdfffd;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      padding: 22px 32px;
+      gap: 15px;
+      border: 3px solid transparent;
+
+      &:hover {
+        border: 3px solid #4dda36;
+      }
+    }
+
+    .contact__image {
+      margin-bottom: 0;
+    }
+
+    .contact__name {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #010038;
+
+      &_1 {
+        max-width: 69px;
+      }
+
+      &_2 {
+        max-width: 126px;
+      }
+    }
+  }
+
+  &__image {
+    margin-bottom: 10px;
+
+    img {
+      max-width: 40px;
+      max-height: 40px;
+    }
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #010038;
+  }
+
+  .copy {
+    background: #082148;
+    padding-bottom: 60px;
+    padding-top: 20px;
+
+    &__inner {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #fdfffd;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &__image {
+    }
+
+    &__text {
+    }
+
+    &__line {
+      width: 1px;
+      height: 20px;
+      background: #fff;
+    }
+
+    @media (max-width: 500px) {
+      .copy__line {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 1138px) {
+    .contact-telegrams {
+      flex-direction: column;
+      gap: 20px;
+
+      &__item {
+        max-width: 562px;
+        width: 100%;
+      }
+
+      &__title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      &__chat,
+      &__channel {
+        width: 100%;
+      }
+
+      .contact__name {
+        &_1,
+        &_2 {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  @media (max-width: 592px) {
+    &__socs {
+      gap: 10px;
+
+      .contact__item {
+        max-width: 162.5px;
+      }
+    }
+    &__content {
+      gap: 20px;
+    }
+
+    .contact-telegrams {
+      &__chat,
+      &__channel {
+        // max-width: 120px;
+        max-height: 63px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding: 10px;
+        gap: 8px;
+      }
+
+      .contact__image {
+        img {
+          max-width: 22px;
+          width: 100%;
+        }
+      }
+
+      .contact__name {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__inner {
+      padding: 40px 0;
+    }
+    &__item {
+      max-width: 162.5px;
+      padding: 10px 4px;
+    }
+  }
 }

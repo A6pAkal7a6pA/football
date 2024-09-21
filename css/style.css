@@ -118,7 +118,6 @@ body {
   width: 100%;
   height: 100%;
   z-index: 1000;
-  padding: 0 15px;
   background: #fff;
   display: flex;
   align-items: center;
@@ -158,7 +157,7 @@ body {
 .preloader__progressbar_line {
   border-radius: 32px;
   position: absolute;
-  width: 0%;
+  width: 0;
   height: 100%;
   background: #4DDA36;
 }
@@ -225,7 +224,7 @@ body {
 }
 
 .swiper,
-swiper-container {
+.swiper-container {
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -265,7 +264,7 @@ swiper-container {
 }
 
 .swiper-slide,
-swiper-slide {
+.swiper-slide {
   flex-shrink: 0;
   width: 100%;
   height: 100%;
@@ -420,7 +419,7 @@ swiper-slide {
 
 .swiper-watch-progress .swiper-slide-visible .swiper-lazy-preloader,
 .swiper:not(.swiper-watch-progress) .swiper-lazy-preloader,
-swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
+.swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
   animation: swiper-preloader-spin 1s infinite linear;
 }
 
@@ -503,7 +502,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-  font-family: swiper-icons;
+  font-family: swiper-icons, serif;
   font-size: var(--swiper-navigation-size);
   text-transform: none !important;
   letter-spacing: 0;
@@ -803,7 +802,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper .swiper-notification,
-swiper-container .swiper-notification {
+.swiper-container .swiper-notification {
   position: absolute;
   left: 0;
   top: 0;
@@ -890,7 +889,7 @@ swiper-container .swiper-notification {
 .swiper-cube .swiper-cube-shadow {
   position: absolute;
   left: 0;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
   height: 100%;
   opacity: 0.6;
@@ -1111,7 +1110,7 @@ swiper-container .swiper-notification {
     flex-direction: column;
     gap: 45px;
     overflow-y: auto;
-    padding: 45px 10px 0px 10px;
+    padding: 45px 10px 0 10px;
   }
   .header.active .header__list {
     justify-content: flex-start;
@@ -1218,8 +1217,7 @@ swiper-container .swiper-notification {
     gap: 35px;
   }
   .header.active .header__inner {
-    padding: 0px;
-    padding-top: 15px;
+    padding: 15px 0 0;
   }
 }
 
@@ -1252,7 +1250,6 @@ swiper-container .swiper-notification {
   left: 50%;
   transform: translateX(-50%);
   background: #fff;
-  position: relative;
 }
 .main .main-presale {
   width: 100%;
@@ -1279,7 +1276,7 @@ swiper-container .swiper-notification {
   max-width: 724px;
   width: 100%;
   background: #021532;
-  box-shadow: 4px 4px 0px #4dda36;
+  box-shadow: 4px 4px 0 #4dda36;
   border-radius: 10px;
   position: relative;
   display: flex;
@@ -1355,7 +1352,7 @@ swiper-container .swiper-notification {
   right: 0;
   bottom: 74px;
   background: rgba(8, 33, 72, 0.6);
-  border-radius: 16px 0px 0px 16px;
+  border-radius: 16px 0 0 16px;
   padding: 20px 24px;
   display: flex;
   align-items: center;
@@ -1528,13 +1525,11 @@ swiper-container .swiper-notification {
   background: url("../img/tv.svg") top/contain no-repeat;
   height: 87.85256%;
   width: 100%;
-  display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 79.88px;
   display: inline-flex;
   flex-direction: column;
-  justify-content: center;
   position: relative;
 }
 .main__tv-wrapper .main__volume {
@@ -1542,7 +1537,6 @@ swiper-container .swiper-notification {
   right: 20px;
   bottom: 25px;
   z-index: 10;
-  width: auto;
   width: 30px;
   height: 30px;
 }
@@ -1610,7 +1604,6 @@ swiper-container .swiper-notification {
   z-index: 5;
   opacity: 1;
   min-width: 279px;
-  z-index: 5;
 }
 .main__yazik.active {
   animation: 3s dendyTrans;
@@ -1782,14 +1775,14 @@ swiper-container .swiper-notification {
   display: flex;
   flex-direction: column;
   left: 50%;
-  bottom: 0px;
+  bottom: 0;
   gap: 20px;
   align-items: center;
   justify-content: center;
   transform: translateX(-50%);
   padding: 10px 20px;
   background: #ebebeb;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   z-index: 6;
 }
 .main__button.anime {
@@ -1847,6 +1840,7 @@ swiper-container .swiper-notification {
   align-items: center;
   gap: 60px;
 }
+
 @media (max-height: 900px) {
   .main__project-title {
     margin-bottom: 30px;
@@ -2713,7 +2707,6 @@ swiper-container .swiper-notification {
   background: #fff;
   color: #021228;
   padding: 15px;
-  border: 1px solid #021228;
   z-index: 2;
   opacity: 0;
   border: 3px solid #ebebeb;
@@ -2906,7 +2899,6 @@ swiper-container .swiper-notification {
   justify-content: center;
   gap: 10px;
   flex: 1 0 310px;
-  height: 100%;
   height: 150px;
 }
 .investor__image img {
@@ -3102,7 +3094,6 @@ swiper-container .swiper-notification {
   max-width: 175px;
   height: 100%;
   background: #ffffff;
-  border-radius: 5.88957px;
   border-radius: 6px;
   padding: 5px 5px 25px 5px;
   border: 4px solid #4dda36;
@@ -3182,7 +3173,6 @@ swiper-container .swiper-notification {
   height: 15px;
 }
 .store-slider__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet {
-  width: 100%;
   border-radius: 3px;
   background: rgba(253, 255, 253, 0.2);
   position: relative;
@@ -3239,10 +3229,7 @@ swiper-container .swiper-notification {
   justify-content: center;
   align-items: center;
   margin-bottom: 55px;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .possibilities__platform img {
   max-width: 100%;
@@ -3276,7 +3263,6 @@ swiper-container .swiper-notification {
   background: url("../img/skills-bg.png") center/cover no-repeat;
   border: 4px solid rgba(5, 255, 90, 0.1);
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   height: auto;
@@ -3419,7 +3405,6 @@ swiper-container .swiper-notification {
   width: 100%;
   border-radius: 3px;
   background: #dfdfdf;
-  border-radius: 3px;
   position: relative;
   opacity: 1;
   height: 10px;
@@ -3901,7 +3886,6 @@ body .possibilities .secret-ball.active .secret-ball__text {
   transform: translate(-50%, -50%);
   max-width: 390px;
   width: 100%;
-  height: 10px;
   height: 15px;
 }
 .unique-slider__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet {
@@ -4162,7 +4146,6 @@ body .possibilities .secret-ball.active .secret-ball__text {
   border-radius: 5px;
   cursor: pointer;
   border-bottom: 3px solid transparent;
-  border-radius: 5px;
 }
 .custom .head-slider__slide.active {
   border-bottom: 3px solid #4dda36;
@@ -4375,7 +4358,7 @@ body .possibilities .secret-ball.active .secret-ball__text {
     line-height: 20px;
     color: #000000;
     border-bottom: 3px solid #e3e3e3;
-    border-radius: 4px 4px 0px 0px;
+    border-radius: 4px 4px 0 0;
   }
   .custom__variant.active {
     background: #ebebeb;
@@ -4600,7 +4583,6 @@ body .possibilities .secret-ball.active .secret-ball__text {
   width: 100%;
   border-radius: 3px;
   background: #dfdfdf;
-  border-radius: 3px;
   position: relative;
   opacity: 1;
   height: 10px;
@@ -4889,7 +4871,6 @@ body .possibilities .secret-ball.active .secret-ball__text {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  /* main/back2 */
   color: #ffffff;
 }
 .road__text {
