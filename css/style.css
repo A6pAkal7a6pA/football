@@ -1364,7 +1364,7 @@ swiper-container .swiper-notification {
   height: 100px;
 }
 .main__nft-image img {
-  max-height: 29px;
+  max-height: 48px;
 }
 .main__nft-text {
   font-style: normal;
@@ -1872,6 +1872,9 @@ swiper-container .swiper-notification {
   .main__nft {
     max-width: 166px;
     height: 80px;
+  }
+  .main__nft-image img {
+    max-height: 36px;
   }
   .main__nft-text {
     font-size: 15px;

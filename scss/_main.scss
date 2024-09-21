@@ -144,7 +144,7 @@
 		height: 100px;
 		&-image {
 			img {
-				max-height: 29px;
+				max-height: 48px;
 			}
 		}
 		&-text {
@@ -714,6 +714,11 @@
 		&__nft {
 			max-width: 166px;
 			height: 80px;
+			&-image {
+				img {
+					max-height: 36px;
+				}
+			}
 			&-text {
 				font-size: 15px;
 				line-height: 20px;
